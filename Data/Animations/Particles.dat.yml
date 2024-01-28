@@ -1,0 +1,1426 @@
+---
+- 1:
+    :enter:
+      :max_counter: 7
+      :data:
+      - :file: tall-grass
+        :rect:
+        - 0
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :position: :grass_pos
+        :se_player_play: audio/particles/step_tall-grass
+      - :wait: 3
+      - :rect:
+        - 16
+        - 0
+        - 16
+        - 16
+      - :wait: 3
+      - :rect:
+        - 32
+        - 0
+        - 16
+        - 16
+      - :wait: 3
+      - :rect:
+        - 48
+        - 0
+        - 16
+        - 16
+      :loop: false
+    :stay:
+      :max_counter: 1
+      :data:
+      - :file: tall-grass
+        :zoom: 1
+        :position: :grass_pos
+        :rect:
+        - 48
+        - 0
+        - 16
+        - 16
+      :loop: false
+    :leave:
+      :max_counter: 1
+      :data: []
+      :loop: false
+  2:
+    :enter:
+      :max_counter: 8
+      :data:
+      -
+      -
+      -
+      - :file: long-grass
+        :zoom: 1
+        :position: :grass_pos
+        :add_z: 2
+        :se_player_play: audio/particles/step_tall-grass
+      :loop: false
+    :stay:
+      :max_counter: 1
+      :data:
+      - :file: long-grass
+        :zoom: 1
+        :add_z: 2
+        :position: :grass_pos
+      :loop: false
+    :leave: &1
+      :max_counter: 1
+      :data: []
+      :loop: false
+  :exclamation:
+    :enter:
+      :max_counter: 36
+      :data:
+      - :file: emotions
+        :rect:
+        - 0
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :add_z: -1
+        :oy_offset: 0
+        :se_play: audio/particles/se_exclamation
+      -
+      - :oy_offset: 2
+      -
+      - :oy_offset: 4
+      -
+      - :oy_offset: 8
+      -
+      - :oy_offset: 12
+      -
+      - :oy_offset: 16
+        :add_z: 64
+      -
+      - :oy_offset: 20
+      -
+      - :oy_offset: 24
+      -
+      - :oy_offset: 20
+      :loop: false
+    :stay: &2
+      :max_counter: 2
+      :data:
+      - :state: :leave
+      :loop: false
+    :leave: *1
+  :poison:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 32
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/poison
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 48
+        - 0
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :exclamation2:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 0
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/exclamation2
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 16
+        - 16
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :interrogation:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 0
+        - 32
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/interrogation
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 16
+        - 32
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :music:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 32
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/music
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 48
+        - 16
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :love:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 32
+        - 32
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/love
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 48
+        - 32
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :joy:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 64
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/joy
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 80
+        - 0
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :sad:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 64
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/sad
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 80
+        - 16
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :happy:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 64
+        - 32
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/happy
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 80
+        - 32
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :angry:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 96
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/angry
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 112
+        - 0
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :sulk:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 96
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/sulk
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 112
+        - 16
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :nocomment:
+    :enter:
+      :max_counter: 60
+      :data:
+      - :file: emotions
+        :rect:
+        - 96
+        - 32
+        - 16
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :oy_offset: 10
+        :se_play: audio/particles/nocomment
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      -
+      - :rect:
+        - 112
+        - 32
+        - 16
+        - 16
+      :loop: false
+    :stay: *2
+    :leave: *1
+  :dust:
+    :enter:
+      :max_counter: 9
+      :loop: false
+      :data:
+      - :file: dust
+        :rect:
+        - 0
+        - 0
+        - 32
+        - 16
+        :zoom: 1
+        :position: :center_pos
+        :add_z: 2
+      - :wait: 4
+      - :rect:
+        - 32
+        - 0
+        - 32
+        - 16
+        :se_player_play: audio/particles/se_jump-landing
+      - :wait: 4
+      - :rect:
+        - 64
+        - 0
+        - 32
+        - 16
+      - :wait: 4
+      - :rect:
+        - 96
+        - 0
+        - 32
+        - 16
+      - :wait: 5
+      - :rect:
+        - 128
+        - 0
+        - 1
+        - 1
+    :stay: &3
+      :max_counter: 1
+      :loop: false
+      :data: []
+    :leave: *3
+  :sand_d:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 19
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 0
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 125
+      - &4
+        :wait: 17
+      - &5
+        :opacity: 115
+      - &6
+        :wait: 17
+      - &7
+        :opacity: 100
+      - &8
+        :wait: 17
+      - &9
+        :opacity: 85
+      - &10
+        :wait: 17
+      - &11
+        :opacity: 70
+      - &12
+        :wait: 17
+      - &13
+        :opacity: 55
+      - &14
+        :wait: 17
+      - &15
+        :opacity: 40
+      - &16
+        :wait: 17
+      - &17
+        :opacity: 25
+      - &18
+        :wait: 17
+      - &19
+        :opacity: 10
+      - &20
+        :wait: 17
+      - &21
+        :opacity: 0
+  :sand_l:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 19
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 16
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 125
+      - *4
+      - *5
+      - *6
+      - *7
+      - *8
+      - *9
+      - *10
+      - *11
+      - *12
+      - *13
+      - *14
+      - *15
+      - *16
+      - *17
+      - *18
+      - *19
+      - *20
+      - *21
+  :sand_r:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 19
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 32
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 125
+      - *4
+      - *5
+      - *6
+      - *7
+      - *8
+      - *9
+      - *10
+      - *11
+      - *12
+      - *13
+      - *14
+      - *15
+      - *16
+      - *17
+      - *18
+      - *19
+      - *20
+      - *21
+  :sand_u:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 19
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 48
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 125
+      - *4
+      - *5
+      - *6
+      - *7
+      - *8
+      - *9
+      - *10
+      - *11
+      - *12
+      - *13
+      - *14
+      - *15
+      - *16
+      - *17
+      - *18
+      - *19
+      - *20
+      - *21
+  :pond:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 13
+      :loop: false
+      :data:
+      - :file: surf_print
+        :rect:
+        - 0
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 255
+      - :wait: 8
+      - :rect:
+        - 16
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 32
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 48
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 64
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 80
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 96
+        - 0
+        - 16
+        - 16
+  :puddle:
+    :enter:
+      :max_counter: 7
+      :data:
+      - :wait: 5
+      - :se_player_play: audio/particles/step_puddle
+      :loop: false
+    :stay: *3
+    :leave:
+      :max_counter: 13
+      :loop: false
+      :data:
+      - :file: ripple
+        :rect:
+        - 0
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :set_z: -1
+        :position: :center_pos
+        :opacity: 255
+      - :wait: 8
+      - :rect:
+        - 16
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 32
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 48
+        - 0
+        - 16
+        - 16
+  :snow_d:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 35
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 0
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 250
+      - &22
+        :wait: 9
+      - &23
+        :opacity: 240
+      - &24
+        :wait: 9
+      - &25
+        :opacity: 225
+      - &26
+        :wait: 9
+      - &27
+        :opacity: 210
+      - &28
+        :wait: 9
+      - &29
+        :opacity: 195
+      - &30
+        :wait: 9
+      - &31
+        :opacity: 180
+      - &32
+        :wait: 9
+      - &33
+        :opacity: 165
+      - &34
+        :wait: 9
+      - &35
+        :opacity: 150
+      - &36
+        :wait: 9
+      - &37
+        :opacity: 135
+      - &38
+        :wait: 9
+      - &39
+        :opacity: 120
+      - &40
+        :wait: 9
+      - &41
+        :opacity: 105
+      - &42
+        :wait: 9
+      - &43
+        :opacity: 90
+      - &44
+        :wait: 9
+      - &45
+        :opacity: 75
+      - &46
+        :wait: 9
+      - &47
+        :opacity: 60
+      - &48
+        :wait: 9
+      - &49
+        :opacity: 45
+      - &50
+        :wait: 9
+      - &51
+        :opacity: 30
+      - &52
+        :wait: 9
+      - &53
+        :opacity: 15
+      - &54
+        :wait: 9
+      - &55
+        :opacity: 0
+  :snow_l:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 35
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 16
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 125
+      - *22
+      - *23
+      - *24
+      - *25
+      - *26
+      - *27
+      - *28
+      - *29
+      - *30
+      - *31
+      - *32
+      - *33
+      - *34
+      - *35
+      - *36
+      - *37
+      - *38
+      - *39
+      - *40
+      - *41
+      - *42
+      - *43
+      - *44
+      - *45
+      - *46
+      - *47
+      - *48
+      - *49
+      - *50
+      - *51
+      - *52
+      - *53
+      - *54
+      - *55
+  :snow_r:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 35
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 32
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 250
+      - *22
+      - *23
+      - *24
+      - *25
+      - *26
+      - *27
+      - *28
+      - *29
+      - *30
+      - *31
+      - *32
+      - *33
+      - *34
+      - *35
+      - *36
+      - *37
+      - *38
+      - *39
+      - *40
+      - *41
+      - *42
+      - *43
+      - *44
+      - *45
+      - *46
+      - *47
+      - *48
+      - *49
+      - *50
+      - *51
+      - *52
+      - *53
+      - *54
+      - *55
+  :snow_u:
+    :enter: *3
+    :stay: *3
+    :leave:
+      :max_counter: 35
+      :loop: false
+      :data:
+      - :file: floor_print
+        :rect:
+        - 48
+        - 16
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -32
+        :position: :center_pos
+        :opacity: 125
+      - *22
+      - *23
+      - *24
+      - *25
+      - *26
+      - *27
+      - *28
+      - *29
+      - *30
+      - *31
+      - *32
+      - *33
+      - *34
+      - *35
+      - *36
+      - *37
+      - *38
+      - *39
+      - *40
+      - *41
+      - *42
+      - *43
+      - *44
+      - *45
+      - *46
+      - *47
+      - *48
+      - *49
+      - *50
+      - *51
+      - *52
+      - *53
+      - *54
+      - *55
+  :splash_water:
+    :enter:
+      :max_counter: 31
+      :loop: false
+      :data:
+      - :file: eclaboussures
+        :rect:
+        - 0
+        - 0
+        - 40
+        - 7
+        :zoom: 1
+        :position: :center_pos
+        :add_z: 32
+        :ox_offset: -11
+        :se_player_play: audio/particles/diving
+      - :wait: 4
+      - :rect:
+        - 40
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 80
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 0
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 40
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 80
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 0
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 40
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 80
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 0
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 40
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 80
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 0
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 40
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 80
+        - 0
+        - 40
+        - 7
+      - :wait: 4
+      - :rect:
+        - 0
+        - 0
+        - 40
+        - 7
+    :stay:
+      :max_counter: 1
+      :loop: false
+      :data:
+      - :state: :leave
+    :leave: *3
+  :wetsand:
+    :enter:
+      :max_counter: 1
+      :loop: false
+      :data:
+      - :file: splash
+        :rect:
+        - 0
+        - 0
+        - 32
+        - 16
+        :position: :character_pos
+        :se_player_play: audio/particles/step_Puddle
+    :stay:
+      :max_counter: 9
+      :loop: true
+      :data:
+      - :wait: 2
+        :file: splash
+        :rect:
+        - 0
+        - 0
+        - 32
+        - 16
+        :position: :character_pos
+      - :rect:
+        - 0
+        - 0
+        - 32
+        - 16
+      - :wait: 2
+      - :rect:
+        - 32
+        - 0
+        - 32
+        - 16
+      - :wait: 2
+      - :rect:
+        - 64
+        - 0
+        - 32
+        - 16
+    :leave: *3
+  :water_dust:
+    :enter:
+      :max_counter: 8
+      :loop: false
+      :data:
+      - :file: splash
+        :rect:
+        - 0
+        - 0
+        - 20
+        - 11
+        :zoom: 0.8
+        :position: :character_pos
+        :oy_offset: 6
+      - :wait: 1
+      - :rect:
+        - 0
+        - 0
+        - 20
+        - 11
+      - :wait: 1
+      - :rect:
+        - 20
+        - 0
+        - 20
+        - 11
+      - :wait: 1
+      - :rect:
+        - 40
+        - 0
+        - 20
+        - 11
+      - :state: :leave
+    :stay: *3
+    :leave: *3
+- :puddle:
+    :enter:
+      :max_counter: 7
+      :data:
+      - :wait: 5
+      - :se_player_play: audio/particles/step_swamp
+      :loop: false
+    :stay: *3
+    :leave:
+      :max_counter: 13
+      :loop: false
+      :data:
+      - :file: ripple-mud
+        :rect:
+        - 0
+        - 0
+        - 16
+        - 16
+        :zoom: 1
+        :add_z: -1
+        :position: :center_pos
+        :opacity: 255
+      - :wait: 8
+      - :rect:
+        - 16
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 32
+        - 0
+        - 16
+        - 16
+      - :wait: 8
+      - :rect:
+        - 48
+        - 0
+        - 16
+        - 16

@@ -1,0 +1,118 @@
+fr,en
+"Note : il est possible d'afficher la fenêtre de message ailleurs sur l'écran (haut, milieu, bas, gauche, droite, coordonnées personnalisées...) avec la commande\nl\c[5]position_overwrite\c[0].","Note: you can display messages on other parts of the screen (top, middle, bottom, left, right, custom coordinates...) with \c[5]""position_overwrite\c[0]."
+Bienvenue dans la Bibliothèque de la Tour !,Welcome to the Tower's Library!
+:[lookto=9]:Sur votre gauche : des livres...,:[lookto=9]:On your left: books...
+:[lookto=8]:Et sur votre droite aussi !,:[lookto=8]:And on your right too!
+":[lookto=11]:Grâce à la commande \c[5]""[lookto=N]""\c[0], je peux vous faire regarder vers n'importe quel évènement !",":[lookto=11]:Thanks to \c[5]""[lookto=N]""\c[0], I can make you look towards any event!"
+"Bonjour \n[1], soyez \f[la§le] bienvenu\E à la Bibliothèque de la Tour !",Hello \N[1]! You're the \f[heroine§hero] of this demo!
+"J'affiche votre nom en utilisant \c[5]""\\n[1]""\c[0] dans mon message.","I can display your name by putting \c[5]""\\n[1]""\c[0] in my message."
+"D'ailleurs, je m'adapte à votre genre avec \c[5]""\\E""\c[0] pour ajouter un ""E"" à la fin d'un mot, et avec \c[5]""\\f[F§M]""\c[0] pour afficher deux mots différents en fonction \nlde l'apparence que vous avez choisie.","By the way, I can adapt to your gender with \c[5]""\\f[F§M]""\c[0] to display two different words depending on the appearance you chose."
+Je connais aussi les noms de vos Pokémon !,I know the names of your Pokémon as well!
+"Par exemple, en première place de votre Équipe, vous avez \p[1].","For instance, the first Pokémon of your Party is \p[1]."
+Bonjour ! Je vois que vous avez \v[26]$.,Hello! I can see you currently have \v[26]$.
+"Je le sais grâce à la fonction \c[5]""\\v[...]""\c[0], qui permet d'afficher une variable au sein d'un message.","I know it thanks to the \c[5]""\\v[...]""\c[0] command, that displays a variable inside a message."
+"En l'occurrence, j'ai rendu la variable temporaire 26 égale à la somme d'argent que vous possédez.","In this case, I made the temporary variable 26 equal to the money you have."
+"\gMais je peux aussi afficher votre argent dans une fenêtre séparée, comme ici, en écrivant \c[5]""\\g"" \c[0]n'importe où dans mon message.","\gBut I can also display it on a separate window, like that, by writing \c[5]""\\g""\c[0] anywhere in my message."
+"Enfin, tout ça est bien inutile ici puisque les livres sont empruntables gratuitement !","Well, this is completely useless here because you can rent all the books for free!"
+"Je cherche un livre sur la \c[2]c\c[6]o\c[3]u\c[4]l\c[1]e\c[5]u\c[7]r\c[0]. C'est fou tout ce qu'on peut faire avec la fonction \c[5]""\\c[...]"" \c[0]!","I'm looking for a book about \c[2]r\c[6]a\c[3]i\c[4]n\c[1]b\c[5]o\c[7]w\c[0]s. Crazy what you can do with \c[5]""\\c[...]""\c[0]!"
+Tu peux colorer tous tes textes très librement.,You can color your text in many ways.
+"C'est le fichier \c[5]""_colors.png""\c[0] qui se trouve dans le dossier Windowskins qui gère tout ça.","Everything is managed in the \c[5]""_colors.png""\c[0] file located in the Windowskins folder."
+La première ligne correspond à la couleur des contours.,The first line is for the colors of outlines (not very functional...).
+La ligne du milieu correspond à la couleur du texte.,The middle line is for the colors of the text.
+Et la troisième ligne correspond à la couleur de l'ombre !,And the third line is for the colors of the shadows!
+"\c[25]Si j'écris ""\\c[25]"" dans mon texte, ça va donc prendre les couleurs de la 26e colonne (parce qu'on commence à compter à partir de 0).","\c[25]If I write ""\\c[25]"" in my text, it will take the colors of the 26th column (we're starting at 0)."
+"Et tu peux rajouter autant de colonnes à ton fichier \c[5]""_colors.png""\c[0] que tu veux tant que tu respectes le format.","You can add as many columns as you want in your \c[5]""_colors.png""\c[0] file as long as you respect the format."
+"Tiens, ton Sac contient une Poche \img[pocket-keys,picture]Objets Rares !","Oh, your Bag has a \img[pocket-keys,picture]Key Items Pocket!"
+" \img[713,icon] Elle est très pratique pour ranger une\nl             Bicylette, par exemple."," \img[713,icon]It is perfect to store a\nl             Bike, for instance."
+"Tu as vu, grâce à \c[5]""\\img[...]""\c[0], je peux afficher des images dans mes messages, et elles peuvent provenir de différents sous-dossiers !","Did you see it? Thanks to \c[5]""\\img[...]""\c[0], I can display pictures in a message, and they even can come from subfolders!"
+":[name=Pierre Rochard;face=160,steven_sma]:Comme je suis une vraie célébrité, j'ai le droit à un affichage de mon nom et de mon portrait !",":[name=Steven Stone;face=160,steven_sma]:Since I'm a real celebrity, my messages display my name and my portrait!"
+":[name=Pierre Rochard;face=160,steven_sma]:Pour ça, j'utilise \c[5]""[name=...]""\c[0] et \c[5]""[face]\c[0]"" dans mon message.",":[name=Steven Stone;face=160,steven_sma]:To do that, I use \c[5]""[name=...]""\c[0] and \c[5]""[face]""\c[0] in my message."
+":[name=Pierre Rochard ;face=160,steven_sma]:D'ailleurs, pour encore plus de classe, je peux même avoir un windowskin différent pour mon nom.",":[name=Steven Stone ;face=160,steven_sma]:By the way, to be even more classy, I can even have a different windowskin for my name."
+J'ai trouvé une super fonction pour afficher un plan de l'endroit où on se trouve au sein même d'un message ! Regarde...,I found a great command to display the map of the location you're in within a message! Take a look...
+:[city=city/library]:\c[18]Bibliothèque\nlOù les livres vous apprennent à les écrire.,:[city=city/library]:\c[18]Library\nlWhere books teach you how to write them.
+"C'est grâce à \c[5]""[city=]""\c[0] que je peux afficher ce genre d'image, couplé avec un changement de windowskin.","It's thanks to \c[5]""[city=]""\c[0] that I can display this kind of message, coupled with a change of windowskin."
+"Bon, pour la bibliothèque, ce n'est pas très utile...","Well, it's not very useful fot the library..."
+\c[18]Quiz de culture générale.\nlRécompense à la clé !,\c[18]General knowledge test.\nlReward at stake!
+\c[18]Question 1 :\nlCombien de couleurs peuvent être utilisées pour colorer un texte ?,\c[18]Question 1:\nlHow many colors can you use to color a text?
+\c[18]Bonne réponse ![WAIT 40]\nlQuestion suivante.,\c[18]Correct![WAIT 40]\nlNext question.
+\c[18]Question 2 :\nlQuelle célébrité se trouve à la Bibliothèque ?,\c[18]Question 2:\nlWhat celebrity can you find at the Library at the moment?
+\c[18]Bonne réponse ![WAIT 40]\nlQuestion suivante.,\c[18]Correct![WAIT 40]\nlNext question.
+\c[18]Question 3 :\nlQuel Pokémon est cité dans une phrase de virelangue ?,\c[18]Question 3:\nlWhich Pokémon is mentioned in a tongue twister sentence?
+\c[18]Bonne réponse ![WAIT 40]\nlQuestion suivante.,\c[18]Correct![WAIT 40]\nlNext question.
+\c[18]Dernière question :\nlQuel objet doit-on trouver dans chaque lieu de cette Île ?,\c[18]Last question:\nlWhat item must you find in each place of this Island?
+\c[18]Bonne réponse ![WAIT 40],\c[18]Correct![WAIT 40]
+"\c[18]Vous avez répondu correctement à toutes les questions, félicitations !\nlVoici votre prix :","\c[18]You answered all the questions right, congratulations!\nlHere is your prize:"
+\c[18]Mauvaise réponse ! Réessayez.[WAIT 40],\c[18]Wrong! Try again.[WAIT 40]
+"\c[18]Vous avez déjà répondu au quiz. Mais voici un rappel : \c[15]""choice(X, Y, ""1"", ""2""...)"" \c[18]permet d'afficher un choix avec plus de quatre options.\nlX est le numéro de la variable qui sera utilisée par la commande ; Y est le nombre d'options ; les chiffres entre guillemets sont les options qui seront affichées.\nlPuis, pour chaque option, il convient de créer une branche conditionnelle qui vérifiera la valeur de la variable choisie : 1 = option 1, et ainsi de suite.","\c[18]You already answered the quiz. Here's a reminder: \c[15]""choice(X, Y, ""1"", ""2""...)""\c[18] displays a choice with more than four options.\nlX is the number of the variable used by the command ; Y is the number of options ; the numbers in quotation marks are the different options.\nlThen for each option, you must create a conditional branch checking the value of the chosen variable : 1 = option 1, and so on."
+Tu savais qu'on peut afficher la fenêtre de choix ailleurs qu'en bas à droite ?,Did you know you can display the choice window somewhere else than on the bottom right?
+"Ah, moi qui pensais t'apprendre quelque chose...",Oh... I thought I could teach you something.
+"Pour ça, il faut \c[5]activer l'interrupteur 26\c[0].\nlCette information t'a été utile ?","To do that, you need to \c[5]trigger switch number 26\c[0].\nlDid this information help you?"
+Ravi que ce soit le cas !,Glad I could help!
+"Comment ça ? Si tu ne le savais pas et que maintenant tu le sais, c'est que ça t'a été utile, non ?","What? If you didn't know and now you do, it must have been useful, right?"
+"Par ailleurs, tu peux tout à fait insérer des couleurs dans tes choix, comme dans n'importe quel message, avec \c[5]""\\c[...]""\c[0].","By the way, you can insert colors within your choices, like in any other message, with \c[5]""\\c[...]""\c[0]."
+"Je crois que le petit perché sur un escabeau juste au-dessus de nous en sait pas mal à ce sujet.\nlSaisissant, n'est-ce pas ?","I think the kid perched on a stepladder right above us knows quite a lot on the matter.\nlFascinating, right?"
+\c[1]Fantastique !,\c[1]Fantastic!
+\c[2]Époustouflant !,\c[2]Mind-blowing!
+Appuyez sur \k[X] pour ouvrir le menu.,Press \k[X] to open the menu.
+"Ce message utilise \c[5]""\\k[...]""\c[0] pour afficher une touche de manière dynamique.\nlAinsi, la bonne touche sera toujours affichée, même si le joueur a changé l'attribution de ses touches ou qu'il utilise une manette.","This message uses \c[5]""\\k[...]""\c[0] to display a key in a dynamic way.\nlDoing so, the correct key will always be displayed, even if the player changed their inputs or is using a controler."
+C'est vide...,It's empty...
+Les étagères sont remplies de livres sur les Pokémon.,The shelves are filled with books about Pokémon.
+Les étagères sont remplies de livres sur les Pokémon.,The shelves are filled with books about Pokémon.
+Les étagères sont remplies de livres sur les Pokémon.,The shelves are filled with books about Pokémon.
+Les étagères sont remplies de livres sur les Pokémon.,The shelves are filled with books about Pokémon.
+C'est la documentation de PokémonSDK !,It's PokémonSDK's documentation!
+Il y a des tonnes de livres sur le langage Ruby.,There are tons of books about the Ruby language.
+C'est une collection de livres sur le design graphique.,It's a book collection about graphic design.
+C'est un recueil de virelangues.,It's a repository on tongue twisters.
+C'est une pile d'ouvrages portant sur le pixel art.,A pile of publications about pixel art.
+C'est une pile d'ouvrages sur l'event-making.,A pile of publications about event-making.
+"Il y a un gros livre intitulé ""Vademecum du chef de Projet"", par Aerun.","There is a big book named ""Vademecum of the Project Manager"", by Aerun."
+"Il y a une brochure poussiéreuse intitulée ""Les fangames et le droit"", par SirMalo.","There is a dusty manual titled ""Fangames and Law"", by SirMalo."
+Les étagères sont remplies de livres sur les Pokémon.,The shelves are filled with books about Pokémon.
+Les étagères sont remplies de livres sur les Pokémon.,The shelves are filled with books about Pokémon.
+\gC'est un Distributeur.\nlQuelle boisson vous fait envie ?,It's a vending machine.\nlWhich drink would you like?
+"Rien, merci","Nothing, thanks"
+Clang !\g,Clang!\g
+"Une bouteille d'\t[12,30] vient de tomber.\g","A bottle of \t[12,30] dropped down.\g"
+"Obtenu : \t[12,30].[WAIT 80]\g","Received: \t[12,30].[WAIT 80]\g"
+"\n[1] met la bouteille d'\t[12,30]\nldans la Poche \img[pocket-medicine,picture]Médicaments.\g","\n[1] put the \t[12,30] bottle\nlin the \img[pocket-medicine,picture]Medicine pocket.\g"
+Vous n'avez pas assez d'argent.,Not enough money...
+Clang !\g,Clang!\g
+"Une bouteille de \t[12,31] vient de tomber.\g","A bottle of \t[12,31] dropped down.\g"
+"Obtenu : \t[12,31].[WAIT 80]\g","Received: \t[12,31].[WAIT 80]\g"
+"\n[1] met la bouteille de \t[12,31]\nldans la Poche \img[pocket-medicine,picture]Médicaments.\g","\n[1] put the \t[12,31] bottle\nlin the \img[pocket-medicine,picture]Medicine pocket.\g"
+Vous n'avez pas assez d'argent.,Not enough money...
+Clang !\g,Clang!\g
+"Une canette de \t[12,32] vient de tomber.\g","A can of \t[12,32] dropped down.\g"
+"Obtenu : \t[12,32].[WAIT 80]\g","Received: \t[12,32].[WAIT 80]\g"
+"\n[1] met le \t[12,32]\nldans la Poche \img[pocket-medicine,picture]Médicaments.\g","\n[1] put the \t[12,31] can\nlin the \img[pocket-medicine,picture]Medicine pocket.\g"
+Vous n'avez pas assez d'argent.,Not enough money...
+"Il y a toute une collection de mangas portant sur un Dresseur accompagné d'un Têtarte, d'un Bulbizarre et d'un Pikachu.","There is a complete collection of mangas about a Trainer and his partners Poliwhirl, Bulbasaur and Pikachu."
+"Il y a toute une collection de mangas portant sur un Dresseur accompagné d'un Têtarte, d'un Bulbizarre et d'un Pikachu.","There is a complete collection of mangas about a Trainer and his partners Poliwhirl, Bulbasaur and Pikachu."
+"La grosse horloge au milieu de la Bibliothèque permet de connaître l'heure à tout moment. Par exemple, il est actuellement [HOUR].","The big clock in the middle of the Library gives me the hour at any time of the day. For instance, it's currently [HOUR]."
+"Si je peux te l'affirmer avec autant d'aplomb, c'est parce que la commande  \c[5]""text.set_variable""\c[0] me permet de stocker une variable complexe et de\nlla retranscrire au sein d'un message.","If I can tell it with such aplomb, it's because the \c[5]""text.set_variable""\c[0] command allows me to store a complex variable and to transcribe it inside a message."
+"Je sais que SirMalo s'en sert souvent, notamment lorsqu'il s'agit de donner leurs premiers Pokémon aux nouveaux arrivants.","I know SirMalo often uses it, especially when he gives their starter Pokémon to newcomers."
+Qui vient encore m'embêter alors que je suis en train de lire ?,Who's anonying me while I'm reading?
+Comment ? Tu n'as pas bien entendu ce que je viens de dire ?,What? You didn't hear what I just said?
+"C'est normal, j'ai utilisé la technique du \c[5]""auto_skip""\c[0] qui permet à un message de s'effacer dès qu'il a fini de s'écrire !","That's normal, I used the \c[5]""auto_skip""\c[0] command, which closes the message window as soon as the text is over."
+"Pour te laisser un peu plus de temps pour lire, n'hésite pas à la combiner avec la fonction \c[5]""[WAIT]""\c[0] !","To give enough time to read the message, you can combine it with the \c[5]""[WAIT]""\c[0] command!"
+Je crois que le type à lunettes juste à gauche en sait un peu plus à ce sujet.,I believe the guy wearing glasses on our left knows more about this subject.
+Une phrase de... virelangue ?\nlMais qu'est-ce que c'est ?,A... tongue-twister sentence?\nlWhat the hell is that?
+"J'essaie de passer le test, mais c'est super dur !","I try to pass the test, but it's really hard!"
+"Tiens, je te laisse essayer.\nl\c[17]Je vais en profiter pour regarder ses réponses...","Here, give it a try.\nl\c[17]I'm going to take this opportunity to look at his answers..."
+Je crois que je vais devoir potasser encore un peu...,I think I'll need to cram a bit more...
+"\spd[1]Akwakwak, quoique couard, couina narquoisement sans couac.",\spd[1]How much lunch could a Munchlax munch if a Munchlax could munch lunch?
+"Je lis un recueil de phrases franchement compliquées à prononcer, alors j'utilise la commande \c[5]""\\spd[N]\c""[0] pour les lire lentement.","I'm reading a collection of sentences that are quite hard to pronounce, so I use the \c[5]""\\spd[N]\c""[0] command to read them slowly."
+Quel livre vais-je bien pouvoir emprunter[WAIT 15].[WAIT 15].[WAIT 15].[WAIT 45]\nlHum ?,Which book will I take[WAIT 15].[WAIT 15].[WAIT 15].[WAIT 45]\nlHmm?
+"J'ai besoin de temps pour réfléchir, alors j'insère \c[5]""[WAIT N]""\c[0] dans mon message pour marquer une pause.","I need time to think, so I insert \c[5]""[WAIT N]""\c[0] in my message to take a break."
+:[align=center]:\s[b]Manuel :\s[r]\nlLes commandes de messages (1/2),:[align=center]:\s[b]Guide:\s[r]\nlMessages commands (1/2)
+"Ajouter \c[5]""[align=]""\c[0] dans un message permet de justifier le texte à gauche ou à droite, ou de le centrer.","Adding \c[5]""[align=]""\c[0] in a message justifies the text to the left or to the right, or centers it."
+\nl:[align=right]:Fin   ,\nl:[align=right]:The end  
+:[align=center]:\s[b]Manuel :\s[r]\nlLes commandes de messages (2/2),:[align=center]:\s[b]Guide:\s[r]\nlMessages commands (2/2)
+"La fonction \c[5]""\\s[...]""\c[0] permet de passer le texte en \s[b]gras\nl\s[r]ou en \s[i]italique\s[r].","The \c[5]""\\s[...]""\c[0] command puts the text in \s[b]bold\s[r]\nlor in \s[i]italic\s[r]."
+ \nl:[align=right]:Fin   ,\nl:[align=right]:The end  
+Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]...,Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]...
+:[align=center]:\^AAAAH !!!,:[align=center]:\^AAAAH!!!
+Tu m'as réveillé et fait crier alors qu'il faut rester silencieux dans une bibliothèque !,You woke me up and made me scream while we're in a library!
+"Bon, où en étais-je... [WAIT 45]Ah, oui !\nl\spd[1]""L'Attaque Bâillement rend le Pokémon somno...""","So, where was I... [WAIT 45]Oh, yes!\nl\spd[1]""The Move Yawn makes the Pokémon drow..."""
+Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]...,Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]Z[WAIT 15]z[WAIT 15]...

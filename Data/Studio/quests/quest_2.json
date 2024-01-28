@@ -1,0 +1,49 @@
+{
+  "klass": "Quest",
+  "id": 2,
+  "dbSymbol": "quest_2",
+  "isPrimary": false,
+  "resolution": "default",
+  "objectives": [
+    {
+      "objectiveMethodName": "objective_speak_to",
+      "objectiveMethodArgs": [
+        0,
+        "Jules"
+      ],
+      "textFormatMethodName": "text_speak_to",
+      "hiddenByDefault": false
+    },
+    {
+      "objectiveMethodName": "objective_catch_pokemon",
+      "objectiveMethodArgs": [
+        [
+          {
+            "type": "pokemon",
+            "value": "froslass"
+          }
+        ],
+        1
+      ],
+      "textFormatMethodName": "text_catch_pokemon",
+      "hiddenByDefault": false
+    }
+  ],
+  "earnings": [
+    {
+      "earningMethodName": "earning_item",
+      "earningArgs": [
+        "cleanse_tag",
+        1
+      ],
+      "textFormatMethodName": "text_earn_item"
+    },
+    {
+      "earningMethodName": "earning_money",
+      "earningArgs": [
+        3000
+      ],
+      "textFormatMethodName": "text_earn_money"
+    }
+  ]
+}

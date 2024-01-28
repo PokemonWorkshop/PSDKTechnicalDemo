@@ -1,0 +1,104 @@
+{
+  "klass": "Specie",
+  "id": 13,
+  "dbSymbol": "weedle",
+  "forms": [
+    {
+      "form": 0,
+      "height": 0.3,
+      "weight": 3.2,
+      "type1": "bug",
+      "type2": "poison",
+      "baseHp": 40,
+      "baseAtk": 35,
+      "baseDfe": 30,
+      "baseSpd": 50,
+      "baseAts": 20,
+      "baseDfs": 20,
+      "evHp": 0,
+      "evAtk": 0,
+      "evDfe": 0,
+      "evSpd": 1,
+      "evAts": 0,
+      "evDfs": 0,
+      "evolutions": [
+        {
+          "dbSymbol": "kakuna",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "minLevel",
+              "value": 7
+            }
+          ]
+        }
+      ],
+      "experienceType": 1,
+      "baseExperience": 39,
+      "baseLoyalty": 70,
+      "catchRate": 255,
+      "femaleRate": 50,
+      "breedGroups": [
+        3,
+        3
+      ],
+      "hatchSteps": 3840,
+      "babyDbSymbol": "weedle",
+      "babyForm": 0,
+      "itemHeld": [
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        },
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        }
+      ],
+      "abilities": [
+        "shield_dust",
+        "shield_dust",
+        "run_away"
+      ],
+      "frontOffsetY": 0,
+      "moveSet": [
+        {
+          "klass": "LevelLearnableMove",
+          "move": "poison_sting",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "string_shot",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "bug_bite",
+          "level": 9
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "electroweb"
+        }
+      ],
+      "resources": {
+        "icon": "013",
+        "iconShiny": "",
+        "front": "013",
+        "frontShiny": "013",
+        "back": "013",
+        "backShiny": "013",
+        "footprint": "013",
+        "character": "013_0",
+        "characterShiny": "013s_0",
+        "cry": "013cry.ogg",
+        "hasFemale": false
+      }
+    }
+  ]
+}

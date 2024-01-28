@@ -1,0 +1,117 @@
+{
+  "klass": "Specie",
+  "id": 664,
+  "dbSymbol": "scatterbug",
+  "forms": [
+    {
+      "form": 0,
+      "height": 0.3,
+      "weight": 2.5,
+      "type1": "bug",
+      "type2": "__undef__",
+      "baseHp": 38,
+      "baseAtk": 35,
+      "baseDfe": 40,
+      "baseSpd": 35,
+      "baseAts": 27,
+      "baseDfs": 25,
+      "evHp": 0,
+      "evAtk": 0,
+      "evDfe": 1,
+      "evSpd": 0,
+      "evAts": 0,
+      "evDfs": 0,
+      "evolutions": [
+        {
+          "dbSymbol": "spewpa",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "minLevel",
+              "value": 9
+            }
+          ]
+        }
+      ],
+      "experienceType": 1,
+      "baseExperience": 40,
+      "baseLoyalty": 70,
+      "catchRate": 255,
+      "femaleRate": 50,
+      "breedGroups": [
+        3,
+        3
+      ],
+      "hatchSteps": 3840,
+      "babyDbSymbol": "scatterbug",
+      "babyForm": 0,
+      "itemHeld": [
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        },
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        }
+      ],
+      "abilities": [
+        "shield_dust",
+        "compound_eyes",
+        "friend_guard"
+      ],
+      "frontOffsetY": 0,
+      "moveSet": [
+        {
+          "klass": "LevelLearnableMove",
+          "move": "tackle",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "string_shot",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "stun_spore",
+          "level": 6
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "bug_bite",
+          "level": 15
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "poison_powder"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "rage_powder"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "stun_spore"
+        }
+      ],
+      "resources": {
+        "icon": "664",
+        "iconShiny": "",
+        "front": "664",
+        "frontShiny": "664",
+        "back": "664",
+        "backShiny": "664",
+        "footprint": "",
+        "character": "664_0",
+        "characterShiny": "664s_0",
+        "cry": "664cry.ogg",
+        "hasFemale": false
+      }
+    }
+  ]
+}

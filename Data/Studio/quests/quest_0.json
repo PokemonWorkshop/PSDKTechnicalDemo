@@ -1,0 +1,51 @@
+{
+  "klass": "Quest",
+  "id": 0,
+  "dbSymbol": "quest_0",
+  "isPrimary": true,
+  "resolution": "default",
+  "objectives": [
+    {
+      "objectiveMethodName": "objective_speak_to",
+      "objectiveMethodArgs": [
+        0,
+        "SirMalo"
+      ],
+      "textFormatMethodName": "text_speak_to",
+      "hiddenByDefault": false
+    }
+  ],
+  "earnings": [
+    {
+      "earningMethodName": "earning_money",
+      "earningArgs": [
+        5000
+      ],
+      "textFormatMethodName": "text_earn_money"
+    },
+    {
+      "earningMethodName": "earning_item",
+      "earningArgs": [
+        "poke_ball",
+        10
+      ],
+      "textFormatMethodName": "text_earn_item"
+    },
+    {
+      "earningMethodName": "earning_item",
+      "earningArgs": [
+        "great_ball",
+        5
+      ],
+      "textFormatMethodName": "text_earn_item"
+    },
+    {
+      "earningMethodName": "earning_item",
+      "earningArgs": [
+        "ultra_ball",
+        3
+      ],
+      "textFormatMethodName": "text_earn_item"
+    }
+  ]
+}

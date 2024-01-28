@@ -1,0 +1,420 @@
+{
+  "klass": "Specie",
+  "id": 133,
+  "dbSymbol": "eevee",
+  "forms": [
+    {
+      "form": 0,
+      "height": 0.3,
+      "weight": 6.5,
+      "type1": "normal",
+      "type2": "__undef__",
+      "baseHp": 55,
+      "baseAtk": 55,
+      "baseDfe": 50,
+      "baseSpd": 55,
+      "baseAts": 45,
+      "baseDfs": 65,
+      "evHp": 0,
+      "evAtk": 0,
+      "evDfe": 0,
+      "evSpd": 0,
+      "evAts": 0,
+      "evDfs": 1,
+      "evolutions": [
+        {
+          "dbSymbol": "vaporeon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "stone",
+              "value": "water_stone"
+            }
+          ]
+        },
+        {
+          "dbSymbol": "jolteon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "stone",
+              "value": "thunder_stone"
+            }
+          ]
+        },
+        {
+          "dbSymbol": "flareon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "stone",
+              "value": "fire_stone"
+            }
+          ]
+        },
+        {
+          "dbSymbol": "espeon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "minLoyalty",
+              "value": 220
+            },
+            {
+              "type": "dayNight",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "dbSymbol": "umbreon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "minLoyalty",
+              "value": 220
+            },
+            {
+              "type": "dayNight",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "dbSymbol": "leafeon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "maps",
+              "value": [
+                50
+              ]
+            }
+          ]
+        },
+        {
+          "dbSymbol": "glaceon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "maps",
+              "value": [
+                90
+              ]
+            }
+          ]
+        },
+        {
+          "dbSymbol": "sylveon",
+          "form": 0,
+          "conditions": [
+            {
+              "type": "minLoyalty",
+              "value": 220
+            },
+            {
+              "type": "func",
+              "value": "elv_nymphali"
+            }
+          ]
+        }
+      ],
+      "experienceType": 1,
+      "baseExperience": 65,
+      "baseLoyalty": 70,
+      "catchRate": 45,
+      "femaleRate": 12.5,
+      "breedGroups": [
+        5,
+        5
+      ],
+      "hatchSteps": 8960,
+      "babyDbSymbol": "eevee",
+      "babyForm": 0,
+      "itemHeld": [
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        },
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        }
+      ],
+      "abilities": [
+        "run_away",
+        "adaptability",
+        "anticipation"
+      ],
+      "frontOffsetY": 0,
+      "resources": {
+        "icon": "133",
+        "iconShiny": "",
+        "front": "133",
+        "frontShiny": "133",
+        "back": "133",
+        "backShiny": "133",
+        "footprint": "133",
+        "character": "133_0",
+        "characterShiny": "133s_0",
+        "cry": "133cry.ogg",
+        "hasFemale": false
+      },
+      "moveSet": [
+        {
+          "klass": "LevelLearnableMove",
+          "move": "tackle",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "helping_hand",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "growl",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "covet",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "tail_whip",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "sand_attack",
+          "level": 5
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "baby_doll_eyes",
+          "level": 9
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "quick_attack",
+          "level": 13
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "bite",
+          "level": 17
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "swift",
+          "level": 17
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "refresh",
+          "level": 20
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "take_down",
+          "level": 25
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "charm",
+          "level": 29
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "baton_pass",
+          "level": 33
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "double_edge",
+          "level": 37
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "last_resort",
+          "level": 41
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "trump_card",
+          "level": 45
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "laser_focus"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "helping_hand"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "last_resort"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "heal_bell"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "covet"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "hyper_voice"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "iron_tail"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "snore"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "work_up"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "toxic"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hidden_power"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sunny_day"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "protect"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rain_dance"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "shadow_ball"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "facade"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "round"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "echoed_voice"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "confide"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "secret_power"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "captivate"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "charm"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "covet"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "curse"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "detect"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "endure"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "fake_tears"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "flail"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "natural_gift"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "stored_power"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "synchronoise"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "tickle"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "wish"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "yawn"
+        }
+      ]
+    }
+  ]
+}
