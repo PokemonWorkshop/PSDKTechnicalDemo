@@ -611,46 +611,52 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
+        - We prepare the choice by getting texts from the CSV
+        indent: 1
+        code: 108
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - '17.'
+        indent: 1
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
         - "@choices = ["
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"17, 216 Combat simple",'
+        - ext_text(17, 216),
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjE3LCAyMTcgQ29tYmF0IGF2ZWMgw6lxdWlwZSBsaW1pdMOpZSIs
+        - ext_text(17, 217),
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"17, 218 Combat double",'
+        - ext_text(17, 218),
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"17, 219 Combat seul contre deux",'
+        - ext_text(17, 219),
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjE3LCAyMjAgQ29tYmF0IGF2ZWMgYWxsacOpIGNvbnRyZSB1biIs
+        - ext_text(17, 220),
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjE3LCAyMjEgQ29tYmF0IGF2ZWMgYWxsacOpIGNvbnRyZSBkZXV4Iiw=
+        - ext_text(17, 221),
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjE3LCAyMjIgQ29tYmF0IHNjcmlwdMOpIiw=
+        - ext_text(17, 222),
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -690,7 +696,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '  @choices << "17, 223 Combattre Palbolsky"'
+        - "  @choices << ext_text(17, 223)"
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -700,7 +706,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '@choices << "17, 224 Quitter"'
+        - "@choices << ext_text(17, 224)"
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -5216,7 +5222,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - !binary |-
-          YmkuYWRkX3BhcnR5KDEsIHBhcnR5LCAnTWFyaWUnLCAnU2NpZW50aWZpcXVlJywgJ2RwX3NjaWVudGlzdF9GJywgYmFnLCAyNTUsIDQsICJKZSB0J2FpIHByw6lkaXQgYXVzc2kgYmllbiBxdWUgbGEgbGlzdGUgZGVzIG5vbWJyZXMgcHJlbWllcnMuIiwgIlRlcyBwYXR0ZXJucyBzdWl2ZW50IGxhIHRow6lvcmllIGR1IGNoYW9zLCBqZSBuZSBwb3V2YWlzIHJpZW4gZmFpcmUuLi4iKQ==
+          YmkuYWRkX3BhcnR5KDEsIHBhcnR5LCAnTWFyaWUnLCAnU2NpZW50aWZpcXVlJywgJ2RwX3NjaWVudGlzdF9GJywgYmFnLCAyNTUsIDQsICIxNywgMjI1IEplIHQnYWkgcHLDqWRpdCBhdXNzaSBiaWVuIHF1ZSBsYSBsaXN0ZSBkZXMgbm9tYnJlcyBwcmVtaWVycy4iLCAiMTcsIDIyNiBUZXMgcGF0dGVybnMgc3VpdmVudCBsYSB0aMOpb3JpZSBkdSBjaGFvcywgamUgbmUgcG91dmFpcyByaWVuIGZhaXJlLi4uIik=
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand

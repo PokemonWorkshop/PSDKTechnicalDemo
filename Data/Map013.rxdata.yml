@@ -2220,7 +2220,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - A
+        - B
         - 0
         indent: 0
         code: 123
@@ -2236,7 +2236,7 @@ events:
         switch1_id: 1
         switch1_valid: false
         variable_value: 0
-        self_switch_valid: false
+        self_switch_valid: true
         variable_id: 1
         variable_valid: false
         switch2_id: 1
@@ -2272,7 +2272,7 @@ events:
       direction_fix: false
       condition: !ruby/object:RPG::Event::Page::Condition
         switch2_valid: false
-        self_switch_ch: A
+        self_switch_ch: B
         switch1_id: 1
         switch1_valid: false
         variable_value: 0
@@ -9932,6 +9932,62 @@ events:
     y: 16
     x: 18
     id: 27
+  28: !ruby/object:RPG::Event
+    pages:
+    - !ruby/object:RPG::Event::Page
+      list:
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - set_self_switch(true,"A",14)
+        indent: 0
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - delete_this_event_forever
+        indent: 0
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 0
+        code: 0
+      move_type: 0
+      direction_fix: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        switch2_valid: false
+        self_switch_ch: A
+        switch1_id: 1
+        switch1_valid: false
+        variable_value: 0
+        self_switch_valid: false
+        variable_id: 1
+        variable_valid: false
+        switch2_id: 1
+      move_route: !ruby/object:RPG::MoveRoute
+        repeat: true
+        skippable: false
+        list:
+        - !ruby/object:RPG::MoveCommand
+          code: 0
+          parameters: []
+      trigger: 2
+      step_anime: false
+      move_frequency: 3
+      always_on_top: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        opacity: 255
+        character_name: ''
+        pattern: 0
+        tile_id: 0
+        direction: 2
+        blend_type: 0
+        character_hue: 0
+      walk_anime: true
+      move_speed: 3
+      through: false
+    name: Activate Birch event
+    y: 16
+    x: 32
+    id: 28
   3: !ruby/object:RPG::Event
     pages:
     - !ruby/object:RPG::Event::Page

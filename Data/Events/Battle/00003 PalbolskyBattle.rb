@@ -97,8 +97,8 @@ end
 # In this example we'll show the 1st AI and make it says something
 Battle::Scene.register_event(:pre_battle_begin) do |scene|
   messages = [
-    '17, 208 :[name=Palbolsky]:Cela faisait longtemps que je n\'avais pas été aussi excité par un combat !',
-    '17, 209 :[name=Palbolsky]:Écoute, même la foule est en délire !'
+    "17, 206 :[name=Palbolsky]:Cela faisait longtemps que je n'avais pas été aussi excité par un combat !",
+    '17, 207 :[name=Palbolsky]:Écoute, même la foule est en délire !'
   ]
   scene.show_message(*messages)
   ya = Yuki::Animation
@@ -112,14 +112,14 @@ Battle::Scene.register_event(:pre_battle_begin) do |scene|
   end
   PFM::Text.set_variable('[PLAYER]', $trainer.name)
   messages = [
-    "17, 210 :[name=Foule]:Allez, [PLAYER], tu peux le faire !",
-    "17, 211 :[name=Foule]:[PLAYER], on est tous avec toi, bats Palbolsky !"
+    '17, 208 :[name=Foule]:Allez, [PLAYER], tu peux le faire !',
+    '17, 209 :[name=Foule]:[PLAYER], on est tous avec toi, bats Palbolsky !'
   ]
   scene.show_message(*messages)
   Audio.bgs_fade(1000)
   messages = [
-    "17, 212 Vous sentez que la foule vous donne de la force ! Vos Pokémon sont plus forts sous l'effet des encouragements !",
-    "17, 213 :[name=Palbolsky]:C'est bien la première fois que la foule veut me voir perdre... Cela me donne encore plus envie de te vaincre !"
+    "17, 210 Vous sentez que la foule vous donne de la force ! Vos Pokémon sont plus forts sous l'effet des encouragements !",
+    "17, 211 :[name=Palbolsky]:C'est bien la première fois que la foule veut me voir perdre... Cela me donne encore plus envie de te vaincre !"
   ]
   scene.show_message(*messages)
 end
@@ -132,7 +132,7 @@ end
 #
 # In this example we'll show the 1st AI and make it says something
 Battle::Scene.register_event(:battle_begin) do |scene|
-  scene.show_event_message('17, 214 :[name=Palbolsky]:Je te présente mon premier Pokémon, qui fut aussi mon premier compagnon... Il risque certainement de te donner du fil à retordre !') # It's calling scene.visual.lock ;)
+  scene.show_event_message('17, 212 :[name=Palbolsky]:Je te présente mon premier Pokémon, qui fut aussi mon premier compagnon... Il risque certainement de te donner du fil à retordre !') # It's calling scene.visual.lock ;)
 end
 
 # Register after attack message
@@ -147,12 +147,12 @@ Battle::Scene.register_event(:after_attack) do |scene, launcher, move|
 
   if move.instance_variable_get(:@effectiveness) >= 2 && !scene.instance_variable_get(:@super_effective_text)
     scene.instance_variable_set(:@super_effective_text, true)
-    next scene.show_event_message("17, 215 :[name=Palbolsky]:Une attaque rondement menée, on voit que tu as l'habitude de cibler les faiblesses adverses !")
+    next scene.show_event_message("17, 213 :[name=Palbolsky]:Une attaque rondement menée, on voit que tu as l'habitude de cibler les faiblesses adverses !")
   end
 
   if move.instance_variable_get(:@critical) && !scene.instance_variable_get(:@crit_message)
     scene.instance_variable_set(:@crit_text, true)
-    next scene.show_event_message("17, 216 :[name=Palbolsky]:Ouille, ça a fait un max de dégâts ça !")
+    next scene.show_event_message("17, 214 :[name=Palbolsky]:Ouille, ça a fait un max de dégâts ça !")
   end
 end
 
@@ -170,5 +170,5 @@ Battle::Scene.register_event(:battle_phase_end) do |scene|
   bgm_name = Audio.instance_variable_get(:@bgm_name)
   Audio.bgm_play(bgm_name, 100, 110)
   Audio.bgm_position = bgm_pos
-  scene.show_event_message("17, 217 :[name=Palbolsky]:Tu me pousses dans mes derniers retranchements, mais je ne compte pas abandonner pour autant !")
+  scene.show_event_message("17, 215 :[name=Palbolsky]:Tu me pousses dans mes derniers retranchements, mais je ne compte pas abandonner pour autant !")
 end

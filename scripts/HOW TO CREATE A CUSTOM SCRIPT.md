@@ -96,7 +96,7 @@ But first, you need to know some useless and kind of mandatory information:
   you copy the whole file, you're "bastardizing" the whole code with methods from an old version of PSDK. You DON'T want
   to have to fix that, believe me.
 
-You should see an example with the file "00001 NewDynamicLightLights.rb". I invite you to read it, as it contains some
+You should see an example with the file "00001 NewDynamicLights.rb". I invite you to read it, as it contains some
 comments and explains a little how to add lights to the "DynamicLight" feature.
 
 # Knowing what to edit
