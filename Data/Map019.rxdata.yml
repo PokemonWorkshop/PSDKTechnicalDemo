@@ -1493,6 +1493,37 @@ events:
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
+        - 12
+        - PFM.game_state.shop.shop_list[:shop_items].any?
+        indent: 0
+        code: 111
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - "@camera = true"
+        indent: 1
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 6
+        - 6
+        - 5
+        indent: 1
+        code: 203
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 15
+        indent: 1
+        code: 106
+      - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 1
+        code: 0
+      - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 0
+        code: 412
+      - !ruby/object:RPG::EventCommand
+        parameters:
         - We open a shop selling a limited amount of items.
         indent: 0
         code: 108
@@ -1523,9 +1554,60 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
+        - 'Also, this shop has the "show_background: false"'
+        indent: 0
+        code: 108
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - parameter, which means it won't display the
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - generic background displayed in most PSDK UIs.
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
         - 'open_shop(:shop_items, {intriguing_stone: 2500}, show_background: false)'
         indent: 0
         code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 1
+        indent: 0
+        code: 106
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 12
+        - "@camera == true"
+        indent: 0
+        code: 111
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - "@camera = nil"
+        indent: 1
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 4
+        - 6
+        - 5
+        indent: 1
+        code: 203
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 15
+        indent: 1
+        code: 106
+      - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 1
+        code: 0
+      - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 0
+        code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
         - Message displayed when the shop already doesn't have

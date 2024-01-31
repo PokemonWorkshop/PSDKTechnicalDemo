@@ -1447,19 +1447,38 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - The second number indicates how many answer there are.
+        - The second number indicates which answer should be
         indent: 1
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - The following strings indicates how each choice is displayed. Don't forget
-          to put "\\" if you want to use tags.
+        - selected if the player cancels between 1 and X.
+        indent: 1
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - "(0 for specific cancel answer, -1 for no cancel possible)"
+        indent: 1
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 'The following strings indicates how each choice is '
+        indent: 1
+        code: 108
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 'displayed. Don''t forget to put "\\" if you want to '
+        indent: 1
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - use tags.
         indent: 1
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
         - !binary |-
-          Y2hvaWNlKDI2LCA1LCAiXFxjWzE4XTAiLCAiXFxjWzE4XTYiLCAiXFxjWzE4XTEwIiwgIlxcY1sxOF0xNSIsICIxNCwgMTE3IFxcY1sxOF1BdXRhbnQgcXUnaWwgeSBlbiBhIGRlIGTDqWZpbmllcyIp
+          Y2hvaWNlKDI2LCAtMSwgIlxcY1sxOF0wIiwgIlxcY1sxOF02IiwgIlxcY1sxOF0xMCIsICJcXGNbMThdMTUiLCAiMTQsIDExNyBcXGNbMThdQXV0YW50IHF1J2lsIHkgZW4gYSBkZSBkw6lmaW5pZXMiKQ==
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -1550,7 +1569,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - !binary |-
-          Y2hvaWNlKDI2LCA1LCAiMTQsIDExOCBcXGNbMThdUGllcnJlIGQnQXJnZW50YSIsICIxNCwgMTE5IFxcY1sxOF1MZSBQci4gU8Opa28iLCAiMTQsIDEyMCBcXGNbMThdRmFyZ2FzIiwgIjE0LCAxMjEgXFxjWzE4XUd1em1hIiw=
+          Y2hvaWNlKDI2LCAtMSwgIjE0LCAxMTggXFxjWzE4XVBpZXJyZSBkJ0FyZ2VudGEiLCAiMTQsIDExOSBcXGNbMThdTGUgUHIuIFPDqWtvIiwgIjE0LCAxMjAgXFxjWzE4XUZhcmdhcyIsICIxNCwgMTIxIFxcY1sxOF1HdXptYSIs
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -1620,7 +1639,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - choice(26, 5, "14, 123 \\c[18]Goinfrex", "14, 124 \\c[18]Akwakwak", "14,
+        - choice(26, -1, "14, 123 \\c[18]Goinfrex", "14, 124 \\c[18]Akwakwak", "14,
           125\\c[18]Amagara", "14, 125\\c[18]Snubull", "14, 126 \\c[18]Miasmax")
         indent: 1
         code: 355
@@ -1686,7 +1705,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 'choice(26, 5, "14, 128 \\c[18]Un Badge", "14, 129 \\c[18]Une Masalada",
+        - 'choice(26, -1, "14, 128 \\c[18]Un Badge", "14, 129 \\c[18]Une Masalada",
           "14, 130 \\c[18]Un Jus de Baie", "14, 131 \\c[18]Une Pierre Insolite", '
         indent: 1
         code: 355
@@ -4093,6 +4112,13 @@ events:
         indent: 0
         code: 404
       - !ruby/object:RPG::EventCommand
+        parameters:
+        - 26
+        - 26
+        - 1
+        indent: 0
+        code: 121
+      - !ruby/object:RPG::EventCommand
         parameters: []
         indent: 0
         code: 0
@@ -4897,9 +4923,15 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - !binary |-
-          MTQsIDEwNSBKJ2FpIGJlc29pbiBkZSB0ZW1wcyBwb3VyIHLDqWZsw6ljaGlyLCBhbG9ycyBqJ2luc8OocmUgXGNbNV1bV0FJVF0gXGNbMF1kYW5zIG1vbiBtZXNzYWdlIHBvdXIgbWFycXVlciB1bmUgcGF1c2Uu
+          MTQsIDEwNSBKJ2FpIGJlc29pbiBkZSB0ZW1wcyBwb3VyIHLDqWZsw6ljaGlyLCBhbG9ycyBqJ2luc8OocmUgXGNbNV0iW1dBSVQgTl0iXGNbMF0gZGFucyBtb24gbWVzc2FnZSBwb3VyIG1hcnF1ZXIgdW5lIHBhdXNlLg==
         indent: 0
         code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
+          Li4uIFBvdXJxdW9pID8gQydlc3QgcG91ciBsJ2V4ZW1wbGUsIGlsIGZhdXQgYmllbiDDqXZpZGVtbWVudCBsZSByZW1wbGFjZXIgcGFyIGxlIG5vbWJyZSBkZSBmcmFtZXMgw6AgYXR0ZW5kcmUgISA=
+        indent: 0
+        code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
