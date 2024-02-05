@@ -2639,6 +2639,10 @@ events:
     - !ruby/object:RPG::Event::Page
       list:
       - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 0
+        code: 247
+      - !ruby/object:RPG::EventCommand
         parameters:
         - 'Here we put the trainer eye sequence, which automates:'
         indent: 0
@@ -2665,13 +2669,9 @@ events:
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: Route 206 (Day)
-          volume: 100
-          pitch: 100
+        parameters: []
         indent: 0
-        code: 241
+        code: 248
       - !ruby/object:RPG::EventCommand
         parameters:
         - set_self_switch(true, "A", 11)

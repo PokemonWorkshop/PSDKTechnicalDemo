@@ -635,6 +635,48 @@ events:
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
+        - 2
+        - A
+        - 1
+        indent: 0
+        code: 111
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
+          NSwgMTggSmUgdm9pcyBxdWUgdHUgbidhcyBwYXMgZGUgY2FubmUgw6AgcMOqY2hlICEgVGllbnMsIGplIHQnZW4gZG9ubmUgcXVlbHF1ZXMgdW5lcyAh
+        indent: 1
+        code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - give_item(:old_rod)
+        indent: 1
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - give_item(:good_rod)
+        indent: 1
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - give_item(:super_rod)
+        indent: 1
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - A
+        - 0
+        indent: 1
+        code: 123
+      - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 1
+        code: 0
+      - !ruby/object:RPG::EventCommand
+        parameters: []
+        indent: 0
+        code: 412
+      - !ruby/object:RPG::EventCommand
+        parameters:
         - !binary |-
           NSwgNCBEJ2FpbGxldXJzLCBqZSBzdWlzIGNvbnNpZMOpcsOpIGNvbW1lIMOpdGFudCBzdXIgbGUgcG9udCwgZG9uYyB0dSBwb3VycmFzIHBhc3NlciBlbiBkZXNzb3VzIGRlIG1vaS4=
         indent: 0
@@ -714,56 +756,56 @@ events:
           skippable: false
           list:
           - &3 !ruby/object:RPG::MoveCommand
-            code: 17
+            code: 20
             parameters: []
           - &4 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &5 !ruby/object:RPG::MoveCommand
-            code: 19
+            code: 20
             parameters: []
           - &6 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &7 !ruby/object:RPG::MoveCommand
-            code: 18
+            code: 20
             parameters: []
           - &8 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &9 !ruby/object:RPG::MoveCommand
-            code: 16
+            code: 20
             parameters: []
           - &10 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &11 !ruby/object:RPG::MoveCommand
-            code: 18
+            code: 21
             parameters: []
           - &12 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &13 !ruby/object:RPG::MoveCommand
-            code: 19
+            code: 21
             parameters: []
           - &14 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &15 !ruby/object:RPG::MoveCommand
-            code: 17
+            code: 21
             parameters: []
           - &16 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &17 !ruby/object:RPG::MoveCommand
-            code: 16
+            code: 21
             parameters: []
           - &18 !ruby/object:RPG::MoveCommand
             code: 15

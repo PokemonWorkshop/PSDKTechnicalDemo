@@ -1636,6 +1636,25 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
+        - 'We change the Trainer Transition to 2 to play the '
+        indent: 1
+        code: 108
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - D/P/Pl transition (Gen 4)
+        indent: 1
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 31
+        - 31
+        - 0
+        - 0
+        - 2
+        indent: 1
+        code: 122
+      - !ruby/object:RPG::EventCommand
+        parameters:
         - A
         - 0
         indent: 1
@@ -1935,56 +1954,56 @@ events:
           skippable: false
           list:
           - &7 !ruby/object:RPG::MoveCommand
-            code: 17
+            code: 20
             parameters: []
           - &8 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &9 !ruby/object:RPG::MoveCommand
-            code: 19
+            code: 20
             parameters: []
           - &10 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &11 !ruby/object:RPG::MoveCommand
-            code: 18
+            code: 20
             parameters: []
           - &12 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &13 !ruby/object:RPG::MoveCommand
-            code: 16
+            code: 20
             parameters: []
           - &14 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &15 !ruby/object:RPG::MoveCommand
-            code: 18
+            code: 21
             parameters: []
           - &16 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &17 !ruby/object:RPG::MoveCommand
-            code: 19
+            code: 21
             parameters: []
           - &18 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &19 !ruby/object:RPG::MoveCommand
-            code: 17
+            code: 21
             parameters: []
           - &20 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 5
           - &21 !ruby/object:RPG::MoveCommand
-            code: 16
+            code: 21
             parameters: []
           - &22 !ruby/object:RPG::MoveCommand
             code: 15

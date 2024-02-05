@@ -1,3 +1,9 @@
+# !!! Before reading this file !!!
+
+To read this file the intended way, open this file using Visual Studio Code (VSCode) and type CTRL+K, then V. It will open the preview of this file.
+
+Enjoy your reading!
+
 # Preface
 
 Hello maker!
@@ -73,7 +79,7 @@ Woohoo, the fun part begins! 🥳
 So, now that you have the proper environment, and the proper knowledge of Ruby (I hope?), we can now begin to write
 code!
 
-But first, you need to know some useless and kind of mandatory information:
+But first, you need to know some useful and kind of mandatory information:
 - For Solargraph to work flawlessly, you need to open the scripts folder with VSCode. This way, Solargraph will be able
   to parse the PSDK codebase, while also parsing your own scripts.
 - You **CAN'T edit the PSDK codebase**. PSDK was created with an "easily updatable" mindset. Pokémon Studio is
@@ -132,8 +138,9 @@ RMXP events use what we call the "Interpreter".
 It's a class that contains every method accessible by events during their "runtime" which can be called using the
 "Insert script command" command of an event.
 
-To modify those methods, head to "scripts\00600 Script_RMXP", and have a look at the Interpreter_X.rb files. You'll find
-lots and lots of commands.
+To modify the methods defined by RMXP, head to "scripts\00600 Script_RMXP", and have a look at the Interpreter_X.rb files.
+And, to modify the methods defined by PSDK, head to "scripts\00700 PSDK Event Interpreter".
+You'll find lots and lots of useful commands in these two folders.
 
 You can also use the VSCode search function and try to search for "class Interpreter".
 

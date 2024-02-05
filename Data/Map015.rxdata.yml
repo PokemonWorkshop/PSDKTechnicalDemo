@@ -2081,7 +2081,17 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
+        - Yuki::FollowMe.update
+        indent: 1
+        code: 655
+      - !ruby/object:RPG::EventCommand
+        parameters:
         - gp.return_to_previous_state
+        indent: 1
+        code: 655
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - gp.follower&.move_toward_player
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -2095,12 +2105,7 @@ events:
         code: 202
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::FollowMe.smart_enable
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 4
+        - 8
         indent: 1
         code: 106
       - !ruby/object:RPG::EventCommand

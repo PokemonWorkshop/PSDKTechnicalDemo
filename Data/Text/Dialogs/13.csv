@@ -4,7 +4,7 @@ fr,en
 ":[name=Prof. Orme]:Malheureusement, je suis bloqué dans ce Laboratoire, et si je le garde, il risque de ne pas éclore de sitôt...",":[name=Professor Elm]:Unfortunately, I'm stuck in this Laboratory, and if I were to keep it, I'm afraid it wouldn't hatch soon..."
 ":[name=Prof. Orme]:Tu veux bien t'en occuper, dis ?",":[name=Professor Elm]:Could you look after it, please?"
 :[name=Prof. Orme]:Merveilleux !\nlPrends-en bien soin.,:[name=Professor Elm]:Wonderful!\nlTake good care of it.
-\c[18]\N[1] reçoit l'Œuf de la part du Professeur Orme ! [WAIT 150],\c[18]\N[1] received the Egg from Professor Elm![WAIT 150]
+\c[18]\N[1] reçoit \c[27]l'Œuf \c[18]de la part du Professeur Orme ! [WAIT 150],\c[18]\N[1] received an \c[27]Egg \c[18]from Professor Elm![WAIT 150]
 ":[name=Prof. Orme]:Pour donner un Œuf de Pokémon, il suffit d'utiliser la commande \c[5]""add_egg({...})""\c[0].",":[name=Professor Elm]:To give a Pokémon Egg, just use the \c[5]""add_egg({...})""\c[0] command."
 ":[name=Prof. Orme]:Tu peux rentrer tout un tas d'informations à l'intérieur des accolades, comme l'ID du Pokémon, ses statistiques, ses attaques...",":[name=Professor Elm]:You can enter a lot of informations in braces, like the ID of the Pokémon, its stats, its moves..."
 :[name=Prof. Orme]:Je trouve les Œufs de Pokémon fascinants !,":[name=Professor Elm]:Pokémon Eggs are fascinating, aren't they?"
@@ -31,7 +31,7 @@ C'est ma puissance cachée à moi.,My own hidden power lets me do that.
 Oui-hi-hi !,Woo-hoo-hoo!
 Je peux imiter le cri de n'importe quel Pokémon !\nlYoupi-li-pou !,I can mimic any Pokémon's cry!\nlYahoo-dee-lah!
 Il va falloir attendre un peu avant que je puisse imiter ce Pokémon...,You'll have to wait a bit more before I can mimic this Pokémon's cry...
-C'est le cri de [POKE] ! Oui-hi-hi ![WAIT 50],That's the cry of [POKE]! Woo-hoo-hoo![WAIT 50]
+C'est le cri de \c[1][POKE] \c[0]! Oui-hi-hi ![WAIT 50],That's the cry of \c[1][POKE]\c[0]! Woo-hoo-hoo![WAIT 50]
 Quelle douce mélodie !,What a nice melody!
 Ah ! Te voilà !:[name=Prof. Seko]:,There you are!:[name=Professor Birch]:
 Le Staff nous a prévenu que tu viendrais.:[name=Prof. Seko]:,The Staff members told us you'd come.:[name=Professor Birch]:
@@ -39,7 +39,7 @@ Tu as pu explorer un peu l'Île ?:[name=Prof. Seko]:,Were you able to explore th
 Tu as dû rencontrer toute une variété de Pokémon.:[name=Prof. Seko]:,You must have seen a whole variety of Pokémon.:[name=Professor Birch]:
 Mais ! Il semblerait qu'on ait complètement oublié de te donner un Pokédex !:[name=Prof. Seko]:,Wait! It looks like we forgot to give you a Pokédex!:[name=Professor Birch]:
 Laisse-moi régler ça...:[name=Prof. Seko]:,Let me handle this...:[name=Professor Birch]:
-\c[18]\N[1] reçoit le Pokédex de la part du Prof. Seko ! [WAIT 120],\c[18]\N[1] received the Pokédex from Professor Birch![WAIT 120]
+\c[18]\N[1] reçoit le \c[27]Pokédex \c[18]de la part du Prof. Seko ! [WAIT 120],\c[18]\N[1] received the \c[27]Pokédex \c[18]from Professor Birch![WAIT 120]
 C'est un outil très performant qui te permettra de collecter un tas d'informations sur les Pokémon que tu rencontres.:[name=Prof. Seko]:,It's a high-tech tool that automatically collects a bunch of data on Pokémon you've seen or caught.:[name=Professor Birch]:
 N'hésite pas à venir me voir à mon bureau pour que je l'évalue.:[name=Prof. Seko]:,Feel free to come to my desk to show me your Pokédex.:[name=Professor Birch]:
 "Qui sait, je pourrais peut-être t'offrir quelque chose d'intéressant...:[name=Prof. Seko]:","Who knows, I could offer you something interesting...:[name=Professor Birch]:"
@@ -167,7 +167,7 @@ Il est particulier car j'ai réussi à lui apprendre l'attaque Lance-Flammes !,I
 "Ça tombe bien, car en plus de ça il est rouge comme le feu.",That suits it perfectly because it's red as fire.
 Ça te dirait de t'en occuper à ma place ?,Would you train it for me?
 T'es au top !,So cool!
-\c[18]\N[1] obtient Iguolta ![WAIT 240],\c[18]\N[1] received Heliolisk![WAIT 240]
+\c[18]\N[1] obtient \c[27]Iguolta \c[18]![WAIT 240],\c[18]\N[1] received \c[27]Heliolisk\c[18]![WAIT 240]
 "Bon, j'ai un peu triché car j'ai utilisé la commande \c[5]""add_specific_pokemon""\c[0], qui me permet de générer un Pokémon avec toutes sortes de paramètres.","I cheated a bit by using the command \c[5]""add_specific_pokemon""\c[5], which allows me to create a Pokémon with a lot of parameters."
 J'aimerais ne pas avoir à m'en débarrasser autrement...,I wish I didn't have to get rid of it any other way...
 J'espère que tu t'occupes bien de mon beau Smaug.,I hope you take good care of my pretty Smaug.
@@ -195,14 +195,14 @@ C'est vide...,It's empty...
 ":[name=Prof. Sorbier]:Le tout est d'afficher les bonnes images au bon moment, et de ne pas oublier l'utilisation des \c[5]labels\c[0] pour naviguer au sein de l'évènement.","The key is to display the right pictures at the right time, and don't forget to use \c[5]labels\c[0] to navigate through your event.:[name=Professor Rowan]:"
 :[name=Léo]:J'ai trouvé ce Pokémon rigolo dans la Caverne rocailleuse.,I found this funny Pokémon in the Rocky Cavern.:[name=Bill]:
 ":[name=Léo]:Je suis plutôt branché programmation que combats Pokémon, donc je veux bien te le donner.","I'm more into programming rather than battling, so I can give it to you.:[name=Bill]:"
-\c[18]\N[1] obtient Tic de la part de Léo ! [WAIT 240],\c[18]\N[1] received Klink from Bill![WAIT 240]
+\c[18]\N[1] obtient \c[27]Tic \c[18]de la part de Léo ! [WAIT 240],\c[18]\N[1] received \c[27]Klink \c[18]from Bill![WAIT 240]
 ":[name=Léo]:Comme j'ai utilisé \c[5]""store_pokemon""\c[0], ce Tic a été stocké directement dans ton PC !","As I used \c[5]""store_pokemon""\c[0], this Klink was directly stored into your PC!:[name=Bill]:"
-":[name=Léo]:Alors, comment se porte le Tic que je t'ai donné ?","Tell me, how is Klink going?:[name=Bill]:"
+":[name=Léo]:Alors, comment se porte le Tic que je t'ai donné ?","Tell me, how is Klink doing?:[name=Bill]:"
 ":[name=Léo]:Comme j'ai utilisé \c[5]""store_pokemon""\c[0], ce Tic a été stocké directement dans ton PC !","As I used \c[5]""store_pokemon""\c[0], this Klink was directly stored into your PC!:[name=Bill]:"
 Les équipes du Laboratoire m'ont appelé pour les débarrasser des Pokémon Insecte qui viennent grignoter les câbles électriques.,The Laboratory staff called me to get rid of all those Bug Pokémon nibbling the power cables.
 Mais je ne sais même plus quoi faire de tous ceux que j'attrape !\nlJe te les donne si tu veux.,But I don't even know what to do with all of those I catch!\nlI can give them to you if you want.
 Ça te dit un Pokémon Insecte gratos ?,Would you like a free Bug Pokémon?
-\c[18]\N[1] obtient Chenipan ! [WAIT 240],\c[18]\N[1] received Caterpie![WAIT 240]
+\c[18]\N[1] obtient \c[27]Chenipan \c[18]! [WAIT 240],\c[18]\N[1] received \c[27]Caterpie\c[18]![WAIT 240]
 "J'ai utilisé la commande \c[5]""add_pokemon""\c[0], qui ajoute simplement un Pokémon à ton équipe, sans te proposer de le renommer.","I used the command \c[5]""add_pokemon""\c[0], which simply adds a Pokémon to your party, without asking you if you want to rename it."
 Mais je crois qu'il y a un papy qui peut renommer tes Pokémon au milieu de cette pièce.,But I think there's an old man who can rename your Pokémon in the middle of this room.
 "N'hésite pas à venir me reparler si tu en veux d'autres, j'en ai un sacré nombre.","Come ask me if you want some more, I have quite a few of them."
