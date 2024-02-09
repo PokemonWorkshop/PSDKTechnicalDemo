@@ -7911,20 +7911,442 @@
 - !ruby/object:RPG::CommonEvent
   list:
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - This variable allows the player to rotate during the
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - elevation animation. We set it to 0 because it can be
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - used by other events.
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    - 26
+    - 0
+    - 0
+    - 0
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !binary |-
+      RGlzYWJsaW5nIHRoZSBmb2xsb3dpbmcgUG9rw6ltb24gaWYgYXBwcm9wcmlhdGUu
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Disabling the shadow under the player.
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Yuki::FollowMe.smart_disable
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.shadow_disabled = true
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.leave_cycling_state
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      name: SE_Warp
+      volume: 80
+      pitch: 100
+    indent: 0
+    code: 250
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Resetting the y position of the player.
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.offset_screen_y = gp.offset_shadow_screen_y = 0
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.reset_follower
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 112
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - gp.offset_screen_y == -256
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 113
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Moving the player up by 16 pixels, then adding 1 to the
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - temporary variable [26]. As long as the player hasn't
+    indent: 1
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - moved up by 256 pixels, this elevation will loop.
+    indent: 1
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.offset_screen_y -= 16
+    indent: 1
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.offset_shadow_screen_y = gp.offset_screen_y
+    indent: 1
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    - 26
+    - 1
+    - 0
+    - 1
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Rotating the player one in three loops.
+    indent: 1
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - gv[26] % 3 == 0
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      list:
+      - &100 !ruby/object:RPG::MoveCommand
+        code: 20
+        parameters: []
+      - !ruby/object:RPG::MoveCommand
+        code: 0
+        parameters: []
+    indent: 2
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *100
+    indent: 2
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 1
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 413
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:Tone
+      red: -255
+      green: -255
+      blue: -255
+      gray: 0
+    - 10
+    indent: 0
+    code: 223
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 20
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      list:
+      - &101 !ruby/object:RPG::MoveCommand
+        code: 42
+        parameters:
+        - 0
+      - !ruby/object:RPG::MoveCommand
+        code: 0
+        parameters: []
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *101
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 210
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
-  name: "--- Reserved"
+  name: TP Player Going Up Anim
   trigger: 0
   switch_id: 1
   id: 44
 - !ruby/object:RPG::CommonEvent
   list:
   - !ruby/object:RPG::EventCommand
+    parameters:
+    - This animation only plays if the player has used
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - a warp in another map.
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Setting the y position of the player on the very
+    indent: 0
+    code: 108
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - top of the screen.
+    indent: 0
+    code: 408
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.offset_screen_y = gp.offset_shadow_screen_y = -256
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:Tone
+      red: 0
+      green: 0
+      blue: 0
+      gray: 0
+    - 10
+    indent: 0
+    code: 223
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      list:
+      - &102 !ruby/object:RPG::MoveCommand
+        code: 42
+        parameters:
+        - 255
+      - !ruby/object:RPG::MoveCommand
+        code: 0
+        parameters: []
+    indent: 0
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *102
+    indent: 0
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 10
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - !ruby/object:RPG::AudioFile
+      name: SE_Warp
+      volume: 80
+      pitch: 100
+    indent: 0
+    code: 250
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 112
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - gp.offset_screen_y == 0
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 113
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.offset_screen_y += 16
+    indent: 1
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.offset_shadow_screen_y = gp.offset_screen_y
+    indent: 1
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    - 26
+    - 1
+    - 0
+    - 1
+    indent: 1
+    code: 122
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 12
+    - gv[26] % 3 == 0
+    indent: 1
+    code: 111
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - -1
+    - !ruby/object:RPG::MoveRoute
+      repeat: false
+      skippable: false
+      list:
+      - &103 !ruby/object:RPG::MoveCommand
+        code: 20
+        parameters: []
+      - !ruby/object:RPG::MoveCommand
+        code: 0
+        parameters: []
+    indent: 2
+    code: 209
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - *103
+    indent: 2
+    code: 509
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 2
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 412
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 1
+    indent: 1
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 1
+    code: 0
+  - !ruby/object:RPG::EventCommand
+    parameters: []
+    indent: 0
+    code: 413
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.offset_screen_y = gp.offset_shadow_screen_y = nil
+    indent: 0
+    code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.reset_follower
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - gp.shadow_disabled = false
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - Yuki::FollowMe.smart_enable
+    indent: 0
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 4
+    indent: 0
+    code: 106
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - 26
+    - 26
+    - 0
+    - 0
+    - 0
+    indent: 0
+    code: 122
+  - !ruby/object:RPG::EventCommand
     parameters: []
     indent: 0
     code: 0
-  name: "--- Reserved"
+  name: TP Player Going Down Anim
   trigger: 0
   switch_id: 1
   id: 45
