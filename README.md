@@ -35,7 +35,10 @@ git clone https://gitlab.com/pokemonsdk/pokemonsdk.git
 ```
 As this project is versioned, it requires that you give it a pokemonsdk folder. The pokemonsdk folder is part of the .gitignore and won't be verified by Git. If you'd prefer to manage the pokemonsdk folder yourself, you're free to do so, as long as you have one ready for playtesting.
 
-After cloning the repository, make sure to launch the cmd.bat file at the root of the folder and type `psdk --util=restore`. This will regenerate the .rxdata files from the .yml files. This step is **mandatory**.
+After cloning the repository, open the project with Studio and launch the project with it at least one time to let Studio generate the proper psdk.bat. The game will crash because as you don't have the .rxdata files.
+
+To get these files, make sure to launch the cmd.bat file at the root of the folder and type `psdk --util=restore`. This will regenerate the .rxdata files from the .yml files. This step is **mandatory**.
+
 
 ### Starting contributing
 The PSDK Technical Demo uses .yml files for the versioning of maps and data related to RPG Maker XP. This is done through the use of 2 different files:
