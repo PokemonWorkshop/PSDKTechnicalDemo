@@ -14,6 +14,8 @@ It features all of the above in the form of a small educational game which lasts
 [![Twitter PW](https://img.shields.io/twitter/follow/PokemonWorkshop?label=Twitter%20PW&logoColor=%23333333&style=social)](https://twitter.com/PokemonWorkshop)
 [![GitHub Pokémon Studio](https://img.shields.io/badge/Powered_by-Pokémon_Studio-6562f8?style=flat&logo=github&labelColor=1d1c22)]((https://github.com/PokemonWorkshop/PokemonStudio))
 
+You can also head to the [Pokémon Workshop website](https://pokemonworkshop.com/) to find some useful articles about using some of PokémonSDK's features.
+
 ## If you are a contributor
 
 If you intend on contributing to this Technical Demo, you must first send a message on Discord to either **@pw_rey** or **@sirmalo**.
@@ -73,7 +75,7 @@ Here are some information about this base project:
 - This base project uses Tiled by default. The maps, tilesets, and assets are located in Data/Tiled. Your own maps/tilesets/assets **MUST** be located at the same places.
 - It is recommended you keep these maps in your project to be able to refer to these at any times. But you can also create two projects: your own without the demo, and a project solely for tests and for refering to the demo.
   - If you go the second route, make sure to delete the maps in Studio, and delete the tilesets in the RMXP tileset editor **before** initiating the first Tiled map conversion.
-- The maps **WILL** look weird in RMXP after a Tiled map conversion involving animated tiles. This behavior is totally normal and the maps will look absolutely fine ingame. To ensure we could convert Tiled animated tiles to RMXP, we had to make this choice to ensure the best compatibily possible.
+- The maps **WILL** look weird in RMXP after a Tiled map conversion involving animated tiles. This behavior is totally normal and the maps will look absolutely fine ingame. To ensure we could convert Tiled animated tiles to RMXP, we had to make this choice to ensure the best compatibility.
 
 Thank you for choosing to use PokémonSDK and Pokémon Studio to make your fangame, and we hope you'll enjoy this demo! ❤
 
