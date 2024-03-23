@@ -1,19 +1,13 @@
 {
   "klass": "Group",
-  "id": 9,
-  "dbSymbol": "group_9",
-  "systemTag": "Ocean",
+  "id": 24,
+  "dbSymbol": "group_24",
+  "systemTag": "Pond",
   "terrainTag": 0,
-  "tool": "GoodRod",
+  "tool": "SuperRod",
   "isDoubleBattle": false,
   "isHordeBattle": false,
-  "customConditions": [
-    {
-      "type": "mapId",
-      "value": 6,
-      "relationWithPreviousCondition": "AND"
-    }
-  ],
+  "customConditions": [],
   "encounters": [
     {
       "specie": "gyarados",
@@ -25,8 +19,8 @@
       "levelSetup": {
         "kind": "minmax",
         "level": {
-          "minimumLevel": 22,
-          "maximumLevel": 25
+          "minimumLevel": 27,
+          "maximumLevel": 30
         }
       },
       "randomEncounterChance": 1,
@@ -58,7 +52,7 @@
       ]
     },
     {
-      "specie": "lanturn",
+      "specie": "barboach",
       "form": 0,
       "shinySetup": {
         "kind": "automatic",
@@ -67,8 +61,8 @@
       "levelSetup": {
         "kind": "minmax",
         "level": {
-          "minimumLevel": 22,
-          "maximumLevel": 25
+          "minimumLevel": 27,
+          "maximumLevel": 30
         }
       },
       "randomEncounterChance": 1,
@@ -100,7 +94,7 @@
       ]
     },
     {
-      "specie": "dhelmise",
+      "specie": "whiscash",
       "form": 0,
       "shinySetup": {
         "kind": "automatic",
@@ -109,8 +103,50 @@
       "levelSetup": {
         "kind": "minmax",
         "level": {
-          "minimumLevel": 22,
-          "maximumLevel": 25
+          "minimumLevel": 27,
+          "maximumLevel": 30
+        }
+      },
+      "randomEncounterChance": 1,
+      "expandPokemonSetup": [
+        {
+          "type": "evs",
+          "value": {
+            "hp": 0,
+            "atk": 0,
+            "dfe": 0,
+            "spd": 0,
+            "ats": 0,
+            "dfs": 0
+          }
+        },
+        {
+          "type": "loyalty",
+          "value": 70
+        },
+        {
+          "type": "moves",
+          "value": [
+            "__undef__",
+            "__undef__",
+            "__undef__",
+            "__undef__"
+          ]
+        }
+      ]
+    },
+    {
+      "specie": "dratini",
+      "form": 0,
+      "shinySetup": {
+        "kind": "automatic",
+        "rate": -1
+      },
+      "levelSetup": {
+        "kind": "minmax",
+        "level": {
+          "minimumLevel": 27,
+          "maximumLevel": 30
         }
       },
       "randomEncounterChance": 1,

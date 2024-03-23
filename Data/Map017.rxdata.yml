@@ -9672,7 +9672,54 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - !binary |-
+          OltuYW1lPVBhbGJvbHNreV06T2gsIGV0IGNvbW1lIHR1IG1lIHBsYWlzIGJpZW4sIGplIHQnb2ZmcmUgY2VjaSBlbiBjYWRlYXUgZCdhcnJpdsOpZSBkYW5zIGNldHRlIGFyw6huZSAh
+        indent: 0
+        code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - 'pokemon = PFM::Pokemon.generate_from_hash(id: :riolu, level: 32, loyalty:
+          200, item: :lucarionite)'
+        indent: 0
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - receive_pokemon_sequence(pokemon)
+        indent: 0
+        code: 655
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
+          OltuYW1lPVBhbGJvbHNreV06Q2UgUmlvbHUgYXZhaXQgbCdhaXIgZGUgYmVhdWNvdXAgdCdhcHByw6ljaWVyLCBpbCBkZXZyYWl0IMOpdm9sdWVyIHRyw6hzIHZpdGUgIQ==
+        indent: 0
+        code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
+          OltuYW1lPVBhbGJvbHNreV06UGVuc2Ugw6AgcmVnYXJkZXIgbCdvYmpldCBxdSdpbCB0aWVudCwgZCdhaWxsZXVycyAh
+        indent: 0
+        code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
           MTcsIDIwNSA6W25hbWU9UGFsYm9sc2t5XTpTdXIgY2UsIGplIHZhaXMgYWxsZXIgbWUgcmVwb3NlciBsZXMgY29yZGVzIHZvY2FsZXMsIGZhaXJlIGwnYXJiaXRyZSBldCBsZSBwcsOpc2VudGF0ZXVyIGVuIG3Dqm1lIHRlbXBzIMOnYSB1c2UuLi4=
+        indent: 0
+        code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
+          OltuYW1lPVBhbGJvbHNreV06RGVybmllciBwZXRpdCBjb25zZWlsIGNlbGEgZGl0Li4uIFNpIHR1IG4nYXMgcGFzIGVuY29yZSBleHBsb3LDqSBsYSBUb3VyLCBqZSB0ZSBjb25zZWlsbGUgZGUgbGUgZmFpcmUgYXZhbnQgZGUgdGUgZnJvdHRlciDDoCBsJ0Fyw6huZS4uLg==
+        indent: 0
+        code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
+          OltuYW1lPVBhbGJvbHNreV06SGlzdG9pcmUgcXVlIHR1IHB1aXNzZXMgZ2FnbmVyIGVuIGV4cMOpcmllbmNlIGV0IHRlIGNvbnN0cnVpcmUgdW5lIHBldGl0ZSDDqXF1aXBlICE=
+        indent: 0
+        code: 101
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !binary |-
+          OltuYW1lPVBhbGJvbHNreV06TWFpcyBzaSB0dSB0ZSBzZW5zIHByw6p0IGRlIHN1aXRlLCBhbG9ycyBqZSB0ZSBzb3VoYWl0ZSBib25uZSBjaGFuY2UgISBTdXIgY2UsIGoneSB2YWlzICE=
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
