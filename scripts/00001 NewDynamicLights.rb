@@ -6,8 +6,12 @@
 # I will assume from now on you HAVE read the mentioned file (and have learned Ruby to ).
 # Below, you will find an example of something you can do to modify/add new code to PSDK.
 # In this example, we're adding a new light to the DynamicLight feature.
-# Let's dissect this code:
 #
+# As you can see, to monkey-patch or to add anything to the code, you need to tell Ruby what you'll modify.
+# This is done by writing the proper modules/classes. In this code, we're opening the module NuriYuri, then the
+# module DynamicLight.
+# Finally, as LIGHTS is a constant, and an Array, this means we can add values in it without having to modify the
+# constant itself!
 
 module NuriYuri
   module DynamicLight
