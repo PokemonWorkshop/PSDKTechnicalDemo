@@ -35,7 +35,7 @@ git clone git@github.com:PokemonWorkshop/PSDKTechnicalDemo.git
 cd PSDKTechnicalDemo
 git clone https://gitlab.com/pokemonsdk/pokemonsdk.git
 ```
-As this project is versioned, it requires that you give it a pokemonsdk folder. The pokemonsdk folder is part of the .gitignore and won't be verified by Git. If you'd prefer to manage the pokemonsdk folder yourself, you're free to do so, as long as you have one ready for playtesting.
+If you want to use your own PSDK codebase, you can clone the official PSDK repository at the root of the Technical Demo. If you don't, the codebase used will the stable one included in Pokémon Studio.
 
 After cloning the repository, open the project with Studio and launch the project with it at least one time to let Studio generate the proper psdk.bat. The game will crash because as you don't have the .rxdata files.
 
