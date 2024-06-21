@@ -12,7 +12,7 @@ It features all of the above in the form of a small educational game which lasts
 [![Discord](https://img.shields.io/discord/143824995867557888.svg?logo=discord&colorB=728ADA&label=Discord)](https://discord.gg/0noB0gBDd91B8pMk)
 [![Twitter PSDK](https://img.shields.io/twitter/follow/PokemonSDK?label=Twitter%20PSDK&logoColor=%23333333&style=social)](https://twitter.com/PokemonSDK)
 [![Twitter PW](https://img.shields.io/twitter/follow/PokemonWorkshop?label=Twitter%20PW&logoColor=%23333333&style=social)](https://twitter.com/PokemonWorkshop)
-[![GitHub Pokémon Studio](https://img.shields.io/badge/Powered_by-Pokémon_Studio-6562f8?style=flat&logo=github&labelColor=1d1c22)]((https://github.com/PokemonWorkshop/PokemonStudio))
+[![GitHub Pokémon Studio](https://img.shields.io/badge/Powered_by-Pokémon_Studio-6562f8?style=flat&logo=github&labelColor=1d1c22)](https://github.com/PokemonWorkshop/PokemonStudio)
 
 You can also head to the [Pokémon Workshop website](https://pokemonworkshop.com/) to find some useful articles about using some of PokémonSDK's features.
 
