@@ -1,15 +1,30 @@
+#ifdef GL_ES
+precision mediump float;
+
+uniform mat4 sf_texture;
+uniform vec2 factor_npot;
+
+varying vec2 v_texCoord;
+#else
+const vec2 factor_npot = vec2(1.0, 1.0);
+#endif
 uniform float yval[10];
 uniform sampler2D texture;
 const vec4 dark = vec4(.0, .0, .0, 1.);
 void main()
 {
-  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
-  float y = gl_TexCoord[0].y;
+#ifdef GL_ES
+  vec2 tc = (sf_texture * vec4(v_texCoord, 0.0, 1.0)).xy;
+#else
+  vec2 tc = gl_TexCoord[0].xy;
+#endif
+  vec4 frag = texture2D(texture, tc);
+  float y = tc.y * factor_npot.y;
   for(int i = 0; i < 10; i++)
   {
     if(yval[i] >= y)
     {
-      frag = mix(frag, dark, float(10 - i) / 10);
+      frag = mix(frag, dark, float(10 - i) / 10.f);
       break;
     }
   }
