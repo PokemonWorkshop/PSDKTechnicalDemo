@@ -823,62 +823,57 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 'choice(26, 9, "4, 20 1: Hall de la Tour",'
+        - 'choice(26, 9, "4, 20 1: Main Hall",'
         indent: 0
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"4, 21 2: Prairie ruisselante",'
+        - '"4, 21 2: Prairie Stream",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"4, 22 3: Crique turbulente",'
+        - '"4, 22 3: Turbulent Creek",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"4, 23 4: Caverne rocailleuse",'
+        - '"4, 23 4: Rocky Cavern",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"4, 24 5: Marais cendreux",'
+        - '"4, 24 5: Ashen Marsh",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjQsIDI1IDY6IFRvdW5kcmEgdmVyZ2xhY8OpZSIs
+        - '"4, 25 6: Icy Tundra",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjQsIDI2IDc6IFBpc3RlIGFtw6luYWfDqWUiLA==
+        - '"4, 26 7: Built Road",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjQsIDI3IDg6IEluc3RhbGxhdGlvbiBtYWxmYW3DqWUiLA==
+        - '"4, 27 8: Shady Facility",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"4, 28 Retour")'
+        - '"4, 28 Return")'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMCBOb3VzIHNvbW1lcyBhY3R1ZWxsZW1lbnQgw6AgbCfDqXRhZ2UgXHZbMTAzXS4=
+        - 4, 0 We are currently on floor \v[103].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          w4AgcXVlbCBlbnZpcm9ubmVtZW50IHNvdWhhaXRlei12b3VzIGFsbGVyID8=
+        - Which environment may I take you to?
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -916,8 +911,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMSBOb3VzIHNvbW1lcyBkw6lqw6Agw6AgY2V0IMOpdGFnZS4=
+        - 4, 1 We are already on that floor?!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -949,12 +943,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 4, 2 Certainement.
+        - 4, 2 Certainly.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Nous descendons.
+        - Elevator going down.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1064,12 +1058,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 4, 3 Certainement.
+        - 4, 3 Certainly.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Nous montons.
+        - Elevator going up.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1315,8 +1309,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgNCBQcmVtaWVyIMOpdGFnZSA6IEhhbGwgZGUgbGEgVG91ci4=
+        - 4, 4 The first floor has the Main Hall.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1338,8 +1331,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgNSBEZXV4acOobWUgw6l0YWdlIDogUHJhaXJpZSBydWlzc2VsYW50ZS4=
+        - 4, 5 The second floor has the Prairie Stream.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1361,8 +1353,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgNiBUcm9pc2nDqG1lIMOpdGFnZSA6IENyaXF1ZSB0dXJidWxlbnRlLg==
+        - 4, 6 The third floor has the Turbulent Creek.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1384,8 +1375,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgNyBRdWF0cmnDqG1lIMOpdGFnZSA6IENhdmVybmUgcm9jYWlsbGV1c2Uu
+        - 4, 7 The fourth floor has the Rocky Cavern.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1407,8 +1397,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgOCBDaW5xdWnDqG1lIMOpdGFnZSA6IE1hcmFpcyBjZW5kcmV1eC4=
+        - 4, 8 The fifth floor has the Ashen Marsh.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1430,8 +1419,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgOSBTaXhpw6htZSDDqXRhZ2UgOiBUdW5kcmEgdmVyZ2xhY8OpZS4=
+        - 4, 9 The sixth floor has the Icy Tundra.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1453,8 +1441,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTAgU2VwdGnDqG1lIMOpdGFnZSA6IFBpc3RlIGFtw6luYWfDqWUu
+        - 4, 10 The seventh floor has the Built Road.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1476,8 +1463,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTEgSHVpdGnDqG1lIMOpdGFnZSA6IEluc3RhbGxhdGlvbiBtYWxmYW3DqWUu
+        - 4, 11 The eighth floor has the Shady Facility.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1643,8 +1629,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTIgUHJlbWllciDDqXRhZ2UgOiBIYWxsIGRlIGxhIFRvdXIu
+        - 4, 12 The first floor has the Main Hall.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1666,8 +1651,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTMgRGV1eGnDqG1lIMOpdGFnZSA6IFByYWlyaWUgcnVpc3NlbGFudGUu
+        - 4, 13 The second floor has the Prairie Stream.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1689,8 +1673,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTQgVHJvaXNpw6htZSDDqXRhZ2UgOiBDcmlxdWUgdHVyYnVsZW50ZS4=
+        - 4, 14 The third floor has the Turbulent Creek.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1712,8 +1695,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTUgUXVhdHJpw6htZSDDqXRhZ2UgOiBDYXZlcm5lIHJvY2FpbGxldXNlLg==
+        - 4, 15 The fourth floor has the Rocky Cavern.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1735,8 +1717,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTYgQ2lucXVpw6htZSDDqXRhZ2UgOiBNYXJhaXMgY2VuZHJldXgu
+        - 4, 16 The fifth floor has the Ashen Marsh.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1758,8 +1739,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTcgU2l4acOobWUgw6l0YWdlIDogVHVuZHJhIHZlcmdsYWPDqWUu
+        - 4, 17 The sixth floor has the Icy Tundra.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1781,8 +1761,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTggU2VwdGnDqG1lIMOpdGFnZSA6IFBpc3RlIGFtw6luYWfDqWUu
+        - 4, 18 The seventh floor has the Built Road.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1804,8 +1783,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NCwgMTkgSHVpdGnDqG1lIMOpdGFnZSA6IEluc3RhbGxhdGlvbiBtYWxmYW3DqWUu
+        - 4, 19 The eighth floor has the Shady Facility.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand

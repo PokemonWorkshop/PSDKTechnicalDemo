@@ -839,8 +839,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDAgOltuYW1lPT8/P106bGwgbmUgbWUgcmVzdGUgcGx1cyBxdSfDoCBiaW5kZXIgw6dhIGF2ZWMgY2VjaSBldC4uLg==
+        - 21, 0 :[name=???]:Now the only thing left is to bind this to that and...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -913,13 +912,13 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDEgOltuYW1lPT8/P106Q2EgdmEgcGFzIGxhIHTDqnRlIGRlIHZlbmlyIGNvbW1lIMOnYSBkYW5zIGxlIGRvcyBkZXMgZ2VucyBzYW5zIHQnYW5ub25jZXIgPyE=
+        - 21, 1 :[name=???]:Are you crazy, scaring people like that without announcing
+          yourself?!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 2 :[name=???]:J'ai failli faire une attaque cardiaque...
+        - 21, 2 :[name=???]:I almost had a heart attack...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -929,43 +928,40 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDMgOltuYW1lPT8/P106T0ssIGMnZXN0IGJvbiwgaidzdWlzIGNhbG3DqS4uLiBCb24sIHR1IGVzIHF1aSBleGFjdGVtZW50ID8=
+        - 21, 3 :[name=???]:Alright, okay, I'm calm now...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQgOltuYW1lPT8/P106XE5bMV0gPyDDh2EgbWUgZGl0IHF1ZWxxdWUgY2hvc2UuLi4gRW5maW4gYnJlZiwgcGFzc29ucy4=
+        - 21, 4 :[name=???]:\N[1]? It does ring a bell...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 5 :[name=Scor]:Moi, c'est Scorbutics. Mais tu peux m'appeler Scor.
+        - 21, 5 :[name=Scor]:The name's Scorbutics, but you can call me Scor.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDYgOltuYW1lPVNjb3JdOkplIHN1aXMgY2UgcXUnb24gYXBwZWxsZSB1biBkZXYgZGUgbCdvbWJyZS4uLiBFdCBqZSBuZSBkaXMgcGFzIMOnYSBwYXJjZSBxdSdvbiBlc3QgZGFucyB1bmUgc2FsbGUgcGxvbmfDqWUgZGFucyBsZSBub2lyLCBtYWlzIGJpZW4gcGFyY2UgcXVlIGplIHRyYXZhaWxsZSBzdXIgZGVzIGNoYW50aWVycyBpbXBvcnRhbnRzIHNhbnMgZm9yY8OpbWVudCB0cm9wIGVuIHBhcmxlciBlbiBwdWJsaWMu
+        - 21, 6 :[name=Scor]:I'm what you might call a "shadow-dev"...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDcgOltuYW1lPVNjb3JdOkVuIHBhcmxhbnQgZGUgc2FsbGUgc29tYnJlLCBqJ2VzcMOocmUgcXVlIHR1IGFwcHLDqWNpZXMgbGUgRHluYW1pY0xpZ2h0ID8=
+        - 21, 7 :[name=Scor]:Talking about dark rooms, I hope you like the \c[5]DynamicLight\c[0]?
+          Nuri Yuri made it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDggOltuYW1lPVNjb3JdOkMnZXN0IHVuZSBmZWF0dXJlIHN1cGVyIGNvb2wgZGUgUG9rw6ltb25TREsgcXVpIHBlcm1ldCBkJ2F2b2lyIGRlIGxhICJsdW1pw6hyZSIgZHluYW1pcXVlLCBjb21tZSBzb24gbm9tIGwnaW5kaXF1ZS4=
+        - 21, 8 :[name=Scor]:It's a very cool feature of PokémonSDK that lets you
+          create dynamic "lighting", as indicated by its name.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDkgOltuYW1lPVNjb3JdOkQnYWlsbGV1cnMsIGplIHJlbWFycXVlIHF1ZSBwb3VyIHVuZSByYWlzb24gcXVlIGonaWdub3JlLCB0dSBhcyB1biBwbHVzIHBldGl0IGNlcmNsZS4gQm91Z2UgcGFzLCBqZSB2YWlzIGFycmFuZ2VyIMOnYS4=
+        - 21, 9 :[name=Scor]:By the way, for an unknown reason, it seems like your
+          light isn't the same size as mine...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -985,20 +981,19 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDEwIDpbbmFtZT1TY29yXTpWb2lsw6AsIG9uIGEgbWFpbnRlbmFudCBsYSBtw6ptZSB0YWlsbGUgZGUgbHVtacOocmUgIQ==
+        - 21, 10 :[name=Scor]:Right, now we have the same light size!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDExIDpbbmFtZT1TY29yXTpCb24gcGFyIGNvbnRyZSwgYydlc3QgYmllbiBzeW1wYSB0b3V0ZXMgY2VzIHTDqW7DqGJyZXMsIG1haXMgw6dhIGZhdGlndWUgbGVzIHlldXguIENhIHRlIGRpcmFpdCBxdSdvbiBhaWxsZSBkw6lzYWN0aXZlciBjZSBxdWkgY2F1c2Ugw6dhID8=
+        - 21, 11 :[name=Scor]:On the other hand, all this darkness is fun, but it's
+          tiring my poor eyes.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDEyIDpbbmFtZT1TY29yXTpZJ2EgdW5lIHNhbGxlIGF1IHN1ZC1lc3QgZCdpY2kuIFR1IHkgZXMgcGV1dC3DqnRyZSBkw6lqw6AgYWxsw6lcRSA/IFJldHJvdXZlLW1vaSBsw6AtYmFzLg==
+        - 21, 12 :[name=Scor]:There's another room to the south-east. Maybe you've
+          already gone there?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1008,7 +1003,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 13 :[name=Scor]:Si tu veux bien te pousser ?
+        - 21, 13 :[name=Scor]:If you could step aside...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1244,13 +1239,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDE0IExhIHTDqWzDqXZpc2lvbiBzY2ludGlsbGUgZGUgbWFuacOocmUgw6l0cmFuZ2UuLi4=
+        - 21, 14 The television flickers strangely...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Mieux vaut ne pas y toucher pour le moment.
+        - It's safer to not deal with it right now.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1316,14 +1310,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDE1IExhIHTDqWzDqXZpc2lvbiBzY2ludGlsbGUgZGUgbWFuacOocmUgw6l0cmFuZ2UuLi4=
+        - 21, 15 The television flickers strangely...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDE2IFZvdXMgc2VudGV6IHF1ZSBxdWVscXVlIGNob3NlIHZvdXMgcmVnYXJkZSBkZXB1aXMgbCdpbnTDqXJpZXVyIGRlIGwnw6ljcmFuLg==
+        - 21, 16 You feel something watching you from inside the screen.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1338,8 +1330,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDE3IExhIGNyw6lhdHVyZSB2b3VzIGF0dGFxdWUgIQ==
+        - 21, 17 The creature attacks you!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1408,8 +1399,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDE4IDpbbmFtZT1TY29yXTpUdSBsJ2FzIGNhcHR1csOpID8=
+        - 21, 18 :[name=Scor]:Did you catch it?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1464,8 +1454,7 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDE5IDpbbmFtZT1TY29yXTpDb21tZSBqZSBsZSBwZW5zYWlzLCBjJ8OpdGFpdCBkb25jIGJpZW4gdW4gTW90aXNtYS4gTWFpbnRlbmFudCBxdSdpbCBuZSBwb21wZSBwbHVzIGwnw6luZXJnaWUgZHUgZ8OpbsOpcmF0ZXVyIHByaW5jaXBhbCwgbGEgbHVtacOocmUgZGV2cmFpdCByZXZlbmlyLi4u
+        - 21, 19 :[name=Scor]:As I thought, it was a Rotom.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1485,7 +1474,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 20 :[name=Scor]:Maintenant.
+        - 21, 20 :[name=Scor]:Now.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1495,19 +1484,18 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDIxIDpbbmFtZT1TY29yXTpDJ8OpdGFpdCByYXBpZGUu
+        - 21, 21 :[name=Scor]:That was fast.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDIyIDpbbmFtZT1TY29yXTpNZXJjaSBwb3VyIGxlIGNvdXAgZGUgbWFpbiwgw6dhIGF1cmFpdCDDqXTDqSBjb21wbGlxdcOpIHNldWwsIHN1cnRvdXQgdnUgbGUgbm9tYnJlIGRlIFBva8OpbW9uIHNhdXZhZ2VzIHF1aSBvbnQgdGVudMOpIGRlIHMnaW50cm9kdWlyZSBpY2ku
+        - 21, 22 :[name=Scor]:Thanks for the helping hand, alone it would have been
+          a much harder task, with all the wild Pokémon that tried to enter the room!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 23 :[name=Scor]:Tiens, un petit cadeau en gage de remerciement.
+        - 21, 23 :[name=Scor]:Here, take this gift as a token of thanks.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1517,14 +1505,14 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDI0IDpbbmFtZT1TY29yXTpQZW5kYW50IHF1ZSBqJ3kgcGVuc2UsIGlsIG1lIHNlbWJsZSBxdSfDoCBsJ8OpdGFnZSBkdSBMYWJvcmF0b2lyZSwgdW4gY2hlcmNoZXVyIGEgYW1lbsOpIGRpdmVycyBhcHBhcmVpbHMuLi4gVHUgcG91cnJhaXMgcGV1dC3DqnRyZSBhbGxlciB2b2lyIMOnYSBhdmVjIE1vdGlzbWEgPw==
+        - 21, 24 :[name=Scor]:Now that I think about it, I believe a scientist brought
+          a lof of different devices to the Laboratory floor...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDI1IDpbbmFtZT1TY29yXTpTaSB0dSB2ZXV4IHJldmVuaXIgbWUgdm9pciwgZW4gdG91dCBjYXMsIHR1IHNhaXMgb8O5IG1lIHRyb3V2ZXIgIQ==
+        - 21, 25 :[name=Scor]:If you want to come see me again, you know where to
+          find me!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1577,8 +1565,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDI2IExlIFBva8OpbW9uIHJldG91cm5lIGRhbnMgbGEgdMOpbMOpdmlzaW9uIHBvdXIgcmVnYWduZXIgZGVzIGZvcmNlcy4=
+        - 21, 26 The Pokémon returns to the television to gain back its strength.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1651,8 +1638,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDI3IFNhbnMgTW90aXNtYSDDoCBsJ2ludMOpcmlldXIsIGxhIHTDqWzDqXZpc2lvbiBlc3QgbWFpbnRlbmFudCB0b3RhbGVtZW50IMOpdGVpbnRlLg==
+        - 21, 27 Without Rotom inside, the television is now completely out of order.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1704,13 +1690,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDI4IExhIHTDqWzDqXZpc2lvbiBzY2ludGlsbGUgZGUgbWFuacOocmUgw6l0cmFuZ2UuLi4=
+        - 21, 28 The television flickers strangely...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Mieux vaut ne pas y toucher pour le moment.
+        - It's safer to not deal with it right now.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1776,14 +1761,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDI5IExhIHTDqWzDqXZpc2lvbiBzY2ludGlsbGUgZGUgbWFuacOocmUgw6l0cmFuZ2UuLi4=
+        - 21, 29 The television flickers strangely...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDMwIFZvdXMgc2VudGV6IHF1ZSBxdWVscXVlIGNob3NlIHZvdXMgcmVnYXJkZSBkZXB1aXMgbCdpbnTDqXJpZXVyIGRlIGwnw6ljcmFuLg==
+        - 21, 30 You feel something watching you from inside the screen.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1798,8 +1781,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDMxIExhIGNyw6lhdHVyZSB2b3VzIGF0dGFxdWUgIQ==
+        - 21, 31 The creature attacks you!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1868,8 +1850,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDMyIDpbbmFtZT1TY29yXTpUdSBsJ2FzIGNhcHR1csOpID8=
+        - 21, 32 :[name=Scor]:Did you catch it?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1924,8 +1905,7 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDMzIDpbbmFtZT1TY29yXTpDb21tZSBqZSBsZSBwZW5zYWlzLCBjJ8OpdGFpdCBkb25jIGJpZW4gdW4gTW90aXNtYS4gTWFpbnRlbmFudCBxdSdpbCBuZSBwb21wZSBwbHVzIGwnw6luZXJnaWUgZHUgZ8OpbsOpcmF0ZXVyIHByaW5jaXBhbCwgbGEgbHVtacOocmUgZGV2cmFpdCByZXZlbmlyLi4u
+        - 21, 33 :[name=Scor]:As I thought, it was a Rotom.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1945,7 +1925,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 34 :[name=Scor]:Maintenant.
+        - 21, 34 :[name=Scor]:Now.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1955,19 +1935,18 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDM1IDpbbmFtZT1TY29yXTpDJ8OpdGFpdCByYXBpZGUu
+        - 21, 35 :[name=Scor]:That was fast.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDM2IDpbbmFtZT1TY29yXTpNZXJjaSBwb3VyIGxlIGNvdXAgZGUgbWFpbiwgw6dhIGF1cmFpdCDDqXTDqSBjb21wbGlxdcOpIHNldWwsIHN1cnRvdXQgdnUgbGUgbm9tYnJlIGRlIFBva8OpbW9uIHNhdXZhZ2VzIHF1aSBvbnQgdGVudMOpIGRlIHMnaW50cm9kdWlyZSBpY2ku
+        - 21, 36 :[name=Scor]:Thanks for the helping hand, alone it would have been
+          a much harder task, with all the wild Pokémon that tried to enter the room!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 37 :[name=Scor]:Tiens, un petit cadeau en gage de remerciement.
+        - 21, 37 :[name=Scor]:Here, take this gift as a token of thanks.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1977,14 +1956,14 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDM4IDpbbmFtZT1TY29yXTpQZW5kYW50IHF1ZSBqJ3kgcGVuc2UsIGlsIG1lIHNlbWJsZSBxdSfDoCBsJ8OpdGFnZSBkdSBMYWJvcmF0b2lyZSwgdW4gY2hlcmNoZXVyIGEgYW1lbsOpIGRpdmVycyBhcHBhcmVpbHMuLi4gVHUgcG91cnJhaXMgcGV1dC3DqnRyZSBhbGxlciB2b2lyIMOnYSBhdmVjIE1vdGlzbWEgPw==
+        - 21, 38 :[name=Scor]:Now that I think about it, I believe a scientist brought
+          a lof of different devices to the Laboratory floor...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDM5IDpbbmFtZT1TY29yXTpTaSB0dSB2ZXV4IHJldmVuaXIgbWUgdm9pciwgZW4gdG91dCBjYXMsIHR1IHNhaXMgb8O5IG1lIHRyb3V2ZXIgIQ==
+        - 21, 39 :[name=Scor]:If you want to come see me again, you know where to
+          find me!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2037,8 +2016,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQwIExlIFBva8OpbW9uIHJldG91cm5lIGRhbnMgbGEgdMOpbMOpdmlzaW9uIHBvdXIgcmVnYWduZXIgZGVzIGZvcmNlcy4=
+        - 21, 40 The Pokémon returns to the television to gain back its strength.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2111,8 +2089,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQxIFNhbnMgTW90aXNtYSDDoCBsJ2ludMOpcmlldXIsIGxhIHTDqWzDqXZpc2lvbiBlc3QgbWFpbnRlbmFudCB0b3RhbGVtZW50IMOpdGVpbnRlLg==
+        - 21, 41 Without Rotom inside, the television is now completely out of order.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2164,7 +2141,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 42 Une vieille radio. Elle semble ne plus avoir de batterie.
+        - 21, 42 An old radio. It seems like it doesn't have any charge left.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2262,36 +2239,32 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQzIEMnZXN0IMOpdHJhbmdlIGNldHRlIG1hbmllIHF1J29udCBsZXMgZ2VucyBkZSBmb3VpbGxlciBkYW5zIGxlcyBwb3ViZWxsZXMuLi4=
+        - 21, 43 Dumpster diving is such a weird obsession...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 44 Vous pensez que toutes les poubelles contiennent des choses ?
+        - 21, 44 Do you believe all dumpsters contain things?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQ1IEVoIGJpZW4sIG5hdnLDqSwgbWFpcyBjZSBuJ2VzdCBwYXMgbGUgY2FzIGRlIGNlbGxlLWNpLg==
+        - 21, 45 Well, sorry not sorry, this one does not.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQ2IEVsbGUgbmUgY29udGllbnQgcGFzIGQnb2JqZXQgaW50w6lyZXNzYW50LCBtYWlzIGVsbGUgY29udGllbnQgZGVzIG1vdHMu
+        - 21, 46 It does not contain any interesting item, but it contains words.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQ3IEJlYXVjb3VwIGRlIG1vdHMuIERlcyBtb3RzIHF1ZSB2b3VzIMOqdGVzIGVuIHRyYWluIGRlIGxpcmUu
+        - 21, 47 A lot of words.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 48 ... Oh, tiens, un CD au fond de la poubelle.
+        - 21, 48 ... Oh, wait, there's a CD at the bottom of the dumpster.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2301,8 +2274,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDQ5IExhIHBvdWJlbGxlIHNlIHRhaXQgw6AgamFtYWlzLg==
+        - 21, 49 The dumpster is now forever silent.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2358,7 +2330,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 50 Un ordinateur portable. Il ne semble plus avoir de charge.
+        - 21, 50 A laptop.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2414,74 +2386,72 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDUxIDpbbmFtZT1TY29yXTpBaCwgdGUgdm9pbMOgLiBKZSBwcsOpZsOpcmFpcyB0J2F0dGVuZHJlLCBoaXN0b2lyZSBxdSdvbiBzb2l0IGRldXggcG91ciByw6lnbGVyIGxlIHNvdWNpLg==
+        - 21, 51 :[name=Scor]:Ah, there you are.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDUyIDpbbmFtZT1TY29yXTpMZXMgbHVtacOocmVzIGfDqW7DqXJhbGVzIGR1IHNvdXMtc29sIHNvbnQgdG91dGVzIMOpdGVpbnRlcyBldCB0b3VzIGxlcyBhcHBhcmVpbHMgZGUgY2V0dGUgcGnDqGNlIG4nb250IHBsdXMgZGUgY291cmFudC4=
+        - 21, 52 :[name=Scor]:The general lights of this basement and all the devices
+          in here are out of power.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDUzIDpbbmFtZT1TY29yXTpTZXVsZXMgbGVzIGx1bWnDqHJlcyBzZWNvbmRhaXJlcyBkdSBzb3VzLXNvbCBzb250IGVuY29yZSBhbGx1bcOpZXMsIHBhcmNlIHF1J2VsbGVzIHNvbnQgYnJhbmNow6llcyBzdXIgdW4gZ8OpbsOpcmF0ZXVyIGF1eGlsaWFpcmUuLi4gRXQgeSdhIGNldHRlIHTDqWzDqXZpc2lvbi4=
+        - 21, 53 :[name=Scor]:Only the basement's secondary lights are still on, as
+          they're connected to an auxiliary generator...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDU0IDpbbmFtZT1TY29yXTpUdSBzZXJhcyBkJ2FjY29yZCBhdmVjIG1vaSwgw6dhIG5lIGZhaXQgYXVjdW4gc2VucyBkZSBicmFuY2hlciB1bmUgdMOpbMOpIHN1ciB1biBnw6luw6lyYXRldXIgYXV4aWxpYWlyZS4=
+        - '21, 54 :[name=Scor]:I''m sure you''ll agree with me: it makes no sense
+          to plug a television to an auxiliary generator.'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDU1IDpbbmFtZT1TY29yXTpPbiBwZXV0IGRvbmMgZW4gZMOpZHVpcmUgcXVlIGxlIHNvdWNpIHZpZW50IGRlIGxhIHTDqWzDqS4uLiBPdSBwbHVzIHBhcnRpY3VsacOocmVtZW50IGRlIGNlIHF1aSBsJ2hhYml0ZS4=
+        - 21, 55 :[name=Scor]:So we can deduce the problem is caused by this television..
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDU2IDpbbmFtZT1TY29yXTpKJ2FpIG1vbiBhdmlzIHN1ciBsYSBxdWVzdGlvbiwgbWFpcyBqZSBwcsOpZsOocmUgbmUgcGFzIG0nYXZhbmNlci4=
+        - 21, 56 :[name=Scor]:I have my own theory, but I prefer to keep it to myself
+          for now.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDU3IDpbbmFtZT1TY29yXTpDZSBxdWkgZXN0IHPDu3IsIGMnZXN0IHF1ZSBub3VzIGF2b25zIGFmZmFpcmUgw6AgdW4gUG9rw6ltb24gw4lsZWN0cmlrLiDDh2EgZXhwbGlxdWVyYWl0IHBvdXJxdW9pIGxlIGfDqW7DqXJhdGV1ciBwcmluY2lwYWwgZXN0IEtPIGV0IHBvdXJxdW9pIGxhIHTDqWzDqXZpc2lvbiBjb250aW51ZSBkZSBmb25jdGlvbm5lci4=
+        - 21, 57 :[name=Scor]:The only sure thing is, it must be an Electric Pokémon.
+          It would explain why the main generator is down and why the television is
+          still working.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDU4IDpbbmFtZT1TY29yXTpKZSBjb3V2cmUgdGVzIGFycmnDqHJlcywgb2NjdXBlIHRvaSBkZSBjZSBQb2vDqW1vbi4gQXR0ZW50aW9uIGNlbGEgZGl0IDogdHUgdmFzIGRldm9pciBsZSBjYXB0dXJlci4=
+        - 21, 58 :[name=Scor]:I'm covering you, you take care of this Pokémon.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDU5IDpbbmFtZT1TY29yXTpTaSB0dSBsZSBtZXRzIEtPIG91IHF1ZSB0dSBmdWlzLCBpbCBuJ2F1cmEgcXUnw6AgcmVudHJlciBkYW5zIGxhIHTDqWzDqXZpc2lvbiBwb3VyIHJlZmFpcmUgbGUgcGxlaW4gZCfDqW5lcmdpZS4=
+        - 21, 59 :[name=Scor]:If you defeat it or if you flee, it will need to enter
+          the television again to recharge its batteries.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDYwIDpbbmFtZT1TY29yXTpFdCBwdWlzLCBjJ2VzdCBjZXJ0YWluZW1lbnQgdW4gYm9uIFBva8OpbW9uLCBxdWkgcGx1cyBlc3QgcmFyZS4gw4dhIHNlcmFpdCBkb21tYWdlIGRlIHNlIHByaXZlciBkJ3VuZSB0ZWxsZSBjYXB0dXJlICE=
+        - 21, 60 :[name=Scor]:And, well, it's certainly a good Pokémon, a rare one
+          at that.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDYxIDpbbmFtZT1TY29yXTpQYXJsZSDDoCBsYSB0w6lsw6l2aXNpb24gZMOocyBxdWUgdHUgdGUgc2VucyBwcsOqdCwgZXQgbidvdWJsaWUgcGFzIGRlIHByZW5kcmUgZGVzIFBva8OpIEJhbGxzICE=
+        - 21, 61 :[name=Scor]:Check the television when you feel ready, and don't
+          forget to bring some Poké Balls!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDYyIDpbbmFtZT1TY29yXTpKZSB2YWlzIG1lIHBvc3RlciBqdXN0ZSBkZXZhbnQgbCdlbnRyw6llIHBvdXIgbSdvY2N1cGVyIGRlcyBQb2vDqW1vbiBzYXV2YWdlcyBxdWkgcG91cnJhaWVudCDDqnRyZSBhdHRpcsOpcyBwYXIgbGUgYnJ1aXQu
+        - 21, 62 :[name=Scor]:I'll stand over there to deal with the wild Pokémon
+          attracted by the noise.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2636,8 +2606,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDYzIDpbbmFtZT1TY29yXTpQYXJsZSDDoCBsYSB0w6lsw6l2aXNpb24gZMOocyBxdWUgdHUgdGUgc2VucyBwcsOqdCDDoCBjYXB0dXJlciBjZSBQb2vDqW1vbiwgamUgY291dnJlIHRlcyBhcnJpw6hyZXMgIQ==
+        - 21, 63 :[name=Scor]:Talk to the television when you feel ready to catch
+          this Pokémon, I've got your back!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3368,19 +3338,19 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 21, 64 :[name=Scor]:Oh, tiens, \N[1], sympa de venir me rendre visite !
+        - 21, 64 :[name=Scor]:Oh, well, \N[1], thanks for visiting me!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDY1IDpbbmFtZT1TY29yXTpKZSBib3NzZSBzdXIgdW4gcHJvamV0IHNlY3JldCBkw6lmZW5zZSwgZG9uYyBqZSBwZXV4IHBhcyB0cm9wIHQnZW4gcGFybGVyLi4u
+        - 21, 65 :[name=Scor]:I'm working on a top-secret project, so I can't speak
+          about it here...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjEsIDY2IDpbbmFtZT1TY29yXTpIw6lzaXRlIHBhcyDDoCByZXZlbmlyIG1lIHZvaXIgw6AgbCdvY2Nhc2lvbiwgb24gc2Ugc2VudCByYXBpZGVtZW50IGVzc2V1bMOpIGljaS4=
+        - 21, 66 :[name=Scor]:Please come back to see me again when you have some
+          time, it's quite lonely here.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

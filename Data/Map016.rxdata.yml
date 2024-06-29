@@ -617,7 +617,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 0 \N[1] trouve 25 jetons !
+        - 16, 0 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -682,7 +682,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 1 \N[1] trouve 25 jetons !
+        - 16, 1 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -747,7 +747,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 2 \N[1] trouve 25 jetons !
+        - 16, 2 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -812,7 +812,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 3 \N[1] trouve 25 jetons !
+        - 16, 3 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -877,8 +877,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDQgXE5bMV0gdHJvdXZlIDEwMCBqZXRvbnMgISBDJ2VzdCBqb3VyIGRlIGbDqnRlICE=
+        - 16, 4 \N[1] found 100 Coins! It's a day of celebration!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -943,27 +942,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 5 Activation du jeu de Minage !
+        - '16, 5 Mining Game: Activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 6 Que voulez-vous faire ?
+        - 16, 6 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 7 Jouer
-          - 16, 8 Réglage de la borne
-          - 16, 9 Consulter mes stats
-          - 16, 10 Quitter
+        - - 16, 7 Play
+          - 16, 8 Machine's settings
+          - 16, 9 Check my stats
+          - 16, 10 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 7 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -1008,26 +1007,22 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 8 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDExIENldHRlIGJvcm5lIGVzdCByw6lnbMOpZSBhdmVjIGxlcyBwYXJhbcOodHJlcyBzdWl2YW50cyA6
+        - '16, 11 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBFbnRyZSAyIGV0IDUgb2JqZXRzIGF1IGhhc2FyZCAocGFyYW3DqHRyZSBkZSBiYXNlKQ==
+        - "- Bewteen 2 and 5 items at random (basic settings)"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBSw6lww6l0YWJsZQ==
+        - "- Repeatable"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1037,7 +1032,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 9 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -1092,8 +1087,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEyIFZvdXMgYXZleiBqb3XDqSBbTkJfTEFVTkNIXSBmb2lzLCBnYWduw6kgW05CX1dJTl0gZm9pcywgcGVyZHUgW05CX0xPU0VdLg==
+        - 16, 12 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1104,8 +1099,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEzIFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcywgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcywgZXQgYXZlYyBsYSBkeW5hbWl0ZSBbTkJfRFlOQU1JVEVdIGZvaXMu
+        - 16, 13 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1118,8 +1113,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE0IFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcyBldCBhdmVjIGxhIG1hc3NlIFtOQl9NQUNFXSBmb2lzLg==
+        - 16, 14 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the mace
+          [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1132,8 +1127,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE1IFBvdXIgZmluaXIsIHZvdXMgYXZleiBkw6l0ZXJyw6kgZGVzIG9iamV0cyBbTkJfSVRFTVNdIGZvaXMgIQ==
+        - 16, 15 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1163,13 +1157,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 10 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE2IE1lcmNpIGQnYXZvaXIgam91w6kgIQ==
+        - 16, 16 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1229,14 +1222,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3IFZvdWxlei12b3VzIGpvdWVyIGF1IFZvbHRvcmJhdGFpbGxlID8gTGEgcGFydGllIGNvw7t0ZSA1IGpldG9ucy4=
+        - 16, 17 Do you want to play Voltorb Flip? A game costs 5 Coins.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 18 Oui
-          - 16, 19 Non
+        - - 16, 18 Yes
+          - 16, 19 No
         - 2
         indent: 0
         code: 102
@@ -1290,7 +1282,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 20 Vous n'avez pas assez de jetons.
+        - 16, 20 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1311,8 +1303,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIxIElsIHZvdXMgZmF1dCB1bmUgQm/DrnRlIEpldG9ucyBwb3VyIHBvdXZvaXIgam91ZXIgIQ==
+        - 16, 21 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1669,27 +1660,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 22 Activation du jeu de Minage !
+        - '16, 22 Mining Game: activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 23 Que voulez-vous faire ?
+        - 16, 23 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 24 Jouer
-          - 16, 25 Réglage de la borne
-          - 16, 26 Consulter mes stats
-          - 16, 27 Quitter
+        - - 16, 24 Play
+          - 16, 25 Machine's settings
+          - 16, 26 Check my stats
+          - 16, 27 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 24 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -1734,25 +1725,22 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 25 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI4IENldHRlIGJvcm5lIGVzdCByw6lnbMOpZSBhdmVjIGxlcyBwYXJhbcOodHJlcyBzdWl2YW50cyA6
+        - '16, 28 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "- 3 objets au hasard"
+        - "- 3 items at random"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBSw6lww6l0YWJsZQ==
+        - "- Repeatable"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1762,7 +1750,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 26 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -1817,8 +1805,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI5IFZvdXMgYXZleiBqb3XDqSBbTkJfTEFVTkNIXSBmb2lzLCBnYWduw6kgW05CX1dJTl0gZm9pcywgcGVyZHUgW05CX0xPU0VdLg==
+        - 16, 29 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1829,8 +1817,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDMwIFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcywgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcywgZXQgYXZlYyBsYSBkeW5hbWl0ZSBbTkJfRFlOQU1JVEVdIGZvaXMu
+        - 16, 30 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1843,8 +1831,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDMxIFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcyBldCBhdmVjIGxhIG1hc3NlIFtOQl9NQUNFXSBmb2lzLg==
+        - 16, 31 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the mace
+          [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1857,8 +1845,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDMyIFBvdXIgZmluaXIsIHZvdXMgYXZleiBkw6l0ZXJyw6kgZGVzIG9iamV0cyBbTkJfSVRFTVNdIGZvaXMgIQ==
+        - 16, 32 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1888,13 +1875,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 27 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDMzIE1lcmNpIGQnYXZvaXIgam91w6kgIQ==
+        - 16, 33 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1954,27 +1940,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 34 Activation du jeu de Minage !
+        - '16, 34 Mining Game: activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 35 Que voulez-vous faire ?
+        - 16, 35 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 36 Jouer
-          - 16, 37 Réglage de la borne
-          - 16, 38 Consulter mes stats
-          - 16, 39 Quitter
+        - - 16, 36 Play
+          - 16, 37 Machine's settings
+          - 16, 38 Check my stats
+          - 16, 39 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 36 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2059,31 +2045,27 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 37 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDQwIENldHRlIGJvcm5lIGVzdCByw6lnbMOpZSBhdmVjIGxlcyBwYXJhbcOodHJlcyBzdWl2YW50cyA6
+        - '16, 40 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "- 4 objets au hasard"
+        - "- 4 items at random"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBIYXJkIG1vZGUgYWN0aXbDqSBhdmFudCwgZMOpc2FjdGl2w6kgYXByw6hz
+        - Hard mode at first, then disabled
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBSw6lww6l0YWJsZQ==
+        - "- Repeatable"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2093,7 +2075,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 38 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2148,8 +2130,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDQxIFZvdXMgYXZleiBqb3XDqSBbTkJfTEFVTkNIXSBmb2lzLCBnYWduw6kgW05CX1dJTl0gZm9pcywgcGVyZHUgW05CX0xPU0VdLg==
+        - 16, 41 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2160,8 +2142,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDQyIFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcywgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcywgZXQgYXZlYyBsYSBkeW5hbWl0ZSBbTkJfRFlOQU1JVEVdIGZvaXMu
+        - 16, 42 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2174,8 +2156,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDQzIFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcyBldCBhdmVjIGxhIG1hc3NlIFtOQl9NQUNFXSBmb2lzLg==
+        - 16, 43 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the mace
+          [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2188,8 +2170,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDQ0IFBvdXIgZmluaXIsIHZvdXMgYXZleiBkw6l0ZXJyw6kgZGVzIG9iamV0cyBbTkJfSVRFTVNdIGZvaXMgIQ==
+        - 16, 44 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2219,13 +2200,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 39 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDQ1IE1lcmNpIGQnYXZvaXIgam91w6kgIQ==
+        - 16, 45 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2285,27 +2265,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 46 Activation du jeu de Minage !
+        - '16, 46 Mining Game: activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 47 Que voulez-vous faire ?
+        - 16, 47 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 48 Jouer
-          - 16, 49 Réglage de la borne
-          - 16, 50 Consulter mes stats
-          - 16, 51 Quitter
+        - - 16, 48 Play
+          - 16, 49 Machine's settings
+          - 16, 50 Check my stats
+          - 16, 51 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 48 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2366,31 +2346,27 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 49 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDUyIENldHRlIGJvcm5lIGVzdCByw6lnbMOpZSBhdmVjIGxlcyBwYXJhbcOodHJlcyBzdWl2YW50cyA6
+        - '16, 52 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "- 5 objets au hasard"
+        - "- 5 items at random"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBTZSBkw6lzYWN0aXZlIHRlbXBvcmFpcmVtZW50ICgxIGhldXJlKQ==
+        - Turns off for a limited time (1hr)
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBSw6lww6l0YWJsZQ==
+        - "- Repeatable"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2400,7 +2376,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 50 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2455,8 +2431,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDUzIFZvdXMgYXZleiBqb3XDqSBbTkJfTEFVTkNIXSBmb2lzLCBnYWduw6kgW05CX1dJTl0gZm9pcywgcGVyZHUgW05CX0xPU0VdLg==
+        - 16, 53 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2467,8 +2443,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDU0IFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcywgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcywgZXQgYXZlYyBsYSBkeW5hbWl0ZSBbTkJfRFlOQU1JVEVdIGZvaXMu
+        - 16, 54 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2481,8 +2457,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDU1IFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcyBldCBhdmVjIGxhIG1hc3NlIFtOQl9NQUNFXSBmb2lzLg==
+        - 16, 55 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the mace
+          [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2495,8 +2471,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDU2IFBvdXIgZmluaXIsIHZvdXMgYXZleiBkw6l0ZXJyw6kgZGVzIG9iamV0cyBbTkJfSVRFTVNdIGZvaXMgIQ==
+        - 16, 56 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2526,13 +2501,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 51 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDU3IE1lcmNpIGQnYXZvaXIgam91w6kgIQ==
+        - 16, 57 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2762,27 +2736,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 58 Activation du jeu de Minage !
+        - '16, 58 Mining Game: activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 59 Que voulez-vous faire ?
+        - 16, 59 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 60 Jouer
-          - 16, 61 Réglage de la borne
-          - 16, 62 Consulter mes stats
-          - 16, 63 Quitter
+        - - 16, 60 Play
+          - 16, 61 Machine's settings
+          - 16, 62 Check my stats
+          - 16, 63 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 60 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2838,25 +2812,22 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 61 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDY0IENldHRlIGJvcm5lIGVzdCByw6lnbMOpZSBhdmVjIGxlcyBwYXJhbcOodHJlcyBzdWl2YW50cyA6
+        - '16, 64 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "- 1 Tesson Jaune, 1 Pierre Foudre, 1 Plaque Volt"
+        - "- 1 Yellow Shard, 1 Thunder Stone, 1 Zap Plate"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBDZXR0ZSBtYWNoaW5lIG5lIHNlcmEgcGx1cyBhY2Nlc3NpYmxlIGFwcsOocyB1dGlsaXNhdGlvbi4=
+        - This machine won't be usable after one use.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2866,7 +2837,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 62 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2921,8 +2892,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDY1IFZvdXMgYXZleiBqb3XDqSBbTkJfTEFVTkNIXSBmb2lzLCBnYWduw6kgW05CX1dJTl0gZm9pcywgcGVyZHUgW05CX0xPU0VdLg==
+        - 16, 65 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2933,8 +2904,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDY2IFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcywgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcywgZXQgYXZlYyBsYSBkeW5hbWl0ZSBbTkJfRFlOQU1JVEVdIGZvaXMu
+        - 16, 66 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2947,8 +2918,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDY3IFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcyBldCBhdmVjIGxhIG1hc3NlIFtOQl9NQUNFXSBmb2lzLg==
+        - 16, 67 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the mace
+          [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2961,8 +2932,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDY4IFBvdXIgZmluaXIsIHZvdXMgYXZleiBkw6l0ZXJyw6kgZGVzIG9iamV0cyBbTkJfSVRFTVNdIGZvaXMgIQ==
+        - 16, 68 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2992,13 +2962,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 63 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDY5IE1lcmNpIGQnYXZvaXIgam91w6kgIQ==
+        - 16, 69 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3057,27 +3026,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 70 Activation du jeu de Minage !
+        - '16, 70 Mining Game: activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 71 Que voulez-vous faire ?
+        - 16, 71 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 72 Jouer
-          - 16, 73 Réglage de la borne
-          - 16, 74 Consulter mes stats
-          - 16, 75 Quitter
+        - - 16, 72 Play
+          - 16, 73 Machine's settings
+          - 16, 74 Check my stats
+          - 16, 75 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 72 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3132,25 +3101,22 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 73 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDc2IENldHRlIGJvcm5lIGVzdCByw6lnbMOpZSBhdmVjIGxlcyBwYXJhbcOodHJlcyBzdWl2YW50cyA6
+        - '16, 76 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "- 1 Tesson rouge, 1 Pierre Feu, 1 Plaque Flamme"
+        - "- 1 Red Shard, 1 Fire Stone, 1 Flame Plate"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBDZXR0ZSBtYWNoaW5lIG5lIHNlcmEgcGx1cyBhY2Nlc3NpYmxlIGFwcsOocyB1dGlsaXNhdGlvbi4=
+        - This machine won't be usable after one use.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3160,7 +3126,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 74 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3215,8 +3181,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDc3IFZvdXMgYXZleiBqb3XDqSBbTkJfTEFVTkNIXSBmb2lzLCBnYWduw6kgW05CX1dJTl0gZm9pcywgcGVyZHUgW05CX0xPU0VdLg==
+        - 16, 77 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3227,8 +3193,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDc4IFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcywgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcywgZXQgYXZlYyBsYSBkeW5hbWl0ZSBbTkJfRFlOQU1JVEVdIGZvaXMu
+        - 16, 78 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3241,8 +3207,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDc5IFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcyBldCBhdmVjIGxhIG1hc3NlIFtOQl9NQUNFXSBmb2lzLg==
+        - 16, 79 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the mace
+          [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3255,8 +3221,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDgwIFBvdXIgZmluaXIsIHZvdXMgYXZleiBkw6l0ZXJyw6kgZGVzIG9iamV0cyBbTkJfSVRFTVNdIGZvaXMgIQ==
+        - 16, 80 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3286,13 +3251,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 75 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDgxIE1lcmNpIGQnYXZvaXIgam91w6kgIQ==
+        - 16, 81 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3351,27 +3315,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 82 Activation du jeu de Minage !
+        - '16, 82 Mining Game: activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 83 Que voulez-vous faire ?
+        - 16, 83 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 84 Jouer
-          - 16, 85 Réglage de la borne
-          - 16, 86 Consulter mes stats
-          - 16, 87 Quitter
+        - - 16, 84 Play
+          - 16, 85 Machine's settings
+          - 16, 86 Check my stats
+          - 16, 87 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 84 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3426,25 +3390,22 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 85 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDg4IENldHRlIGJvcm5lIGVzdCByw6lnbMOpZSBhdmVjIGxlcyBwYXJhbcOodHJlcyBzdWl2YW50cyA6
+        - '16, 88 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "- 1 Tesson vert, 1 Pierre Plante, 1 Plaque Herbe"
+        - "- 1 Green Shard, 1 Leaf Stone, 1 Meadow Plate"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBDZXR0ZSBtYWNoaW5lIG5lIHNlcmEgcGx1cyBhY2Nlc3NpYmxlIGFwcsOocyB1dGlsaXNhdGlvbi4=
+        - This machine won't be usable after one use.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3454,7 +3415,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 86 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3509,8 +3470,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDg5IFZvdXMgYXZleiBqb3XDqSBbTkJfTEFVTkNIXSBmb2lzLCBnYWduw6kgW05CX1dJTl0gZm9pcywgcGVyZHUgW05CX0xPU0VdLg==
+        - 16, 89 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3521,8 +3482,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDkwIFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcywgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcywgZXQgYXZlYyBsYSBkeW5hbWl0ZSBbTkJfRFlOQU1JVEVdIGZvaXMu
+        - 16, 90 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3535,8 +3496,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDkxIFZvdXMgYXZleiB0YXDDqSBhdmVjIGxhIHBpb2NoZSBbTkJfUElDS0FYRV0gZm9pcyBldCBhdmVjIGxhIG1hc3NlIFtOQl9NQUNFXSBmb2lzLg==
+        - 16, 91 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the mace
+          [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3549,8 +3510,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDkyIFBvdXIgZmluaXIsIHZvdXMgYXZleiBkw6l0ZXJyw6kgZGVzIG9iamV0cyBbTkJfSVRFTVNdIGZvaXMgIQ==
+        - 16, 92 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3580,13 +3540,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 87 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDkzIE1lcmNpIGQnYXZvaXIgam91w6kgIQ==
+        - 16, 93 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3645,27 +3604,27 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 94 Activation du jeu de Minage !
+        - '16, 94 Mining Game: activated!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 95 Que voulez-vous faire ?
+        - 16, 95 What do you want to do?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 96 Jouer
-          - 16, 97 Réglage de la borne
-          - 16, 98 Consulter mes stats
-          - 16, 99 Quitter
+        - - 16, 96 Play
+          - 16, 97 Machine's settings
+          - 16, 98 Check my stats
+          - 16, 99 Exit
         - 4
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Jouer
+        - 16, 96 Play
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3720,25 +3679,22 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          UsOpZ2xhZ2UgZGUgbGEgYm9ybmU=
+        - 16, 97 Machine's settings
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEwMCBDZXR0ZSBib3JuZSBlc3QgcsOpZ2zDqWUgYXZlYyBsZXMgcGFyYW3DqHRyZXMgc3VpdmFudHMgOg==
+        - '16, 100 This machine was set with the following parameters:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "- 1 Tesson bleu, 1 Pierre Eau, 1 Plaque Hydro"
+        - "- 1 Blue Shard, 1 Water Stone, 1 Splash Plate"
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          LSBDZXR0ZSBtYWNoaW5lIG5lIHNlcmEgcGx1cyBhY2Nlc3NpYmxlIGFwcsOocyB1dGlsaXNhdGlvbi4=
+        - This machine won't be usable after one use.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3748,7 +3704,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Consulter mes stats
+        - 16, 98 Check my stats
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3803,8 +3759,8 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEwMSBWb3VzIGF2ZXogam91w6kgW05CX0xBVU5DSF0gZm9pcywgZ2FnbsOpIFtOQl9XSU5dIGZvaXMsIHBlcmR1IFtOQl9MT1NFXS4=
+        - 16, 101 You have played [NB_LAUNCH] time(s), won [NB_WIN] time(s), and lost
+          [NB_LOSE] time(s).
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3815,8 +3771,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEwMiBWb3VzIGF2ZXogdGFww6kgYXZlYyBsYSBwaW9jaGUgW05CX1BJQ0tBWEVdIGZvaXMsIGF2ZWMgbGEgbWFzc2UgW05CX01BQ0VdIGZvaXMsIGV0IGF2ZWMgbGEgZHluYW1pdGUgW05CX0RZTkFNSVRFXSBmb2lzLg==
+        - 16, 102 You have hit with the pickaxe [NB_PICKAXE] time(s), with the mace
+          [NB_MACE] time(s), and with the dynamite [NB_DYNAMITE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3829,8 +3785,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEwMyBWb3VzIGF2ZXogdGFww6kgYXZlYyBsYSBwaW9jaGUgW05CX1BJQ0tBWEVdIGZvaXMgZXQgYXZlYyBsYSBtYXNzZSBbTkJfTUFDRV0gZm9pcy4=
+        - 16, 103 You have hit with the pickaxe [NB_PICKAXE] time(s) and with the
+          mace [NB_MACE] time(s).
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3843,8 +3799,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEwNCBQb3VyIGZpbmlyLCB2b3VzIGF2ZXogZMOpdGVycsOpIGRlcyBvYmpldHMgW05CX0lURU1TXSBmb2lzICE=
+        - 16, 104 Finally, you have dug up items [NB_ITEMS] time(s)!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3874,13 +3829,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Quitter
+        - 16, 99 Exit
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEwNSBNZXJjaSBkJ2F2b2lyIGpvdcOpICE=
+        - 16, 105 Thank you for playing!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3939,14 +3893,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEwNiBWb3VsZXotdm91cyBqb3VlciBhdSBWb2x0b3JiYXRhaWxsZSA/IExhIHBhcnRpZSBjb8O7dGUgNSBqZXRvbnMu
+        - 16, 106 Do you want to play Voltorb Flip? A game costs 5 Coins.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 107 Oui
-          - 16, 108 Non
+        - - 16, 107 Yes
+          - 16, 108 No
         - 2
         indent: 0
         code: 102
@@ -4000,7 +3953,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 109 Vous n'avez pas assez de jetons.
+        - 16, 109 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4021,8 +3974,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDExMCBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 110 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4099,14 +4051,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDExMSBWb3VsZXotdm91cyBqb3VlciBhdSBWb2x0b3JiYXRhaWxsZSA/IExhIHBhcnRpZSBjb8O7dGUgNSBqZXRvbnMu
+        - 16, 111 Do you want to play Voltorb Flip? A game costs 5 Coins.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 112 Oui
-          - 16, 113 Non
+        - - 16, 112 Yes
+          - 16, 113 No
         - 2
         indent: 0
         code: 102
@@ -4160,7 +4111,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 114 Vous n'avez pas assez de jetons.
+        - 16, 114 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4181,8 +4132,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDExNSBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 115 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4259,14 +4209,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDExNiBWb3VsZXotdm91cyBqb3VlciBhdSBWb2x0b3JiYXRhaWxsZSA/IExhIHBhcnRpZSBjb8O7dGUgNSBqZXRvbnMu
+        - 16, 116 Do you want to play Voltorb Flip? A game costs 5 Coins.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 117 Oui
-          - 16, 118 Non
+        - - 16, 117 Yes
+          - 16, 118 No
         - 2
         indent: 0
         code: 102
@@ -4320,7 +4269,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 119 Vous n'avez pas assez de jetons.
+        - 16, 119 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4341,8 +4290,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEyMCBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 120 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4419,14 +4367,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEyMSBWb3VsZXotdm91cyBqb3VlciBhdSBWb2x0b3JiYXRhaWxsZSA/IExhIHBhcnRpZSBjb8O7dGUgNSBqZXRvbnMu
+        - 16, 121 Do you want to play Voltorb Flip? A game costs 5 Coins.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 122 Oui
-          - 16, 123 Non
+        - - 16, 122 Yes
+          - 16, 123 No
         - 2
         indent: 0
         code: 102
@@ -4480,7 +4427,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 124 Vous n'avez pas assez de jetons.
+        - 16, 124 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4501,8 +4448,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEyNSBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 125 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4579,14 +4525,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEyNiBWb3VsZXotdm91cyBqb3VlciBhdSBWb2x0b3JiYXRhaWxsZSA/IExhIHBhcnRpZSBjb8O7dGUgNSBqZXRvbnMu
+        - 16, 126 Do you want to play Voltorb Flip? A game costs 5 Coins.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 127 Oui
-          - 16, 128 Non
+        - - 16, 127 Yes
+          - 16, 128 No
         - 2
         indent: 0
         code: 102
@@ -4640,7 +4585,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 129 Vous n'avez pas assez de jetons.
+        - 16, 129 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4661,8 +4606,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEzMCBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 130 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4739,20 +4683,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 131 Voulez-vous jouer aux Ruines Alpha ?
+        - 16, 131 Do you want to play Ruins of Alph?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 132 Oui
-          - 16, 133 Non
+        - - 16, 132 Yes
+          - 16, 133 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 132 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4774,8 +4718,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEzNCBWb3VzIGF2ZXogY29tcGzDqXTDqSBsZSBQdXp6bGUgbnVtw6lybyAxICE=
+        - 16, 134 You have completed Puzzle number 1!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4787,8 +4730,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEzNSBQb3VyIHZvdHJlIHByZW1pw6hyZSB2aWN0b2lyZSwgbm91cyB2b3VzIG9mZnJvbnMgNTAwIGpldG9ucyAh
+        - 16, 135 For your first win, we offer you 500 Coins!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4829,7 +4771,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 133 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5118,20 +5060,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 136 Voulez-vous jouer aux Ruines Alpha ?
+        - 16, 136 Do you want to play Ruins of Alph?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 137 Oui
-          - 16, 138 Non
+        - - 16, 137 Yes
+          - 16, 138 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 137 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5153,8 +5095,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDEzOSBWb3VzIGF2ZXogY29tcGzDqXTDqSBsZSBQdXp6bGUgbnVtw6lybyAyICE=
+        - 16, 139 You have completed Puzzle number 2!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5166,8 +5107,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE0MCBQb3VyIHZvdHJlIHByZW1pw6hyZSB2aWN0b2lyZSwgbm91cyB2b3VzIG9mZnJvbnMgNTAwIGpldG9ucyAh
+        - 16, 140 For your first win, we offer you 500 Coins!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5208,7 +5148,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 138 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5275,20 +5215,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 141 Voulez-vous jouer aux Ruines Alpha ?
+        - 16, 141 Do you want to play Ruins of Alph?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 142 Oui
-          - 16, 143 Non
+        - - 16, 142 Yes
+          - 16, 143 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 142 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5310,8 +5250,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE0NCBWb3VzIGF2ZXogY29tcGzDqXTDqSBsZSBQdXp6bGUgbnVtw6lybyAzICE=
+        - 16, 144 You have completed Puzzle number 3!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5323,8 +5262,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE0NSBQb3VyIHZvdHJlIHByZW1pw6hyZSB2aWN0b2lyZSwgbm91cyB2b3VzIG9mZnJvbnMgNTAwIGpldG9ucyAh
+        - 16, 145 For your first win, we offer you 500 Coins!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5365,7 +5303,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 143 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5432,20 +5370,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 146 Voulez-vous jouer aux Ruines Alpha ?
+        - 16, 146 Do you want to play Ruins of Alph?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 147 Oui
-          - 16, 148 Non
+        - - 16, 147 Yes
+          - 16, 148 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 147 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5467,8 +5405,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE0OSBWb3VzIGF2ZXogY29tcGzDqXTDqSBsZSBQdXp6bGUgbnVtw6lybyA0ICE=
+        - 16, 149 You have completed Puzzle number 4!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5480,8 +5417,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE1MCBQb3VyIHZvdHJlIHByZW1pw6hyZSB2aWN0b2lyZSwgbm91cyB2b3VzIG9mZnJvbnMgNTAwIGpldG9ucyAh
+        - 16, 150 For your first win, we offer you 500 Coins!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5522,7 +5458,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 148 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5589,21 +5525,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE1MSBWb3VsZXotdm91cyBqb3VlciDDoCBsYSBtYWNoaW5lIMOgIHNvdXMgPw==
+        - 16, 151 Do you want to play the Slot machine?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 152 Oui
-          - 16, 153 Non
+        - - 16, 152 Yes
+          - 16, 153 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 152 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5646,7 +5581,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 154 Vous n'avez pas assez de jetons.
+        - 16, 154 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5667,8 +5602,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE1NSBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 155 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5686,7 +5620,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 153 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5745,21 +5679,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE1NiBWb3VsZXotdm91cyBqb3VlciDDoCBsYSBtYWNoaW5lIMOgIHNvdXMgPw==
+        - 16, 156 Do you want to play the Slot machine?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 157 Oui
-          - 16, 158 Non
+        - - 16, 157 Yes
+          - 16, 158 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 157 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5802,7 +5735,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 159 Vous n'avez pas assez de jetons.
+        - 16, 159 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5823,8 +5756,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE2MCBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 160 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5842,7 +5774,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 158 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5901,21 +5833,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE2MSBWb3VsZXotdm91cyBqb3VlciDDoCBsYSBtYWNoaW5lIMOgIHNvdXMgPw==
+        - 16, 161 Do you want to play the Slot machine?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 162 Oui
-          - 16, 163 Non
+        - - 16, 162 Yes
+          - 16, 163 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 162 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5958,7 +5889,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 164 Vous n'avez pas assez de jetons.
+        - 16, 164 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5979,8 +5910,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE2NSBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 165 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5998,7 +5928,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 163 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -6057,21 +5987,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE2NiBWb3VsZXotdm91cyBqb3VlciDDoCBsYSBtYWNoaW5lIMOgIHNvdXMgPw==
+        - 16, 166 Do you want to play the Slot machine?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 167 Oui
-          - 16, 168 Non
+        - - 16, 167 Yes
+          - 16, 168 No
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 167 Yes
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -6114,7 +6043,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 169 Vous n'avez pas assez de jetons.
+        - 16, 169 You don't have enough Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6135,8 +6064,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3MCBJbCB2b3VzIGZhdXQgdW5lIEJvw650ZSBKZXRvbnMgcG91ciBwb3V2b2lyIGpvdWVyICE=
+        - 16, 170 You need a Coin Case to play!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6154,7 +6082,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 168 No
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -6213,8 +6141,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3MSA6W25hbWU9V2FsdmVuXTpRdWUgcXVvaSA/IExlcyBtYWNoaW5lcyBzJ2VmZmFjZW50IGFwcsOocyB1bmUgc2ltcGxlIHV0aWxpc2F0aW9uID8gQ2EgZG9ubmUgcGFzIGVudmllIGRlIHNlIGZvaXJlci4uLg==
+        - 16, 171 :[name=Walven]:Wh-what? The machines turn off after one use? You
+          don't want to mess it up...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6247,46 +6175,41 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3MiA6W25hbWU9V2FsdmVuXTpPaCBwYXJkb24sIGplIGfDqm5lIHBldXQtw6p0cmUgPyBEw6lzb2zDqSwgaidhcnJpdmUgcGFzIMOgIGTDqWNpZGVyIHNpIGplIHRlbnRlIG1hIGNoYW5jZSBvdSBub24uLi4=
+        - 16, 172 :[name=Walven]:Oh excuse-me, was I blocking you?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3MyA6W25hbWU9V2FsdmVuXTpUJ2FzIGwnYWlyIGQnYXZvaXIgdW4gRXhwbG9yYWtpdCwgdCdhcyBwcm9iYWJsZW1lbnQgcGx1cyBkJ2V4cMOpcmllbmNlIHF1ZSBtb2ksIGplIHRlIGxhaXNzZSBsYSBwbGFjZSB2b2xvbnRpZXJzICE=
+        - 16, 173 :[name=Walven]:It looks like you have an Explorer Kit.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3NCA6W25hbWU9V2FsdmVuXTpIdW0gPyBPaCwgdCdhcyBlbnRlbmR1IHBhcmxlciBkZSBtb2kgPyBBaCBtYWlzIG91aSwgdCdlcyBcZltsYSBub3V2ZWxsZcKnbGUgbm91dmVhdV0gTWFrZXIgcsOpY2VtbWVudCBhcnJpdsOpXEUgc3VyIGwnw45sZSAh
+        - 16, 174 :[name=Walven]:Hm? Oh, you've heard about me?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3NSA6W25hbWU9V2FsdmVuXTpDb21tZW50IHNlIHBhc3NlIHRvbiBzw6lqb3VyIGp1c3F1J2ljaSA/
+        - 16, 175 :[name=Walven]:How is your stay going so far?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 176 Bien !
-          - 16, 177 Pas trop mal !
-          - 16, 178 La bouffe laisse à désirer...
+        - - 16, 176 Good!
+          - 16, 177 Not bad!
+          - 16, 178 The food isn't up to par...
         - 0
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Bien !
+        - 16, 176 Good!
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE3OSA6W25hbWU9V2FsdmVuXTpUYW50IG1pZXV4LCBvbiBzJ2VzdCBkb25uw6kgw6AgZm9uZCBwb3VyIHF1ZSB2b3VzIHBhc3NpZXogdW4gYm9uIG1vbWVudC4=
+        - 16, 179 :[name=Walven]:Great! We gave our all so you can enjoy it!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6296,13 +6219,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Pas trop mal !
+        - 16, 177 Not bad!
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4MCA6W25hbWU9V2FsdmVuXTogTWlldXggcXVlIHJpZW4gamUgZGlyYWksIGjDqXNpdGUgcGFzIMOgIG5vdXMgZmFpcmUgZGVzIHJldG91cnMgc2kgdHUgcGVuc2VzIHF1ZSBjZXJ0YWluZXMgY2hvc2VzIHBvdXJyYWllbnQgw6p0cmUgYW3DqWxpb3LDqWVzICE=
+        - 16, 180 :[name=Walven]:That's better than nothing...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6312,14 +6234,13 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - !binary |-
-          TGEgYm91ZmZlIGxhaXNzZSDDoCBkw6lzaXJlci4uLg==
+        - 16, 178 The food isn't up to par...
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4MSA6W25hbWU9V2FsdmVuXTpPdWFpcyBiYWggaGVpbiwgbGVzIE1ha2VycyDDp2Egc2FpdCBmYWlyZSBhdSBtaWV1eCBkZXMgcMOidGVzIGF1IHBhcm1lc2FuLCBkZXMgZ8OidGVhdXggY3JhbcOpcyBldCBkZXMgYnJvd25pZXMgcXVpIHRvdXJuZW50IGF1IGZvbmRhbnQgYXUgY2hvY29sYXQsIG9uIGZhaXQgY2UgcXUnb24gcGV1dC4uLg==
+        - 16, 181 :[name=Walven]:Well huh - at best, makers know how to cook pastas
+          with parmesan, burnt cakes and brownies that look more like chocolate fondants...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6332,38 +6253,34 @@ events:
         code: 404
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4MiA6W25hbWU9V2FsdmVuXTpNYWlzIHRyw6p2ZSBkZSBiYXZhcmRhZ2UsIHNpIHR1IGVzIHZlbnUgbWUgcGFybGVyIGMnZXN0IHF1ZSB0dSB2ZXV4IHLDqWN1cMOpcmVyIG1hIFBpZXJyZSBJbnNvbGl0ZSwgamUgbWUgdHJvbXBlID8=
+        - 16, 182 :[name=Walven]:Enough chit-chat, I guess you came to talk to me
+          to get my Intriguing Stone, right?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4MyA6W25hbWU9V2FsdmVuXTpFdCBwb3VyIMOnYSwgaidhdXJhaSB1biBwZXRpdCBjaGFsbGVuZ2UgcG91ciB0b2ku
+        - 16, 183 :[name=Walven]:If that so, I have a little challenge for you.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 184 :[name=Walven]:J'suis une bille aux jeux d'argents, et y'a un prix
-          dans la boutique de jetons que je veux absolument...
+        - 16, 184 :[name=Walven]:I really suck at gambling, but there's a prize at
+          the Prize corner that I absolutely want...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4NSA6W25hbWU9V2FsdmVuXTpJbCBzJ2FnaXQgZGUgbGEgQ2zDqSBTZWNyw6h0ZS4gTmUgbWUgZGVtYW5kZSBwYXMgY2UgcXVlIGplIHZhaXMgZW4gZmFpcmUgZXQgcG91cnF1b2kgbGEgVG91ciBsYSBtZXQgZW4gdmVudGUgY29udHJlIGRlcyBqZXRvbnMsIGplIG4nYWkgcGFzIGxhIHLDqXBvbnNlIMOgIGNlcyBxdWVzdGlvbnMu
+        - 16, 185 :[name=Walven]:It's the Secret Key.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4NiA6W25hbWU9V2FsdmVuXTpBbcOobmUgbW9pIGxhLCBldCBqZSB0ZSBkb25uZXJhaSBtYSBQaWVycmUgSW5zb2xpdGUu
+        - 16, 186 :[name=Walven]:Bring it to me and I'll give you my Intriguing Stone.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4NyA6W25hbWU9V2FsdmVuXTpKZSB0J2F0dGVuZHJhaSBlbiBiYXMgZGUgY2V0IMOpdGFnZSwgZW4gdHJhaW4gZGUgc2lyb3RlciB1biBwdGl0IGNvY2t0YWlsLg==
+        - 16, 187 :[name=Walven]:I'll be waiting for you over there, enjoying a cocktail.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6456,26 +6373,25 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE4OCA6W25hbWU9V2FsdmVuXTouLi4gQydlc3QgYmllbiBjZSBxdWUgamUgcGVuc2UgPyBDJ2VzdCBsYSBDbMOpIFNlY3LDqHRlID8gQ2hhcGVhdSBsJ2FtaVxFLCB0J2VzIHVuXEUgdnJhaVxFIGFjY3JvIGF1eCBqZXV4ICE=
+        - 16, 188 :[name=Walven]:... Is that it? The Secret Key?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 189 :[name=Walven]:Tu veux bien me la donner du coup ?
+        - 16, 189 :[name=Walven]:Would you mind giving it to me?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 190 Oui
-          - 16, 191 Non
+        - - 16, 190 Yes
+          - 16, 191 No
         - 2
         indent: 1
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Oui
+        - 16, 190 Yes
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -6485,8 +6401,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 192 :[name=Walven]:Merci infiniment ! Laisse moi m'assurer que la marchandise
-          est bonne...
+        - 16, 192 :[name=Walven]:Thanks a lot!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6496,8 +6411,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 193 :[name=Walven]:Y'a pas de doute, c'est pas une fausse ! Je cours
-          l'utiliser de suite ! Tchao !
+        - '16, 193 :[name=Walven]:No doubt: it''s not fake!'
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6563,8 +6477,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE5NCBPbiBkaXJhaXQgcXUnaWwgdm91cyBhIG91Ymxpw6kuLi4=
+        - 16, 194 It looks like he forgot you...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6624,8 +6537,7 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE5NSA6W25hbWU9V2FsdmVuXTpQQVJET04sIEonQUkgT1VCTEnDiSBERSBURSBET05ORVIgw4dBICE=
+        - 16, 195 :[name=Walven]:SORRY I FORGOT TO GIVE YOU THAT!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6635,7 +6547,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 196 :[name=Walven]:VOILA, LA BISE !
+        - 16, 196 :[name=Walven]:THERE YOU GO, KISS!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6691,18 +6603,17 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Non
+        - 16, 191 No
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 197 :[name=Walven]:Je comprends, c'est un objet d'une valeur inestimable...
-          Du moins pour moi.
+        - 16, 197 :[name=Walven]:I get it, it's a priceless item...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 198 :[name=Walven]:Je serai ici si tu changes d'avis.
+        - 16, 198 :[name=Walven]:I'll be there if you change your mind.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6723,8 +6634,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDE5OSA6W25hbWU9V2FsdmVuXTpBbG9ycywgdHUgdCdhbXVzZXMgPyBIw6lzaXRlIHBhcyDDoCBmYWlyZSBkZXMgcGF1c2VzLCBsJ2FkZGljdGlvbiBhdXggamV1eCBkJ2FyZ2VudHMgZXN0IHVuIHbDqXJpdGFibGUgZmzDqWF1IGRhbnMgbm90cmUgc29jacOpdMOpLg==
+        - 16, 199 :[name=Walven]:Having fun?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6827,8 +6737,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIwMCBKZSBzdWlzIGVuIHJlbmRlei12b3VzIGF2ZWMgbWEgbW9pdGnDqSwgbWFpcyBqJ2FpIGwnaW1wcmVzc2lvbiBxdSdlbGxlIG5lIHNlIHBsYcOudCBwYXMgdHJvcCBpY2kuLi4=
+        - 16, 200 I'm on a date with my fiancée, but it looks like she's not liking
+          this place that much...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6879,8 +6789,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIwMSBKZSBzdWlzIGVuIHJlbmRlei12b3VzIGF2ZWMgbWEgbW9pdGnDqSwgbWFpcyBwb3VyIMOqdHJlIGZyYW5jaGUsIGonYXVyYWlzIHByw6lmw6lyw6kgdW4gcGlxdWUtbmlxdWUgw6AgbCfDqXRhZ2UgZGUgbGEgUHJhaXJpZSBydWlzc2VsYW50ZS4uLg==
+        - 16, 201 I'm on a date with my fiancé, but to be honest, I'd had prefer a
+          picnic on the Prairie Stream...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6931,54 +6841,50 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIwMiBCaWVudmVudWUgXGZbY2jDqHJlIGpvdWV1c2XCp2NoZXIgam91ZXVyXSBkYW5zIG5vdHJlIGh1bWJsZSDDqXRhYmxpc3NlbWVudCAh
+        - 16, 202 Welcome, dear Player, to our humble institution.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIwMyBRdWUgZMOpc2lyZXotdm91cyA/
+        - 16, 203 How can I help you?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 204 Acheter des jetons
-          - 16, 205 Explication des machines
-          - 16, 206 J'ai changé d'avis
+        - - 16, 204 Buy Coins
+          - 16, 205 Explanations on the machines
+          - 16, 206 I changed my mind
         - 3
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Acheter des jetons
+        - 16, 204 Buy Coins
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 207 Bien entendu. Nous vendons un pack de 50 jetons pour 1000$, et un
-          pack de 500 jetons pour 10000$.
+        - 16, 207 All right.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIwOCBMZXF1ZWwgZMOpc2lyZXotdm91cyBhY2hldGVyID9cRw==
+        - 16, 208 Which one would you like?\G
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - '16, 209 50 jetons : 1000$'
-          - '16, 210 500 jetons : 10000$'
-          - 16, 211 J'ai changé d'avis
+        - - '16, 209 50 Coins: 1000$'
+          - '16, 210 500 Coins: 10000$'
+          - 16, 211 I changed my mind
         - 3
         indent: 1
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - '50 jetons : 1000$'
+        - '16, 209 50 Coins: 1000$'
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -6998,7 +6904,7 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 212 Voici vos jetons, merci de votre achat.
+        - 16, 212 Your Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7027,8 +6933,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIxMyBKZSBzdWlzIG5hdnLDqSwgaWwgc2VtYmxlcmFpdCBxdWUgdm91cyBuJ2F2ZXogcGFzIGxlcyBmb25kcyBzdWZmaXNhbnRzIHBvdXIgY2V0dGUgdHJhbnNhY3Rpb24uLi4gUmV2ZW5leiBsb3JzcXVlIHZvdXMgYXVyZXogYXNzZXogPw==
+        - 16, 213 I'm sorry, it looks like you don't have enough money for this purchase...
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7046,7 +6951,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - '500 jetons : 10000$'
+        - '16, 210 500 Coins: 10000$'
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -7066,7 +6971,7 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 214 Voici vos jetons, merci de votre achat.
+        - 16, 214 Your Coins.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7095,8 +7000,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIxNSBKZSBzdWlzIG5hdnLDqSwgaWwgc2VtYmxlcmFpdCBxdWUgdm91cyBuJ2F2ZXogcGFzIGxlcyBmb25kcyBzdWZmaXNhbnRzIHBvdXIgY2V0dGUgdHJhbnNhY3Rpb24uLi4gUmV2ZW5leiBsb3JzcXVlIHZvdXMgYXVyZXogYXNzZXogPw==
+        - 16, 215 I'm sorry, it looks like you don't have enough money for this purchase...
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7114,8 +7018,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - !binary |-
-          SidhaSBjaGFuZ8OpIGQnYXZpcw==
+        - 16, 211 I changed my mind
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -7138,49 +7041,48 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Explication des machines
+        - 16, 205 Explanations on the machines
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIxNiBCaWVuIHPDu3IgISBOb3VzIHBvc3PDqWRvbnMgYWN0dWVsbGVtZW50IDMgbWFuacOocmVzIGRlIHZvdXMgZGl2ZXJ0aXIu
+        - 16, 216 Of course! We can entertain you in four ways.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIxNyBMYSBwcmVtacOocmUgZXN0IGxlIFZvbHRvcmJhdGFpbGxlLCB1bmUgc29ydGUgZGUgZMOpbWluZXVyIHF1aSBtZXR0cmEgdm9zIG5lcmZzIMOgIHJ1ZGUgw6lwcmV1dmUu
+        - 16, 217 The first one is Voltorb Flip, a kind of minesweeper that will test
+          your nerves to their limit.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIxOCBMYSBkZXV4acOobWUgZXN0IGxhIG1hY2hpbmUgw6Agc291cy4gSW5zw6lyZXogZGVzIGpldG9ucywgbGFuY2V6IGxhIG1hY2hpbmUsIGV0IGFjdGlvbm5leiBsZXMgbGV2aWVycyBwb3VyIHN0b3BwZXIgbGEgbWFjaGluZS4gVm91cyB5IHJlc3NlbnRpcmV6IGxlcyBmcmlzc29ucyBkZSBsJ2F0dGVudGUgZCd1biBjb21ibyBnYWduYW50ICE=
+        - 16, 218 The third one is the Slot machine.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIxOSBQb3VyIGZpbmlyLCBub3VzIGF2b25zIHVuIGpldSB1biBwZXUgcGFydGljdWxpZXIsIGluc3BpcsOpIGRlcyBzb3V0ZXJyYWlucyBkZSBsYSByw6lnaW9uIGRlIFNpbm5vaCA6IGxlIGpldSBkZSBtaW5hZ2UuIENlIGpldSBuZSByZXF1acOocmUgcGFzIGRlIGpldG9uIGV0IG5lIHZvdXMgZW4gZG9ubmVyYSBwYXMgbm9uIHBsdXMgZW4gcsOpY29tcGVuc2UsIG1haXMgaWwgdm91cyBwZXJtZXR0cmEgZCdvYnRlbmlyIGRlIGZhYnVsZXV4IG9iamV0cywgY2FkZWF1eCBkZSBsYSBtYWlzb24gIQ==
+        - '16, 219 Finally, we have quite a special game, based on Sinnoh''s Undergrounds:
+          the Mining Game.'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyMCBOZSB2b3VzIMOpdG9ubmV6IHBhcyBzaSBsZXMgbWFjaGluZXMgdm91cyBwYXJsZW50IGRlICJtdXJzIiBvdSBkZSAicm9jaGVycyIsIG5vdXMgYXZvbnMganVzdGUgdm91bHUgw6p0cmUgYXUgcGx1cyBwcm9jaGUgZGVzIGNvbmRpdGlvbnMgcsOpZWxsZXMgc2kgdm91cyBsJ3V0aWxpc2lleiBzdXIgdm90cmUgcHJvamV0Lg==
+        - 16, 220 Don't be surprised if the machines talk about "walls" and "rocks",
+          we just wanted to be as close as the real conditions if you were to use
+          them on your project.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyMSBEZSBtw6ptZSwgY2hhcXVlIG1hY2hpbmUgYSBzYSBwcm9wcmUgY29uZmlndXJhdGlvbiA6IGxlcyBtYWNoaW5lcyBkZSBnYXVjaGUgc29udCBkZXMgbWFjaGluZXMgcGVybWFuZW50ZXMgYXZlYyBkZXMgcGFyYW3DqHRyZXMgc2ltcGxlcywgbGVzIG1hY2hpbmVzIGRlIGRyb2l0ZSBzb250IGRlcyBtYWNoaW5lcyBxdWkgbmUgZm9uY3Rpb25uZXJvbnQgcXUndW5lIGZvaXMgYXZlYyBkZXMgcGFyYW3DqHRyZXMgdHLDqHMgc3DDqWNpZmlxdWVzICE=
+        - '16, 221 Besides, each machine has its own configuration: on the left, the
+          machines are permanent with simple settings, while those on the right will
+          only work once and have very specific settings! '
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyMiBKZSB2b3VzIHNvdWhhaXRlIGRlIHBhc3NlciB1biBhZ3LDqWFibGUgbW9tZW50IGRhbnMgbm90cmUgZXNwYWNlIGRlIGpldXgu
+        - 16, 222 I wish you a very pleasant moment in our Game Corner.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7190,8 +7092,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - !binary |-
-          SidhaSBjaGFuZ8OpIGQnYXZpcw==
+        - 16, 206 I changed my mind
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -7201,8 +7102,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyMyBUcsOocyBiaWVuLCBqZSB2b3VzIHNvdWhhaXRlIHVuZSBhZ3LDqWFibGUgam91cm7DqWUgZGFucyBub3RyZSDDqXRhYmxpc3NlbWVudCAh
+        - 16, 223 Very well, have a nice day in our establishment.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7315,14 +7215,12 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyNCBCaWVudmVudWUgZGFucyBub3RyZSBodW1ibGUgw6l0YWJsaXNzZW1lbnQgISBKZSBjb25zdGF0ZSBxdWUgYydlc3Qgdm90cmUgcHJlbWnDqHJlIHZpc2l0ZSBpY2ksIGplIHZhaXMgZG9uYyBtZSBwZXJtZXR0cmUgZGUgdm91cyBwcsOpc2VudGVyIGxlcyBsaWV1eC4g
+        - 16, 224 Welcome in our humble institution!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 225 Mais tout d'abord, je me dois de vous remettre ceci, en gage de
-          bienvenue.
+        - 16, 225 First of all, I must give you that, as a welcome gift.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7337,44 +7235,41 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyNiBDZXR0ZSBCb8OudGUgSmV0b24gdm91cyBwZXJtZXR0cmEgZGUgc3RvY2tlciB2b3MgamV0b25zIGR1cmVtZW50IGdhZ27DqXMgbG9ycyBkZSB2b3MgcGFydGllcyBlbiBjZSBsaWV1Lg==
+        - 16, 226 This Coin Case can stock your hard-earned Coins.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyNyBFbiBjZSBxdWkgY29uY2VybmUgbGVzIGpldXggw6AgZGlzcG9zaXRpb24sIG5vdXMgcG9zc8OpZG9ucyBhY3R1ZWxsZW1lbnQgMyBtYW5pw6hyZXMgZGUgdm91cyBkaXZlcnRpci4=
+        - 16, 227 As for the games you can find, we actually offer four ways of entertainment.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyOCBMYSBwcmVtacOocmUgZXN0IGxlIFZvbHRvcmJhdGFpbGxlLCB1bmUgc29ydGUgZGUgZMOpbWluZXVyIHF1aSBtZXR0cmEgdm9zIG5lcmZzIMOgIHJ1ZGUgw6lwcmV1dmUu
+        - 16, 228 The first one is Voltorb Flip, a kind of minesweeper that will test
+          your nerves to their limit.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIyOSBMYSBkZXV4acOobWUgZXN0IGxhIG1hY2hpbmUgw6Agc291cy4gSW5zw6lyZXogZGVzIGpldG9ucywgbGFuY2V6IGxhIG1hY2hpbmUsIGV0IGFjdGlvbm5leiBsZXMgbGV2aWVycyBwb3VyIHN0b3BwZXIgbGEgbWFjaGluZS4gVm91cyB5IHJlc3NlbnRpcmV6IGxlcyBmcmlzc29ucyBkZSBsJ2F0dGVudGUgZCd1biBjb21ibyBnYWduYW50ICE=
+        - 16, 229 The second one is the "Ruins of Alph" machine, based on the puzzles
+          you can find in Johto.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzMCBMYSB0cm9pc2nDqG1lIGVzdCBsYSBtYWNoaW5lIMOgICJSdWluZXMgQWxwaGEiLiBFbGxlIHMnaW5zcGlyZSBkZXMgZmFtZXV4IHB1enpsZXMgZGVzIFJ1aW5lcyBBbHBoYSBkZSBsYSByw6lnaW9uIGRlIEpvaHRvLiBFbGxlIHZvdXMgZGVtYW5kZXJhIGQndXNlciBkZSB2b3RyZSBsb2dpcXVlIHBvdXIgcsOpYXNzZW1ibGVyIGxlIHB1enpsZS4=
+        - 16, 230 The third one is the Slot machine.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzMSBQb3VyIGZpbmlyLCBub3VzIGF2b25zIHVuIGpldSB1biBwZXUgcGFydGljdWxpZXIsIGluc3BpcsOpIGRlcyBzb3V0ZXJyYWlucyBkZSBsYSByw6lnaW9uIGRlIFNpbm5vaCA6IGxlIGpldSBkZSBtaW5hZ2UuIENlIGpldSBuZSByZXF1aWVydCBwYXMgZGUgamV0b24gZXQgbmUgdm91cyBlbiBkb25uZXJhIHBhcyBub24gcGx1cyBlbiByw6ljb21wZW5zZSwgbWFpcyBpbCB2b3VzIHBlcm1ldHRyYSBkJ29idGVuaXIgZGUgZmFidWxldXggb2JqZXRzLCBjYWRlYXV4IGRlIGxhIG1haXNvbiAh
+        - '16, 231 Finally, we have quite a special game, based on Sinnoh''s Undergrounds:
+          the Mining Game.'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 232 Il vous faut cependant un Explorakit pour l'actionner, je vais donc
-          vous en fournir un.
+        - 16, 232 However, you need an Explorer Kit to play it, so I will give you
+          one.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7389,20 +7284,21 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzMyBOZSB2b3VzIMOpdG9ubmV6IHBhcyBzaSBsZXMgbWFjaGluZXMgdm91cyBwYXJsZW50IGRlICJtdXJzIiBvdSBkZSAicm9jaGVycyIsIG5vdXMgYXZvbnMganVzdGUgdm91bHUgw6p0cmUgYXUgcGx1cyBwcm9jaGUgZGVzIGNvbmRpdGlvbnMgcsOpZWxsZXMgc2kgdm91cyBsJ3V0aWxpc2lleiBzdXIgdm90cmUgcHJvamV0Lg==
+        - 16, 233 Don't be surprised if the machines talk about "walls" and "rocks",
+          we just wanted to be as close as the real conditions if you were to use
+          them on your project.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzNCBEZSBtw6ptZSwgY2hhcXVlIG1hY2hpbmUgYSBzYSBwcm9wcmUgY29uZmlndXJhdGlvbiA6IGxlcyBtYWNoaW5lcyBkZSBnYXVjaGUgc29udCBkZXMgbWFjaGluZXMgcGVybWFuZW50ZXMgYXZlYyBkZXMgcGFyYW3DqHRyZXMgc2ltcGxlcywgbGVzIG1hY2hpbmVzIGRlIGRyb2l0ZSBzb250IGRlcyBtYWNoaW5lcyBxdWkgbmUgZm9uY3Rpb25uZXJvbnQgcXUndW5lIGZvaXMgYXZlYyBkZXMgcGFyYW3DqHRyZXMgdHLDqHMgc3DDqWNpZmlxdWVzICE=
+        - '16, 234 Besides, each machine has its own configuration: on the left, the
+          machines are permanent with simple settings, while those on the right will
+          only work once and have very specific settings! '
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzNSBQb3VyIMOpY2hhbmdlciB2b3MgamV0b25zIGNvbnRyZSBkZXMgcsOpY29tcGVuc2VzLCBhZHJlc3Nlei12b3VzIGF1eCBndWljaGV0cyBqdXN0ZSBsw6Au
+        - 16, 235 To exchange Coins for prize, head towards the counters over there.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7413,8 +7309,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzNiBQb3VyIGZpbmlyLCBzaSB2b3VzIGF2ZXogdW4gQ2hlcmNoJ09iamV0LCBqZSBuZSBwZXV4IHF1ZSB2b3VzIGNvbnNlaWxsZXogZGUgbCd1dGlsaXNlci4gUGFyZm9pcywgY2VydGFpbnMgY2xpZW50cyB1biBwZXUgcHJlc3PDqSBmb250IHRvbWJlciBxdWVscXVlcyBqZXRvbnMgYXUgc29sLi4u
+        - 16, 236 To finish off, if you appear to have a Dowsing Machine, I can only
+          adivse you to use it.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7427,8 +7323,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzNyBFbmZpbiwgcG91ciBmaW5pciwgc2FjaGV6IHF1ZSBjZXJ0YWlucyBjbGllbnRzIGZvbnQgcGFyZm9pcyB0b21iZXIgcXVlbHF1ZXMgdW5zIGRlIGxldXJzIGpldG9ucyBhdSBzb2wuIFRlbmV6LCBqZSB2b3VzIG9mZnJlIHVuIENoZXJjaCdPYmpldCBwb3VyIGxlcyByw6ljdXDDqXJlci4=
+        - 16, 237 To finish off, you should know that our customers sometimes drop
+          a few Coins on the floor.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7446,14 +7342,12 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzOCBDZWxhIHBvdXJyYWl0IHZvdXMgYWlkZXIgw6AgY29uc3RpdHVlciB1bmUgbWlzZSBkZSBkw6lwYXJ0IHNhbnMgYXZvaXIgw6AgZMOpcGVuc2VyIGQnYXJnZW50LiBCaWVuIGVudGVuZHUsIGNlbGEgcmVzdGUgZW50cmUgbm91cywgbidhbGxleiBwYXMgbGUgcsOpcMOpdGVyIMOgIG1lcyByZXNwb25zYWJsZXMuIEplIHZvdXMgbGUgZGlzIGNhciB2b3VzIG1lIHNlbWJsZXogYmllbiBhaW1hYmxlLg==
+        - 16, 238 It can help you gather some Coins without spending money on it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDIzOSBKZSB2b3VzIHNvdWhhaXRlIGRlIHBhc3NlciB1biBhZ3LDqWFibGUgbW9tZW50IGRhbnMgbm90cmUgZXNwYWNlIGRlIGpldXgu
+        - 16, 239 I wish you a very pleasant moment in our Game Corner.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7530,34 +7424,32 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI0MCBCb25qb3VyIFxuWzFdLCBzb3lleiBcZltsYcKnbGVdIGJpZW52ZW51XEUgw6AgbCdlc3BhY2UgZCfDqWNoYW5nZSBkdSBDYXNpbm8gIQ==
+        - 16, 240 Hello, and welcome to our Prize Corner!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI0MSBOb3VzIMOpY2hhbmdlb25zIHZvcyBqZXRvbnMgY29udHJlIGRlIGZhYnVsZXV4IFBva8OpbW9uLCDDqWxldsOpcyBhdmVjIGFtb3VyIGV0IGRhbnMgbGUgcmVzcGVjdCBkZXMgbG9pcyBpbnRlcm5hdGlvbmFsZXMgYmllbiBlbnRlbmR1Li4u
+        - 16, 241 We exchange Coins for remarkable Pokémon, trained with love and
+          in compliance with international law...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI0MiBRdWVsIFBva8OpbW9uIGTDqXNpcmV6LXZvdXMgPw==
+        - 16, 242 Which Pokémon would you like?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 243 Draby
-          - 16, 244 Griknot
-          - 16, 245 Coupenotte
+        - - 16, 243 Bagon
+          - 16, 244 Gible
+          - 16, 245 Axew
         - 5
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Draby
+        - 16, 243 Bagon
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -7571,13 +7463,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 246 Un Draby pour 1000 jetons. Cela vous convient ?
+        - 16, 246 A Bagon for 1000 Coins.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 247 Oui
-          - 16, 248 Non
+        - - 16, 247 Yes
+          - 16, 248 No
         - 2
         indent: 2
         code: 102
@@ -7589,7 +7481,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 249 Merci de votre achat ! Voici votre Draby !
+        - 16, 249 Thank you for your purchase!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7639,14 +7531,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI1MCBEw6lzb2zDqSwgbWFpcyBpbCBzZW1ibGVyYWl0IHF1ZSB2b3VzIG4nYXlleiBwYXMgYXNzZXogZGUgamV0b25zLi4u
+        - 16, 250 Sorry, but it looks like you don't have enough Coins...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI1MSBOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHF1YW5kIHZvdXMgZW4gYXVyZXogYXNzZXogIQ==
+        - 16, 251 Please come back when you'll have enough.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7664,7 +7554,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Griknot
+        - 16, 244 Gible
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -7678,13 +7568,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 252 Un Griknot pour 1000 jetons. Cela vous convient ?
+        - 16, 252 A Gible for 1000 Coins.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 253 Oui
-          - 16, 254 Non
+        - - 16, 253 Yes
+          - 16, 254 No
         - 2
         indent: 2
         code: 102
@@ -7696,7 +7586,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 255 Merci de votre achat ! Voici votre Griknot !
+        - 16, 255 Thank you for your purchase!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7746,14 +7636,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI1NiBEw6lzb2zDqSwgbWFpcyBpbCBzZW1ibGVyYWl0IHF1ZSB2b3VzIG4nYXlleiBwYXMgYXNzZXogZGUgamV0b25zLi4u
+        - 16, 256 Sorry, but it looks like you don't have enough Coins...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI1NyBOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHF1YW5kIHZvdXMgZW4gYXVyZXogYXNzZXogIQ==
+        - 16, 257 Please come back when you'll have enough.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7771,7 +7659,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Coupenotte
+        - 16, 245 Axew
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -7785,13 +7673,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 258 Un Coupenotte pour 1000 jetons. Cela vous convient ?
+        - 16, 258 An Axew for 1000 Coins.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 259 Oui
-          - 16, 260 Non
+        - - 16, 259 Yes
+          - 16, 260 No
         - 2
         indent: 2
         code: 102
@@ -7803,7 +7691,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 261 Merci de votre achat ! Voici votre Coupenotte !
+        - 16, 261 Thank you for your purchase!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7853,14 +7741,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI2MiBEw6lzb2zDqSwgbWFpcyBpbCBzZW1ibGVyYWl0IHF1ZSB2b3VzIG4nYXlleiBwYXMgYXNzZXogZGUgamV0b25zLi4u
+        - 16, 262 Sorry, but it looks like you don't have enough Coins...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI2MyBOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHF1YW5kIHZvdXMgZW4gYXVyZXogYXNzZXogIQ==
+        - 16, 263 Please come back when you'll have enough.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7886,8 +7772,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI2NCBBIHVuZSBwcm9jaGFpbmUgZm9pcyBwZXV0LcOqdHJlICE=
+        - 16, 264 See you soon!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7946,14 +7831,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI2NSBCb25qb3VyIFxuWzFdLCBzb3lleiBcZltsYcKnbGVdIGJpZW52ZW51XEUgw6AgbCdlc3BhY2UgZCfDqWNoYW5nZSBkdSBDYXNpbm8gIQ==
+        - 16, 265 Hello, and welcome to our Prize Corner!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI2NiBPbiDDqWNoYW5nZSBsZXMgamV0b25zIGNvbnRyZSBkZSBmYWJ1bGV1eCBwcml4ICE=
+        - 16, 266 We exchange Coins for fantastic prize!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7963,18 +7846,17 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"16, 305 Super Bonbon : 500", '
+        - '"16, 305 Rare Candy: 500", '
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjE2LCAzMDYgUMOpcGl0ZSA6IDEwMDAiLCA=
+        - '"16, 306 Nugget: 1000", '
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"16, 307 Master Ball : 3000"'
+        - '"16, 307 Master Ball: 3000"'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -7984,8 +7866,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Y2hvaWNlcyA8PCAiMTYsIDMwOCBDbMOpIFNlY3LDqHRlIDogMTAwMCIgdW5sZXNzIGdldF9zZWxmX3N3aXRjaCgiQSIp
+        - 'choices << "16, 308 Secret Key: 1000" unless get_self_switch("A")'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -7995,8 +7876,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI2NyBRdWVsIHByaXggZMOpc2lyZXotdm91cyA/
+        - 16, 267 Which prize would you like?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8019,13 +7899,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 268 Un Super Bonbon pour 500 jetons. Cela vous convient ?
+        - 16, 268 A Rare Candy for 500 Coins.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 269 Oui
-          - 16, 270 Non
+        - - 16, 269 Yes
+          - 16, 270 No
         - 2
         indent: 2
         code: 102
@@ -8037,7 +7917,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 271 Merci de votre achat ! Voici votre Super Bonbon !
+        - 16, 271 Thank you for your purchase!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8087,14 +7967,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI3MiBEw6lzb2zDqSwgbWFpcyBpbCBzZW1ibGVyYWl0IHF1ZSB2b3VzIG4nYXlleiBwYXMgYXNzZXogZGUgamV0b25zLi4u
+        - 16, 272 Sorry, but it looks like you don't have enough Coins...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI3MyBOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHF1YW5kIHZvdXMgZW4gYXVyZXogYXNzZXogIQ==
+        - 16, 273 Please come back when you'll have enough.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8133,14 +8011,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI3NCBVbmUgUMOpcGl0ZSBwb3VyIDEwMDAgamV0b25zLiBDZWxhIHZvdXMgY29udmllbnQgPw==
+        - 16, 274 A Nugget for 1000 Coins.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 275 Oui
-          - 16, 276 Non
+        - - 16, 275 Yes
+          - 16, 276 No
         - 2
         indent: 2
         code: 102
@@ -8152,8 +8029,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI3NyBNZXJjaSBkZSB2b3RyZSBhY2hhdCAhIFZvaWNpIHZvdHJlIFDDqXBpdGUgIQ==
+        - 16, 277 Thank you for your purchase!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8203,14 +8079,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI3OCBEw6lzb2zDqSwgbWFpcyBpbCBzZW1ibGVyYWl0IHF1ZSB2b3VzIG4nYXlleiBwYXMgYXNzZXogZGUgamV0b25zLi4u
+        - 16, 278 Sorry, but it looks like you don't have enough Coins...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI3OSBOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHF1YW5kIHZvdXMgZW4gYXVyZXogYXNzZXogIQ==
+        - 16, 279 Please come back when you'll have enough.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8249,13 +8123,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 280 Une Master Ball pour 3000 jetons. Cela vous convient ?
+        - 16, 280 A Master Ball for 3000 Coins.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 281 Oui
-          - 16, 282 Non
+        - - 16, 281 Yes
+          - 16, 282 No
         - 2
         indent: 2
         code: 102
@@ -8267,7 +8141,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 283 Merci de votre achat ! Voici votre Master Ball !
+        - 16, 283 Thank you for your purchase!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8317,14 +8191,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI4NCBEw6lzb2zDqSwgbWFpcyBpbCBzZW1ibGVyYWl0IHF1ZSB2b3VzIG4nYXlleiBwYXMgYXNzZXogZGUgamV0b25zLi4u
+        - 16, 284 Sorry, but it looks like you don't have enough Coins...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI4NSBOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHF1YW5kIHZvdXMgZW4gYXVyZXogYXNzZXogIQ==
+        - 16, 285 Please come back when you'll have enough.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8363,14 +8235,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI4NiBVbmUgQ2zDqSBTZWNyw6h0ZSBwb3VyIDEwMDAgamV0b25zLiBDZWxhIHZvdXMgY29udmllbnQgPyBDJ2VzdCBsZSBzZXVsIGV4ZW1wbGFpcmUgcXVlIG5vdXMgYXZvbnMgIQ==
+        - 16, 286 A Secret Key for 1000 Coins. Is that fine?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 16, 287 Oui
-          - 16, 288 Non
+        - - 16, 287 Yes
+          - 16, 288 No
         - 2
         indent: 2
         code: 102
@@ -8382,8 +8253,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI4OSBNZXJjaSBkZSB2b3RyZSBhY2hhdCAhIFZvaWNpIHZvdHJlIENsw6kgU2VjcsOodGUgIQ==
+        - 16, 289 Thank you for your purchase!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8444,14 +8314,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI5MCBEw6lzb2zDqSwgbWFpcyBpbCBzZW1ibGVyYWl0IHF1ZSB2b3VzIG4nYXlleiBwYXMgYXNzZXogZGUgamV0b25zLi4u
+        - 16, 290 Sorry, but it looks like you don't have enough Coins...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI5MSBOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHF1YW5kIHZvdXMgZW4gYXVyZXogYXNzZXogIQ==
+        - 16, 291 Please come back when you'll have enough.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8486,8 +8354,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI5MiBBIHVuZSBwcm9jaGFpbmUgZm9pcyBwZXV0LcOqdHJlICE=
+        - 16, 292 See you soon!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8546,8 +8413,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI5MyBTaSBqZSB0b3VjaGUgbGUgamFja3BvdCwgamUgcG91cnJhaXMgZW5maW4gcXVpdHRlciBsYSBUZWFtIFJvY2tldCBldCBwYXJ0aXIgbSdpbnN0YWxsZXIgYXV4IMOubGVzIE1hc2Nhw69tYW4gIQ==
+        - 16, 293 If I hit the jackpot, I'll finally be able to leave Team Rocket
+          and go settle in the Totodile Islands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8557,8 +8424,7 @@ events:
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTYsIDI5NSBadXQsIGVuY29yZSByYXTDqSAh
+        - 16, 295 Darn, I missed again!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8706,7 +8572,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 301 \N[1] trouve 25 jetons !
+        - 16, 301 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8771,7 +8637,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 302 \N[1] trouve 25 jetons !
+        - 16, 302 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8836,7 +8702,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 303 \N[1] trouve 25 jetons !
+        - 16, 303 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8901,7 +8767,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 16, 304 \N[1] trouve 25 jetons !
+        - 16, 304 \N[1] found 25 Coins!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

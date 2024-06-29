@@ -342,8 +342,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDAgTm90ZSA6IGlsIGVzdCBwb3NzaWJsZSBkJ2FmZmljaGVyIGxhIGZlbsOqdHJlIGRlIG1lc3NhZ2UgYWlsbGV1cnMgc3VyIGwnw6ljcmFuIChoYXV0LCBtaWxpZXUsIGJhcywgZ2F1Y2hlLCBkcm9pdGUsIGNvb3Jkb25uw6llcyBwZXJzb25uYWxpc8OpZXMuLi4pIGF2ZWMgbGEgY29tbWFuZGU=
+        - '14, 0 Note: you can display messages on other parts of the screen (top,
+          middle, bottom, left, right, custom coordinates...) with "\c[5]position_overwrite\c[0]".'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -399,8 +399,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDEgQmllbnZlbnVlIGRhbnMgbGEgQmlibGlvdGjDqHF1ZSBkZSBsYSBUb3VyICE=
+        - 14, 1 Welcome to the Tower's Library!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -420,7 +419,7 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 2 :[lookto=9]:Sur votre gauche : des livres...'
+        - '14, 2 :[lookto=9]:On your left: books...'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -430,13 +429,13 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 3 :[lookto=8]:Et sur votre droite aussi !
+        - 14, 3 :[lookto=8]:And on your right too!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQgOltsb29rdG89MTFdOkdyw6JjZSDDoCBsYSBjb21tYW5kZSBcY1s1XVtsb29rdG9dIFxjWzBdamUgcGV1eCB2b3VzIGZhaXJlIHJlZ2FyZGVyIHZlcnMgbidpbXBvcnRlIHF1ZWwgw6l2w6huZW1lbnQgIQ==
+        - 14, 4 :[lookto=11]:Thanks to \c[5]"[lookto=N]"\c[0], I can make you look
+          towards any event!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -497,19 +496,18 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDUgQm9uam91ciBcblsxXSwgc295ZXogXGZbbGHCp2xlXSBiaWVudmVudVxFIMOgIGxhIEJpYmxpb3Row6hxdWUgZGUgbGEgVG91ciAh
+        - 14, 5 Hello \N[1]! You're the \f[heroine§hero] of this demo!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 6 J'affiche votre nom en utilisant \c[5]\\n[1]\c[0] dans mon message.
+        - 14, 6 I can display your name by putting \c[5]"\\n[1]"\c[0] in my message.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDcgRCdhaWxsZXVycywgamUgbSdhZGFwdGUgw6Agdm90cmUgZ2VucmUgYXZlYyBcY1s1XVxcRVxjWzBdIHBvdXIgYWpvdXRlciB1biAiRSIgw6AgbGEgZmluIGQndW4gbW90LCBldCBhdmVjIFxjWzVdXFxmW0bCp01dXGNbMF0gcG91ciBhZmZpY2hlciBkZXV4IG1vdHMgZGlmZsOpcmVudHMgZW4gZm9uY3Rpb24g
+        - 14, 7 By the way, I can adapt to your gender with \c[5]"\\f[F§M]"\c[0] to
+          display two different words depending on the appearance you chose.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -535,14 +533,12 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDggSmUgY29ubmFpcyBhdXNzaSBsZXMgbm9tcyBkZSB2b3MgUG9rw6ltb24gIQ==
+        - 14, 8 I know the names of your Pokémon as well!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDkgUGFyIGV4ZW1wbGUsIGVuIHByZW1pw6hyZSBwbGFjZSBkZSB2b3RyZSDDiXF1aXBlLCB2b3VzIGF2ZXogXHBbMV0u
+        - 14, 9 For instance, the first Pokémon of your Party is \c[27]\p[1]\c[0].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -612,19 +608,19 @@ events:
         code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 10 Bonjour ! Je vois que vous avez \v[26]$.
+        - 14, 10 Hello! I can see you currently have \v[26]$.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDExIEplIGxlIHNhaXMgZ3LDomNlIMOgIGxhIGZvbmN0aW9uIFxjWzVdXFx2Wy4uLl1cY1swXSwgcXVpIHBlcm1ldCBkJ2FmZmljaGVyIHVuZSB2YXJpYWJsZSBhdSBzZWluIGQndW4gbWVzc2FnZS4=
+        - 14, 11 I know it thanks to the \c[5]"\\v[...]"\c[0] command, that displays
+          a variable inside a message.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDEyIEVuIGwnb2NjdXJyZW5jZSwgaidhaSByZW5kdSBsYSB2YXJpYWJsZSB0ZW1wb3JhaXJlIDI2IMOpZ2FsZSDDoCBsYSBzb21tZSBkJ2FyZ2VudCBxdWUgdm91cyBwb3Nzw6lkZXou
+        - 14, 12 In this case, I made the temporary variable 26 equal to the money
+          you have.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -644,14 +640,14 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDEzIFxnTWFpcyBqZSBwZXV4IGF1c3NpIGFmZmljaGVyIHZvdHJlIGFyZ2VudCBkYW5zIHVuZSBmZW7DqnRyZSBzw6lwYXLDqWUsIGNvbW1lIGljaSwgZW4gw6ljcml2YW50IFxjWzVdIlxcZyIgXGNbMF1uJ2ltcG9ydGUgb8O5IGRhbnMgbW9uIG1lc3NhZ2Uu
+        - 14, 13 \gBut I can also display it on a separate window, like that, by writing
+          \c[5]"\\g"\c[0] anywhere in my message.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDE0IEVuZmluLCB0b3V0IMOnYSBlc3QgYmllbiBpbnV0aWxlIGljaSBwdWlzcXVlIGxlcyBsaXZyZXMgc29udCBlbXBydW50YWJsZXMgZ3JhdHVpdGVtZW50ICE=
+        - 14, 14 Well, this is completely useless here because you can rent all the
+          books for free!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -746,50 +742,46 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 15 Je cherche un livre sur la \c[2]c\c[6]o\c[3]u\c[4]l\c[1]e\c[5]u\c[7]r\c[0].
-          C'est fou tout ce qu'on peut faire avec la fonction \c[5]"\\c[...]" \c[0]!
+        - 14, 15 I'm looking for a book about \c[2]r\c[6]a\c[3]i\c[4]n\c[1]b\c[5]o\c[7]w\c[0]s.
+          Crazy what you can do with \c[5]"\\c[...]"\c[0]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDE2IFR1IHBldXggY29sb3JlciB0b3VzIHRlcyB0ZXh0ZXMgdHLDqHMgbGlicmVtZW50Lg==
+        - 14, 16 You can color your text in many ways.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDE3IEMnZXN0IGxlIGZpY2hpZXIgXGNbNV0iX2NvbG9ycy5wbmciXGNbMF0gcXVpIHNlIHRyb3V2ZSBkYW5zIGxlIGRvc3NpZXIgV2luZG93c2tpbnMgcXVpIGfDqHJlIHRvdXQgw6dhLg==
+        - 14, 17 Everything is managed in the \c[5]"_colors.png"\c[0] file located
+          in the Windowskins folder.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDE4IExhIHByZW1pw6hyZSBsaWduZSBjb3JyZXNwb25kIMOgIGxhIGNvdWxldXIgZGVzIGNvbnRvdXJzLg==
+        - 14, 18 The first line is for the colors of outlines (not very functional...).
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDE5IExhIGxpZ25lIGR1IG1pbGlldSBjb3JyZXNwb25kIMOgIGxhIGNvdWxldXIgZHUgdGV4dGUu
+        - 14, 19 The middle line is for the colors of the text.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDIwIEV0IGxhIHRyb2lzacOobWUgbGlnbmUgY29ycmVzcG9uZCDDoCBsYSBjb3VsZXVyIGRlIGwnb21icmUgIQ==
+        - 14, 20 And the third line is for the colors of the shadows!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDIxIFxjWzI1XVNpIGonw6ljcmlzICJcXGNbMjVdIiBkYW5zIG1vbiB0ZXh0ZSwgw6dhIHZhIGRvbmMgcHJlbmRyZSBsZXMgY291bGV1cnMgZGUgbGEgMjZlIGNvbG9ubmUgKHBhcmNlIHF1J29uIGNvbW1lbmNlIMOgIGNvbXB0ZXIgw6AgcGFydGlyIGRlIDApLg==
+        - 14, 21 \c[25]If I write "\\c[25]" in my text, it will take the colors of
+          the 26th column (we're starting at 0).
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDIyIEV0IHR1IHBldXggcmFqb3V0ZXIgYXV0YW50IGRlIGNvbG9ubmVzIMOgIHRvbiBmaWNoaWVyIFxjWzVdIl9jb2xvcnMucG5nIlxjWzBdIHF1ZSB0dSB2ZXV4IHRhbnQgcXVlIHR1IHJlc3BlY3RlcyBsZSBmb3JtYXQu
+        - 14, 22 You can add as many columns as you want in your \c[5]"_colors.png"\c[0]
+          file as long as you respect the format.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -865,26 +857,23 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 23 Tiens, ton sac contient une Poche \img[pocket-keys,picture]Objets
-          Rares !
+        - 14, 23 Oh, your Bag has a \img[pocket-keys,picture]Key Items Pocket!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDI0ICBcaW1nWzcxMyxpY29uXSBFbGxlIGVzdCB0csOocyBwcmF0aXF1ZSBwb3VyIHJhbmdlciB1bmU=
+        - 14, 24  \img[713,icon]It is perfect to store a
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqBCaWN5bGV0dGUsIHBhciBleGVtcGxlLg==
+        - "             Bike, for instance."
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDI1IFR1IGFzIHZ1LCBncsOiY2Ugw6AgXGNbNV1cXGltZ1suLi5dXGNbMF0sIGplIHBldXggYWZmaWNoZXIgZGVzIGltYWdlcyBkYW5zIG1lcyBtZXNzYWdlcywgZXQgZWxsZXMgcGV1dmVudCBwcm92ZW5pciBkZSBkaWZmw6lyZW50cyBzb3VzLWRvc3NpZXJzICE=
+        - 14, 25 Did you see it? Thanks to \c[5]"\\img[...]"\c[0], I can display pictures
+          in a message, and they even can come from subfolders!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -953,14 +942,14 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDI2IDpbbmFtZT1QaWVycmUgUm9jaGFyZDtmYWNlPTE2MCxzdGV2ZW5fc21hXTpDb21tZSBqZSBzdWlzIHVuZSB2cmFpZSBjw6lsw6licml0w6ksIGonYWkgbGUgZHJvaXQgw6AgdW4gYWZmaWNoYWdlIGRlIG1vbiBub20gZXQgZGUgbW9uIHBvcnRyYWl0ICE=
+        - 14, 26 :[name=Steven Stone;face=160,steven_sma]:Since I'm a real celebrity,
+          my messages display my name and my portrait!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDI3IDpbbmFtZT1QaWVycmUgUm9jaGFyZDtmYWNlPTE2MCxzdGV2ZW5fc21hXTpQb3VyIMOnYSwgaid1dGlsaXNlIFxjWzVdW25hbWU9Li4uXSBcY1swXWV0IFxjWzVdW2ZhY2VdIFxjWzBdIGRhbnMgbW9uIG1lc3NhZ2Uu
+        - 14, 27 :[name=Steven Stone;face=160,steven_sma]:To do that, I use \c[5]"[name=...]"\c[0]
+          and \c[5]"[face]"\c[0] in my message.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -976,8 +965,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDI4IDpbbmFtZT1QaWVycmUgUm9jaGFyZMKgO2ZhY2U9MTYwLHN0ZXZlbl9zbWFdOkQnYWlsbGV1cnMsIHBvdXIgZW5jb3JlIHBsdXMgZGUgY2xhc3NlLCBqZSBwZXV4IG3Dqm1lIGF2b2lyIHVuIHdpbmRvd3NraW4gZGlmZsOpcmVudCBwb3VyIG1vbiBub20u
+        - 14, 28 :[name=Steven Stone ;face=160,steven_sma]:By the way, to be even
+          more classy, I can even have a different windowskin for my name.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1028,8 +1017,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDI5IEonYWkgdHJvdXbDqSB1bmUgc3VwZXIgZm9uY3Rpb24gcG91ciBhZmZpY2hlciB1biBwbGFuIGRlIGwnZW5kcm9pdCBvw7kgb24gc2UgdHJvdXZlIGF1IHNlaW4gbcOqbWUgZCd1biBtZXNzYWdlwqAhIFJlZ2FyZGUuLi4=
+        - 14, 29 I found a great command to display the map of the location you're
+          in within a message! Take a look...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1074,26 +1063,23 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDMwIDpbY2l0eT1jaXR5L2xpYnJhcnldOlxjWzE4XUJpYmxpb3Row6hxdWU=
+        - 14, 30 :[city=city/library]:\c[18]Library
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          T8O5IGxlcyBsaXZyZXMgdm91cyBhcHByZW5uZW50IMOgIGxlcyDDqWNyaXJlLg==
+        - Where books teach you how to write them.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDMxIEMnZXN0IGdyw6JjZSDDoCBcY1s1XVtjaXR5PV0gXGNbMF1xdWUgamUgcGV1eCBhZmZpY2hlciBjZSBnZW5yZSBkJ2ltYWdlLCBjb3VwbMOpIGF2ZWMgdW4gY2hhbmdlbWVudCBkZSB3aW5kb3dza2luLg==
+        - 14, 31 It's thanks to \c[5]"[city=]"\c[0] that I can display this kind of
+          message, coupled with a change of windowskin.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDMyIEJvbiwgcG91ciBsYSBiaWJsaW90aMOocXVlLCBjZSBuJ2VzdCBwYXMgdHLDqHMgdXRpbGUuLi4=
+        - 14, 32 Well, it's not very useful for the library...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1174,8 +1160,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDMzIFxjWzE4XVF1aXogZGUgY3VsdHVyZSBnw6luw6lyYWxlLiBSw6ljb21wZW5zZSDDoCBsYSBjbMOpICE=
+        - 14, 33 \c[18]General knowledge test.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1230,19 +1215,18 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Y2hvaWNlKDI2LCAtMSwgIlxcY1sxOF0wIiwgIlxcY1sxOF02IiwgIlxcY1sxOF0xMCIsICJcXGNbMThdMTUiLCAiMTQsIDExNyBcY1sxOF1BdXRhbnQgcXUnaWwgeSBlbiBhIGRlIGTDqWZpbmllcyIp
+        - choice(26, -1, "\\c[18]0", "\\c[18]6", "\\c[18]10", "\\c[18]15", "14, 117
+          \c[18]As many as defined")
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 34 \c[18]Question 1 :'
+        - '14, 34 \c[18]Question 1:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Q29tYmllbiBkZSBjb3VsZXVycyBwZXV2ZW50IMOqdHJlIHV0aWxpc8OpZXMgcG91ciBjb2xvcmVyIHVuIHRleHRlID8=
+        - How many colors can you use to color a text?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1302,13 +1286,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDM1IFxjWzE4XUJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 14, 35 \c[18]Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Question suivante.
+        - Next question.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1321,24 +1304,23 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Y2hvaWNlKDI2LCAtMSwgIjE0LCAxMTggXFxjWzE4XVBpZXJyZSBkJ0FyZ2VudGEiLCAiMTQsIDExOSBcXGNbMThdTGUgUHIuIFPDqWtvIiwgIjE0LCAxMjAgXFxjWzE4XUZhcmdhcyIsICIxNCwgMTIxIFxcY1sxOF1HdXptYSIs
+        - choice(26, -1, "14, 118 \c[18]Brock from Pewter City", "14, 119 \c[18]Pr.
+          Birch", "14, 120 \c[18]Kurt", "14, 121 \c[18]Guzma",
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"14, 122 \\c[18]Pierre Rochard")'
+        - '"14, 122 \c[18]Steven Stone")'
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 36 \c[18]Question 2 :'
+        - '14, 36 \c[18]Question 2:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          UXVlbGxlIGPDqWzDqWJyaXTDqSBzZSB0cm91dmUgw6AgbGEgYmlibGlvdGjDqHF1ZSA/
+        - What celebrity can you find at the Library at the moment?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1373,13 +1355,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDM3IFxjWzE4XUJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 14, 37 \c[18]Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Question suivante.
+        - Next question.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1392,19 +1373,18 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - choice(26, -1, "14, 123 \\c[18]Goinfrex", "14, 124 \\c[18]Akwakwak", "14,
-          125\\c[18]Amagara", "14, 126\\c[18]Snubull", "14, 127 \\c[18]Miasmax")
+        - choice(26, -1, "14, 123 \c[18]Golduck", "14, 124 \c[18]Munchlax", "14, 125\\c[18]Amagara",
+          "14, 126\\c[18]Snubull", "14, 127 \c[18]Garbodor")
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 38 \c[18]Question 3 :'
+        - '14, 38 \c[18]Question 3:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          UXVlbCBQb2vDqW1vbiBlc3QgY2l0w6kgZGFucyB1bmUgcGhyYXNlIGRlIHZpcmVsYW5ndWUgPw==
+        - Which Pokémon is mentioned in a tongue twister sentence?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1439,13 +1419,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDM5IFxjWzE4XUJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 14, 39 \c[18]Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Question suivante.
+        - Next question.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1458,25 +1437,23 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 'choice(26, -1, "14, 128 \\c[18]Un Badge", "14, 129 \\c[18]Une Masalada",
-          "14, 130 \\c[18]Un Jus de Baie", "14, 131 \\c[18]Une Pierre Insolite", '
+        - 'choice(26, -1, "14, 128 \c[18]A Badge", "14, 129 \c[18]A Masalada", "14,
+          130 \c[18]A Berry Juice", "14, 131 \c[18]An Intriguing Stone", '
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"14, 132 \\c[18]Une Queuramoloss")'
+        - '"14, 132 \c[18]A SlowpokeTail")'
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQwIFxjWzE4XURlcm5pw6hyZSBxdWVzdGlvbiA6
+        - '14, 40 \c[18]Last question:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          UXVlbCBvYmpldCBkb2l0LW9uIHRyb3V2ZXIgZGFucyBjaGFxdWUgbGlldSBkZSBjZXR0ZSBkw6ltbyA/
+        - What item must you find in each place of this Island?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1511,19 +1488,17 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQxIFxjWzE4XUJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 14, 41 \c[18]Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQyIFxjWzE4XVZvdXMgYXZleiByw6lwb25kdSBjb3JyZWN0ZW1lbnQgw6AgdG91dGVzIGxlcyBxdWVzdGlvbnMsIGbDqWxpY2l0YXRpb25zICE=
+        - 14, 42 \c[18]You answered all the questions right, congratulations!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 'Voici votre prix :'
+        - 'Here is your prize:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1570,8 +1545,7 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQzIFxjWzE4XU1hdXZhaXNlIHLDqXBvbnNlICEgUsOpZXNzYXllei5bV0FJVCA0MF0=
+        - 14, 43 \c[18]Wrong! Try again.[WAIT 40]
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1644,20 +1618,20 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQ0IFxjWzE4XVZvdXMgYXZleiBkw6lqw6AgcsOpcG9uZHUgYXUgcXVpei4gTWFpcyB2b2ljaSB1biByYXBwZWwgOiBcY1sxNV0iY2hvaWNlKFgsIFksICIxIiwgIjIiLi4uKSIgXGNbMThdcGVybWV0IGQnYWZmaWNoZXIgdW4gY2hvaXggYXZlYyBwbHVzIGRlIHF1YXRyZSBvcHRpb25zLg==
+        - '14, 44 \c[18]You already answered the quiz. Here''s a reminder: \c[15]"choice(X,
+          Y, "1", "2"...)"\c[18] displays a choice with more than four options.'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          WCBlc3QgbGUgbnVtw6lybyBkZSBsYSB2YXJpYWJsZSBxdWkgc2VyYSB1dGlsaXPDqWUgcGFyIGxhIGNvbW1hbmRlIDsgWSBlc3QgbGUgbm9tYnJlIGQnb3B0aW9ucyA7IGxlcyBjaGlmZnJlcyBlbnRyZSBndWlsbGVtZXRzIHNvbnQgbGVzIG9wdGlvbnMgcXVpIHNlcm9udCBhZmZpY2jDqWVzLg==
+        - X is the number of the variable used by the command ; Y is the number of
+          options ; the numbers in quotation marks are the different options.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          UHVpcywgcG91ciBjaGFxdWUgb3B0aW9uLCBpbCBjb252aWVudCBkZSBjcsOpZXIgdW5lIGJyYW5jaGUgY29uZGl0aW9ubmVsbGUgcXVpIHbDqXJpZmllcmEgbGEgdmFsZXVyIGRlIGxhIHZhcmlhYmxlIGNob2lzaWUgOiAxID0gb3B0aW9uIDEsIGV0IGFpbnNpIGRlIHN1aXRlLg==
+        - 'Then for each option, you must create a conditional branch checking the
+          value of the chosen variable : 1 = option 1, and so on.'
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1723,8 +1697,8 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQ1IFR1IHNhdmFpcyBxdSdvbiBwZXV0IGFmZmljaGVyIGxhIGZlbsOqdHJlIGRlIGNob2l4IGFpbGxldXJzIHF1J2VuIGJhcyDDoCBkcm9pdGUgPw==
+        - 14, 45 Did you know you can display the choice window somewhere else than
+          on the bottom right?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1742,7 +1716,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 46 Ah, moi qui pensais t'apprendre quelque chose...
+        - 14, 46 Oh... I thought I could teach you something.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1769,8 +1743,7 @@ events:
         code: 121
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQ3IFBvdXIgw6dhLCBpbCBmYXV0IFxjWzVdYWN0aXZlciBsJ2ludGVycnVwdGV1ciAyNlxjWzBdLiBDZXR0ZSBpbmZvcm1hdGlvbiB0J2Egw6l0w6kgdXRpbGUgPw==
+        - 14, 47 To do that, you need to \c[5]trigger switch number 26\c[0].
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1788,7 +1761,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 48 Ravi que ce soit le cas !
+        - 14, 48 Glad I could help!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1810,8 +1783,8 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDQ5IENvbW1lbnQgw6dhID8gU2kgdHUgbmUgbGUgc2F2YWlzIHBhcyBldCBxdWUgbWFpbnRlbmFudCB0dSBsZSBzYWlzLCBjJ2VzdCBxdWUgw6dhIHQnYSDDqXTDqSB1dGlsZSwgbm9uID8=
+        - 14, 49 What? If you didn't know and now you do, it must have been useful,
+          right?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1831,32 +1804,32 @@ events:
         code: 404
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDUwIFBhciBhaWxsZXVycywgdHUgcGV1eCB0b3V0IMOgIGZhaXQgaW5zw6lyZXIgZGVzIGNvdWxldXJzIGRhbnMgdGVzIGNob2l4LCBjb21tZSBkYW5zIG4naW1wb3J0ZSBxdWVsIG1lc3NhZ2UsIGF2ZWMgXGNbNV1cXGNbLi4uXVxjWzBdLg==
+        - 14, 50 By the way, you can insert colors within your choices, like in any
+          other message, with \c[5]"\\c[...]"\c[0].
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDUxIEplIGNyb2lzIHF1ZSBsZSBwZXRpdCBwZXJjaMOpIHN1ciB1biBlc2NhYmVhdSBqdXN0ZSBhdS1kZXNzdXMgZGUgbm91cyBlbiBzYWl0IHBhcyBtYWwgw6AgY2Ugc3VqZXQu
+        - 14, 51 I think the kid perched on a stepladder right above us knows quite
+          a lot on the matter.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Saisissant, n'est-ce pas ?
+        - Fascinating, right?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 14, 52 \c[1]Fantastique !
-          - 14, 53 \c[2]Époustouflant !
+        - - 14, 52 \c[1]Fantastic!
+          - 14, 53 \c[2]Mind-blowing!
         - 0
         indent: 1
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - "\\c[1]Fantastique !"
+        - 14, 52 \c[1]Fantastic!
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -1871,8 +1844,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          XGNbMl3DiXBvdXN0b3VmbGFudCAh
+        - 14, 53 \c[2]Mind-blowing!
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2347,19 +2319,19 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 54 Appuyez sur \k[X] pour ouvrir le menu.
+        - 14, 54 Press \k[X] to open the menu.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDU1IENlIG1lc3NhZ2UgdXRpbGlzZSBcY1s1XVxca1suLi5dIFxjWzBdcG91ciBhZmZpY2hlciB1bmUgdG91Y2hlIGRlIG1hbmnDqHJlIGR5bmFtaXF1ZS4=
+        - 14, 55 This message uses \c[5]"\\k[...]"\c[0] to display a key in a dynamic
+          way.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          QWluc2ksIGxhIGJvbm5lIHRvdWNoZSBzZXJhIHRvdWpvdXJzIGFmZmljaMOpZSwgbcOqbWUgc2kgbGUgam91ZXVyIGEgY2hhbmfDqSBsJ2F0dHJpYnV0aW9uIGRlIHNlcyB0b3VjaGVzIG91IHF1J2lsIHV0aWxpc2UgdW5lIG1hbmV0dGUu
+        - Doing so, the correct key will always be displayed, even if the player changed
+          their inputs or is using a controler.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2410,7 +2382,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 56 C'est vide...
+        - 14, 56 It's empty...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2468,8 +2440,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDU3IExlcyDDqXRhZ8OocmVzIHNvbnQgcmVtcGxpZXMgZGUgbGl2cmVzIHN1ciBsZXMgUG9rw6ltb24u
+        - 14, 57 The shelves are filled with books about Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2535,8 +2506,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDU4IExlcyDDqXRhZ8OocmVzIHNvbnQgcmVtcGxpZXMgZGUgbGl2cmVzIHN1ciBsZXMgUG9rw6ltb24u
+        - 14, 58 The shelves are filled with books about Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2595,8 +2565,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDU5IExlcyDDqXRhZ8OocmVzIHNvbnQgcmVtcGxpZXMgZGUgbGl2cmVzIHN1ciBsZXMgUG9rw6ltb24u
+        - 14, 59 The shelves are filled with books about Pokémon.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2654,8 +2623,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDYwIExlcyDDqXRhZ8OocmVzIHNvbnQgcmVtcGxpZXMgZGUgbGl2cmVzIHN1ciBsZXMgUG9rw6ltb24u
+        - 14, 60 The shelves are filled with books about Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2714,8 +2682,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDYxIEMnZXN0IGxhIGRvY3VtZW50YXRpb24gZGUgUG9rw6ltb24gU0RLICE=
+        - 14, 61 It's PokémonSDK's documentation!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2773,7 +2740,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 62 Il y a des tonnes de livres sur le langage Ruby.
+        - 14, 62 There are tons of books about the Ruby language.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2832,7 +2799,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 63 C'est une collection de livres sur le design graphique.
+        - 14, 63 It's a book collection about graphic design.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2883,7 +2850,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 64 C'est un recueil de virelangues.
+        - 14, 64 It's a repository on tongue twisters.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3156,7 +3123,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 65 C'est une pile d'ouvrages portant sur le pixel art.
+        - 14, 65 A pile of publications about pixel art.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3207,7 +3174,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 66 C'est une pile d'ouvrages sur l'event-making.
+        - 14, 66 A pile of publications about event-making.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3258,8 +3225,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDY3IElsIHkgYSB1biBncm9zIGxpdnJlIGludGl0dWzDqSAiVmFkZW1lY3VtIGR1IGNoZWYgZGUgUHJvamV0IiwgcGFyIEFlcnVuLg==
+        - 14, 67 There is a big book named "Vademecum of the Project Manager", by
+          Aerun.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3310,8 +3277,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDY4IElsIHkgYSB1bmUgYnJvY2h1cmUgcG91c3Npw6lyZXVzZSBpbnRpdHVsw6llICJMZXMgZmFuZ2FtZXMgZXQgbGUgZHJvaXQiLCBwYXIgU2lyTWFsby4=
+        - 14, 68 There is a dusty manual titled "Fangames and Law", by SirMalo.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3369,8 +3335,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDY5IExlcyDDqXRhZ8OocmVzIHNvbnQgcmVtcGxpZXMgZGUgbGl2cmVzIHN1ciBsZXMgUG9rw6ltb24u
+        - 14, 69 The shelves are filled with books about Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3436,8 +3401,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDcwIExlcyDDqXRhZ8OocmVzIHNvbnQgcmVtcGxpZXMgZGUgbGl2cmVzIHN1ciBsZXMgUG9rw6ltb24u
+        - 14, 70 The shelves are filled with books about Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3524,12 +3488,12 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 71 \gC'est un Distributeur.
+        - 14, 71 It's a vending machine.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Quelle boisson vous fait envie ?
+        - Which drink would you like?
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3537,7 +3501,7 @@ events:
         - - "\\t[12,30] : 200$"
           - "\\t[12,31] : 300$"
           - "\\t[12,32] : 350$"
-          - 14, 72 Rien, merci
+          - 14, 72 Nothing, thanks
         - 4
         indent: 0
         code: 102
@@ -3572,12 +3536,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 73 Clang !\g
+        - 14, 73 Clang!\g
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 74 Une bouteille d'\t[12,30] vient de tomber.\g
+        - 14, 74 A bottle of \t[12,30] dropped down.\g
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3595,18 +3559,17 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 75 Obtenu : \t[12,30].[WAIT 80]\g'
+        - '14, 75 Received: \t[12,30].[WAIT 80]\g'
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 76 \n[1] met \t[12,30]
+        - 14, 76 \n[1] put the \t[12,30] bottle
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          ZGFucyBsYSBQb2NoZSBcaW1nW3BvY2tldC1tZWRpY2luZSxwaWN0dXJlXU3DqWRpY2FtZW50cy5cZw==
+        - in the \img[pocket-medicine,picture]Medicine pocket.\g
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3629,7 +3592,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 77 Vous n'avez pas assez d'argent.
+        - 14, 77 Not enough money...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3675,12 +3638,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 78 Clang !\g
+        - 14, 78 Clang!\g
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 79 Une bouteille de \t[12,31] vient de tomber.\g
+        - 14, 79 A bottle of \t[12,31] dropped down.\g
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3698,18 +3661,17 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 80 Obtenu : \t[12,31].[WAIT 80]\g'
+        - '14, 80 Received: \t[12,31].[WAIT 80]\g'
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 81 \n[1] met \t[12,31]
+        - 14, 81 \n[1] put the \t[12,31] bottle
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          ZGFucyBsYSBQb2NoZSBcaW1nW3BvY2tldC1tZWRpY2luZSxwaWN0dXJlXU3DqWRpY2FtZW50cy5cZw==
+        - in the \img[pocket-medicine,picture]Medicine pocket.\g
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3732,7 +3694,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 82 Vous n'avez pas assez d'argent.
+        - 14, 82 Not enough money...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3778,12 +3740,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 83 Clang !\g
+        - 14, 83 Clang!\g
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 84 Une canette de \t[12,32] vient de tomber.\g
+        - 14, 84 A can of \t[12,32] dropped down.\g
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3801,18 +3763,17 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 85 Obtenu : \t[12,32].[WAIT 80]\g'
+        - '14, 85 Received: \t[12,32].[WAIT 80]\g'
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 86 \n[1] met \t[12,32]
+        - 14, 86 \n[1] put the \t[12,32] can
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          ZGFucyBsYSBQb2NoZSBcaW1nW3BvY2tldC1tZWRpY2luZSxwaWN0dXJlXU3DqWRpY2FtZW50cy5cZw==
+        - in the \img[pocket-medicine,picture]Medicine pocket.\g
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3835,7 +3796,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 87 Vous n'avez pas assez d'argent.
+        - 14, 87 Not enough money...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3853,7 +3814,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Rien, merci
+        - 14, 72 Nothing, thanks
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3926,8 +3887,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDg4IElsIHkgYSB0b3V0ZSB1bmUgY29sbGVjdGlvbiBkZSBtYW5nYXMgcG9ydGFudCBzdXIgdW4gRHJlc3NldXIgYWNjb21wYWduw6kgZCd1biBUw6p0YXJ0ZSwgZCd1biBCdWxiaXphcnJlIGV0IGQndW4gUGlrYWNodS4=
+        - 14, 88 There is a complete collection of mangas about a Trainer and his
+          partners Poliwhirl, Bulbasaur and Pikachu.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3993,8 +3954,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDg5IElsIHkgYSB0b3V0ZSB1bmUgY29sbGVjdGlvbiBkZSBtYW5nYXMgcG9ydGFudCBzdXIgdW4gRHJlc3NldXIgYWNjb21wYWduw6kgZCd1biBUw6p0YXJ0ZSwgZCd1biBCdWxiaXphcnJlIGV0IGQndW4gUGlrYWNodS4=
+        - 14, 89 There is a complete collection of mangas about a Trainer and his
+          partners Poliwhirl, Bulbasaur and Pikachu.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4083,15 +4044,15 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDkwIExhIGdyb3NzZSBob3Jsb2dlIGF1IG1pbGlldSBkZSBsYSBiaWJsaW90aMOocXVlIHBlcm1ldCBkZSBjb25uYcOudHJlIGwnaGV1cmUgw6AgdG91dCBtb21lbnQuIFBhciBleGVtcGxlLCBpbCBlc3QgYWN0dWVsbGVtZW50IFtIT1VSXS4=
+        - 14, 90 The big clock in the middle of the Library gives me the hour at any
+          time of the day. For instance, it's currently [HOUR].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '14, 91 Si je peux te l''affirmer avec autant d''aplomb, c''est parce que
-          la \c[5]commande text.set_variable\c[0] me permet de stocker une variable
-          et de la retranscrire '
+        - 14, 91 If I can say it with such confidence, it's because the \c[5]"text.set_variable"\c[0]
+          command allows me to store a complex variable and to transcribe it inside
+          a message.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4101,8 +4062,8 @@ events:
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDkyIEplIHNhaXMgcXVlIFNpck1hbG8gcydlbiBzZXJ0IHNvdXZlbnQsIG5vdGFtbWVudCBsb3JzcXUnaWwgcydhZ2l0IGRlIGRvbm5lciBsZXVycyBwcmVtaWVycyBQb2vDqW1vbiBhdXggbm91dmVhdXggYXJyaXZhbnRzLg==
+        - 14, 92 I know SirMalo often uses it, especially when he gives their starter
+          Pokémon to newcomers.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4186,31 +4147,30 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDkzIFF1aSB2aWVudCBlbmNvcmUgbSdlbWLDqnRlciBhbG9ycyBxdWUgamUgc3VpcyBlbiB0cmFpbiBkZSBsaXJlID8=
+        - 14, 93 Who's annoying me while I'm reading?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 94 Comment ? Tu n'as pas bien entendu ce que je viens de dire ?
+        - 14, 94 What? You didn't hear what I just said?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDk1ICBDJ2VzdCBub3JtYWwsIGonYWkgdXRpbGlzw6kgbGEgdGVjaG5pcXVlIGR1IFxjWzVdYXV0b19za2lwIFxjWzBdcXVpIHBlcm1ldCDDoCB1biBtZXNzYWdlIGRlIHMnZWZmYWNlciBkw6hzIHF1J2lsIGEgZmluaSBkZSBzJ8OpY3JpcmUgIQ==
+        - 14, 95 That's normal, I used the \c[5]"auto_skip"\c[0] command, which closes
+          the message window as soon as the text is over.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDk2IFBvdXIgdGUgbGFpc3NlciB1biBwZXUgcGx1cyBkZSB0ZW1wcyBwb3VyIGxpcmUsIG4naMOpc2l0ZSBwYXMgw6AgbGEgY29tYmluZXIgYXZlYyBsYSBcY1s1XWZvbmN0aW9uIFtXQUlUXSBcY1swXSE=
+        - 14, 96 To give enough time to read the message, you can combine it with
+          the \c[5]"[WAIT]"\c[0] command!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDk3IEplIGNyb2lzIHF1ZSBsZSB0eXBlIMOgIGx1bmV0dGVzIGp1c3RlIMOgIGdhdWNoZSBlbiBzYWl0IHVuIHBldSBwbHVzIMOgIGNlIHN1amV0Lg==
+        - 14, 97 I believe the guy wearing glasses on our left knows more about this
+          subject.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4261,12 +4221,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 98 Une phrase de... virelangue ?
+        - 14, 98 A... tongue-twister sentence?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Mais qu'est-ce que c'est ?
+        - What the hell is that?
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4322,18 +4282,17 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 99 J'essaie de passer le test, mais c'est super dur !
+        - 14, 99 I try to pass the test, but it's really hard!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 100 Tiens, je te laisse essayer.
+        - 14, 100 Here, give it a try.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          XGNbMTddSmUgdmFpcyBlbiBwcm9maXRlciBwb3VyIHJlZ2FyZGVyIHNlcyByw6lwb25zZXMuLi4=
+        - "\\c[28]I'm going to take this opportunity to look at his answers..."
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4491,7 +4450,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 101 Je crois que je vais devoir potasser encore un peu...
+        - 14, 101 I think I'll need to cram a bit more...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4561,13 +4520,14 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 102 \spd[1]Akwakwak, quoique couard, couina narquoisement sans couac.
+        - 14, 102 \spd[1]How much lunch could a Munchlax munch if a Munchlax could
+          munch lunch?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDEwMyBKZSBsaXMgdW4gcmVjdWVpbCBkZSBwaHJhc2VzIGZyYW5jaGVtZW50IGNvbXBsaXF1w6llcyDDoCBwcm9ub25jZXIsIGFsb3JzIGondXRpbGlzZSBsYSBcY1s1XWZvbmN0aW9uIFxcc3BkW05dIFxjWzBdcG91ciBsZXMgbGlyZSBsZW50ZW1lbnQu
+        - 14, 103 I'm reading a collection of sentences that are quite hard to pronounce,
+          so I use the \c[5]"\\spd[N]\c[0]" command to read them slowly.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4628,8 +4588,7 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 104 Quel livre vais-je bien pouvoir emprunter[WAIT 15].[WAIT 15].[WAIT
-          15]. [WAIT 45] Hum ?
+        - 14, 104 Which book will I take[WAIT 15].[WAIT 15].[WAIT 15].[WAIT 45]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4675,14 +4634,14 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDEwNSBKJ2FpIGJlc29pbiBkZSB0ZW1wcyBwb3VyIHLDqWZsw6ljaGlyLCBhbG9ycyBqJ2luc8OocmUgXGNbNV0iW1dBSVQgTl0iXGNbMF0gZGFucyBtb24gbWVzc2FnZSBwb3VyIG1hcnF1ZXIgdW5lIHBhdXNlLg==
+        - 14, 105 I need time to think, so I insert \c[5]"[WAIT N]"\c[0] in my message
+          to take a break.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Li4uIFBvdXJxdW9pID8gQydlc3QgcG91ciBsJ2V4ZW1wbGUsIGlsIGZhdXQgYmllbiDDqXZpZGVtbWVudCBsZSByZW1wbGFjZXIgcGFyIGxlIG5vbWJyZSBkZSBmcmFtZXMgw6AgYXR0ZW5kcmUgISA=
+        - "... Why N? It's an example, it must be replaced by the number of frames
+          to wait, of course!"
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4774,30 +4733,28 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 106 :[align=center]:\s[b]Manuel :\s[r]
+        - 14, 106 :[align=center]:\s[b]Guide:\s[r]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Les fonctions de messages (1/2)
+        - Messages commands (1/2)
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDEwNyBBam91dGVyIFxjWzVdW2FsaWduPV0gXGNbMF0gZGFucyB1biBtZXNzYWdlIHBlcm1ldCBkZSBqdXN0aWZpZXIgbGUgdGV4dGUgw6AgZ2F1Y2hlIG91IMOgIGRyb2l0ZSwgb3UgZGUgbGUgY2VudHJlci4=
+        - 14, 107 Adding \c[5]"[align=]"\c[0] in a message justifies the text to the
+          left or to the right, or centers it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDEwOCDCoA==
+        - '14, 108 '
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          OlthbGlnbj1yaWdodF06RmluwqDCoMKg
+        - ":[align=right]:The end  "
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4863,34 +4820,32 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 109 :[align=center]:\s[b]Manuel :\s[r]
+        - 14, 109 :[align=center]:\s[b]Guide:\s[r]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Les fonctions de messages (2/2)
+        - Messages commands (2/2)
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 110 La fonction \c[5]\\s[...] \c[0]permet de passer le texte en \s[b]gras
+        - 14, 110 The \c[5]"\\s[...]"\c[0] command puts the text in \s[b]bold\s[r]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - "\\s[r]ou en \\s[i]italique\\s[r]."
+        - or in \s[i]italic\s[r].
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDExMSDCoA==
+        - '14, 111 '
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          OlthbGlnbj1yaWdodF06RmluwqDCoMKg
+        - ":[align=right]:The end  "
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4962,7 +4917,7 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 14, 113 :[align=center]:\^AAAAH !!!
+        - 14, 113 :[align=center]:\^AAAAH!!!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5013,8 +4968,7 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDExNCBUdSBtJ2FzIHLDqXZlaWxsw6kgZXQgZmFpdCBjcmllciBhbG9ycyBxdSdpbCBmYXV0IHJlc3RlciBzaWxlbmNpZXV4IGRhbnMgdW5lIGJpYmxpb3Row6hxdWUgIQ==
+        - 14, 114 You woke me up and made me scream while we're in a library!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5065,8 +5019,7 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTQsIDExNSBCb24sIG/DuSBlbiDDqXRhaXMtamUuLi4gW1dBSVQgNDVdQWgsIG91aSAhIFxzcGRbMV0iTCdBdHRhcXVlIELDomlsbGVtZW50IHJlbmQgbGUgUG9rw6ltb24gc29tbm8uLi4i
+        - 14, 115 So, where was I... [WAIT 45]Oh, yes!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

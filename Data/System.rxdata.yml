@@ -56,7 +56,7 @@ variables:
 - Battle lost X coordinate
 - Battle lost Y coordinate
 - Battle Mode
-- "--- Reserved"
+- Current player ID (for multi-protag)
 - "--- Reserved"
 - "--- Reserved"
 - "--- Reserved"
@@ -514,7 +514,7 @@ battle_end_me: !ruby/object:RPG::AudioFile
   name: ''
   volume: 100
   pitch: 100
-magic_number: 34748347
+magic_number: 73720733
 escape_se: !ruby/object:RPG::AudioFile
   name: Fleee
   volume: 80
@@ -582,7 +582,7 @@ switches:
 - "=== Deprecated"
 - "=== Deprecated"
 - "=== Deprecated"
-- "=== Deprecated"
+- Wild Pokemon fled last battle
 - Player fled last battle
 - Lost last battle
 - Won last battle
@@ -599,7 +599,7 @@ switches:
 - Authorize defeat nuzlocke
 - Party Menu Reminder
 - AI can win
-- "--- Reserved"
+- Map change don't reset battle background
 - !binary |-
   UG9rw6ltb24gZXhwIHNjYWxl
 - Water Reflection Disabled
@@ -627,7 +627,7 @@ switches:
 - "--- Reserved"
 - "--- Reserved"
 - player_spotted? disabled
-- "--- Reserved"
+- Can't leave bike
 - Poison KO on overworld
 - "--- Reserved"
 - "--- Reserved"
@@ -1058,7 +1058,7 @@ decision_se: !ruby/object:RPG::AudioFile
   name: select
   volume: 80
   pitch: 100
-edit_map_id: 17
+edit_map_id: 15
 battle_start_se: !ruby/object:RPG::AudioFile
   name: ''
   volume: 80

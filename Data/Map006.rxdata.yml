@@ -454,36 +454,34 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 0 Mon reflet dans cette flaque est absolument magnifique...
+        - 6, 0 My reflection in this puddle is absolutely gorgeous...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMiBOZSB2aWVucyBwYXMgbGUgZMOpZm9ybWVyIGVuIG1hcmNoYW50IGRlc3N1cyAh
+        - 6, 2 Don't distort it by stepping on it!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMSBJbCBhcHBhcmHDrnQgZ3LDomNlIGF1IFxjWzVddGFnICJbcmVmbGVjdGlvbj1vbl0iXGNbMF0gZGFucyBtb24gbm9tIGQnZXZlbnQu
+        - 6, 1 It appears thanks to the \c[5]"[reflection=on]" tag\c[0] present in
+          my name.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 30 Mais ce n'est pas suffisant...
+        - 6, 30 But it's not all there is to it...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMzEgTGVzIHRpbGVzIGRvaXZlbnQgw6p0cmUgdHJhbnNwYXJlbnQgcG91ciB2b2lyIGxlIHJlZmxldC4=
+        - 6, 31 The tiles must be transparent to see the reflection.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 32 Pour ce qui est de la couleur de fond, tu peux simplement utiliser
-          un panorama de la couleur voulue !
+        - 6, 32 As for the background color, you can just use a panorama with the
+          wanted color!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1068,8 +1066,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMyA6W25hbWU9R2/DqWxpc2VdOkdvICEgR28gISBHb2/DqcOpw6kgISBbV0FJVCA2MF0=
+        - 6, 3 :[name=Wingull]:Wiiii! Wiiii! Wiiiin![WAIT 60]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1160,7 +1157,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 4 Vei-veinard !
+        - 6, 4 Chan-chansey!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1363,8 +1360,7 @@ events:
         code: 249
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgNSBMZXZlaW5hcmQgc29pZ25lIHZvdHJlIMOpcXVpcGUuW1dBSVQgOTBd
+        - 6, 5 Chansey heals your team.[WAIT 90]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2143,25 +2139,24 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 33 J'adore jouer dans les flaques !
+        - 6, 33 I like to play in puddles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMzQgUXVhbmQgdHUgbWFyY2hlcyBzdXIgdW4gU3lzdGVtdGFnIFxjWzVdUHVkZGxlXGNbMF0sIHVuZSBwZXRpdGUgb25kZSBhcHBhcmHDrnQgIQ==
+        - 6, 34 When you walk in a \c[5]Puddle\c[0] Systemtag, a little ripple appears!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMzUgVHUgbCdhcyBwZXV0LcOqdHJlIHJlbWFycXXDqSwgbGEgZmxhcXVlIG5lIHNvcnQgcGFzIGRlIGwnZWF1LiBDJ2VzdCBwYXJjZSBxdWUgbCdhbmltYXRpb24gZXN0IGZhaXRlIHBvdXIgc2Ugam91ZXIgc291cyBsYSBmbGFxdWUgIQ==
+        - 6, 35 Maybe you saw that, but the ripple doesn't leave the water. It's because
+          the animation is made to be displayed under this puddle!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 36 Donc il faut que la flaque soit transparente ! La gentille madame
-          qui s'admire te l'expliquera !
+        - '6, 36 So the puddle must be transparent! The nice lady who admires herself
+          will explain this to you! '
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2187,8 +2182,7 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMzcgUGxvdWMuLi4gUGxvYy4gSMOpaMOpICE=
+        - 6, 37 Plop... Plop. Hehe!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2247,20 +2241,18 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgNiBMYSBtZXIgZXN0IHBhcnRpY3VsacOocmVtZW50IGFnaXTDqWUgaWNpLg==
+        - 6, 6 The sea is quite choppy here.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgNyBMZXMgaW5nw6luaWV1cnMgZGUgbGEgVG91ciBvbnQgw6lxdWlww6kgbGEgc2FsbGUgZCd1biBtw6ljYW5pc21lIGfDqW7DqXJhbnQgZGUgZm9ydCBjb3VyYW50cy4=
+        - 6, 7 The Tower's engineers equiped this room with a mechanism that generates
+          powerful rapids.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgOCBDJ2VzdCBwcm9kaWdpZXV4LCBpbHMgb250IG3Dqm1lIHLDqXVzc2kgw6AgY3LDqWVyIHVuIHRvdXJiaWxsb24gIQ==
+        - 6, 8 It's quite impressive, they even succeeded in creating a whirlpool!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2276,13 +2268,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 9 Je vois que tu as la CS Surf...
+        - 6, 9 I see you have the HM Surf...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTAgVHUgdmFzIHBvdXZvaXIgdm9ndWVyIGVuIHRvdXRlIGxpYmVydMOpICE=
+        - 6, 10 You can sail freely!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2295,18 +2286,17 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 11 Oh !
+        - 6, 11 Oh!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - On dirait que tu n'as pas la CS Surf !
+        - It seems like you don't have the HM Surf!
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTIgTGFpc3NlLW1vaSBhcnJhbmdlciDDp2EuLi4=
+        - 6, 12 Let me fix that...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2316,8 +2306,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTMgVHUgdmFzIHBvdXZvaXIgdm9ndWVyIGVuIHRvdXRlIGxpYmVydMOpICE=
+        - 6, 13 You can now sail freely!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2376,19 +2365,17 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 14 J'adore marcher dans le sable !
+        - 6, 14 I love to walk on the sand!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTUgw4dhIGxhaXNzZSBkZXMgdHJhY2VzIGRlIHBhcyBwYXJ0b3V0ICE=
+        - 6, 15 It leaves footprints everywhere!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTYgTWFpcyBjZSBzYWJsZS1sw6AgZXN0IGluZmVzdMOpIGRlIFBva8OpbW9uIHNhdXZhZ2VzIHF1aSBzZSBjYWNoZW50Li4u
+        - 6, 16 But this sand is infested with wild Pokémon hiding in it...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2442,20 +2429,17 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTcgSidhaW1lIGJlYXVjb3VwIGNlIHBldGl0IGlsw7R0IGlzb2zDqS4=
+        - 6, 17 I really enjoy this small isolated islet.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTggUmFyZXMgc29udCBjZXV4IHF1aSBtZSByZW5kZW50IHZpc2l0ZSwgZG9uYyBqJ2FpbWUgYmllbiBsZXMgcsOpY29tcGVuc2VyICE=
+        - 6, 18 Rare are those who visit me, so I always make sure to reward them!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMTkgVmV1eC10dSBxdWUgaidlbnNlaWduZSBsYSBjYXBhY2l0w6kgU2lwaG9uIMOgIHVuIGRlIHRlcyBQb2vDqW1vbiA/
+        - 6, 19 Do you want me to teach the move Whirlpool to one of your Pokémon?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2473,8 +2457,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMjAgw4AgcXVlbCBQb2vDqW1vbiB2ZXV4LXR1IGwnZW5zZWlnbmVyID8=
+        - 6, 20 To which Pokémon should I teach it?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2596,8 +2579,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMjEgSWwgc2VtYmxlcmFpdCBxdWUgdG9uIFtQT0tFXSBjb25uYWlzc2UgZMOpasOgIFNpcGhvbi4uLg==
+        - 6, 21 It seems like your [POKE] already knows Whirlpool...
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2615,8 +2597,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMjIgQWxvcnMgZW5zZWlnbm9ucyBTaXBob24gw6AgdG9uIFtQT0tFXS4=
+        - 6, 22 Alright, let's teach Whirlpool to your [POKE].
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2636,7 +2617,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 23 Ton [POKE] pourra maintenant traverser les tourbillons marins !
+        - 6, 23 Your [POKE] will now be able to across the marine swirls!
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2673,13 +2654,13 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 24 Je crains que ton [POKE] ne soit en mesure d'apprendre cette attaque...
+        - 6, 24 I'm afraid your [POKE] isn't able to learn this move...
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMjUgVHUgcGV1eCB0cm91dmVyIGNlcnRhaW5lcyBlc3DDqGNlcyBkZSBQb2vDqW1vbiBwb3V2YW50IG1hw650cmlzZXIgU2lwaG9uIGRhbnMgbGEgbWVyIGF1dG91ciBkZSBub3VzLCBvdSBkYW5zIGxhIHJpdmnDqHJlLCDDoCBsJ8OpdGFnZSBpbmbDqXJpZXVyLg==
+        - 6, 25 You can find certain Pokémon species that can learn Whirlpool in the
+          sea around us, or in the river in the floor below.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2705,7 +2686,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 26 Tu ne veux pas aller explorer la haute mer ?
+        - 6, 26 Don't you want to explore the high sea?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2733,7 +2714,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 6, 27 Tu ne veux pas aller explorer la haute mer ?
+        - 6, 27 Don't you want to explore the high sea?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2815,14 +2796,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMjggSmUgbSfDqWNoYXVmZmUgYXZhbnQgZCdhZmZyb250ZXIgbGVzIHJhcGlkZXMgIQ==
+        - 6, 28 I'm warming up before challenging the rapids!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          NiwgMjkgQ29tbWUgaidhaSBsZSB0YWcgXGNbNV0ic3VyZl8iXGNbMF0gZGFucyBtb24gbm9tLCBqJ2FwcGFyYcOucyBjb21tZSBpbCBmYXV0IGVuIGpldS4=
+        - 6, 29 As I have the \c[5]"surf_" tag\c[0] in my name, I can't leave the
+          water and I correctly interact with it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

@@ -322,8 +322,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDAgSmUgcGV1eCBhcHByZW5kcmUgdW4gcGV0aXQgdG91ciDDoCB1biBQb2vDqW1vbiBxdWkgdGUgc3VpdC4=
+        - 15, 0 I can teach a little trick to following Pokémon.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -395,14 +394,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEgSWwgZmF1ZHJhaXQgcXUndW4gc2V1bCBQb2vDqW1vbiB0ZSBzdWl2ZS4uLg==
+        - 15, 1 But only one Pokémon would have to follow you...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDIgVHUgcGV1eCBkZW1hbmRlciBhdSBQb2vDqWZhbiBhc3NpcyBqdXN0ZSDDoCBkcm9pdGUgZGUgbW9kaWZpZXIgbGUgbm9tYnJlIGRlIFBva8OpbW9uIHF1aSB0ZSBzdWl2ZW50IGV0IHJldmVuaXIgbWUgdm9pciAh
+        - 15, 2 You can ask the Pokéfan seated on the right to change the number of
+          following Pokémon and come back!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -415,8 +413,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDMgUmVnYXJkZSB1biBwZXUgw6dhLg==
+        - 15, 3 Check that.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -456,8 +453,7 @@ events:
         code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQgW1BPS0VdLCBmYWlzIHVuIHBhcyBlbiBhcnJpw6hyZSAh
+        - 15, 4 [POKE], do a backstep!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -501,7 +497,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 5 Maintenant, saute !
+        - 15, 5 Now, jump!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -575,8 +571,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDYgRXQgbWFpbnRlbmFudCwgZmFpcyB1biB0b3VyIHN1ciB0b2ktbcOqbWUgIQ==
+        - 15, 6 And now, do a spin!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -666,14 +661,12 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDcgVHLDqHMgYmllbiwgW1BPS0VdICE=
+        - 15, 7 Very good, [POKE]!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDggUmV2aWVucyBsw6Au
+        - 15, 8 Come back.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -726,14 +719,13 @@ events:
         code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDkgRXQgdm9pbMOgICE=
+        - 15, 9 Et voilà!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEwIE1vZGlmaWVyIGxhIFxjWzVddmFyaWFibGUgMjFcY1swXSBwZXJtZXQgZCdlZmZlY3R1ZXIgbGVzIGTDqXBsYWNlbWVudHMgbm9ybWFsZW1lbnQgYXBwbGlxdcOpcyBhdSBqb3VldXIgc3VyIGxlIFBva8OpbW9uIHPDqWxlY3Rpb25uw6ku
+        - 15, 10 By changing the \c[5]variable 21\c[0], you can apply the move routes
+          of the player to the selected Pokémon.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -754,8 +746,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDExIEFoLCBqZSB2b2lzIHF1ZSB0dSBwcsOpZsOocmVzIGdhcmRlciB0ZXMgUG9rw6ltb24gZGFucyBsZXVycyBQb2vDqWJhbGxzLi4u
+        - 15, 11 Oh, I see you prefer to keep your Pokémon inside their Poké Balls...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -829,8 +820,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEyIFVuZSBkaW9kZSB2ZXJ0ZSBwYXJjb3VydCBsJ8OpY3JhbiBkZSBsYSBtYWNoaW5lLg==
+        - 15, 12 A green light flashes across the screen.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -915,38 +905,36 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEzIExhIG1hY2hpbmUgc2l0dcOpZSBqdXN0ZSDDoCBjw7R0w6kgZGlzcG9zZSBkJ3VuIHBldGl0IMOpY3JhbiBhbmltw6ku
+        - 15, 13 The machine right there has a little animated screen.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE0IEonYWkgaW5zdGFsbMOpIGxhIGNvbW1hbmRlIFxjWzVdImFuaW1hdGVfZnJvbV9jaGFyc2V0IlxjWzBdIGRlc3N1cyBwb3VyIGwnYW5pbWVyIHBsdXMgZmFjaWxlbWVudC4=
+        - 15, 14 I installed the \c[5]"animate_from_charset"\c[0] command on it to
+          animate it easily.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE1IE9uIHBldXQgbCdpbnPDqXJlciBkaXJlY3RlbWVudCBkYW5zIGxlcyBjb25maWd1cmF0aW9ucyBkZSBtb3V2ZW1lbnQgZCd1biDDqXbDqG5lbWVudCwgbWFpcyBhdXNzaSBhdSBzZWluIGQndW4gw6l2w6huZW1lbnQgc8OpcGFyw6ku
+        - 15, 15 You can directly put it inside the autonomous movement settings of
+          an event, but also in a distinct event as well.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE2IENldHRlIGNvbW1hbmRlIHBlcm1ldCBkJ2FuaW1lciB1bmUgb3UgcGx1c2lldXJzIGxpZ25lcyBkdSBjaGFyYWN0ZXIgZCd1biDDqXbDqG5lbWVudC4=
+        - 15, 16 Use this command to animate one or several lines of an event's character.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE3IElsIHN1ZmZpdCBkJ2luZGlxdWVyIHF1ZWxsZXMgbGlnbmVzIGFuaW1lciwgZXQgbGEgZHVyw6llIHRvdGFsZSBkZSBsJ2FuaW1hdGlvbiAh
+        - 15, 17 You just need to indicate which lines to animate and the total duration
+          of the animation!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE4IE9uIHBldXQgbcOqbWUgbGlyZSBsJ2FuaW1hdGlvbiBlbiBib3VjbGUgKFxjWzVdInJlcGVhdDogdHJ1ZSJcY1swXSkgb3Ugw6AgbCdlbnZlcnMgKFxjWzVdInJldmVyc2U6IHRydWUiXGNbMF0pLg==
+        - '15, 18 You can even loop the animation (\c[5]"repeat: true"\c[0]) or reverse
+          it (\c[5]"reverse: true"\c[0]).'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -997,14 +985,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE5IEplIG0nZW50cmHDrm5lIHBvdXIgdW4gbWFyYXRob24u
+        - 15, 19 I'm training for a marathon.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDIwIE1vbiBDcmFkb3BhdWQgbWUgc3VpdCDDoCBsYSB0cmFjZSBjYXIgaWwgYSBsZSBcY1s1XW5hbWV0YWcgIltmb2xsb3c9SURdIlxjWzBdIGV0IHF1ZSBqJ2FpIG1pcyBtb24gSUQgZGVkYW5zLg==
+        - 15, 20 My Croagunk is following me because I put the \c[5]nametag "[follow=ID]"\c[0]
+          in its name and I filled in my ID.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1096,7 +1083,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 21 Cradooo !
+        - 15, 21 Croaaa!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1159,19 +1146,18 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 22 Salut !
+        - 15, 22 Hi!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          U2kgdHUgdmV1eCwgamUgcGV1eCBmYWlyZSBlbiBzb3J0ZSBxdWUgbGUgUG9rw6ltb24gcXVpIHRlIHN1aXQgbmUgc29pdCBwYXMgZm9yY8OpbWVudCBsZSBwcmVtaWVyIGRlIHRvbiDDqXF1aXBlLg==
+        - If you want, I can make it so the Pokémon that follows you isn't necessarily
+          the first in your Party.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDIzIMOHYSB0ZSBkaXQgPw==
+        - 15, 23 Would you like me to?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1189,13 +1175,12 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 24 Laisse-moi juste changer un petit truc...[WAIT 60]
+        - 15, 24 Let me just change a little something...[WAIT 60]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Vm9pbMOgICE=
+        - There it is!
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1223,8 +1208,7 @@ events:
         code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDI1IE1haW50ZW5hbnQsIHR1IG4nYXMgcXUnw6Agc8OpbGVjdGlvbm5lciBsZSBQb2vDqW1vbiBxdWUgdHUgdmV1eCBkaXJlY3RlbWVudCBkZXB1aXMgbGUgbWVudSBkJ8OpcXVpcGUu
+        - 15, 25 Now, you can simply select the Pokémon you want in your Party menu.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1239,8 +1223,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDI2IENoYWN1biBzZXMgcHLDqWbDqXJlbmNlcywgYXByw6hzIHRvdXQu
+        - 15, 26 Each to their own, after all.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1261,13 +1244,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 27 Le mode "Let's Go" ne te convient plus ?
+        - 15, 27 Tired of the "Let's Go" mode?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          SmUgcGV1eCBsZSBkw6lzYWN0aXZlciwgc2kgdHUgdmV1eC4=
+        - I can disable it, if you want.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1285,13 +1267,13 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 28 C'est fait !
+        - 15, 28 Done!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          U2kgdHUgdmV1eCByw6lhY3RpdmVyIGxlcyBQb2vDqW1vbiBzdWl2ZXVycywgcmV2aWVucyBtZSB2b2lyLCBvdSB2YXMgcGFybGVyIGF1IFBva8OpZmFuIGp1c3RlIGVuIGZhY2UgZGUgbW9pLg==
+        - If you want to enable the followers, come see me or the Pokéfan just in
+          front of me.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1344,8 +1326,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDI5IEMnZXN0IHF1YW5kIG3Dqm1lIHBsdXMgc3ltcGEgY29tbWUgw6dhICE=
+        - 15, 29 It's nicer this way, isn't it?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1412,13 +1393,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDMwIEonYW5hbHlzZSBsZXMgaGFiaXR1ZGVzIGRlIGTDqXBsYWNlbWVudCBkZXMgZ2Vucy4=
+        - 15, 30 I study people's travel habits.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 31 Je peux te suivre un moment ?
+        - 15, 31 Can I follow you for a while?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1436,32 +1416,30 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDMyIEplIHJlbWFycXVlIHR1IGVzIGTDqWrDoCBzdWl2aS4=
+        - 15, 32 I notice you're already followed.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDMzIFR1IHByw6lmw6hyZXMgZ2FyZGVyIHRlcyBQb2vDqW1vbiBkZWhvcnMgb3UgbGVzIHJhbmdlciA/
+        - 15, 33 Would you like to keep your Pokémon outside or recall them?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 15, 34 Les laisser dehors
-          - 15, 35 Les ranger
+        - - 15, 34 Keep outside
+          - 15, 35 Recall
         - 0
         indent: 1
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Les laisser dehors
+        - 15, 34 Keep outside
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 36 Ok !
+        - 15, 36 Ok!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1471,12 +1449,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Les ranger
+        - 15, 35 Recall
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 37 Ok !
+        - 15, 37 Ok!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1494,8 +1472,7 @@ events:
         code: 404
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDM4IEZhaXMgY29tbWUgc2kgamUgbifDqXRhaXMgcGFzIGzDoC4=
+        - 15, 38 Act like if I wasn't there.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1526,7 +1503,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 39 Je ne suis pas un type louche, je te jure !
+        - 15, 39 I'm not a weirdo, I swear!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1623,8 +1600,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQwIEh1bS4uLiBUcsOocyBpbnTDqXJlc3NhbnQu
+        - 15, 40 Hmm... Very interesting.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1646,8 +1622,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQxIEFoICEgSmUgbidhdXJhaXMgcGFzIGZhaXQgw6dhIGNvbW1lIMOnYS4=
+        - 15, 41 Oh! I wouldn't have done it that way.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1669,7 +1644,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 42 Fascinant !
+        - 15, 42 Fascinating!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1691,8 +1666,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQzIFF1ZWwgZHLDtGxlIGRlIHRyYWplY3RvaXJlICE=
+        - 15, 43 What a funny trajectory!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1714,8 +1688,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQ0IE9oID8gRmFpcyBjb21tZSBzaSBqZSBuJ8OpdGFpcyBwYXMgbMOgLg==
+        - 15, 44 Oh? Act like if I wasn't there.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1737,8 +1710,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQ1IFBmaW91LCBxdWVsbGUgZm91bMOpZSAh
+        - 15, 45 Phew, what a stride!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1751,8 +1723,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQ2IFR1IHZldXggcXUnb24gcydhcnLDqnRlIGzDoCA/
+        - 15, 46 Do you want to stop there?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1770,8 +1741,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQ3IEplIHZhaXMgcmV0b3VybmVyIMOgIG1hIHBsYWNlIGFsb3JzLg==
+        - 15, 47 I'll go back to my spot, then.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1903,8 +1873,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQ4IFN1cGVyLCBqJ2FpIGVuY29yZSBkZXMgbm90ZXMgw6AgcHJlbmRyZS4=
+        - 15, 48 Great, I still have notes to take!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2076,33 +2045,31 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDQ5IDpbbmFtZT1OdXJpIFl1cmldOkonYWltZSBiaWVuIHRyYcOubmVyIGRhbnMgY2V0IGVuZHJvaXQu
+        - '15, 49 I like hanging out in this place.:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDUwIDpbbmFtZT1OdXJpIFl1cmldOlNpIHR1IHLDqXBvbmRzIGJpZW4gw6AgdG91dGVzIG1lcyBxdWVzdGlvbnMsIGplIHQnb2ZmcmlyYWkgdW5lIGpvbGllIGJhYmlvbGUgIQ==
+        - '15, 50 If you answer all my questions, I''ll give you a pretty trinket!:[name=Nuri
+          Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDUxIDpbbmFtZT1OdXJpIFl1cmldOsOHYSB0ZSBkaXQgPw==
+        - '15, 51 Are you in?:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 15, 52 Allons-y !
-          - 15, 53 Une autre fois...
+        - - 15, 52 Let's go!
+          - 15, 53 Later...
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Allons-y !
+        - 15, 52 Let's go!
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2112,13 +2079,12 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '15, 54 :[name=Nuri Yuri]:Question 1 :'
+        - '15, 54 Question 1:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          UXVlbCBlc3QgbGUgbmFtZXRhZyBwb3VyIHN1cHByaW1lciBsJ29tYnJlIHNvdXMgdW4gw6l2w6huZW1lbnQgPw==
+        - 'What is the nametag to delete the shadows under an event?:[name=Nuri Yuri]:'
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2133,7 +2099,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - "$"
+        - 15, 55 $
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2146,13 +2112,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDU5IDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 59 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2167,7 +2132,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - "*"
+        - 15, 56 *
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2180,13 +2145,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDYwIDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 60 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2201,8 +2165,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - !binary |-
-          wqc=
+        - 15, 57 §
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2215,13 +2178,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDYxIDpbbmFtZT1OdXJpIFl1cmldOkJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 15, 61 Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Question suivante.
+        - 'Next question.:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2231,7 +2193,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - "[no_shadow]"
+        - 15, 58 [no_shadow]
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2244,13 +2206,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDYyIDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 62 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2273,28 +2234,27 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '15, 63 :[name=Nuri Yuri]:Question 2 :'
+        - '15, 63 Question 2:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Q29tbWVudCBtb2RpZmllciBsYSBoYXV0ZXVyIGQndW4gw6l2w6huZW1lbnQgPw==
+        - 'How can you change the height of an event?:[name=Nuri Yuri]:'
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 15, 64 Boucle et "offset_screen_y"
+        - - 15, 64 With a loop and "offset_screen_y"
           - 15, 65 Nametag [fly]
-          - 15, 66 Commande Déplacer
-          - 15, 67 C'est impossible
+          - 15, 66 Set Move Route
+          - 15, 67 It's impossible
         - 0
         indent: 1
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Boucle et "offset_screen_y"
+        - 15, 64 With a loop and "offset_screen_y"
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2307,13 +2267,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDY4IDpbbmFtZT1OdXJpIFl1cmldOkJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 15, 68 Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Question suivante.
+        - 'Next question.:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2323,7 +2282,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Nametag [fly]
+        - 15, 65 Nametag [fly]
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2336,13 +2295,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDY5IDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 69 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2357,8 +2315,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - !binary |-
-          Q29tbWFuZGUgRMOpcGxhY2Vy
+        - 15, 66 Set Move Route
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2371,13 +2328,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDcwIDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 70 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2392,7 +2348,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - C'est impossible
+        - 15, 67 It's impossible
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2405,12 +2361,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 71 :[name=Nuri Yuri]:Eh ! On n'est pas des feignasses ici !
+        - 15, 71 Hey! We're not slackers!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2433,13 +2389,12 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '15, 72 :[name=Nuri Yuri]:Question 3 :'
+        - '15, 72 Question 3:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Q29tYmllbiBkJ2VudGl0w6lzIHBldXZlbnQgdGUgc3VpdnJlIGF1IG1heGltdW0gPw==
+        - 'How many entities can follow you at maximum?:[name=Nuri Yuri]:'
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2447,14 +2402,14 @@ events:
         - - 15, 73 1
           - 15, 74 2
           - 15, 75 6
-          - 15, 76 Plus de 6
+          - 15, 76 More than 6
         - 0
         indent: 1
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - '1'
+        - 15, 73 1
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2467,12 +2422,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 77 :[name=Nuri Yuri]:Un peu plus...
+        - 15, 77 A bit more...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2487,7 +2442,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - '2'
+        - 15, 74 2
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2500,13 +2455,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDc4IDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 78 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2521,7 +2475,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - '6'
+        - 15, 75 6
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2534,13 +2488,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDc5IDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 79 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2555,7 +2508,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - Plus de 6
+        - 15, 76 More than 6
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2568,13 +2521,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDgwIDpbbmFtZT1OdXJpIFl1cmldOkJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 15, 80 Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Question suivante.
+        - 'Next question.:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2592,27 +2544,28 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '15, 81 :[name=Nuri Yuri]:Question 4 :'
+        - '15, 81 Question 4:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Comment faire pour que le follower bouge sans le joueur ?
+        - 'How can you set the route of a follower without having the player move?:[name=Nuri
+          Yuri]:'
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 15, 82 Lui demander
-          - 15, 83 Modifier la variable 21
-          - 15, 84 Commande Déplacer
-          - 15, 85 C'est impossible
+        - - 15, 82 Asking them
+          - 15, 83 Changing variable 21
+          - 15, 84 Set Move Route
+          - 15, 85 It's impossible
         - 0
         indent: 1
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Lui demander
+        - 15, 82 Asking them
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2625,12 +2578,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 86 :[name=Nuri Yuri]:N'importe quoi...
+        - 15, 86 What are you saying...?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2645,7 +2598,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Modifier la variable 21
+        - 15, 83 Changing variable 21
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2658,14 +2611,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDg3IDpbbmFtZT1OdXJpIFl1cmldOkJvbm5lIHLDqXBvbnNlICFbV0FJVCA0MF0=
+        - 15, 87 Correct![WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VHUgYXMgcsOpcG9uZHUgw6AgbGEgcGVyZmVjdGlvbiAh
+        - 'You answered perfectly!:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2681,8 +2632,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - !binary |-
-          Q29tbWFuZGUgRMOpcGxhY2Vy
+        - 15, 84 Set Move Route
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2695,13 +2645,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDg4IDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 88 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2716,7 +2665,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - C'est impossible
+        - 15, 85 It's impossible
         indent: 1
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2729,13 +2678,12 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDg5IDpbbmFtZT1OdXJpIFl1cmldOk1hdXZhaXNlIHLDqXBvbnNlICE=
+        - 15, 89 Wrong!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Essaie encore...[WAIT 40]
+        - 'Try again...[WAIT 40]:[name=Nuri Yuri]:'
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2758,7 +2706,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Une autre fois...
+        - 15, 53 Later...
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2816,8 +2764,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDkwIDpbbmFtZT1OdXJpIFl1cmldOkbDqWxpY2l0YXRpb25zICE=
+        - '15, 90 Congratulations! You answered all my questions.:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2828,13 +2775,13 @@ events:
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDkxIDpbbmFtZT1OdXJpIFl1cmldOkMnZXN0IHZyYWkgcXUnZWxsZXMgbifDqXRhaWVudCBwYXMgdHLDqHMgZHVyZXMsIG1haXMgw6dhIG1vbnRyZSBxdWUgdHUgYXMgYmllbiBwYXJsw6kgw6AgdG91dCBsZSBtb25kZSBpY2ku
+        - '15, 91 They weren''t super hard, but I can see you spoke to everybody in
+          this room.:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 92 :[name=Nuri Yuri]:Voici le fameux objet que je t'avais promis.
+        - '15, 92 Here''s the present I promised you.:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2844,14 +2791,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDkzIDpbbmFtZT1OdXJpIFl1cmldOklsIG1lIHNlbWJsZSBxdWUgYydlc3QgU2lyTWFsbyBxdWkgY29sbGVjdGlvbm5lIGNlcyBjYWlsbG91eCBiaXphcm/Dr2Rlcy4=
+        - '15, 93 I believe SirMalo collects these kind of odd rocks.:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 94 :[name=Nuri Yuri]:Tu devrais aller lui en parler dans le Hall de
-          la Tour !
+        - '15, 94 You should go talk to him in the Tower''s Hall!:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2902,14 +2847,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDk1IDpbbmFtZT1OdXJpIFl1cmldOklsIG1lIHNlbWJsZSBxdWUgYydlc3QgU2lyTWFsbyBxdWkgY29sbGVjdGlvbm5lIGNlcyBjYWlsbG91eCBiaXphcm/Dr2Rlcy4=
+        - '15, 95 I believe SirMalo collects these kind of odd rocks.:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 96 :[name=Nuri Yuri]:Tu devrais aller lui en parler dans le Hall de
-          la Tour !
+        - '15, 96 You should go talk to him in the Tower''s Hall!:[name=Nuri Yuri]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2960,8 +2903,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 97 Comme cette tasse n'a pas besoin d'apparence, son nom comporte le
-          nametag \c[5]"[sprite=off]"\c[0].
+        - 15, 97 As this mug doesn't need to have an event graphics, its name has
+          the nametag \c[5]"[sprite=off]"\c[0].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3410,31 +3353,29 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDk4IE1vbiBLaXJsaWEgcGV1dCB0w6lsw6lwb3J0ZXIgbGVzIG9iamV0cyBldCBsZXMgZ2VucyDDoCB2b2xvbnTDqSAh
+        - 15, 98 My Kirlia can teleport objects and people!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDk5IEMnZXN0IGdyw6JjZSDDoCBzb24gYXR0YXF1ZSBUw6lsw6lwb3J0LCBtYWlzIGF1c3NpIGdyw6JjZSDDoCBsYSBjb21tYW5kZSBcY1s1XSIkZ2FtZV9wbGF5ZXIubW92ZXRvIlxjWzBdLg==
+        - 15, 99 It's thanks to its move Teleport, but also with the \c[5]"$game_player.moveto"\c[0]
+          command.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEwMCBDb250cmFpcmVtZW50IMOgIGxhIGNvbW1hbmRlIGJhc2lxdWUgZGUgdMOpbMOpcG9ydGF0aW9uLCBcY1s1XSJtb3ZldG8iXGNbMF0gbmUgcsOpaW5pdGlhbGlzZSBwYXMgbGEgbWFwLCBuaSBsYSBtdXNpcXVlIGpvdcOpZS4=
+        - 15, 100 Unlike the basic warping command, \c[5]"moveto"\c[0] doesn't reinitialize
+          the map or the music.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 101 C'est donc pratique dans certains cas.
+        - 15, 101 It's quite handy in some situations.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEwMiBUdSB2ZXV4IGV4cMOpcmltZW50ZXIgcGFyIHRvaS1tw6ptZSA/
+        - 15, 102 Do you want to try it yourself?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3490,8 +3431,7 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEwMyBLaXJsaWEsIGF0dGFxdWUgVMOpbMOpcG9ydCAh
+        - 15, 103 Kirlia, use Teleport!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3544,8 +3484,7 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEwNSBLaXJsaWEgdXRpbGlzZSBUw6lsw6lwb3J0ICE=
+        - 15, 105 Kirlia uses \c[1]Teleport\c[0]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3740,7 +3679,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 106 T'aimes pas les sensations fortes ?
+        - 15, 106 Don't you like thrilling sensations?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4077,31 +4016,31 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 108 Bonjour !
+        - 15, 108 Hello!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEwOSBKJ2FpIGxlIFxjWzVdbmFtZXRhZyAkIFxjWzBdZGFucyBtb24gbm9tLCBkb25jIG1vbiBhcHBhcmVuY2UgcmVzdGUgbGEgbcOqbWUgc3VyIHRvdXRlcyBsZXMgcGFnZXMgcXVpIGNvbXBvc2VudCBtb24gw6l2w6huZW1lbnQu
+        - 15, 109 I've got the \c[5]nametag $\c[0] in my event's name, so my graphics
+          stay the same on all the pages of my event.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 110 Tu en penses quoi ?
+        - 15, 110 What do you think about that?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 15, 111 C'est pratique
-          - 15, 112 C'est utile
+        - - 15, 111 It's handy
+          - 15, 112 It's useful
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - C'est pratique
+        - 15, 111 It's handy
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4117,7 +4056,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - C'est utile
+        - 15, 112 It's useful
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4176,8 +4115,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDExMyBFaCBvdWkgISBDJ2VzdCBwcmF0aXF1ZSBwb3VyIG5lIHBhcyBhdm9pciDDoCBjb25maWd1cmVyIGwnYXBwYXJlbmNlIMOgIGNoYXF1ZSBmb2lzLg==
+        - 15, 113 It is! So you don't have to set the graphics each time.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4228,7 +4166,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 114 Eh oui ! C'est utile pour ne pas oublier une apparence sur une page...
+        - 15, 114 It is! So you won't forget to set the graphics on a page...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4285,20 +4223,17 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDExNSBKJ2FpIGRlbWFuZMOpIMOgIG1vbiBQb2vDqW1vbiBTcGVjdHJlIGRlIG1lIHJlbmRyZSB0cmFuc3BhcmVudCBjb21tZSBsdWkgIQ==
+        - 15, 115 I asked my Ghost Pokémon to make me half-transparent like him!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDExNiBKJ2FpIGF1c3NpIHV0aWxpc8OpIGxlIFxjWzVdbmFtZXRhZyDCp1xjWzBdIHBvdXIgc3VwcHJpbWVyIG1vbiBvbWJyZS4=
+        - 15, 116 I also used the \c[5]nametag §\c[0] to delete my shadow.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDExNyBDaGFuLW3DqSAh
+        - 15, 117 Sheesh!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4357,19 +4292,18 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDExOCBKZSB2b2lzIHF1ZSB0dSBhcyBhY3RpdsOpIGxlIG1vZGUgIkxldCdzIGdvIiBwb3VyIGxlcyBQb2vDqW1vbiBzdWl2ZXVycy4=
+        - 15, 118 I see you enabled the "Let's Go" mode for followers.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDExOSBTaSB0dSB2ZXV4IG1hbmlwdWxlciBsZXMgUG9rw6ltb24gc3VpdmV1cnMgZGUgbGEgdmVyc2lvbiBIR1NTLCBqZSB2YWlzIGRldm9pciBsZSBkw6lzYWN0aXZlciBkJ2Fib3JkLg==
+        - 15, 119 If you want to make some manipulations on followers based on the
+          HGSS versions, I need to disable it first.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Qu'en dis-tu ?
+        - Is it OK for you?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4387,8 +4321,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEyMCBDJ2VzdCBub3TDqSAhIEplIGTDqXNhY3RpdmUgY2Ugc3lzdMOobWUgYWxvcnMu
+        - 15, 120 All right! I disable the system then.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4436,8 +4369,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEyMSBUcsOocyBiaWVuLg==
+        - 15, 121 Very fine.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4465,39 +4397,36 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEyMiBBbG9ycywgdGVzIFBva8OpbW9uIGFwcHLDqWNpZW50IGxldXIgYmFsYWRlID8=
+        - 15, 122 So, do your Pokémon enjoy the walk?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 123 Tu veux modifier quelque chose ?
+        - 15, 123 Do you want to change somehting?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 15, 124 Arrêter
-          - 15, 125 Modifier le nombre
-          - 15, 126 Rien
+        - - 15, 124 Stop
+          - 15, 125 Change the number
+          - 15, 126 Nothing
         - 3
         indent: 2
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - !binary |-
-          QXJyw6p0ZXI=
+        - 15, 124 Stop
         indent: 2
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 127 C'est toi qui vois.
+        - 15, 127 It's up to you.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEyOCBKZSBkw6lzYWN0aXZlIGwnXGNbNV1pbnRlcnJ1cHRldXIgMTlcY1swXSBkYW5zIGNlIGNhcy4=
+        - 15, 128 I put the \c[5]switch 19\c[0] on Off, then.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4523,33 +4452,32 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Modifier le nombre
+        - 15, 125 Change the number
         indent: 2
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 129 Plus on est de fous, plus on rit, hein !
+        - 15, 129 The more, the merrier, right?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEzMCBUdSB2ZXV4IHF1ZSBjb21iaWVuIGRlIFBva8OpbW9uIHRlIHN1aXZlbnQgPw==
+        - 15, 130 How many following Pokémon would you like?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 15, 131 Un
-          - 15, 132 Deux
-          - 15, 133 Trois
-          - 15, 134 Toute l'équipe
+        - - 15, 131 One
+          - 15, 132 Two
+          - 15, 133 Three
+          - 15, 134 The whole party
         - 0
         indent: 3
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Un
+        - 15, 131 One
         indent: 3
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4568,7 +4496,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - Deux
+        - 15, 132 Two
         indent: 3
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4587,7 +4515,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Trois
+        - 15, 133 Three
         indent: 3
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4606,8 +4534,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 3
-        - !binary |-
-          VG91dGUgbCfDqXF1aXBl
+        - 15, 134 The whole party
         indent: 3
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4634,7 +4561,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Rien
+        - 15, 126 Nothing
         indent: 2
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4655,8 +4582,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEzNSBUaWVucyAhIEplIHJlbWFycXVlIHF1ZSB0dSBnYXJkZXMgdGVzIFBva8OpbW9uIGRhbnMgbGV1cnMgUG9rw6liYWxscy4uLg==
+        - 15, 135 I notice you keep your Pokémon in their Poké Balls...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4666,8 +4592,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEzNiDDh2EgdGUgZGlyYWl0IHF1ZSBsZSBwcmVtaWVyIFBva8OpbW9uIGRlIHRvbiDDqXF1aXBlIHRlIHN1aXZlID8=
+        - 15, 136 Would you like to be followed by the first Pokémon in your Party?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4685,7 +4610,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 137 Fais-lui prendre un peu l'air !
+        - 15, 137 Enjoy the fresh air!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4706,14 +4631,14 @@ events:
         code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEzOCBKJ2FpIHNpbXBsZW1lbnQgYWN0aXbDqSBsJ1xjWzVdaW50ZXJydXB0ZXVyIDE5XGNbMF0gZXQgcGFzc8OpIGxhIFxjWzVddmFyaWFibGUgMTlcY1swXSBzdXIgMS4=
+        - 15, 138 I just enabled \c[5]switch 19\c[0] and set \c[5]variable 19\c[0]
+          to 1.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDEzOSBOJ291YmxpZSBwYXMgbGEgY29tbWFuZGUgXGNbNV1ZdWtpOjpGb2xsb3dNZS5zbWFydF9kaXNhYmxlIFxjWzBdIHBvdXIgYWN0aXZlciBvdSBkw6lzYWN0aXZlciBsZSBmb2xsb3ctbWUgZGUgbWFuacOocmUgaW50ZWxsaWdlbnRlLg==
+        - 15, 139 Don't forget the \c[5]Yuki::FollowMe.smart_disable \c[0] command
+          to enable or disable the follow-me system dynamically.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4728,7 +4653,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 140 S'ils y sont bien, c'est l'essentiel.
+        - 15, 140 If they're feeling good there, that's the main thing.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4803,7 +4728,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 141 Comme cette tasse n'a pas besoin d'apparence, son nom comporte le
+        - 15, 141 Since this mug's graphics are already on the tileset, it has the
           nametag \c[5]"[sprite=off]"\c[0].
         indent: 0
         code: 101
@@ -4855,25 +4780,23 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE0MiBKJ2VudHJhw65uZSBtb24gQW5jaHdhdHQgcG91ciBxdSdpbCBsw6l2aXRlIGJpZW4gaGF1dC4=
+        - 15, 142 I train my Tynamo so that it levitates very high.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE0MyBHcsOiY2Ugw6Agc29uIFRhbGVudCBMw6l2aXRhdGlvbiwgaWwgbidhIGF1Y3VuZSBmYWlibGVzc2UgIQ==
+        - 15, 143 With its Ability Levitate, it has no weakness!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE0NCBMYSB0ZWNobmlxdWUgcGV1dCBwYXJhw650cmUgY29tcGxleGUsIG1haXMgc2kgdHUgbGlzIGJpZW4gbGVzIGNvbW1lbnRhaXJlcyBkZSBsJ8OpdsOobmVtZW50LCB0dSBjb21wcmVuZHJhcy4=
+        - 15, 144 The technic might look quite complex, but if you read the comments
+          in the event carrefully, you'll get it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 145 Regarde bien.
+        - 15, 145 Check that.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4976,7 +4899,7 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 146 Bravo !
+        - 15, 146 Nice!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4996,7 +4919,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 147 Maintenant, redescend.
+        - 15, 147 Now, back down.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5075,13 +4998,12 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 148 C'est un travail de longue haleine.
+        - 15, 148 It's a long-term job.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTUsIDE0OSBMYSBjb21tYW5kZSBcY1s1XSJvZmZzZXRfc2NyZWVuX3kiXGNbMF0gY291cGzDqWUgw6AgdW5lIGJvdWNsZSBtJ2EgYmllbiBhaWTDqS4=
+        - 15, 149 The \c[5]"offset_screen_y"\c[0] coupled with a loop helped me well.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5137,7 +5059,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 15, 150 :[name=Anchwatt]:Chwatt, chwatt ![WAIT 50]
+        - 15, 150 :[name=Tynamo]:Namo, Namo![WAIT 50]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
