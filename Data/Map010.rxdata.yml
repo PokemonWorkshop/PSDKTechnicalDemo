@@ -621,20 +621,18 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDAgQ2V0dGUgcGlzdGUgY3ljbGFibGUgZXN0IGVuIHBlbnRlICEgQydlc3Qgw6AgZGlyZSBxdWUgc2kgdHUgbmUgYm91Z2VzIHBhcyBwYXIgdG9pLW3Dqm1lLCBvdSBxdWUgdHUgbidhcHB1aWVzIHBhcyBzdXIgdGEgdG91Y2hlIEIsIHR1IGRlc2NlbmRyYXMgZW4gY29udGludSAh
+        - 10, 0 This Cycling Road is on a slope.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDEgRCdhaWxsZXVycywgdW5lIGZvcmNlIG9ic2N1cmUgZXQgaW5zb25kYWJsZSBub3VzIGVtcMOqY2hlIGQnYWxsZXIgZGVzc3VzIHNpIG5vdXMgbmUgc29tbWVzIHBhcyBzdXIgdW4gdsOpbG8uLi4=
+        - 10, 1 Also, an obscure and unfathomable force keeps anyone from going on
+          it without a bike...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDIgRW5jb3JlIHVuIGNvdXAgZGUgY2VzIHNhdGFuw6lzIGTDqXZlbG9wcGV1cnMgIQ==
+        - 10, 2 Surely these damn developers have something to do with that!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -685,13 +683,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDMgT2ggYmllbiBqb3XDqSwgdHUgbSdhcyB0cm91dsOpICEgQXUgY2FzIG/DuSB0dSBuZSBzYXVyYWlzIHBhcyBwb3VycXVvaSBqZSBzdWlzIGzDoCwgYydlc3QgcG91ciBtb250cmVyIHF1ZSB0dSBwZXV4IHJvdWxlciBzdXIgbGEgYmFycmUgcXVpIGVzdCBjb25zaWTDqXLDqWUgcGFyIGxlIHN5c3TDqG1lIGNvbW1lIHVuIHBvbnQgZXQgcGFzc2VyIGF1IGRlc3N1cyBkZSBtb2ksIGV0IHR1IG5lIHBvdXJyYXMgcGFzIG5vbiBwbHVzIG1lIHBhcmxlciAh
+        - 10, 3 Oh, well done, you found me!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 10, 4 Essaye, tu verras !
+        - 10, 4 Try it and you'll see!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -846,8 +843,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDUgVm91cyBuZSBwb3V2ZXogcGFzIGFjY8OpZGVyIMOgIGxhIFBpc3RlIEN5Y2xhYmxlIMOgIHBpZWQsIHZveW9ucyAh
+        - 10, 5 You can't access the Cycling Road on foot, of course!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1049,8 +1045,8 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDYgSWwgbmUgZmF1dC5bV0FJVCAyMF0uW1dBSVQgMjBdLiBqYW1haXMuW1dBSVQgMjBdLltXQUlUIDIwXS4gcydhcnLDqnRlci5bV0FJVCAyMF0uW1dBSVQgMjBdLiBkZSBww6lkYWxlciAh
+        - 10, 6 You must.[WAIT 20].[WAIT 20]. never.[WAIT 20].[WAIT 20]. stop.[WAIT
+          20].[WAIT 20]. pedaling!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1171,12 +1167,12 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 10, 7 J'adore me laisser emporter par la vitesse !
+        - 10, 7 I really enjoy letting myself go with the speed!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 10, 8 Mais pour remonter la pente, il faut forcer sur les cuisses...
+        - 10, 8 But to get back on the slope, you must strain your legs a lot...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2086,14 +2082,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDkgVHUgcGV1eCBlc2NhbGFkZXIgY2VzIGdyb3Mgcm9jaGVycyBlbiBzYXV0YW50IGRlc3N1cyBhdmVjIHVuIFxjWzVdVsOpbG8gQ3Jvc3NcY1swXS4=
+        - 10, 9 You can climb these big boulders by jumping on them with an \c[5]Acro
+          Bike\c[0].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDEwIFNpIHR1IGZhaXMgdW5lIHJvdWUgYXJyacOocmUgZXQgcXVlIHR1IHJlc3RlcyBzdXIgcGxhY2UsIHR1IHZhcyB0ZSBtZXR0cmUgw6Agc2F1dGlsbGVyICE=
+        - 10, 10 If you do a wheelie and stay still, you'll start bunny hopping!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2144,14 +2139,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDExIExlcyB0cmVtcGxpbnMgZW4gcGllcnJlIHF1ZSB0dSB2b2lzIGzDoCB0ZSBwZXJtZXR0ZW50IGRlIHNhdXRlciBzdXBlciBsb2luIGVuIHbDqWxvLg==
+        - 10, 11 The rocky ramps you see over there make you jump very far with your
+          bike.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDEyIFNpIHR1IGwnZW1wcnVudGVzIMOgIGdyYW5kZSB2aXRlc3NlLCB0dSBpcmFzIGVuY29yZSBwbHVzIGxvaW4gIQ==
+        - 10, 12 If you take it at high speed, you'll go even further!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2205,14 +2199,14 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDEzIEonYWkgdnUgdW4gdHlwZSBzdXBlciBmb3J0IGVuIFZUVCBmcmFuY2hpciBsZXMgcmFtcGVzIGJsYW5jaGVzIGluc3RhbGzDqWVzIMOgIG5vdHJlIGdhdWNoZS4=
+        - 10, 13 I saw a skillful dude with a mountain bike crossing these white ramps
+          installed on our left.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDE0IElsIHJlYm9uZGlzc2FpdCBzdXIgc29uIFxjWzVdVsOpbG8gQ3Jvc3NcY1swXSBldCBzYXV0YWl0IGQndW5lIHJhbXBlIMOgIGwnYXV0cmUgY29tbWUgdW4gYWNyb2JhdGUgIQ==
+        - 10, 14 He was bouncing on his \c[5]Acro Bike\c[0] and jumped from one ramp
+          to another like an acrobat!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2266,14 +2260,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDE1IEplIG1hbnF1ZSBkJ2FjY8OpbMOpcmF0aW9uIGF2ZWMgbWEgYsOpY2FuZSBwb3VyIGZyYW5jaGlyIGNlcyBjb3Vsw6llcyBkZSBib3VlLi4u
+        - 10, 15 I lack some acceleration with my hog to cross these mudslide...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDE2IFNpIHNldWxlbWVudCBqJ2F2YWlzIHVuIFxjWzVdVsOpbG8gQ291cnNlXGNbMF0gIQ==
+        - 10, 16 If only I had a \c[5]Mach Bike\c[0]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2407,18 +2399,18 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          dHJhaW5lcl9leWVfc2VxdWVuY2UoIjEwLCAyOCBIZXAsIHRvaSwgbMOgICEiLCBleWVfYmdtOiAnYXVkaW8vYmdtL1Nwb3R0ZWQgLSBUb3VnaCBHdXkub2dnJyk=
+        - 'trainer_eye_sequence("10, 28 Hey, you there!", eye_bgm: ''audio/bgm/Spotted
+          - Tough Guy.ogg'')'
         indent: 0
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 10, 17 Je te rassure, je ne suis pas un Dresseur.
+        - 10, 17 Don't worry, I'm not a Trainer.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 10, 18 Je veux juste m'assurer que tu kiffes ta descente !
+        - 10, 18 I just wanted to make sure you're feelin' it!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2478,7 +2470,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 10, 19 Rares sont ceux qui comprennent le vrai plaisir de la piste !
+        - 10, 19 Rare are those who really understand the thrills of the Road!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2893,8 +2885,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDIwIFZvdXMgbmUgcG91dmV6IHBhcyBhY2PDqWRlciDDoCBsYSBQaXN0ZSBDeWNsYWJsZSDDoCBwaWVkLCB2b3lvbnMgIQ==
+        - 10, 20 You can't access the Cycling Road on foot, of course!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2975,14 +2966,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDIxIFNhbHV0IGpldW5lIFZUVGlzdGUgISBJY2ksIGxlIHbDqWxvLCBjJ2VzdCBvYmxpZ2F0b2lyZSAhIFRlbGxlbWVudCBvYmxpZ2F0b2lyZSBxdSdpbCB2YSBtw6ptZSB0J2VuIGZhbGxvaXIgZGV1eCBwb3VyIGFycml2ZXIgYXUgYm91dCBkdSBwYXJjb3VycyAh
+        - 10, 21 Hello young mountain biker!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDIyIFRpZW5zLCBwcmVuZHMgY2V1eC1sw6AsIGplIG1lIGJhbGFkZSB0b3Vqb3VycyBhdmVjIGRlcyB2w6lsb3MgZGUgcmVjaGFuZ2VzIHBvdXIgbWVzIHbDqWxvcyBkZSByZWNoYW5nZXMsIGF1IGNhcyBvw7kgaWxzIG1lIGZlcmFpZW50IGTDqWZhdXQgIQ==
+        - 10, 22 Here, take these, I'm always bringing spare bikes for my spare bikes,
+          in case they fail me.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2997,20 +2987,19 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDIzIFBvdXIgaW5mbyA6IGxlIFbDqWxvIGRlIENvdXJzZSBlc3QgbGUgcGx1cyByYXBpZGUgZGVzIGRldXggZXQgdGUgcGVybWV0dHJhIGRlIHBhc3NlciBjZXJ0YWlucyBvYnN0YWNsZXMgcXVpIHJlcXVpw6hyZW50IHVuZSB2aXRlc3NlIMOpbGV2w6llLg==
+        - 10, 23 For your information, the Mach Bike is the fastest of the two and
+          will allow you to cross obstacles that require a high speed.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDI0IExlIFbDqWxvIENyb3NzLCBsdWksIGVzdCBwbHVzIGxlbnQsIG1haXMgdHUgcGV1eCBmYWlyZSBkZXMgdHJpY2tzIGRlIGZvdSBhdmVjLCBldCBwYXNzZXIgY2VydGFpbnMgb2JzdGFjbGVzIHF1aSB0ZSByZXF1acOocmVudCBkZSBsJ2FnaWxpdMOpICE=
+        - 10, 24 The Acro Bike is slower, but you can do some sick tricks with it,
+          and cross some obstacles that require agility!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDI1IEFsbGV6LCDDqWNsYXRlIHRvaSBiaWVuICE=
+        - 10, 25 Well, go have fun now!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3061,8 +3050,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDI2IFknYSBwYXMgw6AgZGlyZSwgbGVzIEJpa2UgUGFyayBuYXR1cmVscyBjJ2VzdCBsZSBtdXN0Lg==
+        - 10, 26 No need to say, the Bike Parks sure are the thing.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3873,8 +3861,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTAsIDI3IFZvdXMgbmUgcG91dmV6IHBhcyBhY2PDqWRlciDDoCBsYSBQaXN0ZSBDeWNsYWJsZSDDoCBwaWVkLCB2b3lvbnMgIQ==
+        - 10, 27 You can't access the Cycling Road on foot, of course!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

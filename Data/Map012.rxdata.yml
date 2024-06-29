@@ -683,45 +683,42 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 'choice(26, 6, "12, 14 1: Hall de la Tour",'
+        - 'choice(26, 6, "12, 14 1: Tower Hall",'
         indent: 0
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"12, 15 2: Laboratoire",'
+        - '"12, 15 2: Laboratory",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          IjEyLCAxNiAzOiBCaWJsaW90aMOocXVlIiw=
+        - '"12, 16 3: Library",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"12, 17 4: Studio photo",'
+        - '"12, 17 4: Photo Studio",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"12, 18 5: Casino",'
+        - '"12, 18 5: Game Corner",'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"12, 19 Retour")'
+        - '"12, 19 Return")'
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDAgTm91cyBzb21tZXMgYWN0dWVsbGVtZW50IMOgIGwnw6l0YWdlIFx2WzEwM10u
+        - 12, 0 We are currently on floor \v[103].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          w4AgcXVlbCBzeXN0w6htZSB2b3VsZXotdm91cyBhbGxlciA/
+        - Which System may I take you to?
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -759,8 +756,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDEgTm91cyBzb21tZSBkw6lqw6Agw6AgY2V0IMOpdGFnZS4=
+        - 12, 1 We are already on that floor?!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -792,12 +788,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 12, 2 Certainement.
+        - 12, 2 Certainly.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Nous descendons.
+        - Elevator going down.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -907,12 +903,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 12, 3 Certainement.
+        - 12, 3 Certainly.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Nous montons.
+        - Elevator going up.
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1143,8 +1139,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDQgUHJlbWllciDDqXRhZ2UgOiBIYWxsIGRlIGxhIFRvdXIu
+        - 12, 4 The first floor has the Main Hall.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1166,8 +1161,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDUgRGV1eGnDqG1lIMOpdGFnZSA6IExhYm9yYXRvaXJlLg==
+        - 12, 5 The second floor has the Laboratory.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1189,8 +1183,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDYgVHJvaXNpw6htZSDDqXRhZ2UgOiBCaWJsaW90aMOocXVlLg==
+        - 12, 6 The third floor has the Library.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1212,8 +1205,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDcgUXVhdHJpw6htZSDDqXRhZ2UgOiBTdHVkaW8gcGhvdG8u
+        - 12, 7 The fourth floor has the Photo Studio.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1235,8 +1227,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDggQ2lucXVpw6htZSDDqXRhZ2UgOiBDYXNpbm8u
+        - 12, 8 The fifth floor has the Game Corner.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1387,8 +1378,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDkgUHJlbWllciDDqXRhZ2UgOiBIYWxsIGRlIGxhIFRvdXIu
+        - 12, 9 The first floor has the Main Hall.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1410,8 +1400,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDEwIERldXhpw6htZSDDqXRhZ2UgOiBMYWJvcmF0b2lyZS4=
+        - 12, 10 The second floor has the Laboratory.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1433,8 +1422,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDExIFRyb2lzacOobWUgw6l0YWdlIDogQmlibGlvdGjDqHF1ZS4=
+        - 12, 11 The third floor has the Library.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1456,8 +1444,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDEyIFF1YXRyacOobWUgw6l0YWdlIDogU3R1ZGlvIHBob3RvLg==
+        - 12, 12 The fourth floor has the Photo Studio.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1479,8 +1466,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTIsIDEzIENpbnF1acOobWUgw6l0YWdlIDogQ2FzaW5vLg==
+        - 12, 13 The fifth floor has the Game Corner.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand

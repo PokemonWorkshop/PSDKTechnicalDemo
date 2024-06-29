@@ -322,31 +322,29 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDAgOltuYW1lPVByb2YuIE9ybWVdOlRpZW5zLCBib25qb3VyIGpldW5lIFxmW0RyZXNzZXVzZcKnRHJlc3NldXJdICE=
+        - 13, 0 :[name=Professor Elm]:Hi, young Trainer!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VHUgdG9tYmVzIMOgIHBpYy4=
+        - This is perfect timing.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEgOltuYW1lPVByb2YuIE9ybWVdOk1vbiBhbWksIE0uIFBva8OpbW9uLCB2aWVudCDDoCBsJ2luc3RhbnQgZGUgbSdlbnZveWVyIHVuIMWSdWYu
+        - 13, 1 :[name=Professor Elm]:My dear friend, Mr. Pokémon, just sent me this
+          Egg.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIgOltuYW1lPVByb2YuIE9ybWVdOk1hbGhldXJldXNlbWVudCwgamUgc3VpcyBibG9xdcOpIGRhbnMgY2UgTGFib3JhdG9pcmUsIGV0IHNpIGplIGxlIGdhcmRlLCBpbCByaXNxdWUgZGUgbmUgcGFzIMOpY2xvcmUgZGUgc2l0w7R0Li4u
+        - 13, 2 :[name=Professor Elm]:Unfortunately, I'm stuck in this Laboratory,
+          and if I were to keep it, I'm afraid it wouldn't hatch soon...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 3 :[name=Prof. Orme]:Tu veux bien t'en occuper, dis ?
+        - 13, 3 :[name=Professor Elm]:Could you look after it, please?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -364,12 +362,12 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 4 :[name=Prof. Orme]:Merveilleux !
+        - 13, 4 :[name=Professor Elm]:Wonderful!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Prends-en bien soin.
+        - Take good care of it.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -407,8 +405,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDUgXGNbMThdXE5bMV0gcmXDp29pdCBsJ8WSdWYgZGUgbGEgcGFydCBkdSBQcm9mZXNzZXVyIE9ybWUgISBbV0FJVCAxNTBd
+        - 13, 5 \c[18]\N[1] received an \c[27]Egg \c[18]from Professor Elm![WAIT 150]
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -438,20 +435,19 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDYgOltuYW1lPVByb2YuIE9ybWVdOlBvdXIgZG9ubmVyIHVuIMWSdWYgZGUgUG9rw6ltb24sIGlsIHN1ZmZpdCBkJ3V0aWxpc2VyIGxhIGNvbW1hbmRlIFxjWzVdImFkZF9lZ2coey4uLn0pIlxjWzBdLg==
+        - 13, 6 :[name=Professor Elm]:To give a Pokémon Egg, just use the \c[5]"add_egg({...})"\c[0]
+          command.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDcgOltuYW1lPVByb2YuIE9ybWVdOlR1IHBldXggcmVudHJlciB0b3V0IHVuIHRhcyBkJ2luZm9ybWF0aW9ucyDDoCBsJ2ludMOpcmlldXIgZGVzIGFjY29sYWRlcywgY29tbWUgbCdJRCBkdSBQb2vDqW1vbiwgc2VzIHN0YXRpc3RpcXVlcywgc2VzIGF0dGFxdWVzLi4u
+        - 13, 7 :[name=Professor Elm]:You can enter a lot of informations in braces,
+          like the ID of the Pokémon, its stats, its moves...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDggOltuYW1lPVByb2YuIE9ybWVdOkplIHRyb3V2ZSBsZXMgxZJ1ZnMgZGUgUG9rw6ltb24gZmFzY2luYW50cyAh
+        - 13, 8 :[name=Professor Elm]:Pokémon Eggs are fascinating, aren't they?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -477,8 +473,8 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDkgOltuYW1lPVByb2YuIE9ybWVdOlF1ZWwgZG9tbWFnZS4uLiBJbCBwZXV0IGNvbnRlbmlyIHVuIFBva8OpbW9uIHJhcmUsIHR1IHNhaXMgIQ==
+        - 13, 9 :[name=Professor Elm]:What a shame... It could contain a rare Pokémon,
+          you know!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -531,7 +527,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 10 :[name=Prof. Orme]:Oh, c'est toi.
+        - 13, 10 :[name=Professor Elm]:Oh, it's you.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -547,14 +543,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExIDpbbmFtZT1Qcm9mLiBPcm1lXTpJbCBuJ2EgcGFzIGVuY29yZSDDqWNsb3Qu
+        - 13, 11 :[name=Professor Elm]:It hasn't hatched yet.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyIDpbbmFtZT1Qcm9mLiBPcm1lXTpBcHBhcmVtbWVudCwgbWFyY2hlciBhdmVjIHVuIMWSdWYgbCdhaWRlIMOgIGxlIGZhaXJlIMOpY2xvcmUgIQ==
+        - 13, 12 :[name=Professor Elm]:Apparently, walking with an Egg helps it hatch!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -572,14 +566,12 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEzIDpbbmFtZT1Qcm9mLiBPcm1lXTpXYW91aCAhIFVuIEF6dXJpbGwgZXN0IHNvcnRpIGRlIGwnxZJ1Zi4=
+        - 13, 13 :[name=Professor Elm]:Wow! Azurill came out of the Egg.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0IDpbbmFtZT1Qcm9mLiBPcm1lXTpJbCBwZXV0IMOpdm9sdWVyIGVuIHVuIFBva8OpbW9uIHRyw6hzIHB1aXNzYW50Lg==
+        - 13, 14 :[name=Professor Elm]:It can evolve into a strong Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -638,8 +630,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1IDpbbmFtZT1Qcm9mLiBPcm1lXTpKZSB0cm91dmUgbGVzIMWSdWZzIGRlIFBva8OpbW9uIGZhc2NpbmFudHMgIQ==
+        - 13, 15 :[name=Professor Elm]:Pokémon Eggs are fascinating, aren't they?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -690,19 +681,17 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 16 Bonjour, jeune Maker !
+        - 13, 16 Hello, young Maker!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3IE9uIG0nYXBwZWxsZSBsZSBTcMOpY2lhbGlzdGUgZGVzIG5vbXMu
+        - 13, 17 I am the official Name Rater!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4IFZldXgtdHUgcmVub21tZXIgdW4gUG9rw6ltb24gZGUgdG9uIMOpcXVpcGUgPw==
+        - 13, 18 Want me to rate the nicknames of your Pokémon?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -720,8 +709,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5IFF1ZWwgUG9rw6ltb24gdmV1eC10dSBxdWUgamUgcmVub21tZSA/
+        - 13, 19 Which Pokémon's nickname should I critique?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -788,8 +776,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwIE1haXMgZW5maW4sIHR1IHBldXggcGFzIHJlbm9tbWVyIHVuIMWSdWYsIGMnZXN0IGJpZW4gY29ubnUgIQ==
+        - 13, 20 Now, now. That is merely an Egg! An Egg can go by no other name!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -833,8 +820,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxIEhtLCBbUE9LRV0sIHR1IGRpcyA/IEMnZXN0IHVuIG5vbSBpbnTDqXJlc3NhbnQsIG1haXMgamUgcGVuc2UgcXUnb24gcGV1dCB0cm91dmVyIG1pZXV4Lg==
+        - 13, 21 [POKE], is it? Hmm... That is a decent nickname!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -881,7 +867,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 22 Mais enfin ! Tu te moques de moi ?
+        - 13, 22 It looks no different from before?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -899,7 +885,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 23 C'est beaucoup plus original, tu ne trouves pas ?
+        - 13, 23 It is a better name than before, isn't it? Good for you!"
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -948,8 +934,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDI0IEplIHJlc3RlIGzDoCwgc2kgdHUgY2hhbmdlcyBkJ2F2aXMu
+        - 13, 24 Ah, good. I see. Do come visit again if you change your mind.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1008,14 +993,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDI1IEplIHBldXggdG91dCB0ZSBkaXJlIHN1ciBsZSB0eXBlIGRlIGxhIHB1aXNzYW5jZSBjYWNow6llIGRlIHRvbiDDqXF1aXBlLg==
+        - 13, 25 I’ll tell you what type your Pokémon’s Hidden Power will be.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDI2IEMnZXN0IG1hIHB1aXNzYW5jZSBjYWNow6llIMOgIG1vaS4=
+        - 13, 26 My own hidden power lets me do that.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1120,8 +1103,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDI3IFNpIGNlIFBva8OpbW9uIGFwcHJlbmFpdCBbTU9WRV0sIGNlIHNlcmFpdCB1bmUgY2FwYWNpdMOpIGRlIHR5cGUgW1BPV0VSXS4=
+        - 13, 27 If this Pokémon were to learn [MOVE], the move’s type would be [POWER].
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1177,8 +1159,8 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDI4IFNpIHR1IGNoYW5nZXMgZCdhdmlzLCBmYWlzLWxlIG1vaSBzYXZvaXIsIGV0IGplIG1ldHRyYWkgbWEgcHVpc3NhbmNlIGNhY2jDqWUgw6AgdG9uIHNlcnZpY2Uu
+        - 13, 28 If you want to know, ask me, and I’ll activate my hidden power for
+          you.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1237,18 +1219,17 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 29 Oui-hi-hi !
+        - 13, 29 Woo-hoo-hoo!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDMwIEplIHBldXggaW1pdGVyIGxlIGNyaSBkZSBuJ2ltcG9ydGUgcXVlbCBQb2vDqW1vbiAh
+        - 13, 30 I can mimic any Pokémon's cry!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Youpi-li-pou !
+        - Yahoo-dee-lah!
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1321,8 +1302,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDMxIElsIHZhIGZhbGxvaXIgYXR0ZW5kcmUgdW4gcGV1IGF2YW50IHF1ZSBqZSBwdWlzc2UgaW1pdGVyIGNlIFBva8OpbW9uLi4u
+        - 13, 31 You'll have to wait a bit more before I can mimic this Pokémon's
+          cry...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1593,7 +1574,7 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 32 C'est le cri de [POKE] ! Oui-hi-hi ![WAIT 50]
+        - 13, 32 That's the cry of \c[1][POKE]\c[0]! Woo-hoo-hoo![WAIT 50]
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1617,8 +1598,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDMzIFF1ZWxsZSBkb3VjZSBtw6lsb2RpZSAh
+        - 13, 33 What a nice melody!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1803,38 +1783,33 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDM0IEFoICEgVGUgdm9pbMOgICE6W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 34 There you are!:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDM1IExlIFN0YWZmIG5vdXMgYSBwcsOpdmVudSBxdWUgdHUgdmllbmRyYWlzLjpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 35 The Staff members told us you''d come.:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDM2IFR1IGFzIHB1IGV4cGxvcmVyIHVuIHBldSBsJ8OObGUgPzpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 36 Were you able to explore the Island a little?:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDM3IFR1IGFzIGTDuyByZW5jb250cmVyIHRvdXRlIHVuZSB2YXJpw6l0w6kgZGUgUG9rw6ltb24uOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 37 You must have seen a whole variety of Pokémon.:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDM4IE1haXMgISBJbCBzZW1ibGVyYWl0IHF1J29uIGFpdCBjb21wbMOodGVtZW50IG91Ymxpw6kgZGUgdGUgZG9ubmVyIHVuIFBva8OpZGV4ICE6W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 38 Wait! It looks like we forgot to give you a Pokédex!:[name=Professor
+          Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDM5IExhaXNzZS1tb2kgcsOpZ2xlciDDp2EuLi46W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 39 Let me handle this...:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1900,26 +1875,26 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDQwIFxjWzE4XVxOWzFdIHJlw6dvaXQgbGUgUG9rw6lkZXggZGUgbGEgcGFydCBkdSBQcm9mLiBTZWtvICEgW1dBSVQgMTIwXQ==
+        - 13, 40 \c[18]\N[1] received the \c[27]Pokédex \c[18]from Professor Birch![WAIT
+          120]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDQxIEMnZXN0IHVuIG91dGlsIHRyw6hzIHBlcmZvcm1hbnQgcXVpIHRlIHBlcm1ldHRyYSBkZSBjb2xsZWN0ZXIgdW4gdGFzIGQnaW5mb3JtYXRpb25zIHN1ciBsZXMgUG9rw6ltb24gcXVlIHR1IHJlbmNvbnRyZXMuOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 41 It''s a high-tech tool that automatically collects a bunch of data
+          on Pokémon you''ve seen or caught.:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDQyIE4naMOpc2l0ZSBwYXMgw6AgdmVuaXIgbWUgdm9pciDDoCBtb24gYnVyZWF1IHBvdXIgcXVlIGplIGwnw6l2YWx1ZS46W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 42 Feel free to come to my desk to show me your Pokédex.:[name=Professor
+          Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDQzIFF1aSBzYWl0LCBqZSBwb3VycmFpcyBwZXV0LcOqdHJlIHQnb2ZmcmlyIHF1ZWxxdWUgY2hvc2UgZCdpbnTDqXJlc3NhbnQuLi46W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 43 Who knows, I could offer you something interesting...:[name=Professor
+          Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2080,13 +2055,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 44 Un lave-linge.
+        - 13, 44 It’s a washing machine.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          SWwgZXN0IMOpcXVpcMOpIGQndW4gw6l0cmFuZ2UgbW90ZXVyLg==
+        - It has an odd-shaped motor on it.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2117,8 +2091,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDQ1IFZvdWxlei12b3VzIGZhaXJlIHNvcnRpciBNb3Rpc21hIGRlIHNhIFBva8OpYmFsbCA/
+        - 13, 45 Do you want to let Rotom out of its Poké Ball?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2240,12 +2213,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 46 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 46 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 47 Le laisser entrer dans le moteur ?
+        - 13, 47 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2309,8 +2282,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDQ4IFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 48 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2330,8 +2302,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDQ5IFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 49 [POKE] reluctantly gave up on entering the washing machine’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2363,7 +2334,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 50 [POKE] reprend sa forme d'origine.
+        - 13, 50 [POKE] returned to its original form.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2423,19 +2394,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 51 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 51 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 52 Le laisser entrer dans le moteur ?
+        - 13, 52 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
         - - "\\t[11,27]"
           - "\\t[11,28]"
-          - 13, 53 Rappeler
+          - 13, 53 Recall
         - 2
         indent: 4
         code: 102
@@ -2493,8 +2464,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDU0IFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 54 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2514,8 +2484,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDU1IFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 55 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2530,7 +2499,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Rappeler
+        - 13, 53 Recall
         indent: 4
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -2550,7 +2519,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 56 [POKE] est sorti du moteur.
+        - 13, 56 [POKE] emerged from the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2670,8 +2639,7 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDU3IMOHYSBuZSBmb25jdGlvbm5lcmEgcGFzIGF2ZWMgY2UgUG9rw6ltb24u
+        - 13, 57 That Pokémon can’t enter a motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2822,14 +2790,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDU4IFVuIGZvdXIgw6AgbWljcm8tb25kZXMu
+        - 13, 58 It’s a microwave oven.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          SWwgZXN0IMOpcXVpcMOpIGQndW4gw6l0cmFuZ2UgbW90ZXVyLg==
+        - It has an odd-shaped motor on it.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2860,8 +2826,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDU5IFZvdWxlei12b3VzIGZhaXJlIHNvcnRpciBNb3Rpc21hIGRlIHNhIFBva8OpYmFsbCA/
+        - 13, 59 Do you want to let Rotom out of its Poké Ball?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2983,12 +2948,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 60 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 60 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 61 Le laisser entrer dans le moteur ?
+        - 13, 61 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3052,8 +3017,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDYyIFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 62 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3073,8 +3037,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDYzIFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 63 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3106,7 +3069,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 64 [POKE] reprend sa forme d'origine.
+        - 13, 64 [POKE] returned to its original form.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3166,19 +3129,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 65 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 65 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 66 Le laisser entrer dans le moteur ?
+        - 13, 66 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
         - - "\\t[11,27]"
           - "\\t[11,28]"
-          - 13, 67 Rappeler
+          - 13, 67 Recall
         - 2
         indent: 4
         code: 102
@@ -3236,8 +3199,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDY4IFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 68 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3257,8 +3219,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDY5IFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 69 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3273,7 +3234,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Rappeler
+        - 13, 67 Recall
         indent: 4
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -3314,7 +3275,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 70 [POKE] est sorti du moteur.
+        - 13, 70 [POKE] emerged from the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3413,8 +3374,7 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDcxIMOHYSBuZSBmb25jdGlvbm5lcmEgcGFzIGF2ZWMgY2UgUG9rw6ltb24u
+        - 13, 71 That Pokémon can’t enter a motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3565,13 +3525,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 72 Une tondeuse.
+        - 13, 72 It’s a lawn mower.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          RWxsZSBlc3Qgw6lxdWlww6llIGQndW4gw6l0cmFuZ2UgbW90ZXVyLg==
+        - It has an odd-shaped motor on it.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3602,8 +3561,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDczIFZvdWxlei12b3VzIGZhaXJlIHNvcnRpciBNb3Rpc21hIGRlIHNhIFBva8OpYmFsbCA/
+        - 13, 73 Do you want to let Rotom out of its Poké Ball?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3725,12 +3683,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 74 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 74 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 75 Le laisser entrer dans le moteur ?
+        - 13, 75 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3789,8 +3747,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDc2IFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 76 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3810,8 +3767,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDc3IFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 77 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3843,7 +3799,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 78 [POKE] reprend sa forme d'origine.
+        - 13, 78 [POKE] returned to its original form.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3903,19 +3859,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 79 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 79 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 80 Le laisser entrer dans le moteur ?
+        - 13, 80 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
         - - "\\t[11,27]"
           - "\\t[11,28]"
-          - 13, 81 Rappeler
+          - 13, 81 Recall
         - 2
         indent: 4
         code: 102
@@ -3973,8 +3929,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDgyIFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 82 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3994,8 +3949,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDgzIFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 83 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4010,7 +3964,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Rappeler
+        - 13, 81 Recall
         indent: 4
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4051,7 +4005,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 84 [POKE] est sorti du moteur.
+        - 13, 84 [POKE] emerged from the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4150,8 +4104,7 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDg1IMOHYSBuZSBmb25jdGlvbm5lcmEgcGFzIGF2ZWMgY2UgUG9rw6ltb24u
+        - 13, 85 That Pokémon can’t enter a motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4302,14 +4255,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDg2IFVuIHLDqWZyaWfDqXJhdGV1ci4=
+        - 13, 86 It’s a refrigerator.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          SWwgZXN0IMOpcXVpcMOpIGQndW4gw6l0cmFuZ2UgbW90ZXVyLg==
+        - It has an odd-shaped motor on it.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4340,8 +4291,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDg3IFZvdWxlei12b3VzIGZhaXJlIHNvcnRpciBNb3Rpc21hIGRlIHNhIFBva8OpYmFsbCA/
+        - 13, 87 Do you want to let Rotom out of its Poké Ball?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4463,12 +4413,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 88 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 88 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 89 Le laisser entrer dans le moteur ?
+        - 13, 89 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4532,8 +4482,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDkwIFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 90 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4553,8 +4502,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDkxIFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 91 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4586,7 +4534,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 92 [POKE] reprend sa forme d'origine.
+        - 13, 92 [POKE] returned to its original form.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4646,19 +4594,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 93 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 93 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 94 Le laisser entrer dans le moteur ?
+        - 13, 94 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
         - - "\\t[11,27]"
           - "\\t[11,28]"
-          - 13, 95 Rappeler
+          - 13, 95 Recall
         - 2
         indent: 4
         code: 102
@@ -4716,8 +4664,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDk2IFtQT0tFXSBlc3QgZW50csOpIGRhbnMgbGUgbW90ZXVyLg==
+        - 13, 96 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4737,8 +4684,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDk3IFtQT0tFXSByZW5vbmNlIG1hbGdyw6kgbHVpIMOgIGVudHJlciBkYW5zIGxlIG1vdGV1ciBkdSB2ZW50aWxhdGV1ci4uLg==
+        - 13, 97 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4753,7 +4699,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Rappeler
+        - 13, 95 Recall
         indent: 4
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -4794,7 +4740,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 98 [POKE] est sorti du moteur.
+        - 13, 98 [POKE] emerged from the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4893,8 +4839,7 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDk5IMOHYSBuZSBmb25jdGlvbm5lcmEgcGFzIGF2ZWMgY2UgUG9rw6ltb24u
+        - 13, 99 That Pokémon can’t enter a motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5045,13 +4990,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 100 Un ventilateur.
+        - 13, 100 It’s a rotary fan.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          SWwgZXN0IMOpcXVpcMOpIGQndW4gw6l0cmFuZ2UgbW90ZXVyLg==
+        - It has an odd-shaped motor on it.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -5082,8 +5026,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEwMSBWb3VsZXotdm91cyBmYWlyZSBzb3J0aXIgTW90aXNtYSBkZSBzYSBQb2vDqWJhbGwgPw==
+        - 13, 101 Do you want to let Rotom out of its Poké Ball?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5205,12 +5148,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 102 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 102 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 103 Le laisser entrer dans le moteur ?
+        - 13, 103 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5243,8 +5186,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEwNCBbUE9LRV0gZXN0IGVudHLDqSBkYW5zIGxlIG1vdGV1ci4=
+        - 13, 104 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5306,8 +5248,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEwNSBbUE9LRV0gcmVub25jZSBtYWxncsOpIGx1aSDDoCBlbnRyZXIgZGFucyBsZSBtb3RldXIgZHUgdmVudGlsYXRldXIuLi4=
+        - 13, 105 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5344,7 +5285,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 106 [POKE] reprend sa forme d'origine.
+        - 13, 106 [POKE] returned to its original form.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5408,19 +5349,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 107 Oh ? On dirait que [POKE] veut entrer dans le moteur.
+        - 13, 107 Oh? [POKE] appears as if it wants to go into the motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 108 Le laisser entrer dans le moteur ?
+        - 13, 108 Allow it to enter the motor?
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
         - - "\\t[11,27]"
           - "\\t[11,28]"
-          - 13, 109 Rappeler
+          - 13, 109 Recall
         - 2
         indent: 4
         code: 102
@@ -5447,8 +5388,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExMCBbUE9LRV0gZXN0IGVudHLDqSBkYW5zIGxlIG1vdGV1ci4=
+        - 13, 110 [POKE] entered the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5499,8 +5439,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExMSBbUE9LRV0gcmVub25jZSBtYWxncsOpIGx1aSDDoCBlbnRyZXIgZGFucyBsZSBtb3RldXIgZHUgdmVudGlsYXRldXIuLi4=
+        - 13, 111 [POKE] reluctantly gave up on entering the rotary fan’s motor...
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5515,7 +5454,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 2
-        - Rappeler
+        - 13, 109 Recall
         indent: 4
         code: 402
       - !ruby/object:RPG::EventCommand
@@ -5535,7 +5474,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 112 [POKE] est sorti du moteur.
+        - 13, 112 [POKE] emerged from the motor.
         indent: 5
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5670,8 +5609,7 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExMyDDh2EgbmUgZm9uY3Rpb25uZXJhIHBhcyBhdmVjIGNlIFBva8OpbW9uLg==
+        - 13, 113 That Pokémon can’t enter a motor.
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6205,14 +6143,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExNCBNb3Rpc21hIGEgdW5lIHJlbWFycXVhYmxlIGFwdGl0dWRlIMOgIGludMOpZ3JlciBjZXJ0YWlucyBtb3RldXJzLg==
+        - 13, 114 Remarkably, Rotom has the ability to enter and merge with special
+          motors.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExNSBTYSBjYXBhY2l0w6kgw6AgZnVzaW9ubmVyIGF2ZWMgdG91dGVzIHNvcnRlcyBkJ2FwcGFyZWlscyBlc3QgZmFzY2luYW50ZSAh
+        - 13, 115 Fascinating how it can integrate all kinds of machines!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6228,8 +6165,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExNiBPaCwgbWFpcyBqZSB2b2lzIHF1ZSB0dSBlbiBwb3Nzw6hkZXMgdW4gIQ==
+        - 13, 116 Oh, I see you have one with you!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6250,14 +6186,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExNyBJbCBhIG3Dqm1lIHVuZSBmb3JtZSBzcMOpY2lhbGUgIQ==
+        - 13, 117 It even has a special form!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExOCBKZSB2b2lzIHF1ZSB0dSBtYcOudHJpc2VzIHRvdXQgY2UgcXUnaWwgeSBhIMOgIHNhdm9pciBzdXIgY2UgbWVydmVpbGxldXggUG9rw6ltb24gcXUnZXN0IE1vdGlzbWEu
+        - 13, 118 It looks like you master everything there is to know about this
+          wonderful Pokémon.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6270,8 +6205,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDExOSBUdSBkZXZyYWlzIGFsbGVyIGpldGVyIHVuIMWTaWwgYXV4IG1hY2hpbmVzIHNpdHXDqWVzIGRlcnJpw6hyZSBtb2kgIQ==
+        - 13, 119 You should take a look at the devices behind me!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6292,14 +6226,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyMCBKJ2FpIGVudGVuZHUgZGlyZSBxdSdvbiBwb3V2YWl0IGVuIHRyb3V2ZXIgZGFucyB1biBkw6liYXJyYXMgc2l0dcOpIGF1IHNvdXMtc29sIGRlIGxhIFRvdXIuLi4=
+        - 13, 120 I heard you could find one in a storage room located under the Tower...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyMSBNYWlzIGNvbW1lbnQgeSBhY2PDqWRlciA/
+        - 13, 121 But I don't know how to get there...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6359,25 +6291,23 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 122 Je suis un grand fan de Porygon et de toute sa famille !
+        - 13, 122 I'm a big fan of Porygon and its family!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyMyBKJ2FpIG3Dqm1lIGVudGVuZHUgZGlyZSBxdSdpbHMgcHLDqWbDqXJhaWVudCDDqnRyZSBzdG9ja8OpcyBkYW5zIGxlIFBDIHF1ZSBkZSByZXN0ZXIgYXZlYyBsZXVyIERyZXNzZXVyLi4u
+        - 13, 123 I heard they sometimes prefered to be kept in the Storage System
+          rather than with their Trainer...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyNCBUdSBhcyB1biBQb3J5Z29uIG91IHVuIFBva8OpbW9uIGRlIHNhIGZhbWlsbGUgZGFucyB0b24gUEMsIHRvaSA/
+        - 13, 124 Do you have a Porygon or one of its evolution in your PC?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          SmUgcGV1eCBsZSB2w6lyaWZpZXIgYXZlYyBcY1s1XSIkc3RvcmFnZS5hbnlfcG9rZW1vbj8iXGNbMF0u
+        - I can check with \c[5]"$storage.any_pokemon?"\c[0].
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -6394,7 +6324,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 125 Super ! Il doit s'y sentir super bien.
+        - 13, 125 Amazing! It must feel at ease.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6407,7 +6337,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 126 Hmm... Dommage.
+        - 13, 126 Hmm... Too bad.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6473,20 +6403,17 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyNyBKZSBzdWlzIHVuIGZvdSBkZXMgUG9rw6ltb24gY2hyb21hdGlxdWVzICE=
+        - 13, 127 I'm a Shinies fanatic!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyOCBUdSBzYWlzLCBjZSBzb250IGNlcyBQb2vDqW1vbiBxdWkgb250IHVuZSBjb3VsZXVyIGluaGFiaXR1ZWxsZS4=
+        - 13, 128 You know, shiny Pokémon have an unusual coloration.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEyOSBUdSBlbiBhcyBkw6lqw6AgYXR0cmFww6kgdW4gPw==
+        - 13, 129 Have you ever caught one?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6593,17 +6520,17 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 130 Oh ! Magnifique !
+        - 13, 130 Oh! Splendid!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Ton [POKE] est si beau !
+        - Your [POKE] is breathtaking!
         indent: 3
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 131 Dis...[WAIT 60] Tu ne voudrais pas me le donner ?
+        - 13, 131 Look...[WAIT 60] Would you give it to me?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6613,12 +6540,12 @@ events:
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 133 Non ?
+        - 13, 133 No?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 134 Tant pis...
+        - 13, 134 Too bad...
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6631,8 +6558,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEzNSBIdW0uLi4gSmUgbSd5IGNvbm5haXMgdHLDqHMgYmllbiBlbiBQb2vDqW1vbiBjaHJvbWF0aXF1ZXMsIGV0IHRvbiBbUE9LRV0gbidlbiBlc3QgcGFzIHVuLg==
+        - 13, 135 Hmm... I know a lot about shiny Pokémon and your [POKE] isn't one
+          of them.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6681,20 +6608,19 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEzNiBDZSBzb250IGRlcyBQb2vDqW1vbiB0csOocyByYXJlcyDDoCB0cm91dmVyLCBlbiBlZmZldC4uLg==
+        - 13, 136 These Pokémon are quite rare, indeed...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEzNyBEJ2FpbGxldXJzLCBqJ2FpIGTDqWNvdXZlcnQgdW5lIHRlY2huaXF1ZSBpbnTDqXJlc3NhbnRlIHBvdXIgZW4gZMOpYnVzcXVlciBwbHVzIGZhY2lsZW1lbnQu
+        - 13, 137 Speaking of which, I discovered a very interesting technic to flush
+          them out easily.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEzOCBTaSB0dSBww6pjaGVzIGRlcyBQb2vDqW1vbiDDoCBsYSBjaGHDrm5lLCBzYW5zIGJvdWdlciBkZSB0b24gc3BvdCwgbGVzIGNoYW5jZXMgZGUgZmVycmVyIHVuIFBva8OpbW9uIGNocm9tYXRpcXVlIGF1Z21lbnRlbnQgcHJvZ3Jlc3NpdmVtZW50Lg==
+        - 13, 138 If you chain-fish Pokémon, without moving from your spot, chances
+          to catch a shiny Pokémon will progressively increase.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6758,8 +6684,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDEzOSBBbG9ycywgY29tbWVudCBzZSBwYXNzZSBsYSBjb21wbMOpdGlvbiBkZSB0b24gUG9rw6lkZXggPzpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 139 So, how’s your Pokédex coming along?:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6775,19 +6700,19 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0MCBKZSBwZXV4IGZhY2lsZW1lbnQgdsOpcmlmaWVyIGxlIG5vbWJyZSBkZSBQb2vDqW1vbiB2dXMgb3UgYXR0cmFww6lzIGdyw6JjZSBhdXggXGNbNV12YXJpYWJsZXMgMiBldCAzXGNbMF0uOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 140 I can easily check the number of Pokémon you''ve seen or caught
+          with the \c[5]variables 2 and 3\c[0].:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 141 Hm, voyons voir...
+        - 13, 141 Hmm, let's see...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VHUgYXMgdnUgXHZbMl0gUG9rw6ltb24gZXQgdHUgZW4gYXMgY2FwdHVyw6kgXHZbM10gITpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - 'You''ve seen \v[2] Pokémon, and you''ve caught \v[3] Pokémon!:[name=Professor
+          Birch]:'
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -6826,19 +6751,18 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0MiBJbmNyb3lhYmxlICEgVHUgYXMgdnUgcGx1cyBkZSA0MCBQb2vDqW1vbiBkaWZmw6lyZW50cyBkYW5zIGxhIFRvdXIgIVtXQUlUIDQwMF06W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 142 Excellent! You''ve seen more than 40 Pokémon on the Island![WAIT
+          400]:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0MyBUdSBhcyB1biB0YWxlbnQgY2VydGFpbiBwb3VyIGTDqWJ1c3F1ZXIgZGVzIFBva8OpbW9uICE6W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 143 You seem to be good at collecting Pokémon!:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '13, 144 Comme promis, je te remets ma Pierre Insolite.:[name=Prof. Seko]:'
+        - '13, 144 As promised, here''s my Intriguing Stone.:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6848,8 +6772,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0NSBUdSBtZSBzZXJhaXMgZCd1bmUgYWlkZSBjZXJ0YWluZSBkYW5zIG1hIHLDqWdpb24gbmF0YWxlLCDDoCBIb2Vubi4uLjpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 145 You''d help me a lot in my home region, in Hoenn...:[name=Professor
+          Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6900,14 +6824,14 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0NiBUdSBhcyBkZSBwbHVzIGVuIHBsdXMgZGUgUG9rw6ltb24gZW5yZWdpc3Ryw6lzICEgQ29udGludWUgY29tbWUgw6dhICFbV0FJVCAyMDBdOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 146 Your Pokédex is really filling up. Keep up the good work![WAIT
+          200]:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0NyBRdWFuZCB0dSBhdXJhcyB2dSBwbHVzIGRlIDQwIFBva8OpbW9uIGRpZmbDqXJlbnRzLCBqZSB0J29mZnJpcmFpIHVuZSBQaWVycmUgSW5zb2xpdGUgITpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 147 When you''ve seen at least 40 different Pokémon, I''ll give you
+          an Intriguing Stone!:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6947,14 +6871,14 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '13, 148 Tu ne manques pas de ressources ! Tu m''impressionnes vraiment
-          ![WAIT 240]:[name=Prof. Seko]:'
+        - '13, 148 Wow, you''ve gotten so far...! I''ve got high expectations for
+          you![WAIT 240]:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE0OSBDZXJ0YWluZXMgZXNww6hjZXMgZGUgUG9rw6ltb24gc2Vyb250IHBsdXMgZmFjaWxlcyDDoCByZW5jb250cmVyIGVuIGNvbWJhdHRhbnQgZGVzIERyZXNzZXVycyAhOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 149 Don''t forget some Trainers have rare Pokémon, too!:[name=Professor
+          Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6994,14 +6918,14 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1MCBBaCwgdHUgcHJvZ3Jlc3NlcyBiaWVuICEgVG9uIFBva8OpZGV4IHByZW5kIHVuZSBib25uZSB0b3VybnVyZSAhW1dBSVQgMjQwXTpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 150 You''re getting good at this! Your Pokédex is coming together![WAIT
+          240]:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1MSBOJ291YmxpZSBwYXMgcXVlIGNlcnRhaW5lcyBlc3DDqGNlcyBkZSBQb2vDqW1vbiBwZXV2ZW50IMOpdm9sdWVyLCBtYWlzIGF1c3NpIGZhaXJlIGRlcyDFknVmcyAhOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 151 You know some Pokémon can evolve, but also lay Eggs!:[name=Professor
+          Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7038,14 +6962,13 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1MiBFc3NhaWUgZGUgbWFyY2hlciBkYW5zIGxlcyBoYXV0ZXMgaGVyYmVzIHBvdXIgcmVuY29udHJlciBkZXMgUG9rw6ltb24gIVtXQUlUIDIwMF06W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 152 Look for Pokémon in grassy areas![WAIT 200]:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1MyBMYSBUb3VyIHJlZ29yZ2UgZCdlbnZpcm9ubmVtZW50cyB2YXJpw6lzLCB0dSBwb3VycmFzIHJlbmNvbnRyZXIgZGVzIHRvbm5lcyBkJ2VzcMOoY2VzIGRlIFBva8OpbW9uLjpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 153 The Island is filled with a variety of environments, you''ll encounter
+          tons of Pokémon species.:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7108,8 +7031,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1NCBUdSB2ZXV4IHF1ZSBqJ8OpdmFsdWUgw6Agbm91dmVhdSB0b24gUG9rw6lkZXggPzpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - '13, 154 Do you want to show me your Pokédex again?:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7125,13 +7047,13 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 155 Hm, voyons voir...
+        - 13, 155 Hmm, let's see...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VHUgYXMgdnUgXHZbMl0gUG9rw6ltb24gZXQgdHUgZW4gYXMgY2FwdHVyw6kgXHZbM10gITpbbmFtZT1Qcm9mLiBTZWtvXTo=
+        - 'You''ve seen \v[2] Pokémon, and you''ve caught \v[3] Pokémon!:[name=Professor
+          Birch]:'
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -7170,8 +7092,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1NiBEw6ljb3V2cmlyIGRlIG5vdXZlYXV4IFBva8OpbW9uIGRldmllbnQgcGx1cyBjb21wbGlxdcOpLCBuJ2VzdC1jZSBwYXMgP1tXQUlUIDIwMF06W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 156 Discovering new Pokémon is getting harder, isn''t it?[WAIT 200]:[name=Professor
+          Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7206,8 +7128,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1NyBUdSBhcyBkw6ljaWTDqW1lbnQgdW4gZG9uICEgSmUgc3VpcyBpbXByZXNzaW9ubsOpICFbV0FJVCAyMDBdOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 157 You definitely have a gift! I''m actually impressed![WAIT 200]:[name=Professor
+          Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7242,20 +7164,18 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '13, 158 C''est tout bonnement hallucinant ! Tu les as TOUS vus ![WAIT 400]:[name=Prof.
-          Seko]:'
+        - '13, 158 It''s simply mind-boggling! You''ve seen the ALL![WAIT 400]:[name=Professor
+          Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE1OSBKZSBuJ2Fycml2ZSBtw6ptZSBwYXMgw6AgY29tcHJlbmRyZSBjb21tZW50IHR1IGFzIHB1IGZhaXJlLi4uOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 159 I don''t even understand how you made it...:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE2MCBKJ2VuIHZpZW5zIHByZXNxdWUgw6AgZXNww6lyZXIgcXVlIHR1IGFzIHRyaWNow6kuLi46W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 160 It almost makes me think you''ve cheated...:[name=Professor Birch]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7319,14 +7239,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE2MSBUdSBhcyB2dSB0b3VzIGxlcyBQb2vDqW1vbiBkZSBsJ8OObGUuLi46W25hbWU9UHJvZi4gU2Vrb106
+        - '13, 161 You''ve seen all the Pokémon on the Island...:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE2MiBKZSBuJ2FpIHZyYWltZW50IHBsdXMgcmllbiDDoCB0J2FwcHJlbmRyZSAhOltuYW1lPVByb2YuIFNla29dOg==
+        - '13, 162 I''ve got nothing to teach you anymore!:[name=Professor Birch]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7377,26 +7295,23 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 163 On m'interdit d'utiliser mon Iguolta ici car cela pourrait endommager
-          les appareils...
+        - 13, 163 I'm not allowed to use my Heliolisk here because it could damage
+          the equipment...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE2NCBJbCBlc3QgcGFydGljdWxpZXIgY2FyIGonYWkgcsOpdXNzaSDDoCBsdWkgYXBwcmVuZHJlIGwnYXR0YXF1ZSBMYW5jZS1GbGFtbWVzICE=
+        - 13, 164 It's a bit special because I taught it Flamethrower!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE2NSDDh2EgdG9tYmUgYmllbiwgY2FyIGVuIHBsdXMgZGUgw6dhIGlsIGVzdCByb3VnZSBjb21tZSBsZSBmZXUu
+        - 13, 165 That suits it perfectly because it's red as fire.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE2NiDDh2EgdGUgZGlyYWl0IGRlIHQnZW4gb2NjdXBlciDDoCBtYSBwbGFjZSA/
+        - 13, 166 Would you train it for me?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7414,7 +7329,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 167 T'es au top !
+        - 13, 167 So cool!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7443,7 +7358,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 168 \c[18]\N[1] obtient Iguolta ! [WAIT 240]
+        - 13, 168 \c[18]\N[1] received \c[27]Heliolisk\c[18]![WAIT 240]
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7486,8 +7401,8 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE2OSBCb24sIGonYWkgdW4gcGV1IHRyaWNow6kgY2FyIGonYWkgdXRpbGlzw6kgbGEgY29tbWFuZGUgXGNbNV0iYWRkX3NwZWNpZmljX3Bva2Vtb24iXGNbMF0sIHF1aSBtZSBwZXJtZXQgZGUgZ8OpbsOpcmVyIHVuIFBva8OpbW9uIGF2ZWMgdG91dGVzIHNvcnRlcyBkZSBwYXJhbcOodHJlcy4=
+        - 13, 169 I cheated a bit by using the command \c[5]"add_specific_pokemon"\c[5],
+          which allows me to create a Pokémon with a lot of parameters.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7508,8 +7423,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3MCBKJ2FpbWVyYWlzIG5lIHBhcyBhdm9pciDDoCBtJ2VuIGTDqWJhcnJhc3NlciBhdXRyZW1lbnQuLi4=
+        - 13, 170 I wish I didn't have to get rid of it any other way...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7562,14 +7476,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3MSBKJ2VzcMOocmUgcXVlIHR1IHQnb2NjdXBlcyBiaWVuIGRlIG1vbiBiZWF1IFNtYXVnLg==
+        - 13, 171 I hope you take good care of my pretty Smaug.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3MiBCb24sIGonYWkgdW4gcGV1IHRyaWNow6kgY2FyIGonYWkgdXRpbGlzw6kgbGEgY29tbWFuZGUgXGNbNV0iYWRkX3NwZWNpZmljX3Bva2Vtb24iXGNbMF0sIHF1aSBtJ2EgcGVybWlzIGRlIGxlIGfDqW7DqXJlciBhdmVjIHRvdXRlcyBzb3J0ZXMgZGUgcGFyYW3DqHRyZXMu
+        - 13, 172 I cheated a bit by using the command \c[5]"add_specific_pokemon"\c[5],
+          which allows me to create a Pokémon with a lot of parameters.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7700,26 +7613,24 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3MyBCb25qb3VyICEgSmUgdm9pcyBxdWUgbGEgbWFjaGluZSDDoCBjw7R0w6kgZGUgbW9pIHQnaW50cmlndWVzLi4uOltuYW1lPVByb2YuIFNvcmJpZXJdOg==
+        - '13, 173 Hello! I can see you''re intrigued by that machine right there...:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3NCBDb21tZSB0dSBwZXV4IGxlIHZvaXIsIGVsbGUgY29udGllbnQgMyBQb2vDqWJhbGxzLjpbbmFtZT1Qcm9mLiBTb3JiaWVyXTo=
+        - '13, 174 As you can see, it displays 3 Poké Balls.:[name=Professor Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3NSBDaGFjdW5lIHJlbmZlcm1lIHVuIFBva8OpbW9uIGFzc2V6IHNww6ljaWFsLjpbbmFtZT1Qcm9mLiBTb3JiaWVyXTo=
+        - '13, 175 Each one contains a special Pokémon.:[name=Professor Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3NiBDaG9pc2lzIGNlbHVpIHF1ZSB0dSBwcsOpZsOocmVzLCBqZSB0ZSBsJ29mZnJlICE6W25hbWU9UHJvZi4gU29yYmllcl06
+        - '13, 176 Chose the one you like best, I''ll give it to you!:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8015,8 +7926,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3NyBcY1sxOF1VdGlsaXNleiBsZXMgZmzDqGNoZXMgZGlyZWN0aW9ubmVsbGVzIHBvdXIgc8OpbGVjdGlvbm5lciB1bmUgUG9rw6liYWxsLg==
+        - 13, 177 \c[18]Use the direction buttons to select a Poké Ball.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8491,8 +8401,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3OCBUdSB2ZXV4IE1pbmlkcmFjbywgbGUgUG9rw6ltb24gRHJhZ29uID8=
+        - 13, 178 Do you want Dratini, the Dragon Pokémon?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8719,8 +8628,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE3OSBUdSB2ZXV4IEVtYnJ5bGV4LCBsZSBQb2vDqW1vbiBQZWF1cGllcnJlID8=
+        - 13, 179 Do you want Larvitar, the Rock Skin Pokémon?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8947,8 +8855,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4MCBUdSB2ZXV4IFRhcnNhbCwgbGUgUG9rw6ltb24gU2VudGltZW50ID8=
+        - 13, 180 Do you want Ralts, the Feeling Pokémon?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9536,8 +9443,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4MSBJbCByZXN0ZSBkZXV4IFBva8OpYmFsbCBsYWlzc8OpZXMgcGFyIGxlIFByb2YuIFNvcmJpZXIu
+        - 13, 181 There are two Poké Balls left by Professor Rowan.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9589,7 +9495,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 182 C'est vide...
+        - 13, 182 It's empty...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9640,7 +9546,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 183 C'est vide...
+        - 13, 183 It's empty...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9969,26 +9875,24 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4NCA6W25hbWU9UHJvZi4gU29yYmllcl06Qm9uam91ciAhIEplIHZvaXMgcXVlIGxhIG1hY2hpbmUgw6AgY8O0dMOpIGRlIG1vaSB0J2ludHJpZ3Vlcy4uLg==
+        - '13, 184 Hello! I can see you''re intrigued by that machine right there...:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4NSA6W25hbWU9UHJvZi4gU29yYmllcl06Q29tbWUgdHUgcGV1eCBsZSB2b2lyLCBlbGxlIGNvbnRpZW50IDMgUG9rw6liYWxscy4=
+        - '13, 185 As you can see, it displays 3 Poké Balls.:[name=Professor Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4NiA6W25hbWU9UHJvZi4gU29yYmllcl06Q2hhY3VuZSByZW5mZXJtZSB1biBQb2vDqW1vbiBhc3NleiBzcMOpY2lhbC4=
+        - '13, 186 Each one contains a special Pokémon.:[name=Professor Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4NyA6W25hbWU9UHJvZi4gU29yYmllcl06Q2hvaXNpcyBjZWx1aSBxdWUgdHUgcHLDqWbDqHJlcywgamUgdGUgbCdvZmZyZSAh
+        - '13, 187 Chose the one you like best, I''ll give it to you!:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10044,8 +9948,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4OCA6W25hbWU9UHJvZi4gU29yYmllcl06SmUgdCdlbiBwcmllLCBjaG9pc2lzIHVuZSBQb2vDqWJhbGwgcGFybWkgbGVzIHBsYWPDqWVzIGRhbnMgbGEgbWFjaGluZS4=
+        - '13, 188 Please choose a Poké Ball on the machine.:[name=Professor Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10090,32 +9993,33 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE4OSA6W25hbWU9UHJvZi4gU29yYmllcl06Sidlc3DDqHJlIHF1ZSBsZSBQb2vDqW1vbiBxdWUgdHUgYXMgY2hvaXNpIGRldmllbmRyYSB1biB2cmFpIHBhcnRlbmFpcmUu
+        - '13, 189 I hope the Pokémon you chose will become a true partner.:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5MCA6W25hbWU9UHJvZi4gU29yYmllcl06TGEgbWFjaGluZSBxdWUgdHUgYXMgdXRpbGlzw6llIHV0aWxpc2UgZGUgbm9tYnJldXggc3lzdMOobWVzIHBvdXIgZm9uY3Rpb25uZXIu
+        - '13, 190 The device you used works thanks to numerous systems.:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5MSA6W25hbWU9UHJvZi4gU29yYmllcl06VG91dCBkJ2Fib3JkLCBsZXMgZGlmZsOpcmVudGVzIGFuaW1hdGlvbnMgc29udCBqb3XDqWVzIGdyw6JjZSDDoCBkZXMgZmljaGllcnMgXGNbNV1naWZcY1swXSwgcXVlIFBva8OpbW9uU0RLIHN1cHBvcnRlLg==
+        - 13, 191 First of all, the animations are played using \c[5]gif\c[0] files,
+          which PokémonSDK supports.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5MiA6W25hbWU9UHJvZi4gU29yYmllcl06RW5zdWl0ZSwgbGEgZ2VzdGlvbiBkZXMgYm91dG9ucyBlc3QgcsOpYWxpc8OpZSBlbiB1dGlsaXNhbnQgdW5lIFxjWzVdbG9vcFxjWzBdIGV0IGRlcyBcY1s1XXZhcmlhYmxlc1xjWzBdLg==
+        - '13, 192 Then, the inputs are managed with a \c[5]loop\c[0] and \c[5]variables\c[0].:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5MyA6W25hbWU9UHJvZi4gU29yYmllcl06TGUgdG91dCBlc3QgZCdhZmZpY2hlciBsZXMgYm9ubmVzIGltYWdlcyBhdSBib24gbW9tZW50LCBldCBkZSBuZSBwYXMgb3VibGllciBsJ3V0aWxpc2F0aW9uIGRlcyBcY1s1XWxhYmVsc1xjWzBdIHBvdXIgbmF2aWd1ZXIgYXUgc2VpbiBkZSBsJ8OpdsOobmVtZW50Lg==
+        - '13, 193 The key is to display the right pictures at the right time, and
+          don''t forget to use \c[5]labels\c[0] to navigate through your event.:[name=Professor
+          Rowan]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10166,14 +10070,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5NCA6W25hbWU9TMOpb106SidhaSB0cm91dsOpIGNlIFBva8OpbW9uIHJpZ29sbyBkYW5zIGxhIENhdmVybmUgcm9jYWlsbGV1c2Uu
+        - '13, 194 I found this funny Pokémon in the Rocky Cavern.:[name=Bill]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5NSA6W25hbWU9TMOpb106SmUgc3VpcyBwbHV0w7R0IGJyYW5jaMOpIHByb2dyYW1tYXRpb24gcXVlIGNvbWJhdHMgUG9rw6ltb24sIGRvbmMgamUgdmV1eCBiaWVuIHRlIGxlIGRvbm5lci4=
+        - '13, 195 I''m more into programming rather than battling, so I can give
+          it to you.:[name=Bill]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10197,8 +10100,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5NiBcY1sxOF1cTlsxXSBvYnRpZW50IFRpYyBkZSBsYSBwYXJ0IGRlIEzDqW8gISBbV0FJVCAyNDBd
+        - 13, 196 \c[18]\N[1] received \c[27]Klink \c[18]from Bill![WAIT 240]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10214,8 +10116,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5NyA6W25hbWU9TMOpb106Q29tbWUgaidhaSB1dGlsaXPDqSBcY1s1XSJzdG9yZV9wb2tlbW9uIlxjWzBdLCBjZSBUaWMgYSDDqXTDqSBzdG9ja8OpIGRpcmVjdGVtZW50IGRhbnMgdG9uIFBDICE=
+        - '13, 197 As I used \c[5]"store_pokemon"\c[0], this Klink was directly stored
+          into your PC!:[name=Bill]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10266,14 +10168,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5OCA6W25hbWU9TMOpb106QWxvcnMsIGNvbW1lbnQgc2UgcG9ydGUgbGUgVGljIHF1ZSBqZSB0J2FpIGRvbm7DqSA/
+        - '13, 198 Tell me, how is Klink doing?:[name=Bill]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDE5OSA6W25hbWU9TMOpb106Q29tbWUgaidhaSB1dGlsaXPDqSBcY1s1XSJzdG9yZV9wb2tlbW9uIlxjWzBdLCBjZSBUaWMgYSDDqXTDqSBzdG9ja8OpIGRpcmVjdGVtZW50IGRhbnMgdG9uIFBDICE=
+        - '13, 199 As I used \c[5]"store_pokemon"\c[0], this Klink was directly stored
+          into your PC!:[name=Bill]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10427,25 +10328,23 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwMCBMZXMgw6lxdWlwZXMgZHUgTGFib3JhdG9pcmUgbSdvbnQgYXBwZWzDqSBwb3VyIGxlcyBkw6liYXJyYXNzZXIgZGVzIFBva8OpbW9uIEluc2VjdGUgcXVpIHZpZW5uZW50IGdyaWdub3RlciBsZXMgY8OiYmxlcyDDqWxlY3RyaXF1ZXMu
+        - 13, 200 The Laboratory staff called me to get rid of all those Bug Pokémon
+          nibbling the power cables.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwMSBNYWlzIGplIG5lIHNhaXMgbcOqbWUgcGx1cyBxdW9pIGZhaXJlIGRlIHRvdXMgY2V1eCBxdWUgaidhdHRyYXBlICE=
+        - 13, 201 But I don't even know what to do with all of those I catch!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Je te les donne si tu veux.
+        - I can give them to you if you want.
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwMiDDh2EgdGUgZGl0IHVuIFBva8OpbW9uIEluc2VjdGUgZ3JhdG9zID8=
+        - 13, 202 Would you like a free Bug Pokémon?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10482,7 +10381,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 203 \c[18]\N[1] obtient Chenipan ! [WAIT 240]
+        - 13, 203 \c[18]\N[1] received \c[27]Caterpie\c[18]![WAIT 240]
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10509,20 +10408,19 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwNCBKJ2FpIHV0aWxpc8OpIGxhIGNvbW1hbmRlIFxjWzVdImFkZF9wb2tlbW9uIlxjWzBdLCBxdWkgYWpvdXRlIHNpbXBsZW1lbnQgdW4gUG9rw6ltb24gw6AgdG9uIMOpcXVpcGUsIHNhbnMgdGUgcHJvcG9zZXIgZGUgbGUgcmVub21tZXIu
+        - 13, 204 I used the command \c[5]"add_pokemon"\c[0], which simply adds a
+          Pokémon to your party, without asking you if you want to rename it.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwNSBNYWlzIGplIGNyb2lzIHF1J2lsIHkgYSB1biBwYXB5IHF1aSBwZXV0IHJlbm9tbWVyIHRlcyBQb2vDqW1vbiBhdSBtaWxpZXUgZGUgY2V0dGUgcGnDqGNlLg==
+        - 13, 205 But I think there's an old man who can rename your Pokémon in the
+          middle of this room.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwNiBOJ2jDqXNpdGUgcGFzIMOgIHZlbmlyIG1lIHJlcGFybGVyIHNpIHR1IGVuIHZldXggZCdhdXRyZXMsIGonZW4gYWkgdW4gc2FjcsOpIG5vbWJyZS4=
+        - 13, 206 Come ask me if you want some more, I have quite a few of them.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10537,7 +10435,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 207 Vraiment ? Je ne sais franchement plus quoi en faire...
+        - 13, 207 Oh, really? I honestly don't know what to do with them anymore...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10596,20 +10494,20 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 208 :[name=Prof. Chen]:Bonjour et bienvenue.[WAIT 10].[WAIT 10].[WAIT
-          10]
+        - '13, 208 Hello and welcome.[WAIT 10].[WAIT 10].[WAIT 10]:[name=Professor
+          Oak]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIwOSA6W25hbWU9UHJvZi4gQ2hlbl06UGFyZG9uLCBqJ2FpIGwnaGFiaXR1ZGUgZGUgbWUgcHLDqXNlbnRlciBkZSBsYSBtYW5pw6hyZSBhdXggbm91dmVhdXggRHJlc3NldXJzLi4u
+        - '13, 209 Sorry, I''m used to introduce myself this way to new Trainers...:[name=Professor
+          Oak]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxMCA6W25hbWU9UHJvZi4gQ2hlbl06w4dhIHQnaW50w6lyZXNzZXJhaXQgcXVlIGplIHRlIHJlZmFzc2UgbW9uIGludHJvZHVjdGlvbiBlbiBlbnRpZXIgPw==
+        - '13, 210 Would like me to show you my introduction from the beginning?:[name=Professor
+          Oak]:'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10627,7 +10525,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 211 :[name=Prof. Chen]:Dans ce cas...
+        - '13, 211 Well then...:[name=Professor Oak]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10673,8 +10571,8 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxMiA6W25hbWU9UHJvZi4gQ2hlbl06SmUgY29tcHJlbmRzLi4uIE4naMOpc2l0ZSBwYXMgw6AgdmVuaXIgbWUgdm9pciBzaSB0dSB2ZXV4IHRlIHJlbcOpbW9yZXIgdGVzIGTDqWJ1dHMgZW4gdGFudCBxdWUgRHJlc3NldXIu
+        - '13, 212 I understand... Please come see me if you want to relive your first
+          steps as a Trainer.:[name=Professor Oak]:'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -10826,25 +10724,23 @@ events:
         code: 235
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxMyBCaWVudmVudWUgZGFucyBsZSBtb25kZSBkZXMgUG9rw6ltb24gIQ==
+        - 13, 213 Welcome to the world of Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 214 Mon nom est Chen.
+        - 13, 214 My name is Oak.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxNSBNYWlzIHRvdXQgbGUgbW9uZGUgbSdhcHBlbGxlIGxlIFByb2Zlc3NldXIgUG9rw6ltb24u
+        - 13, 215 But everyone calls me the Pokémon Professor.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxNiBDZSBtb25kZS5bV0FJVCAxMF0uW1dBSVQgMTBdLltXQUlUIDMwXSBlc3QgcGV1cGzDqSBkZSBjcsOpYXR1cmVzIGFwcGVsw6llcyBQb2vDqW1vbi4=
+        - 13, 216 This world.[WAIT 10].[WAIT 10].[WAIT 30] is widely inhabited by
+          creatures known as Pokémon.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -11049,30 +10945,28 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxNyBOb3VzLCBsZXMgaHVtYWlucywgdml2b25zIGF2ZWMgbGVzIFBva8OpbW9uLg==
+        - 13, 217 We humans live alongside Pokémon as friends.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 218 Il nous arrive de jouer ou de travailler ensemble.
+        - 13, 218 At times we play together, and at other times we work together.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIxOSBDZXJ0YWluZXMgcGVyc29ubmVzIHV0aWxpc2VudCBsZXMgUG9rw6ltb24gcG91ciBjb21iYXR0cmUgZXQgY3LDqWVudCB1biBsaWVuIHRyw6hzIGZvcnQgYXZlYyBldXgu
+        - 13, 219 Some people use their Pokémon to battle and develop closer bonds
+          with them.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 220 Moi ?
+        - 13, 220 Myself…
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIyMSBKZSBtZSBjb250ZW50ZSBkZSBmYWlyZSBkZXMgcmVjaGVyY2hlcywgcG91ciBxdWUgbm91cyBlbiBzYWNoaW9ucyBwbHVzIHN1ciBsZXMgUG9rw6ltb24u
+        - 13, 221 I study Pokémon as a profession.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -11096,23 +10990,22 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 222 Mais avant tout, parle-moi un peu de toi.
+        - 13, 222 Now, why don't you tell me a little bit about yourself?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIyMyBFcy10dSB1biBnYXLDp29uID8=
+        - 13, 223 Are you a boy?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Ou bien une fille ?
+        - Or are you a girl?
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Dis-moi tout...
+        - Won't you please tell me?
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -11694,7 +11587,7 @@ events:
         code: 250
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 224 C'est l'apparence qui te convient le mieux ?
+        - 13, 224 Is it the look that suits you best?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -11809,7 +11702,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 225 C'est l'apparence qui te convient le mieux ?
+        - 13, 225 Is it the look that suits you best?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -11950,14 +11843,14 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIyNiBNZXJ2ZWlsbGV1eCAhIFR1IGFzIGTDqWrDoCBkw6lmaW5pIHRvbiBhcHBhcmVuY2UgYXUgZMOpYnV0IGRlIGNldHRlIGTDqW1vLCBkb25jIGplIG5lIHZhaXMgcGFzIGxhIGNoYW5nZXIu
+        - 13, 226 Wonderful! Now, you already set your look at the beginning of this
+          demo, so I won't change it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIyNyBUdSBwZXV4IGTDqWZpbmlyIGxlIGdlbnJlIGRlIHRvbiBwZXJzb25uYWdlIGF2ZWMgbGEgY29tbWFuZGUgXGNbNV0iJHRyYWluZXIuZGVmaW5lX2dlbmRlcihOKSJcY1swXS4=
+        - 13, 227 You can define the gender of your main player with \c[5]"$trainer.define_gender(N)"\c[0].\nReplace
+          "N" with "true" for a girl, and "false" for a boy.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -11968,26 +11861,27 @@ events:
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIyOCBKZSBuZSB0ZSBkZW1hbmRlcmFpIHBhcyB0b24gcHLDqW5vbSBub24gcGx1cywgbWFpcyBpbCBzdWZmaXQgZCd1dGlsaXNlciBsYSBjb21tYW5kZSBcY1s1XSJOYW1lIElucHV0IFByb2Nlc3NpbmciXGNbMF0gcG91ciBsZSBkw6lmaW5pci4=
+        - 13, 228 I won't ask your name either, but you just have to use the \c[5]"Name
+          Input Processing"\c[0] command to define it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIyOSBMYSBjb21tYW5kZSBcY1s1XSIkdHJhaW5lci5uYW1lID0gJy4uLiciXGNbMF0gdGUgcGVybWV0IMOpZ2FsZW1lbnQgZGUgZMOpZmluaXIgbWFudWVsbGVtZW50IGxlIG5vbSBkdSBqb3VldXIu
+        - 13, 229 You can also use the \c[5]"$trainer.name = '...'"\c[0] command to
+          manually set your player's name.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIzMCBUb3V0ZXMgY2VzIGNvbW1hbmRlcyBzb250IGTDqWNyaXRlcyBkYW5zIGwnw6l2w6huZW1lbnQgZGUgZMOpcGFydCBkZSBsYSBkw6ltbywgc3VyIGxhIG1hcCBcY1s1XVN0YXJ0XGNbMF0u
+        - 13, 230 All these commands are described inside the first event of the demo,
+          on the map \c[5]Start\c[0].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIzMSBDb21tZSBjZXR0ZSBpbnRybyBlc3QgZ8OpbsOpcmFsZW1lbnQgbGUgcHJlbWllciDDqXbDqG5lbWVudCBkJ3VuIGpldSwgYydlc3QgZG9uYyB1bmUgYm9ubmUgb2NjYXNpb24gZCdpbml0aWFsaXNlciBjZXJ0YWluZXMgbcOpY2FuaXF1ZXMgOiBsZSBzeXN0w6htZQ==
+        - '13, 231 And as this introduction usually is the first event of a game,
+          it is a good place to initialize some features: day/night system, berries,
+          shadows under the events...'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -11998,19 +11892,17 @@ events:
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIzMiBNYWlzIHRyw6p2ZSBkZSBiYXZhcmRhZ2VzICEgRmluaXNzb25zLWVuIGzDoC4=
+        - 13, 232 Enough of this chatter! Let's end it there.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTMsIDIzMyBOJ2jDqXNpdGUgcGFzIMOgIG1lIHJlcGFybGVyIHNpIHR1IHZldXggcmV2b2lyIGNldHRlIHPDqXF1ZW5jZS4=
+        - 13, 233 Don't hesitate to talk to me if you want to see this sequence again.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 13, 234 En attendant, bonne chance pour ton aventure, jeune Maker !
+        - 13, 234 In the meantime, good luck with your adventure, young Maker!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

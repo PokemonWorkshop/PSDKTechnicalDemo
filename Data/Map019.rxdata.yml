@@ -736,14 +736,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDAgSmUgY29tcHRlIHZlbmRyZSBjZXJ0YWlucyBkZXMgUG9rw6ltb24gZGUgbWEgZmVybWUgY2FyIGonZW4gYWkgdHJvcCwgbWFpcyBqJ2F0dGVuZHMgbCdhdXRvcmlzYXRpb24gb2ZmaWNpZWxsZSBkdSBTdGFmZiBkZSBsYSBUb3VyLi4u
+        - 19, 0 I'm planning to sell some of my farm's Pokémon as I have too many,
+          but the Tower's Staff has yet to give me the official approval...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEgUmV2aWVucyBtZSB2b2lyIHBsdXMgdGFyZCBzaSDDp2EgdCdpbnTDqXJlc3NlICE=
+        - 19, 1 Come back again later if you're interested!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -801,8 +800,8 @@ events:
         code: 123
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDIgSidhaSBlbmZpbiBvYnRlbnUgbCdhdXRvcmlzYXRpb24gZHUgU3RhZmYgZGUgbGEgVG91ciBwb3VyIHZlbmRyZSBtZXMgUG9rw6ltb24gZW4gdHJvcCAh
+        - 19, 2 I finally got the approval from the Tower's Staff to sell my extra
+          Pokémon!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -815,8 +814,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDMgQmllbnZlbnVlIMOgIG1vbiDDqWNob3BwZSwgcGV0aXRcRSAh
+        - 19, 3 Welcome to my stall, pal!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -844,8 +842,8 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDQgLi4uIEonYXVyYWlzIGFpbcOpIHBvdXZvaXIgdCdhaWRlciwgbWFpcyBqZSBuJ2FpIHBsdXMgZGUgUG9rw6ltb24gw6AgdGUgdmVuZHJlLg==
+        - 19, 4 ... I would have liked to help you, but I don't have any Pokémon left
+          to sell.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -864,8 +862,7 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDUgVmV1eC10dSB2b2lyIGxlcyBQb2vDqW1vbiBkb250IGplIG1lIHPDqXBhcmUgPw==
+        - 19, 5 Want to have a look at the Pokémon I'm selling away?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -883,7 +880,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 6 Tout de suite, petit\E !
+        - 19, 6 Here you go, pal!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -942,8 +939,7 @@ events:
         code: 404
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDcgTidow6lzaXRlIHBhcyDDoCByZXZlbmlyLCBtZXMgUG9rw6ltb24gbidhdHRlbmRlbnQgcXVlIHRvaSAh
+        - 19, 7 Don't hesitate to come back, my Pokémon only wait for you!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1002,14 +998,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDggTGUgcGxhbnQgZGUgYmFpZXMgT3JhbiBhIGRyw7RsZW1lbnQgYmllbiBwb3Vzc8OpLCDDp2EgZmFpdCBwbGFpc2lyIMOgIHZvaXIgIQ==
+        - 19, 8 The Oran Berry plant has grown very fast, it puts a smile on my face!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDkgSWwgbWFucXVlIGVuY29yZSB1biBwZXUgZGUgdGVtcHMgYXZhbnQgcXVlIGNlbHVpIGRlIGJhaWVzIFNpdHJ1cyBuJ2Fycml2ZSDDoCBtYXR1cml0w6ksIGNlbGEgZGl0Li4u
+        - 19, 9 With that said, there's still some time left until the Sitrus Berries
+          grow into maturity...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1057,49 +1052,46 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEwIE9oIHBhcmRvbiwgamUgbmUgdCdhaSBwYXMgZW50ZW5kdVxFIGFycml2ZXIsIGonw6l0YWlzIHRyb3AgYWJzb3Jiw6llIGRhbnMgbWEgY29udGVtcGxhdGlvbiBkZSBjZXMgbWVydmVpbGxldXggcGxhbnRzIGRlIGJhaWVzICE=
+        - 19, 10 Oh sorry, I didn't hear you there, I was too lost in thought about
+          these Berry trees!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExIFZvaXMtdHUsIFBva8OpbW9uU0RLIGVzdCBjYXBhYmxlIGRlIFxjWzVdZ8OpcmVyIGRpcmVjdGVtZW50IGxlcyBiYWllcyBldCBsZXVyIGNyb2lzc2FuY2VcY1swXS4=
+        - 19, 11 You see, PokémonSDK is capable of \c[5]directly managing Berries
+          and their growth\c[0].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEyIElsIGVzdCByZWNvbW1hbmTDqSBkJ1xjWzVdaW5pdGlhbGlzZXIgbGVzIHBsYW50cyBkZSBiYWllc1xjWzBdIGRpcmVjdGVtZW50IGRhbnMgdG9uIGludHJvZHVjdGlvbi4=
+        - 19, 12 It's recommended to directly \c[5]initialize the Berry trees\c[0]
+          inside your introduction.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzIFVuIHBldSDDoCBsYSBtYW5pw6hyZSBkZSBjZXR0ZSBkw6ltbyAh
+        - 19, 13 As does this demo!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0IFBlbnNlIMOgIGpldGVyIHVuIMWTaWwgw6AgbCdpbnRybyBkZSBjZXR0ZSBkw6ltbyBwb3VyIHZvaXIgY29tbWVudCBjJ2VzdCBmYWl0Lg==
+        - 19, 14 You can have a look at the intro of this demo to see how it's done.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 15 Si tu veux cueillir celles-ci, je t'en prie, fais donc !
+        - 19, 15 If you want to harvest these trees, feel free to do so!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE2IEplIHZhaXMgYXVzc2kgdGUgZG9ubmVyIGNlY2ksIMOnYSB0ZSBwZXJtZXR0cmEgZCdhcnJvc2VyIGxlcyBwbGFudHMgZGUgYmFpZXMsIHNpIHR1IGVuIHJlcGxhbnRlcy4=
+        - 19, 16 I also want to give you this, it will allow you to water Berry plants,
+          if you replant some.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE3IFR1IHBvdXJyYXMgYXVzc2kgYXJyb3NlciBsZXMgYmFpZXMgU2l0cnVzIGp1c3RlIMOgIGPDtHTDqSwgcG91ciBsZXMgYWlkZXIgw6AgcG91c3NlciB1biBwZXUgcGx1cyB2aXRlICE=
+        - 19, 17 You also can water this Sitrus Berries here to help fasten its growth!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1109,8 +1101,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE4IEplIHRlIGxhaXNzZSB0J2FtdXNlciDDoCBwbGFudGVyIGRlcyBiYWllcywgbW9pIGplIHZhaXMgZW4gY2hlcmNoZXIgZGFucyBsZXMgY29pbnMgaW5leHBsb3LDqXMgZGUgbCfDjmxlICE=
+        - 19, 18 Have fun planting Berries, I'll go search some more in the unexplored
+          part of the Island!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1397,13 +1389,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE5IEonYWkgZGVzIG9iamV0cyByYXJlcyBldCBzdXBlciB1dGlsZXMgw6AgdmVuZHJlLCBtYWlzIG9uIG0nYSBkaXQgZCdhdHRlbmRyZSBxdWUgbGUgZGVybmllciBhcnJpdmFudCBzZSByZW5kZSDDoCBsYSBUb3VyLi4u
+        - 19, 19 I have some very rare and useful items to sell, but I was told to
+          wait for the last comer to go to the Tower...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Tu sais de qui il s'agit ?
+        - Any idea who it might be?
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1455,8 +1447,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDIwIExlIGRlcm5pZXIgYXJyaXZhbnQgcydlc3QgcHLDqXNlbnTDqSDDoCBsYSBUb3VyLCBjZSBxdWkgdmV1dCBkaXJlIHF1ZSBqZSBwZXV4IGVuZmluIG91dnJpciBtYSBib3V0aXF1ZSAh
+        - 19, 20 The last comer got to the Tower, so this means I can finally open
+          my shop!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1475,7 +1467,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 21 Je me fournis chez des pro des combats !
+        - 19, 21 I buy from some real battle professionnals!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1488,7 +1480,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 22 Je te montre de suite ce que je vends.
+        - 19, 22 Let me show you my stock right now.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1629,14 +1621,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDIzIETDqXNvbMOpLCBqZSBuJ2FpIHBsdXMgcmllbiDDoCB0ZSB2ZW5kcmUu
+        - 19, 23 Sorry, got nothing left to sell.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          UmVwYXNzZSB1bmUgYXV0cmUgZm9pcywgcGV1dC3DqnRyZSA/
+        - Come back another time maybe?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1668,13 +1658,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDI0IFZpc2libGVtZW50LCByaWVuIGRlIGNlIHF1ZSBqZSB2ZW5kcyBuZSB0J2ludMOpcmVzc2Uu
+        - 19, 24 Clearly, nothing I sell seems to interest you.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Tant pis, repasse me voir si tu changes d'avis !
+        - Ah, nevermind, come back again if you change your mind!
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1712,8 +1701,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDI1IE1lcmNpIHBvdXIgdG9uIGFjaGF0LCDDoCB1bmUgcHJvY2hhaW5lIGZvaXMgIQ==
+        - 19, 25 Thank you for your purchase, until next time!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1756,8 +1744,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDI2IE1lcmNpIHBvdXIgdGVzIGFjaGF0cywgZW4gZXNww6lyYW50IHRlIHJldm9pciBiaWVudMO0dCAh
+        - 19, 26 Thank you for your purchases, I hope to see you again soon!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1794,14 +1781,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDI3IFR1IGFzIGFjaGV0w6kgdG91dCBtb24gc3RvY2sgIQ==
+        - 19, 27 You bought my whole stock!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          SmUgbidhaSBwbHVzIHJpZW4gw6AgdGUgdmVuZHJlIGR1IGNvdXAsIHJlcGFzc2UgbWUgdm9pciDDoCBsJ29jY2FzaW9uICE=
+        - Well, I don't have anything left to sell you, come see me again sometime!
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1860,14 +1845,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDI4IFNhbHV0LCBncmHDrm5lIGRlIHN0cmF0w6hnZSAh
+        - 19, 28 Hello, budding strategist!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDI5IEplIHZlbmRzIGRlcyBDYXBzdWxlcyBUZWNobmlxdWVzIGRlIGZvdSBmdXJpZXV4LCBsZSBnZW5yZSBkJ2F0dGFxdWVzIG7DqWNlc3NhaXJlIHBvdXIgZmFpcmUgZCd1biBNYXJhaXN0ZSBsZSBtZWlsbGV1ciBkZXMgc3RhbGxlcnMgIQ==
+        - 19, 29 I sell some furiously mind-busting TMs, the kind of move necessary
+          to transform a Quagsire into the best of stallers!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1882,7 +1866,7 @@ events:
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 31 Tu comprends de quoi je parle, au moins ?
+        - 19, 31 You do understand what I'm saying, right?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1900,13 +1884,12 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDMyIEFoIMOnYSwgw6dhIG1lIHBsYcOudCAh
+        - 19, 32 Ah, this puts a smile on my face!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Tu connais les vraies strats, toi !
+        - You're a fellow strategist of culture I see!
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1927,14 +1910,13 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDMzIEFoLi4uIETDqXNvbMOpLCBqZSBtZSBzdWlzIGVuZmxhbW3DqSBwb3VyIHJpZW4u
+        - 19, 33 Oh, sorry then, I got all fired up over nothing,
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDM0IENvbmNyw6h0ZW1lbnQsIGplIHZlbmRzIGRlcyBDVCBxdWkgdGUgcGVybWV0dHJvbnQgZCdhcHByZW5kcmUgZGUgbm91dmVsbGVzIGNhcGFjaXTDqXMgw6AgdGVzIFBva8OpbW9uLCBtb3llbm5hbnQgcXUnaWxzIHNvaWVudCBhcHRlcyDDoCBsZXMgYXBwcmVuZHJlLg==
+        - 19, 34 Concretely, I sell TMs which allow you to teach new moves to your
+          Pokémon, as long as they are able to learn it.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1947,14 +1929,12 @@ events:
         code: 404
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 35 Quoiqu'il en soit, je dois attendre encore un peu avant d'ouvrir
-          boutique.
+        - 19, 35 Anyway, I have to wait a bit before opening my shop.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDM2IFJldmllbnMgbWUgdm9pciBwbHVzIHRhcmQgc2kgdCdlcyBpbnTDqXJlc3PDqVxFLg==
+        - 19, 36 Come back again later if you're interested.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2006,19 +1986,17 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDM3IEhleSwgamUgdGUgcmVjb25uYWlzLCB0J2VzIFxmW21hwqdtb25dIHBvdGUgcHJvIGRlIGxhIHN0cmF0w6lnaWUgIQ==
+        - 19, 37 Hey, I remember you! You're my fellow strategist of culture!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 38 Je peux enfin ouvrir mon magasin, tu vas voir j'ai des CT trop pratiques.
+        - 19, 38 I finally can open my shop.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDM5IEV0IGNvbW1lIHQnZXMgXGZbdW5lIGZpbGxlwqd1biBnYXJzXSBiaWVuLCBqZSB0ZSBmYWlzIHVuZSByaXN0b3VybmUgc3VyIGxlcyBwcml4Lg==
+        - 19, 39 And as you seem like a nice \f[girl§guy], I'll give you a discount.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2076,8 +2054,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDQwIEJvbmpvdXIgamV1bmUgXGZbZHJlc3NldXNlwqdkcmVzc2V1cl0gISBJbnTDqXJlc3PDqVxFIHBhciBtZXMgQ1QgPw==
+        - 19, 40 Hello young trainer! Interested in my TMs?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2186,25 +2163,25 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDQxIFVuZSBydW1ldXIgcXVpIGNpcmN1bGUgc3VyIGwnw45sZSBkaXQgcXUnYXBwYXJlbW1lbnQsIGVsbGUgYSBtaXMgcGx1c2lldXJzIGFubsOpZXMgYSDDqnRyZSBjb25zdHJ1aXRlLg==
+        - 19, 41 There's a rumor going around about the Tower, apparently it took
+          years to build it.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDQyIENlcyBydW1ldXJzIGRpc2VudCBhdXNzaSBxdSdhdSBkw6lwYXJ0LCBlbGxlIGRldmFpdCDDqnRyZSB1bmUgcGV0aXRlIHLDqWdpb24gw6AgcGFydCBlbnRpw6hyZSwgbWFpcyBxdWUgbGVzIGNvbmNlcHRldXJzIG9udCBqdWfDqSBjZWxhIHRyb3AgYW1iaXRpZXV4Li4u
+        - 19, 42 Those rumors also say that in the beginning, it was supposed to be
+          a small region, but their conceptors thought it was too ambitious...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDQzIEQnYXV0cmVzIHJ1bWV1cnMgZGlzZW50IHF1J2FwcGFyZW1tZW50LCBsZSBwcm9qZXQgZGUgcsOpZ2lvbiBuJ2EgcGFzIMOpdMOpIGFiYW5kb25uw6kgcG91ciBhdXRhbnQgIQ==
+        - 19, 43 But some other rumors say that apparently, this region project wasn't
+          given up on!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 44 Mais bon, ce ne sont que des rumeurs...
+        - 19, 44 But, well, those are rumors at the end of the day...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2259,8 +2236,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDQ1IExlIHByb2Jsw6htZSBkdSB0ZW1wcywgYydlc3QgdW4gbm9uLXByb2Jsw6htZS4uLg==
+        - 19, 45 The problem of time isn't one to begin with...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2293,7 +2269,8 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 46 Je savais que tu viendrais...
+        - 19, 46 I knew you'd come... You see, I possess powers beyond anything you
+          could ever imagine.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2304,35 +2281,35 @@ events:
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 47 Manipuler le temps est un jeu d'enfant pour moi...
+        - 19, 47 Warping time is child's play for me...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 48 Je peux t'en faire profiter si tu veux.
+        - 19, 48 I can share it with you if you want.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDQ5IEplIHN1aXMgcGFyIGV4ZW1wbGUgY2FwYWJsZSBkZSBjaGFuZ2VyIGxlIHLDqWbDqXJlbnRpZWwgdGVtcG9yZWwgZGUgbm90cmUgcsOpYWxpdMOpLg==
+        - 19, 49 For instance, I'm able to change the frame of reference of time in
+          our reality.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDUwIEplIHBldXggY2hvaXNpciBkZSBwYXNzZXIgbGUgdGVtcHMgc3VyIHVuZSBcY1s1XWhvcmxvZ2UgcsOpZWxsZVxjWzBdLCBkb25jIGNlbGxlIGRlIHRvbiBQQywgb3Ugc3VyIHVuZSBcY1s1XWhvcmxvZ2UgdmlydHVlbGxlXGNbMF0uLi4=
+        - 19, 50 I can choose to swap time to a \c[5]real clock\c[0], so your PC's,
+          or a \c[5]virtual clock\c[0].
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDUxIEwnaG9ybG9nZSB2aXJ0dWVsbGUgaXJhIGF1IHJ5dGhtZSBkJ3VuZSBtaW51dGUgw6ljb3Vsw6llIHRvdXRlcyBsZXMgMTAgc2Vjb25kZXMuLi4=
+        - 19, 51 The virtual clock will flow at a rythm of one minute spent every
+          10 seconds...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 52 Viens me parler si tu veux changer le cours du temps.
+        - 19, 52 Come talk to me if you want to change the flow of time.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2383,7 +2360,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 53 Ainsi, tu souhaites toi aussi manipuler le temps...
+        - 19, 53 So, you wish to manipulate time.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2400,13 +2377,12 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDU0IEFjdHVlbGxlbWVudCwgbm90cmUgdW5pdmVycyB1dGlsaXNlIGwnaG9ybG9nZSByw6llbGxlLi4u
+        - 19, 54 Currently, our universe uses the real clock...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Veux-tu passer sur l'horloge virtuelle ?
+        - Do you want to swap to the virtual clock?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2429,8 +2405,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDU1IFRyw6hzIGJpZW4sIG5vdHJlIHVuaXZlcnMgdmEgcydhY2PDqWzDqXJlciBkYW5zIDMuLi5bV0FJVCA0MF0gMi4uLltXQUlUIDQwXSAxLi4uIFtXQUlUIDQwXQ==
+        - 19, 55 Very well, our universe will accelerate in 3...[WAIT 40] 2...[WAIT
+          40] 1... [WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2492,26 +2468,23 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDU2IFZvaWzDoC4uLg==
+        - 19, 56 Done...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          TGEgZmFicmlxdWUgdGVtcG9yZWxsZSBkZSBub3RyZSB1bml2ZXJzIGEgY2hhbmfDqS4uLg==
+        - The time fabric of our universe has changed...
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDU3IEwnaG9ybG9nZSB2aXJ0dWVsbGUgaXJhIGF1IHJ5dGhtZSBkJ3VuZSBtaW51dGUgw6ljb3Vsw6llIGNoYXF1ZSBzZWNvbmRlLg==
+        - 19, 57 The virtual clock will flow at a rythm of one minute spent each 10
+          seconds...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDU4IEonYWkgZml4w6kgbCdoZXVyZSDDoCAxMmgwMC4=
+        - 19, 58 I fixed the time at 12am.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2535,33 +2508,32 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"19, 168 Matin",'
+        - '"19, 168 Morning",'
         indent: 2
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"19, 169 Jour",'
+        - '"19, 169 Midday",'
         indent: 2
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"19, 170 Soir",'
+        - '"19, 170 Evening",'
         indent: 2
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"19, 171 Nuit",'
+        - '"19, 171 Night",'
         indent: 2
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '"19, 172 Retour")'
+        - '"19, 172 Return")'
         indent: 2
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDU5IFNvdWhhaXRlcy10dSB0ZSByZW5kcmUgw6AgdW4gbW9tZW50IGRlIGxhIGpvdXJuw6llIGVuIHBhcnRpY3VsaWVyID8=
+        - 19, 59 Do you wish to wait until a specific time of the day?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2575,8 +2547,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDYwIEplIHBhc3NlIGwnaGV1cmUgw6AgN2gwMC4=
+        - 19, 60 I want to wait until 7am.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2648,8 +2619,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDYxIEplIHBhc3NlIGwnaGV1cmUgw6AgMTFoMDAu
+        - 19, 61 I want to wait until 11am.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2721,8 +2691,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDYyIEplIHBhc3NlIGwnaGV1cmUgw6AgMTloMDAu
+        - 19, 62 I want to wait until 7pm.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2794,8 +2763,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDYzIEplIHBhc3NlIGwnaGV1cmUgw6AgMjJoMDAu
+        - 19, 63 I want to wait until 10pm.
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2906,13 +2874,12 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 64 Actuellement, notre univers utilise l'horloge virtuelle...
+        - 19, 64 Currently, our universe uses the virtual clock...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VmV1eC10dSBsYWlzc2VyIGxlIHRlbXBzIHJlZGV2bmlyIG1hw650cmUgZXQgcmV0b3VybmVyIMOgIGwnaG9ybG9nZSByw6llbGxlID8=
+        - Do you want to swap to the real clock?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -2935,8 +2902,8 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDY1IFRyw6hzIGJpZW4sIG5vdHJlIHVuaXZlcnMgdmEgZMOpY8OpbMOpcmVyIGRhbnMgMy4uLltXQUlUIDQwXSAyLi4uW1dBSVQgNDBdIDEuLi4gW1dBSVQgNDBd
+        - 19, 65 Very well, our universe will decelerate in 3...[WAIT 40] 2...[WAIT
+          40] 1... [WAIT 40]
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2971,20 +2938,17 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDY2IFZvaWzDoC4uLg==
+        - 19, 66 Done...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          TGEgZmFicmlxdWUgdGVtcG9yZWxsZSBkZSBub3RyZSB1bml2ZXJzIGEgY2hhbmfDqS4uLg==
+        - The time fabric of our universe has changed...
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDY3IEwnaG9ybG9nZSByw6llbGxlIHN1aXQgZXhhY3RlbWVudCBsJ2hldXJlIGRlIHRvbiBQQy4=
+        - 19, 67 The real clock strictly follows your system's clock.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3020,8 +2984,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDY4IFJldmllbnMgbWUgdm9pciBzaSB0dSB2ZXV4IMOgIG5vdXZlYXUgbW9kaWZpZXIgbGUgdGVtcHMuLi4=
+        - 19, 68 Come see me back if you want to change time again...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3119,13 +3082,12 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 69 :[name=Marissa]:Oh, tu es de retour...
+        - 19, 69 :[name=Marissa]:Oh, you're back...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VHUgYXMgY2hhbmfDqSBkJ2F2aXMgPw==
+        - Did you change your mind?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3138,19 +3100,18 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDcwIFNpIHNldWxlbWVudCBqZSBuZSBtJ8OpdGFpcyBwYXMgcGVuY2jDqWUgcG91ciB2b2lyIGNldHRlIHNhdGFuw6llIHNpbGhvdWV0dGUgaHVtYW5vw69kZS4uLg==
+        - 19, 70 Why did I have to bend over to see this damned humanoid figure...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 71 Je serais encore vivante et je vivrais mon idylle...
+        - 19, 71 I would still be alive and living my perfect love life...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDcyIFNpIGplIHBvdXZhaXMgYXR0cmFwZXIgY2V0dGUgY2hvc2UgZXQgbHVpIGZhaXJlIGdvw7t0ZXIgw6AgbWVzIGJhZmZlcyBmYW50b21hdGlxdWVzLCBqZSBuZSBtZSBnw6puZXJhaXMgcGFzLi4u
+        - 19, 72 If only I could just catch this thing and make it taste some of my
+          ghostly slaps, I wouldn't be shy about doing that...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3198,36 +3159,34 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 73 Tu... Tu peux me voir ? Et m'entendre ?!
+        - 19, 73 You... You can see me? And hear me?!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - C'est formidable !
+        - It's amazing!
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDc0IEplIHBlbnNhaXMgcXVlIGonw6l0YWlzIGNvbmRhbW7DqWUgw6AgZXJyZXIgw6l0ZXJuZWxsZW1lbnQsIMOgIHJlZ2FyZGVyIGxlIHZpZGUgZGFucyBsZXF1ZWwgamUgc3VpcyB0b21iw6llLCBldCDDoCByZXNzYXNzZXIgbWVzIHJlZ3JldHMuLi4=
+        - 19, 74 I thought I was doomed to wander eternally and watch the void I fell
+          into, as well as rehash my regrets...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDc1IE9oIG1haXMgcGFyZG9uLCBqZSBuZSBtZSBzdWlzIHBhcyBwcsOpc2VudMOpZS4uLg==
+        - 19, 75 Oh, sorry, where are my manners...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDc2IEplIG0nYXBwZWxsZSBNYXJpc3NhLCBldCBjb21tZSB0dSBwZXV4IGxlIGNvbnN0YXRlciwgamUgc3VpcyB1biBmYW50w7RtZSBxdWUgcGVyc29ubmUgbmUgdm9pdC4=
+        - 19, 76 :[name=Marissa]:I'm Marissa, and as you can notice, I'm a ghost nobody
+          sees.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDc3IDpbbmFtZT1NYXJpc3NhXTpNYWlzLi4uIENvbW1lIHR1IGVzIGzDoCBldCBxdWUgdHUgcGV1eCBtZSB2b2lyLi4uIA==
+        - 19, 77 :[name=Marissa]:But... As you're here and you can see me....
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3240,8 +3199,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDc4IDpbbmFtZT1NYXJpc3NhXTpUdSB2ZXV4IGJpZW4gYWNjw6lkZXIgw6AgcXVlbHF1ZXMgdW5lcyBkZSBtZXMgZGVtYW5kZXMgPw==
+        - 19, 78 :[name=Marissa]:Would you be so kind as to access some of my demands?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3259,31 +3217,30 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '19, 79 :[name=Marissa]:Merci mille fois ! '
+        - 19, 79 :[name=Marissa]:Thank you very much!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 80 :[name=Marissa]:Je vais avoir besoin que tu fasses deux choses pour
-          moi.
+        - 19, 80 :[name=Marissa]:I will need you to do two things for me.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDgxIDpbbmFtZT1NYXJpc3NhXTpUb3V0IGQnYWJvcmQsIGplIHZvdWRyYWlzIHF1ZSB0dSBhaWxsZXMgcGFybGVyIMOgIG1vbiBhbW91cmV1eCDigJMgZW5maW4gZXgtYW1vdXJldXgsIHZ1IHF1ZSBqZSBzdWlzIG1vcnRlLiA=
+        - 19, 81 :[name=Marissa]:First, I'd like you to talk to my lover – well, ex-lover,
+          as I'm dead.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 82 :[name=Marissa]:Je n'ai jamais pu lui dire "Je t'aime", et c'est
-          pour moi un immense regret.
+        - 19, 82 :[name=Marissa]:I never was able to tell him "I love you", and it's
+          an immense regret.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDgzIDpbbmFtZT1NYXJpc3NhXTpKJ2FpbWVyYWlzIGRvbmMgcXVlIHR1IGFpbGxlcyBsdWkgZGlyZSBwb3VyIG1vaSwgdW5lIHNvcnRlIGRlIGTDqWNsYXJhdGlvbiBwb3N0LW1vcnRlbS4uLg==
+        - 19, 83 :[name=Marissa]:So I would like you to tell him for me, a sort of
+          post-mortem confession...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3333,54 +3290,52 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 84 :[name=Marissa]:Tu le trouveras dans la Tour, au niveau de la balustrade.
+        - 19, 84 :[name=Marissa]:You'll find him in the Tower, around the balustrade.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 85 :[name=Marissa]:Il s'appelle Jules, tu ne peux pas le louper.
+        - 19, 85 :[name=Marissa]:His name is Jules, you can't miss him.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDg2IDpbbmFtZT1NYXJpc3NhXTpFdCBlbmZpbiwgaidhcHByw6ljaWVyYWlzIHF1ZSB0dSBtZSBjYXB0dXJlcyB1biBQb2vDqW1vbiBTcGVjdHJlLg==
+        - 19, 86 :[name=Marissa]:And finally, I would like you to catch a Ghost Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDg3IDpbbmFtZT1NYXJpc3NhXTpWb2lzLXR1LCBqJ2FpIHRvdWpvdXJzIHLDqnbDqSBkJ2VuIGF2b2lyIHVuLCBtYWlzIGplIG4nYWkgamFtYWlzIGZyYW5jaGkgbGUgcGFzLg==
+        - 19, 87 :[name=Marissa]:See, I always dreamed of having one, but I never
+          took the plunge.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDg4IDpbbmFtZT1NYXJpc3NhXTpFdCBzaSBjJ2VzdCB1biBQb2vDqW1vbiBTcGVjdHJlLCBpbCB5IGEgZGUgZ3JhbmRlcyBjaGFuY2VzIHF1J2lsIHB1aXNzZSBtZSBzdWl2cmUgZGUgbCdhdXRyZSBjw7R0w6ksIGplIG5lIHNlcmFpIGRvbmMgcGFzIHNldWxlLg==
+        - 19, 88 :[name=Marissa]:And if it's a Ghost Pokémon, there's a huge chance
+          it will be able to follow me to the other side, so I won't be alone then.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDg5IDpbbmFtZT1NYXJpc3NhXTpEJ2FwcsOocyBkZXMgb3XDry1kaXJlLCBpbCB5IGF1cmFpdCB1biBQb2vDqW1vbiBTcGVjdHJlIHF1aSBoYW50ZSBsJ8OpdGFnZSBkZSBsYSBUb3VuZHJhIDogYydlc3QgY2VsdWktbMOgIHF1ZSBqZSB2ZXV4Lg==
+        - '19, 89 :[name=Marissa]:According to hearsay, there is a Ghost Pokémon haunting
+          the Toundra floor: I want this one.'
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDkwIDpbbmFtZT1NYXJpc3NhXTpTaSDDp2EgcGV1dCB0J2FpZGVyLCBqZSBjcm9pcyBxdSdpbCBzJ2FnaXQgZCd1biBNb21hcnRpay4=
+        - 19, 90 :[name=Marissa]:If it can help, I believe it's called a Froslass.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDkxIDpbbmFtZT1NYXJpc3NhXTpKZSBuZSBzYWlzIHBhcyDDoCBxdW9pIMOnYSByZXNzZW1ibGUsIG1haXMgdHUgZXMgXGZbdW5lIERyZXNzZXVzZcKndW4gRHJlc3NldXJdIGRlIFBva8OpbW9uLCBjZWxhIG5lIGRldnJhaXQgcGFzIHRlIHBvc2VyIGRlIHByb2Jsw6htZSAh
+        - 19, 91 :[name=Marissa]:I don't know what it looks like, but you're a Pokémon
+          Trainer, so it shouldn't cause you any problem.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDkyIDpbbmFtZT1NYXJpc3NhXTpKZSB0ZSBsYWlzc2UgZ8OpcmVyIMOnYSwgcmV2aWVucyBtZSB2b2lyIHF1YW5kIHR1IGF1cmFzIGZpbmkgIQ==
+        - 19, 92 :[name=Marissa]:I will let you handle it, come see me back when you're
+          done!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3464,13 +3419,12 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 93 :[name=Marissa]:Je... Je comprends...
+        - 19, 93 :[name=Marissa]:I... I understand...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDk0IDpbbmFtZT1NYXJpc3NhXTpRdWkgYWlkZXJhaXQgdW4gZmFudMO0bWUgZGUgc29uIHBsZWluIGdyw6kgPw==
+        - 19, 94 :[name=Marissa]:Who in their right mind would help a ghost?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3480,13 +3434,12 @@ events:
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 95 :[name=Marissa]:Reviens me voir si tu changes d'avis...
+        - 19, 95 :[name=Marissa]:Come back if you change your mind...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDk2IDpbbmFtZT1NYXJpc3NhXTpBcHLDqHMgdG91dCwgaidhaSBsJ8OpdGVybml0w6kgZGV2YW50IG1vaS4uLg==
+        - 19, 96 :[name=Marissa]:After all, I have eternity ahead of me...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3646,54 +3599,48 @@ events:
         code: 223
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 97 :[name=Marissa]:Ne dis rien, ton regard me dit tout.
+        - 19, 97 :[name=Marissa]:Say nothing, your eyes tell me everything.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDk4IDpbbmFtZT1NYXJpc3NhXTpHcsOiY2Ugw6AgdG9pLCBqZSB2YWlzIHBvdXZvaXIgcGFydGlyIGVuIHBhaXgu
+        - 19, 98 :[name=Marissa]:Thanks to you, I will be able to leave with peace
+          of mind.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDk5IDpbbmFtZT1NYXJpc3NhXTpBbG9ycyBkaXMtbW9pLCBxdSdhIGRpdCBtb24gYmllbi1haW3DqSA/
+        - 19, 99 :[name=Marissa]:So tell me, what did my beloved say?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 100 :[name=Marissa]:.[WAIT 20].[WAIT 20].[WAIT 20] Pardon ?
+        - 19, 100 :[name=Marissa]:.[WAIT 20].[WAIT 20].[WAIT 20] I beg your pardon?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEwMSA6W25hbWU9TWFyaXNzYV06SWwgYSBwZW5zw6kgcXVlIHR1IGNoZXJjaGFpcyDDoCBsZSBtYXVkaXJlID8=
+        - 19, 101 :[name=Marissa]:He thought you tried to curse him?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEwMiA6W25hbWU9TWFyaXNzYV06TW9uIGFtb3VyIG4nZXN0IHF1J3VuZSBtYWzDqWRpY3Rpb24gcG91ciBsdWkuLi4/
+        - 19, 102 :[name=Marissa]:So my love was only a curse to him..?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEwMyA6W25hbWU9TWFyaXNzYV06SmUuLi4gSmUgbSdhdHRlbmRhaXMgw6AgdG91dCwgc2F1ZiDDoCDDp2EuLi4=
+        - 19, 103 :[name=Marissa]:I was ready for anything but that...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 104 :[name=Marissa]:Il n'y a donc vraiment plus rien qui me retienne
-          ici.
+        - 19, 104 :[name=Marissa]:So there's definitely nothing that keeps me here.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEwNSA6W25hbWU9TWFyaXNzYV06TWFpcyBhdSBtb2lucywgamUgdmFpcyBwYXJ0aXIgYXZlYyB1biBub3V2ZWwgYW1pLiBUdSBtZSBsZSBwcsOpc2VudGVzID8=
+        - 19, 105 :[name=Marissa]:At least, I will be able to leave with a new friend.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3831,23 +3778,22 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 106 :[name=Marissa]:Que... qu'est ce que...?!
+        - 19, 106 :[name=Marissa]:What... What the hell...?!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEwNyA6W25hbWU9TWFyaXNzYV06Qydlc3QgbGEgc2lsaG91ZXR0ZSDDoCBjYXVzZSBkZSBsYXF1ZWxsZSBqZSBzdWlzIHRvbWLDqWUgIQ==
+        - 19, 107 :[name=Marissa]:That's the figure I bent over to see!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 108 :[name=Marissa]:C'est une blague ?!
+        - 19, 108 :[name=Marissa]:It's a joke, right?!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Parce qu'elle me fait pas rire du tout...
+        - Because it isn't funny at all!
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3857,48 +3803,44 @@ events:
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          Qydlc3QgbGUgUG9rw6ltb24gcXVpIGhhbnRhaXQgbCfDqXRhZ2UgZGUgbGEgVG91bmRyYSA/
+        - It's the Pokémon that was haunting the Tundra floor?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExMCA6W25hbWU9TWFyaXNzYV06UXVvaSA/IExlIHByZW5kcmUgcXVhbmQgbcOqbWUgYXZlYyBtb2kgPw==
+        - 19, 110 :[name=Marissa]:What? Take it with me anyway?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Pour qu'il me rappelle constamment ma mort honteuse ?
+        - I don't want to be remembered of my shameful death.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExMSA6W25hbWU9TWFyaXNzYV06SG9ubsOqdGVtZW50LCBwbHV0w7R0IG1vdXJpciBxdWUgZGUgcHJlbmRyZSBjZSBQb2vDqW1vbiBhdmVjIG1vaSwgZXQgw6dhIHRvbWJlIGJpZW4gcGFyY2UgcXVlIGplIHN1aXMgZMOpasOgIG1vcnRlLg==
+        - 19, 111 :[name=Marissa]:Honestly, I'd rather die than take this Pokémon
+          with me, and it's good because I'm already dead.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExMiA6W25hbWU9TWFyaXNzYV06TWVyY2kgbWFsZ3LDqSB0b3V0IHBvdXIgdG9uIGFpZGUsIFxmW0RyZXNzZXVzZcKnRHJlc3NldXJdLg==
+        - 19, 112 :[name=Marissa]:Thanks for your help anyway, Trainer.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExMyA6W25hbWU9TWFyaXNzYV06TGVzIHLDqXN1bHRhdHMgZMOpc2FzdHJldXggZGUgdGVzIGVmZm9ydHMgbidvbnQgcmllbiDDoCB2b2lyIGF2ZWMgdG9pLCDDp2EgZG9pdCB2ZW5pciBkZSBtb24ga2FybWEgb3UgcXVlbHF1ZSBjaG9zZSBjb21tZSDDp2EuLi4=
+        - 19, 113 :[name=Marissa]:The disastrous results of your efforts aren't your
+          fault, that has to be my karma or something like that....
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExNCA6W25hbWU9TWFyaXNzYV06SmUgbidvdWJsaWUgcGFzIHRlcyByw6ljb21wZW5zZXMgYmllbiBlbnRlbmR1Lg==
+        - 19, 114 :[name=Marissa]:I won't forget your rewards, of course.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Les voici.
+        - Here, take these.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3943,20 +3885,17 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExNSA6W25hbWU9TWFyaXNzYV06SmUgdm9pcyBsYSBsdW1pw6hyZSBkZSBsJ2F1LWRlbMOgLg==
+        - 19, 115 :[name=Marissa]:I can see the light.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExNiA6W25hbWU9TWFyaXNzYV06w4l0cmFuZ2VtZW50LCBlbGxlIGVzdCBlbiBjb250cmViYXMsIGzDoCBvw7kgamUgc3VpcyBtb3J0ZS4uLg==
+        - 19, 116 :[name=Marissa]:Weirdly, it is there, in the void, where I'm dead...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          TGUgaGFzYXJkIGZhaXQgdHLDqHMgbWFsIGxlcyBjaG9zZXMu
+        - '"Luck would have it" they say? I beg to differ...'
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -3981,13 +3920,13 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExNyA6W25hbWU9TWFyaXNzYV06SmV1bmUgXGZbZmlsbGXCp2hvbW1lXSwgamUgdGUgc291aGFpdGUgdW5lIHZpZSBwcm9zcMOocmUgZXQgbW9pbnMgY2hhb3RpcXVlIHF1ZSBsYSBtaWVubmUu
+        - 19, 117 :[name=Marissa]:Young \f[woman§man], I wish you a prosperous and
+          less chaotic life than mine.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Adieu.
+        - Farewell.
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -4109,8 +4048,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDExOCBNb21hcnRpayBhIGwnYWlyIGTDqcOndS4uLg==
+        - 19, 118 Froslass seems kind of sad...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4185,13 +4123,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 119 :[name=Marissa]:Merci de prendre le temps de m'aider !
+        - 19, 119 :[name=Marissa]:Thanks for taking the time to help!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEyMCA6W25hbWU9TWFyaXNzYV06TmUgdGUgcHJlc3NlIHBhcyBzdXJ0b3V0LCBqZSBwZXV4IGF0dGVuZHJlIHVuZSDDqXRlcm5pdMOpIHMnaWwgbGUgZmF1dCAh
+        - 19, 120 :[name=Marissa]:Take your time, I can wait an eternity if needed!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4527,7 +4464,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 121 Je ferais mieux de revenir plus tard...
+        - 19, 121 I better come back later...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4887,7 +4824,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 122 Je ferais mieux de revenir plus tard...
+        - 19, 122 I better come back later...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5302,7 +5239,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 123 Je ferais mieux de revenir plus tard...
+        - 19, 123 I better come back later...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5937,7 +5874,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 124 Je ferais mieux de revenir plus tard...
+        - 19, 124 I better come back later...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6297,14 +6234,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEyNSBUdSB2ZXV4IGTDqWrDoCB0J2VuIGFsbGVyID8=
+        - 19, 125 You already want to leave ?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEyNiBNb2kgaidzdWlzIHBhcyBwcsOocyBkZSBsZXZlciBsJ2FuY3JlICE=
+        - 19, 126 I'm not ready at all to weigh anchor!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6931,31 +6866,27 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEyNyBGaW91LCBzYWNyw6kgdHJhamV0ICE=
+        - 19, 127 Phew, what a journey!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 128 Pas trop le mal de mer ?
+        - 19, 128 Not too sea sick?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEyOSBNZXJjaSBkJ2F2b2lyIHV0aWxpc8OpIG5vcyBzZXJ2aWNlcyBwb3VyIHRlIHJlbmRyZSBpY2kuIE1haXMgdHLDqnZlIGRlIGJhdmFyZGFnZXMsIGonYWkgY3J1IGNvbXByZW5kcmUgcXVlIHQnw6l0YWlzIGF0dGVuZHVcRSA/
+        - 19, 129 Thanks for using our service to come here!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzMCBGYXVkcmFpdCBwYXMgdHJvcCBsZXMgZmFpcmUgcGF0aWVudGVyLCB0J2FzIGp1c3RlIMOgIHRlIHJlbmRyZSDDoCBsYSBUb3VyIHRvdXQgYXUgbm9yZCwgw6AgbGEgc29ydGllIGR1IHBvbnRvbi4=
+        - 19, 130 You shouldn't make them wait for too long.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzMSBEJ2FpbGxldXJzLCBvbiBtJ2EgZGVtYW5kw6kgZGUgdGUgZm91cm5pciBjZWNpLg==
+        - 19, 131 Oh, before I forget, here's something they asked me to give you!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6965,20 +6896,17 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzMiBDJ2VzdCB1biBqb3VybmFsIGRlIHF1w6p0ZXMuIMOHYSB0ZSBwZXJtZXQgZGUgdsOpcmlmaWVyIHRlcyBxdcOqdGVzIGVuIGNvdXJzLCBldCBsZXMgb2JqZWN0aWZzIGRlIGNlcyBxdcOqdGVzLg==
+        - 19, 132 It's a Quest book.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzMyBKZXR0ZXMteSB1biBvZWlsLCDDp2EgdGUgc2VyYSBwcm9iYWJsZW1lbnQgdXRpbGUgIQ==
+        - 19, 133 Have a look at it, it might be useful!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzNCBCb24gc8Opam91ciBpY2ksIG1vdXNzYWlsbG9uICE=
+        - 19, 134 Have a nice stay, you landlubber!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7058,14 +6986,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzNSBVbiBhbWkgbSdhIGRpdCBxdSdvbiBuZSBwb3V2YWl0IHBhcyBww6pjaGVyIGF1IG5pdmVhdSBkZSBjZSBwb250b24u
+        - 19, 135 I was told by a friend that we can't fish on the dock.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzNiBVbmUgaGlzdG9pcmUgZGUgXGNbNV0iU3lzdGVtIFRhZyBkZSBtZXIiXGNbMF0gcGFzIGFwcGxpcXXDqSwgb3UgdW4gdHJ1YyBkdSBnZW5yZS4uLg==
+        - 19, 136 Something about a \c[5]"Sea System Tag"\c[0] not applied, or something
+          like that...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7335,43 +7262,41 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzNyBNYWlzIGVuZmluIFxmW21hbGhldXJldXNlwqdtYWxoZXVyZXV4XSwgb24gdCdhIGphbWFpcyBhcHByaXMgw6AgbmUgcGFzIGFsbGVyIHN1ciB1bmUgUm91dGUgc2FucyBQb2vDqW1vbiA/IQ==
+        - 19, 137 Hey you, are you insane?!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 138 ... Je plaisante !
+        - 19, 138 ... I'm joking!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          RW5maW4sIMOgIG1vaXRpw6kuLi4=
+        - Well, half-joking...
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDEzOSBWb2lzLXR1LCBQb2vDqW1vblNESyBuZSB0ZSByZW52ZXJyYSBwYXMgZCdlcnJldXIgc2kgdHUgbidhcyBwYXMgZGUgUG9rw6ltb24gc3VyIHRvaSwgbWFpcyBpbCBuZSBsYW5jZXJhIGF1Y3VuIGNvbWJhdCBub24gcGx1cy4=
+        - 19, 139 See, PokémonSDK won't raise any error if you don't have any Pokémon
+          on you, but it won't launch any battle either.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0MCBUdSBkb2lzIGRvbmMgdCdhc3N1cmVyIGRlIGRvbm5lciBkZXMgUG9rw6ltb24gw6AgdGVzIGpvdWV1cnMgYXZhbnQgcXUnaWxzIG4nYWllbnQgYWNjw6hzIMOgIGRlcyBjb21iYXRzIG91IGRlcyBoYXV0ZXMgaGVyYmVzLg==
+        - 19, 140 So it's your job to give a Pokémon to your player before they can
+          gain access to trainer battles or to tall grass.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0MSBKZSBwb3VycmFpcyB0ZSBsYWlzc2VyIHBhc3NlciwgbWFpcyBwb3VyIHF1ZSBjZXR0ZSBkw6ltbyBzZSBkw6lyb3VsZSBiaWVuLCBpbCB2YXVkcmFpdCBtaWV1eCBxdWUgdHUgcsOpY3Vww6hyZXMgdW4gb3UgcGx1c2lldXJzIFBva8OpbW9uLg==
+        - 19, 141 I could let you pass, but for the sake of this demo, you should
+          retrieve one or more Pokémon.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0MiBJbCB5IGEgZGUgZ3JhbmRlcyBjaGFuY2VzIHF1ZSBTaXJNYWxvIHQnYXR0ZW5kZSDDoCBsYSBUb3VyLCB0dSBkZXZyYWlzIHQneSByZW5kcmUgIQ==
+        - 19, 142 There's a high chance SirMalo is waiting for you at the Tower, you
+          should go to it.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7495,19 +7420,19 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 143 Bonjour Maker !
+        - 19, 143 Hello Maker!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0NCBDb21tZSB0dSBwZXV4IGxlIGNvbnN0YXRlciwgamUgbW9udGUgbGEgZ2FyZGUgcG91ciBtJ2Fzc3VyZXIgcXVlIHF1aWNvbnF1ZSBcQ1s1XW5lIHBvc3PDqWRhbnQgcGFzIGRlIFBva8OpbW9uXENbMF0gbmUgcHVpc3NlIHBhc3Nlci4=
+        - 19, 144 As you can see, I stand guard to make sure that anyone \c[5]who
+          doesn't have a Pokémon\c[0] can't get through.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0NSBKZSBzZXJhaSBvYmxpZ8OpIGRlIHQnYXJyw6p0ZXIgc2kgdHUgZXNzYXllcyBkZSB0ZSByZW5kcmUgc3VyIGNldHRlIHJvdXRlIHNhbnMgUG9rw6ltb24gIQ==
+        - 19, 145 I will have to stop you if you try to head to the Route without
+          a Pokémon!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7586,13 +7511,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0NiBPaCwgamUgdm9pcyBxdWUgdHUgYXMgZGVzIFBva8OpbW9uIHN1ciB0b2ku
+        - 19, 146 Oh, I see you have Pokémon with you.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 147 Amuse-toi bien sur la Route !
+        - 19, 147 Have fun on the Route then!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7976,37 +7900,36 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 148 :[name=SirMalo]:Hey \N[1] !
+        - 19, 148 :[name=SirMalo]:Hey \N[1]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Ravi de te rencontrer en chair et en os !
+        - Glad to meet you in the flesh!
         indent: 0
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE0OSA6W25hbWU9U2lyTWFsb106TGUgdHJhamV0IHMnZXN0IGJpZW4gcGFzc8OpLCBqZSBwcsOpc3VtZSA/
+        - 19, 149 :[name=SirMalo]:The trip went well, I assume?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - - 19, 150 Franchement, oui !
-          - 19, 151 Honnêtement, non...
+        - - 19, 150 Frankly, yes!
+          - 19, 151 Honestly, no...
         - 2
         indent: 0
         code: 102
       - !ruby/object:RPG::EventCommand
         parameters:
         - 0
-        - Franchement, oui !
+        - 19, 150 Frankly, yes!
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 152 :[name=SirMalo]:On refera appel aux services de cette compagnie
-          pour les prochains makers dans ce cas !
+        - 19, 152 :[name=SirMalo]:We will use the services of this company again for
+          the next Makers in this case!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8016,20 +7939,19 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 1
-        - !binary |-
-          SG9ubsOqdGVtZW50LCBub24uLi4=
+        - 19, 151 Honestly, no...
         indent: 0
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE1MyA6W25hbWU9U2lyTWFsb106TWluY2UsIG1vaSBxdWkgY3JveWFpcyBxdWUgw6dhIHNlcmFpdCBsYSBib25uZSBjb21wYWduaWUgY2V0dGUgZm9pcy4uLg==
+        - 19, 153 :[name=SirMalo]:Damn, and here I thought it was the right one this
+          time...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 154 :[name=SirMalo]:On en changera pour les prochains makers, merci
-          de ta franchise !
+        - 19, 154 :[name=SirMalo]:We will change it for the next Makers, thanks for
+          your honesty!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8042,26 +7964,25 @@ events:
         code: 404
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE1NSA6W25hbWU9U2lyTWFsb106UXVvaSBxdSdpbCBlbiBzb2l0LCBqZSB2b3VsYWlzIGp1c3RlIG0nYXNzdXJlciBxdWUgdHUgw6l0YWlzIGJpZW4gYXJyaXbDqVxFLCBldCBjJ2VzdCBsZSBjYXMgIQ==
+        - 19, 155 :[name=SirMalo]:Anyway, I wanted to make sure you arrived safely,
+          and that's the case!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE1NiA6W25hbWU9U2lyTWFsb106SidhdXJhaXMgcHUgdGUgZG9ubmVyIHRvbiBjYWRlYXUgZCdhcnJpdsOpZSB0b3V0IGRlIHN1aXRlLCBtYWlzIGlsIHNlbWJsZXJhaXQgcXVlIGplIGwnYWllIG91Ymxpw6kgZGFucyBsYSBUb3VyLi4uIE91cHMgIQ==
+        - 19, 156 :[name=SirMalo]:I could have given you your welcome gift right now,
+          but it seems like I forgot it in the Tower... Oopsie!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE1NyA6W25hbWU9U2lyTWFsb106SmUgdCdhdHRlbmRzIMOgIGxhIFRvdXIgcG91ciB0ZSBsZSBkb25uZXIsIGlsIGZhbGxhaXQgYmllbiBxdWUgdHUgdCd5IHJlbmRlcyBkZSB0b3V0ZSBtYW5pw6hyZS4=
+        - 19, 157 :[name=SirMalo]:I will wait for you at the Tower to give it to you,
+          you have to go there at some point anyways.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE1OCA6W25hbWU9U2lyTWFsb106w4AgdG91dCDDoCBsJ2hldXJlLCBNYWtlciAh
+        - 19, 158 :[name=SirMalo]:See you later, Maker!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8266,8 +8187,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE1OSBUdSBuJ2VzIHBhcyBlbmNvcmUgcGFzc8OpXEUgcGFyIGxhIFRvdXIgPyBRdSdlc3QgY2UgcXVlIHR1IGF0dGVuZHMgPw==
+        - 19, 159 Didn't you get to the Tower yet?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8280,8 +8200,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE2MCBTYWx1dCBqZXVuZSBncmFpbmUgZGUgXGZbcMOqY2hldXNlwqdww6pjaGV1cl0gISBKZSB2ZW5kcyBtZXMgdG91dGVzIGRlcm5pw6hyZXMgcHJpc2VzLCDDp2EgdCdpbnTDqXJlc3NlID8=
+        - 19, 160 Hello young fisherman in the making!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8299,13 +8218,12 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE2MSBKZSB0ZSBtb250cmUgbW9uIHN0b2NrIGRlLi4uIEF0dGVuZHMsIGplIHZvaXMgcXVlIHR1IG4nZXMgcGFzIHBhc3PDqVxFIHBhciBsYSBUb3VyLCBqZSBuZSBwZXV4IGRvbmMgcGFzIHRlIG1vbnRyZXIgbW9uIHN0b2NrIGRlIHN1aXRlLg==
+        - 19, 161 Here's my stock of...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 162 Passes-y et je pourrais te montrer mes prises !
+        - 19, 162 Stop by it and come see me again so I can show my catches!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8320,13 +8238,12 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE2MyBEb21tYWdlICEgQXR0ZW5kcy4uLiBUdSBuJ2VzIHBhcyBwYXNzw6lcRSDDoCBsYSBUb3VyID8gSmUgbidhdXJhaSByaWVuIHB1IHRlIHZlbmRyZSBkZSB0b3V0ZSBtYW5pw6hyZSAh
+        - 19, 163 Too bad! Wait, you didn't go to the Tower yet?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 19, 164 Passes-y et je pourrai te montrer mes plus belles prises !
+        - 19, 164 Stop by it and come see me again so I can show my catches!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8400,8 +8317,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE2NSBSZWJvbmpvdXIgISBKZSB2b2lzIHF1ZSB0dSBlcyBlbmZpbiBkaXNwb3PDqVxFIMOgIHZvaXIgbW9uIHN0b2NrLCDDp2EgdCdpbnTDqXJlc3NlID8=
+        - 19, 165 Welcome back! I see you are finally ready to see my stuff?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8414,8 +8330,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE2NiBTYWx1dCBqZXVuZSBncmFpbmUgZGUgXGZbcMOqY2hldXNlwqdww6pjaGV1cl0gISBKZSB2ZW5kcyBtZXMgdG91dGVzIGRlcm5pw6hyZXMgcHJpc2VzLCDDp2EgdCdpbnTDqXJlc3NlID8=
+        - 19, 166 Hello young fisherman in the making!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8444,8 +8359,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTksIDE2NyBKZSBww6pjaGUgYmVhdWNvdXAsIGRvbmMgamUgbmUgc2VyYWkgamFtYWlzIGVuIG1hbnF1ZSBkZSBQb2vDqW1vbiDDoCB0ZSB2ZW5kcmUu
+        - 19, 167 I'm fishing a lot, so I'll never run out of Pokémon to sell you.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

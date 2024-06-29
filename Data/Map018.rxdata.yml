@@ -695,14 +695,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDAgQm9uam91ciwgZXQgYmllbnZlbnVlIGF1IGNvbXB0b2lyIGRlcyDDqWNoYW5nZXMgZW4gbGlnbmUgIQ==
+        - 18, 0 Hello, and welcome to the Online Trade counter!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDEgTWFsaGV1cmV1c2VtZW50LCBub3VzIG5lIHByb3Bvc29ucyBwYXMgZW5jb3JlIGNldHRlIGZvbmN0aW9ubmFsaXTDqSwgbWFpcyBub3VzIGVzcMOpcm9ucyBxdWUgbm91cyBwb3Vycm9ucyB2b3VzIGxhIGZvdXJuaXIgdW4gam91ci4gTWVyY2kgZGUgdm90cmUgcGF0aWVuY2UgIQ==
+        - 18, 1 Unfortunately, we're unable to propose this feature at the time, but
+          we hope to be able to offer it to you one day.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -753,13 +752,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 18, 2 Bonjour, et bienvenue au comptoir des combats en ligne !
+        - 18, 2 Hello, and welcome to the Online Battle counter!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDMgTWFsaGV1cmV1c2VtZW50LCBub3VzIG5lIHByb3Bvc29ucyBwYXMgZW5jb3JlIGNldHRlIGZvbmN0aW9ubmFsaXTDqSwgbWFpcyBub3VzIGVzcMOpcm9ucyBxdWUgbm91cyBwb3Vycm9ucyB2b3VzIGxhIGZvdXJuaXIgdW4gam91ci4gTWVyY2kgZGUgdm90cmUgcGF0aWVuY2UgIQ==
+        - 18, 3 Unfortunately, we're unable to propose this feature at the time, but
+          we hope to be able to offer it to you one day.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -810,14 +809,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDQgU2FsdXQgISBKJ2FpIGF0dHJhcMOpIHVuIFBva8OpbW9uIMOpdHJhbmdlIHF1aSBzZSBiYWxhZGFpdCBkZXJyacOocmUgbGVzIHNlcnZldXJzIGR1IExhYm9yYXRvaXJlLCBtYWlzIGlsIG5lIG0naW5zcGlyZSBwYXMgY29uZmlhbmNlLi4u
+        - 18, 4 Hey! I caught a weird Pokémon that was hiding behind the servers of
+          the Laboratory, but I don't really trust it...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDUgVCdhdXJhaXMgcGFzIHVuIEfDqW9saXRoZSDDoCBtJ8OpY2hhbmdlciDDoCBsYSBwbGFjZSA/IEplIHQnb2ZmcmlyYWkgbGEgam9saWUgcGllcnJlIGFyYy1lbi1jaWVsIHF1ZSBqJ2FpIHRyb3V2w6kgYXZlYyAh
+        - 18, 5 Do you have a Boldore to trade me?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -989,8 +987,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDYgRWggISBNYWlzIGlsIMOpdGFpdCBjZW5zw6kgw6l2b2x1ZXIgIQ==
+        - 18, 6 Huh! It was supposed to evolve!
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1000,14 +997,12 @@ events:
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDggVHUgbHVpIGFzIGRvbm7DqSB1bmUgUGllcnJlIFN0YXNlID8h
+        - 18, 8 You gave it an Everstone?!
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDkgRmF1dCDDqnRyZSBzYWNyw6ltZW50IHZpY2lldXggIQ==
+        - 18, 9 That's pretty vicious!
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1020,14 +1015,12 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDEwIFN1cGVyICEgVG9uIEfDqW9saXRoZSBhIMOpdm9sdcOpICE=
+        - 18, 10 Great! Your Boldore evolved!
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDExIEplIHN1aXMgbWFpbnRlbmFudCBsJ2hldXJldXggcHJvcHJpw6l0YWlyZSBkJ3VuIHNwbGVuZGlkZSBHaWdhbGl0aGUgIQ==
+        - 18, 11 I'm now the happy owner of a splendid Gigalith!
         indent: 4
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1040,7 +1033,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 18, 12 Et parce qu'un deal est un deal... Tiens, prends cette pierre !
+        - 18, 12 A deal's a deal...
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1064,8 +1057,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDEzIEVoLCBtYWlzIGMnZXN0IHBhcyB1biBHw6lvbGl0aGUgIQ==
+        - 18, 13 Wait, it's not a Boldore!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1086,7 +1078,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 18, 14 Bon, tant pis...
+        - 18, 14 Well, too bad...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1109,8 +1101,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDE1IE1haXMgaidlbiB2ZXV4IHBhcyBkZSBjZSBQb2vDqW1vbiAh
+        - 18, 15 But I don't want this Pokémon!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1163,20 +1154,19 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDE2IEMnZXN0IGFzc2V6IHNpbXBsZSBkZSBjb25maWd1cmVyIHVuIFxjWzVdw6ljaGFuZ2UgaW50ZXJuZVxjWzBdIGF2ZWMgUG9rw6ltb25TREsu
+        - 18, 16 It's fairly easy to setup an \c[5]internal trade\c[0] with PokémonSDK.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDE3IElsIHN1ZmZpdCBkJ1xjWzVdYXBwZWxlciBsZSBtZW51IGRlIGwnw6lxdWlwZVxjWzBdIGV0IGRlIHbDqXJpZmllciBxdWUgbGUgUG9rw6ltb24gc8OpbGVjdGlvbm7DqSBlc3QgY2VsdWkgdm91bHUgcG91ciBsJ8OpY2hhbmdlLg==
+        - 18, 17 You just need to \c[5]call the party menu\c[0] and to check that
+          the selected Pokémon is the one needed for the trade.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDE4IEVuc3VpdGUgdHUgcmVudHJlcyBsZXMgY2FyYWN0w6lyaXN0aXF1ZXMgZHUgUG9rw6ltb24gw6ljaGFuZ8OpLCBwdWlzIHR1IHV0aWxpc2VzIGxhIGNvbW1hbmRlIFxjWzVdIm5wY190cmFkZV9zZXF1ZW5jZSJcY1swXS4=
+        - 18, 18 Then, you enter the parameters of the traded Pokémon, and then use
+          the \c[5]"npc_trade_sequence"\c[0] command.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1552,13 +1542,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 18, 19 Bonjour, et bienvenue au comptoir de la GTS !
+        - 18, 19 Hello, and welcome to the GTS counter!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDIwIENlcyBiw6J0aW1lbnRzIGRlcm5pZXJzIGNyaXMgdm91cyBwZXJtZXR0cm9udCBkJ8OpY2hhbmdlciBuJ2ltcG9ydGUgcXVlbCBQb2vDqW1vbiBhdmVjIG4naW1wb3J0ZSBxdWVsIHV0aWxpc2F0ZXVyIGRlIGNldHRlIGTDqW1vICE=
+        - 18, 20 This state-of-the-art system will allow you to trade any Pokémon
+          with any user of this demo!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1570,8 +1560,9 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDIxIFNpIHZvdXMgdmVuZXogw6AgdXRpbGlzZXIgY2Ugc3lzdMOobWUgZGFucyB2b3RyZSBwcm9wcmUgamV1LCBNYWtlciwgcGVuc2V6IMOgIHJlZ2FyZGVyIGxlIGNvZGUgcmVzcG9uc2FibGUgcG91ciB2b2lyIGxhIHByb2PDqWR1cmUgbsOpY2Vzc2FpcmUgcG91ciBhZGFwdGVyIGNldHRlIGZlYXR1cmUgw6Agdm90cmUgamV1ICE=
+        - 18, 21 If you are using this system for your own fangame, Maker, please
+          check the responsible code for the necessary procedure to adapt this feature
+          to your game!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1590,8 +1581,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDIyIFZvdWxlei12b3VzIGFjY8OpZGVyIMOgIGxhIEdUUyA/
+        - 18, 22 Do you want to access the GTS?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1609,7 +1599,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 18, 23 Tout de suite !
+        - 18, 23 Alright!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1629,8 +1619,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDI0IEF1Y3VuIHByb2Jsw6htZSwgcmV2ZW5leiBtZSB2b2lyIHNpIHZvdXMgY2hhbmdleiBkJ2F2aXMgIQ==
+        - 18, 24 No problem, please come back if you change your mind!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1791,8 +1780,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDI1IEplIHZhaXMgZmFpcmUgdW5lIGZhcmNlIMOgIG1vbiBwb3RlIGVuIGx1aSBlbnZveWFudCB1biBNYWNob3BldXIgdGVuYW50IHVuZSBQaWVycmUgU3Rhc2UgY29udHJlIHNvbiBTcGVjdHJ1bSwgY29tbWUgw6dhIGplIHBvdXJyYWkgbGUgbmFyZ3VlciBjYXIgaidhdXJhaSBsZSBtZWlsbGV1ciBQb2vDqW1vbiAh
+        - 18, 25 I'm going to prank my friend by trading him a Machoke with an Everstone
+          for his Haunter.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1843,8 +1832,8 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTgsIDI2IEplIHZhaXMgcGnDqWdlciBtb24gYW1pIGVuIGx1aSBlbnZveWFudCB1biBTcGVjdHJ1bSB0ZW5hbnQgdW5lIFBpZXJyZSBTdGFzZSBjb250cmUgc29uIE1hY2hvcGV1ciwgY29tbWUgw6dhIGplIHNlcmFpIGxlIHNldWwgw6AgYXZvaXIgdW4gUG9rw6ltb24gw6l2b2x1w6kgIQ==
+        - 18, 26 I'll trick my friend by sending him a Haunter holding an Everstone
+          for his Machoke, this way I'll be the only one with a powerful Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

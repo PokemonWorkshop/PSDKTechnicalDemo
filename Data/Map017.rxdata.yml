@@ -586,14 +586,12 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDAgXGNbMThdQm9uam91ciBldCBiaWVudmVudWUgw6AgbGEgYm9ybmUgZGUgcsOpc2VydmF0aW9uIGRlIGNvbWJhdCAh
+        - 17, 0 \c[18]Hello and welcome to the battle reservation terminal!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEgXGNbMThdU291aGFpdGV6LXZvdXMgcsOpc2VydmVyIHVuIGNvbWJhdCBzcMOpY2lmaXF1ZSA/
+        - 17, 1 \c[18]Do you want to reserve a specific battle?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -771,8 +769,7 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIgXGNbMThdUXVlbCBjb21iYXQgdm91bGV6LXZvdXMgcsOpc2VydmVyID8=
+        - 17, 2 \c[18]Which battle do you want to reserve?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -806,14 +803,13 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDMgXGNbMThdRXhjZWxsZW50IGNob2l4LCBub3VzIHByb2dyYW1tb25zIHZvdHJlIGNvbWJhdCBkYW5zIGxlcyBtZWlsbGV1cnMgZMOpbGFpcy4=
+        - 17, 3 \c[18]Excellent choice, we're programming your battle in the shortest
+          possible time.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQgXGNbMThdVmV1aWxsZXogdm91cyByZW5kcmUgw6AgbCdhcsOobmUu
+        - 17, 4 \c[18]Please head to the stage.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -844,8 +840,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDUgXGNbMThdTWFpcyBhdmFudCwgbWVyY2kgZGUgc8OpbGVjdGlvbm5lciBsZXMgMiBQb2vDqW1vbiBxdWkgdm91cyBhY2NvbXBhZ25lcm9udCBwb3VyIGNlIGNvbWJhdC4=
+        - 17, 5 \c[18]But before, please select the two Pokémon you will be fighting
+          with.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -895,8 +891,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDYgXGNbMThdVW5lIMOpcXVpcGUgbidhIHBhcyDDqXTDqSBzw6lsZWN0aW9ubsOpZSwgbGUgY29tYmF0IGEgw6l0w6kgZMOpY29tbWFuZMOpLg==
+        - '17, 6 \c[18]No team was selected, the battle was cancelled. '
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -914,8 +909,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDcgXGNbMThdVm90cmUgY2hvaXggYSBiaWVuIMOpdMOpIGVucmVnaXN0csOpLiBNZXJjaSBkZSB2b3RyZSBwYXRpZW5jZSwgbGUgY29tYmF0IHZhIGJpZW50w7R0IGTDqW1hcnJlci4=
+        - 17, 7 \c[18]Your choice was successfully registered.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1012,8 +1006,7 @@ events:
         code: 118
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDggXGNbMThdTWVyY2kgZCdhdm9pciB1dGlsaXPDqSBsYSBib3JuZSBkZSByw6lzZXJ2YXRpb24gZGUgY29tYmF0LCBub3VzIHZvdXMgc291aGFpdG9ucyB1bmUgYWdyw6lhYmxlIGpvdXJuw6llICE=
+        - 17, 8 \c[18]Thank you for using the battle reservation terminal.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1248,44 +1241,40 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDkgOltuYW1lPVBhbGJvbHNreV06QmllbnZlbnVlIMOgIHRvdXMgY2hlcnMgc3BlY3RhdGV1cnMgIQ==
+        - 17, 9 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwIDpbbmFtZT1QYWxib2xza3ldOkNlIGNvbWJhdCBzZXJhIHVuIGNvbWJhdCBzb2xvLCBhdmVjIGF1Y3VuZSBsaW1pdGUgZW4gbm9tYnJlIGRlIFBva8OpbW9uICE=
+        - 17, 10 :[name=Palbolsky]:This battle will be a solo battle, with no limit
+          in the number of usable Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGdhdWNoZSwgdm91cyBwb3VycmV6IHkgcmV0cm91dmVyIFtDTEFTU10gW05BTUVdLCBsZSBmaW5hbGlzdGUgZHUgcHLDqWPDqWRlbnQgdG91cm5vaSAh
+        - 17, 11 :[name=Palbolsky]:On my left, you'll find [CLASS] [NAME], the finalist
+          of the last tournament!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGRyb2l0ZSwgbGUgbm91dmVhdSBjaGFsbGVuZ2VyIGZyYcOuY2hlbWVudCBhcnJpdsOpXEUgc3VyIGwnw45sZSwgcXVlIHZvdXMgY29ubmFpc3NleiBwZXV0LcOqdHJlLi4u
+        - 17, 12 :[name=Palbolsky]:On my right, the freshly arrived new challenger
+          on the Island, as you may know...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzIDpbbmFtZT1QYWxib2xza3ldOkonYWkgbm9tbcOpLi4uIFxOWzFdICE=
+        - 17, 13 :[name=Palbolsky]:I named... \N[1]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0IDpbbmFtZT1QYWxib2xza3ldOkNoYWxsZW5nZXJzLCDDqnRlcy12b3VzIHByw6p0cyA/
+        - 17, 14 :[name=Palbolsky]:Challengers, are you ready?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1IDpbbmFtZT1QYWxib2xza3ldOkTDqW1hcnJleiAh
+        - 17, 15 :[name=Palbolsky]:Start!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1295,8 +1284,8 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 16 :[name=[NAME]]:Mon Rattatac est encore plus fort que lors du tournoi,
-          tu vas morfler !
+        - 17, 16 :[name=[NAME]]:My Raticate is even stronger than during the tournament,
+          you're gonna suffer!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1392,7 +1381,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 17 :[name=Palbolsky]:Et c'est une victoire pour \N[1] !
+        - 17, 17 :[name=Palbolsky]:Victory goes to \N[1]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1403,8 +1392,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE4IDpbbmFtZT1QYWxib2xza3ldOkonaW5zY3JpcyBjZXR0ZSB2aWN0b2lyZSDDoCBsJ29yZGluYXRldXIuLi4=
+        - 17, 18 :[name=Palbolsky]:I'll add this victory to the computer...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1453,20 +1441,18 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 19 :[name=Palbolsky]:Que vois-je ? \N[1] a vaincu tous mes apprentis
-          ?
+        - 17, 19 :[name=Palbolsky]:Oh, what do I see? \N[1] won against all my apprentices?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIwIDpbbmFtZT1QYWxib2xza3ldOk1lc2RhbWVzIGV0IG1lc3NpZXVycywgbGUgbW9tZW50IHF1ZSB2b3VzIGF0dGVuZGlleiB0b3VzIGVzdCBhcnJpdsOpICE=
+        - 17, 20 :[name=Palbolsky]:Ladies and gentlemen, the moment you've all been
+          waiting for is here!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIxIDpbbmFtZT1QYWxib2xza3ldOlVuIGNoYWxsZW5nZXIgYSBkw6libG9xdcOpIGxlIGRyb2l0IGRlIG1lIGNvbWJhdHRyZSAhIFJlc3RleiBkYW5zIGxlcyBlbnZpcm9ucyBwb3VyIGFzc2lzdGVyIMOgIHVuIG1hdGNoIGQnYW50aG9sb2dpZSAh
+        - 17, 21 :[name=Palbolsky]:A new challenger unlocked the right to fight me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1488,8 +1474,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIyIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcGx1cyBxdSd1biBzZXVsIGNvbWJhdCDDoCBnYWduZXIgcG91ciBcTlsxXSBhdmFudCBkZSBwb3V2b2lyIG0nYWZmcm9udGVyICEgVGllbnMgbGUgY291cCwgZ3JhaW5lIGRlIFxmW2NoYW1waW9ubmXCp2NoYW1waW9uXSAh
+        - 17, 22 :[name=Palbolsky]:Oh! There's only one battle left for \N[1] before
+          they can battle me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1502,8 +1488,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIzIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcXVlIFxWWzI2XSBjb21iYXRzIMOgIGdhZ25lciBwb3VyIFxOWzFdIGF2YW50IGRlIHBvdXZvaXIgbSdhZmZyb250ZXIgIQ==
+        - 17, 23 :[name=Palbolsky]:Oh! There's still \V[26] battles left to win for
+          \N[1] before they can challenge me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1532,8 +1518,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDI0IDpbbmFtZT1QYWxib2xza3ldOkxhIHZpY3RvaXJlIHJldmllbnQgw6AgW05BTUVdICE=
+        - 17, 24 :[name=Palbolsky]:Victory goes to [NAME]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1546,14 +1531,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDI1IDpbbmFtZT1QYWxib2xza3ldOkVuIHRvdXQgY2FzLCBjZSBmdXQgdW4gbWF0Y2ggZCd1bmUgZ3JhbmRlIGludGVuc2l0w6ksIGonZXNww6hyZSBxdWUgdm91cyBsJ2F2ZXogcmVzc2VudGkgYXVzc2kgZGFucyBsZXMgZ3JhZGlucyAh
+        - 17, 25 :[name=Palbolsky]:Anyway, it was a match of great intensity, I hope
+          you felt it all the way to the stands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDI2IDpbbmFtZT1QYWxib2xza3ldOkNoYWxsZW5nZXJzLCBqZSB2YWlzIHNvaWduZXIgdm9zIFBva8OpbW9uIHBvdXIgcXVlIHZvdXMgbidheWV6IHBhcyDDoCBhbGxlciBhdSBDZW50cmUgUG9rw6ltb24u
+        - 17, 26 :[name=Palbolsky]:Challengers, I'll heal your Pokémon so you don't
+          have to go to the Pokémon Center.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1586,14 +1571,14 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDI3IDpbbmFtZT1QYWxib2xza3ldOk4naMOpc2l0ZXogcGFzIMOgIHJldmVuaXIgdm91cyBiYXR0cmUgc2kgdm91cyBsZSB2b3VsZXosIGMnZXN0IHRvdWpvdXJzIHVuIHBsYWlzaXIgZCdhc3Npc3RlciDDoCBkZXMgbWF0Y2hzIGF1c3NpIHBhc3Npb25uYW50cyAh
+        - 17, 27 :[name=Palbolsky]:Don't hesitate to come battle again if you feel
+          like it, it's always a pleasure to attend to such passionating battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDI4IDpbbmFtZT1QYWxib2xza3ldOkNoZXJzIHNwZWN0YXRldXJzLCBtZXJjaSBkJ8OqdHJlIHZlbnVzLCBldCDDoCBsYSBwcm9jaGFpbmUgIQ==
+        - 17, 28 :[name=Palbolsky]:Dear spectators, thank you for coming, and see
+          you all next time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1850,36 +1835,34 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDI5IDpbbmFtZT1QYWxib2xza3ldOkJpZW52ZW51ZSDDoCB0b3VzIGNoZXJzIHNwZWN0YXRldXJzICE=
+        - 17, 29 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDMwIDpbbmFtZT1QYWxib2xza3ldOkNlIGNvbWJhdCBzZXJhIHVuIGNvbWJhdCBzb2xvLCBhdmVjIHVuZSBsaW1pdGUgZGUgZGV1eCBQb2vDqW1vbiAh
+        - 17, 30 :[name=Palbolsky]:This battle will be a solo battle, with a limit
+          of two usable Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDMxIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGdhdWNoZSwgbGEgZ3JhbmRlIGdhZ25hbnRlIGR1IHByw6ljw6lkZW50IHRvdXJub2kgOiBbQ0xBU1NdIFtOQU1FXSAh
+        - '17, 31 :[name=Palbolsky]:On my left, the winner of the last tournament:
+          [CLASS] [NAME]!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDMyIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGRyb2l0ZSwgbGEgc3RhciBtb250YW50ZSBkZSBjZXR0ZSBhcsOobmUuLi4=
+        - 17, 32 :[name=Palbolsky]:On my right, the rising star of this arena...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 33 :[name=Palbolsky]:Applaudissez bien fort... \N[1] !
+        - 17, 33 :[name=Palbolsky]:Please make an ovation for... \N[1]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 34 :[name=Palbolsky]:Le combat peut commencer !
+        - 17, 34 :[name=Palbolsky]:The battle may begin!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1889,8 +1872,8 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDM1IDpbbmFtZT1bTkFNRV1dOkNlIHRvdXJub2kgbifDqXRhaXQgcXUndW4gw6ljaGF1ZmZlbWVudC4uLiBUJ2VzIGxlIHBsYXQgZGUgcsOpc2lzdGFuY2UgIQ==
+        - 17, 35 :[name=[NAME]]:This tournament was only the warm-up, you're the real
+          deal and I'll beat you!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1997,7 +1980,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 36 :[name=Palbolsky]:Et c'est une victoire pour \N[1] !
+        - 17, 36 :[name=Palbolsky]:Victory goes to \N[1]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2008,8 +1991,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDM3IDpbbmFtZT1QYWxib2xza3ldOkonaW5zY3JpcyBjZXR0ZSB2aWN0b2lyZSDDoCBsJ29yZGluYXRldXIuLi4=
+        - 17, 37 :[name=Palbolsky]:I'll add this victory to the computer...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2058,20 +2040,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 38 :[name=Palbolsky]:Que vois-je ? \N[1] a vaincu tous mes apprentis
-          ?
+        - 17, 38 :[name=Palbolsky]:Oh, what do I see? \N[1] won against all my apprentices?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDM5IDpbbmFtZT1QYWxib2xza3ldOk1lc2RhbWVzIGV0IG1lc3NpZXVycywgbGUgbW9tZW50IHF1ZSB2b3VzIGF0dGVuZGlleiB0b3VzIGVzdCBhcnJpdsOpICE=
+        - 17, 39 :[name=Palbolsky]:Ladies and gentlemen, the moment you've all been
+          waiting for is here!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQwIDpbbmFtZT1QYWxib2xza3ldOlVuIGNoYWxsZW5nZXIgYSBkw6libG9xdcOpIGxlIGRyb2l0IGRlIG1lIGNvbWJhdHRyZSAhIFJlc3RleiBkYW5zIGxlcyBlbnZpcm9ucyBwb3VyIGFzc2lzdGVyIMOgIHVuIG1hdGNoIGQnYW50aG9sb2dpZSAh
+        - 17, 40 :[name=Palbolsky]:A new challenger unlocked the right to fight me!
+          Stick around to assist to a match made in history!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2093,8 +2074,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQxIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcGx1cyBxdSd1biBzZXVsIGNvbWJhdCDDoCBnYWduZXIgcG91ciBcTlsxXSBhdmFudCBkZSBwb3V2b2lyIG0nYWZmcm9udGVyICEgVGllbnMgbGUgY291cCwgZ3JhaW5lIGRlIFxmW2NoYW1waW9ubmXCp2NoYW1waW9uXSAh
+        - 17, 41 :[name=Palbolsky]:Oh! There's only one battle left for \N[1] before
+          they can battle me! Keep it up, champion in the making!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2107,8 +2088,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQyIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcXVlIFxWWzI2XSBjb21iYXRzIMOgIGdhZ25lciBwb3VyIFxOWzFdIGF2YW50IGRlIHBvdXZvaXIgbSdhZmZyb250ZXIgIQ==
+        - 17, 42 :[name=Palbolsky]:Oh! There's still \V[26] battles left to win for
+          \N[1] before they can challenge me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2137,8 +2118,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQzIDpbbmFtZT1QYWxib2xza3ldOkxhIHZpY3RvaXJlIHJldmllbnQgw6AgW05BTUVdICE=
+        - 17, 43 :[name=Palbolsky]:Victory goes to [NAME]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2151,14 +2131,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQ0IDpbbmFtZT1QYWxib2xza3ldOkVuIHRvdXQgY2FzLCBjZSBmdXQgdW4gbWF0Y2ggZCd1bmUgZ3JhbmRlIGludGVuc2l0w6ksIGonZXNww6hyZSBxdWUgdm91cyBsJ2F2ZXogcmVzc2VudGkgYXVzc2kgZGFucyBsZXMgZ3JhZGlucyAh
+        - 17, 44 :[name=Palbolsky]:In any case, it was a match of great intensity,
+          I hope you felt it all the way to the stands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQ1IDpbbmFtZT1QYWxib2xza3ldOkNoYWxsZW5nZXJzLCBqZSB2YWlzIHNvaWduZXIgdm9zIFBva8OpbW9uIHBvdXIgcXVlIHZvdXMgbidheWV6IHBhcyDDoCBhbGxlciBhdSBDZW50cmUgUG9rw6ltb24u
+        - 17, 45 :[name=Palbolsky]:Challengers, I'll heal your Pokémon so you don't
+          have to go to the Pokémon Center.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2191,14 +2171,14 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQ2IDpbbmFtZT1QYWxib2xza3ldOk4naMOpc2l0ZXogcGFzIMOgIHJldmVuaXIgdm91cyBiYXR0cmUgc2kgdm91cyBsZSB2b3VsZXosIGMnZXN0IHRvdWpvdXJzIHVuIHBsYWlzaXIgZCdhc3Npc3RlciDDoCBkZXMgbWF0Y2hzIGF1c3NpIHBhc3Npb25uYW50cyAh
+        - 17, 46 :[name=Palbolsky]:Don't hesitate to come battle again if you want,
+          it's always a pleasure to assist to such passionating battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQ3IDpbbmFtZT1QYWxib2xza3ldOkNoZXJzIHNwZWN0YXRldXJzLCBtZXJjaSBkJ8OqdHJlIHZlbnVzLCBldCDDoCBsYSBwcm9jaGFpbmUgIQ==
+        - 17, 47 :[name=Palbolsky]:Dear spectators, thanks for coming, and see you
+          all next time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2461,38 +2441,34 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQ4IDpbbmFtZT1QYWxib2xza3ldOkJpZW52ZW51ZSDDoCB0b3VzIGNoZXJzIHNwZWN0YXRldXJzICE=
+        - 17, 48 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDQ5IDpbbmFtZT1QYWxib2xza3ldOkNlIGNvbWJhdCBzZXJhIHVuIGNvbWJhdCBkdW8sIGF2ZWMgYXVjdW5lIGxpbWl0ZSBlbiBub21icmUgZGUgUG9rw6ltb24gIQ==
+        - 17, 49 :[name=Palbolsky]:This battle will be a duo battle, with no limit
+          in the number of usable Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDUwIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGdhdWNoZSwgbGEgdGVycmV1ciBkZXMgdmFndWVzLCBsJ2ludmluY2libGUgYXJwZW50ZXVyIGRlcyA3IG1lcnMgOiBbQ0xBU1NdIFtOQU1FXSAh
+        - '17, 50 :[name=Palbolsky]:On my left, the terror of the waves, the invincible
+          surveyor of the 7 seas: [CLASS] [NAME]!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDUxIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGRyb2l0ZSwgXGZbY2VsbGXCp2NlbHVpXSBxdWkgbWV0dHJhIHBldXQtw6p0cmUgZmluIMOgIHNvbiBvZHlzc8OpZS4uLg==
+        - 17, 51 :[name=Palbolsky]:On my right, the one who might end their odyssey...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDUyIDpbbmFtZT1QYWxib2xza3ldOlxOWzFdIFxmW2xhwqdsZV0gTWFrZXIgIQ==
+        - 17, 52 :[name=Palbolsky]:\N[1] the Maker!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 53 :[name=Palbolsky]:Sans plus attendre, c'est l'heure du coooooombat
-          !
+        - 17, 53 :[name=Palbolsky]:Without further ado, it's time for the baaaaattleeeeeeeeee!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2502,8 +2478,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDU0IDpbbmFtZT1bTkFNRV1dOlByw6lwYXJlIHRvaSwgdGVzIGxhcm1lcyB2b250IGNvdWxlci4=
+        - 17, 54 :[name=[NAME]]:Prepare yourself, your tears are going to flow.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2585,7 +2560,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 55 :[name=Palbolsky]:Et c'est une victoire pour \N[1] !
+        - 17, 55 :[name=Palbolsky]:Victory goes to \N[1]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2596,8 +2571,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDU2IDpbbmFtZT1QYWxib2xza3ldOkonaW5zY3JpcyBjZXR0ZSB2aWN0b2lyZSDDoCBsJ29yZGluYXRldXIuLi4=
+        - 17, 56 :[name=Palbolsky]:I'll add this victory to the computer...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2651,20 +2625,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 57 :[name=Palbolsky]:Que vois-je ? \N[1] a vaincu tous mes apprentis
-          ?
+        - 17, 57 :[name=Palbolsky]:Oh, what do I see? \N[1] won against all my apprentices?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDU4IDpbbmFtZT1QYWxib2xza3ldOk1lc2RhbWVzIGV0IG1lc3NpZXVycywgbGUgbW9tZW50IHF1ZSB2b3VzIGF0dGVuZGlleiB0b3VzIGVzdCBhcnJpdsOpICE=
+        - 17, 58 :[name=Palbolsky]:Ladies and gentlemen, the moment you've all been
+          waiting for is here!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDU5IDpbbmFtZT1QYWxib2xza3ldOlVuIGNoYWxsZW5nZXIgYSBkw6libG9xdcOpIGxlIGRyb2l0IGRlIG1lIGNvbWJhdHRyZSAhIFJlc3RleiBkYW5zIGxlcyBlbnZpcm9ucyBwb3VyIGFzc2lzdGVyIMOgIHVuIG1hdGNoIGQnYW50aG9sb2dpZSAh
+        - 17, 59 :[name=Palbolsky]:A new challenger unlocked the right to fight me!
+          Stick around to assist to a match made in history!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2686,8 +2659,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDYwIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcGx1cyBxdSd1biBzZXVsIGNvbWJhdCDDoCBnYWduZXIgcG91ciBcTlsxXSBhdmFudCBkZSBwb3V2b2lyIG0nYWZmcm9udGVyICEgVGllbnMgbGUgY291cCwgZ3JhaW5lIGRlIFxmW2NoYW1waW9ubmXCp2NoYW1waW9uXSAh
+        - 17, 60 :[name=Palbolsky]:Oh! There's only one battle left for \N[1] before
+          they can battle me! Keep it up, champion in the making!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2700,8 +2673,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDYxIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcXVlIFxWWzI2XSBjb21iYXRzIMOgIGdhZ25lciBwb3VyIFxOWzFdIGF2YW50IGRlIHBvdXZvaXIgbSdhZmZyb250ZXIgIQ==
+        - 17, 61 :[name=Palbolsky]:Oh! There's still \V[26] battles left to win for
+          \N[1] before they can challenge me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2730,8 +2703,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDYyIDpbbmFtZT1QYWxib2xza3ldOkxhIHZpY3RvaXJlIHJldmllbnQgw6AgW05BTUVdICE=
+        - 17, 62 :[name=Palbolsky]:Victory goes to [NAME]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2744,14 +2716,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDYzIDpbbmFtZT1QYWxib2xza3ldOkVuIHRvdXQgY2FzLCBjZSBmdXQgdW4gbWF0Y2ggZCd1bmUgZ3JhbmRlIGludGVuc2l0w6ksIGonZXNww6hyZSBxdWUgdm91cyBsJ2F2ZXogcmVzc2VudGkgYXVzc2kgZGFucyBsZXMgZ3JhZGlucyAh
+        - 17, 63 :[name=Palbolsky]:In any case, it was a match of great intensity,
+          I hope you felt it all the way to the stands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDY0IDpbbmFtZT1QYWxib2xza3ldOkNoYWxsZW5nZXJzLCBqZSB2YWlzIHNvaWduZXIgdm9zIFBva8OpbW9uIHBvdXIgcXVlIHZvdXMgbidheWV6IHBhcyDDoCBhbGxlciBhdSBDZW50cmUgUG9rw6ltb24u
+        - 17, 64 :[name=Palbolsky]:Challengers, I'll heal your Pokémon so you don't
+          have to go to the Pokémon Center.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2784,14 +2756,14 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDY1IDpbbmFtZT1QYWxib2xza3ldOk4naMOpc2l0ZXogcGFzIMOgIHJldmVuaXIgdm91cyBiYXR0cmUgc2kgdm91cyBsZSB2b3VsZXosIGMnZXN0IHRvdWpvdXJzIHVuIHBsYWlzaXIgZCdhc3Npc3RlciDDoCBkZXMgbWF0Y2hzIGF1c3NpIHBhc3Npb25uYW50cyAh
+        - 17, 65 :[name=Palbolsky]:Don't hesitate to come battle again if you want,
+          it's always a pleasure to assist to such passionating battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDY2IDpbbmFtZT1QYWxib2xza3ldOkNoZXJzIHNwZWN0YXRldXJzLCBtZXJjaSBkJ8OqdHJlIHZlbnVzLCBldCDDoCBsYSBwcm9jaGFpbmUgIQ==
+        - 17, 66 :[name=Palbolsky]:Dear spectators, thanks for coming, and see you
+          all next time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3091,41 +3063,40 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDY3IDpbbmFtZT1QYWxib2xza3ldOkJpZW52ZW51ZSDDoCB0b3VzIGNoZXJzIHNwZWN0YXRldXJzICE=
+        - 17, 67 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDY4IDpbbmFtZT1QYWxib2xza3ldOkNlIGNvbWJhdCBzZXJhIHVuIGNvbWJhdCBzZXVsIGNvbnRyZSBkZXV4LCBhdmVjIGF1Y3VuZSBsaW1pdGF0aW9uIGRlIFBva8OpbW9uICE=
+        - 17, 68 :[name=Palbolsky]:This battle will be a one versus two, with no limit
+          in the number of usable Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDY5IDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGdhdWNoZSwgMiBjb21iYXR0YW50cyBwcsOqdHMgw6AgZW4gZMOpY291ZHJlIGF2ZWMgbGV1cnMgc3RyYXTDqWdpZXMgY29vcMOpcmF0aXZlcyAh
+        - 17, 69 :[name=Palbolsky]:On my left, 2 fighters ready for action with their
+          cooperative strategies!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 70 :[name=Palbolsky]:[CLASS1] [NAME1] et [CLASS2] [NAME2] !
+        - 17, 70 :[name=Palbolsky]:[CLASS1] [NAME1] and [CLASS2] [NAME2]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDcxIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGRyb2l0ZSwgdW5cRSBcZlt2YWxldXJldXNlIGRyZXNzZXVzZcKndmFsZXVyZXV4IGRyZXNzZXVyXSwgcXVpIHZhIHRvdXQgZG9ubmVyIHBvdXIgc29ydGlyIFxmW3ZpY3RvcmlldXNlwqd2aWN0b3JpZXV4XSBkZSBjZXR0ZSBhZmZyb250ZW1lbnQuLi4=
+        - 17, 71 :[name=Palbolsky]:On my right, a courageous trainer who will give
+          their all to leave this battle victorious!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 72 :[name=Palbolsky]:Accueillons... \N[1] !
+        - 17, 72 :[name=Palbolsky]:Let's welcome... \N[1]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 73 :[name=Palbolsky]:Que le match commence !
+        - 17, 73 :[name=Palbolsky]:Let the battle begin!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3135,14 +3106,13 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDc0IDpbbmFtZT1bTkFNRTFdXTpFc3NhaWUgZGUgbmUgcGFzIGFiw65tZXIgbWEgdGVudWUgamUgdGUgcHJpZS4=
+        - 17, 74 :[name=[NAME1]]:Please try to not damage my dress please.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDc1IDpbbmFtZT1bTkFNRTJdXTpNb24gcsOqdmUgZXN0IHF1ZSB0b3VzIGFkbWV0dGVudCBsYSBzcGxlbmRldXIgZGVzIFBva8OpbW9uIEbDqWUgIQ==
+        - 17, 75 :[name=[NAME2]]:My dream is that everyone admit the splendor of the
+          Fairy Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3234,7 +3204,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 76 :[name=Palbolsky]:Et c'est une victoire pour \N[1] !
+        - 17, 76 :[name=Palbolsky]:Victory goes to \N[1]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3245,8 +3215,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDc3IDpbbmFtZT1QYWxib2xza3ldOkonaW5zY3JpcyBjZXR0ZSB2aWN0b2lyZSDDoCBsJ29yZGluYXRldXIuLi4=
+        - 17, 77 :[name=Palbolsky]:I'll add this victory to the computer...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3300,20 +3269,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 78 :[name=Palbolsky]:Que vois-je ? \N[1] a vaincu tous mes apprentis
-          ?
+        - 17, 78 :[name=Palbolsky]:Oh, what do I see? \N[1] won against all my apprentices?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDc5IDpbbmFtZT1QYWxib2xza3ldOk1lc2RhbWVzIGV0IG1lc3NpZXVycywgbGUgbW9tZW50IHF1ZSB2b3VzIGF0dGVuZGlleiB0b3VzIGVzdCBhcnJpdsOpICE=
+        - 17, 79 :[name=Palbolsky]:Ladies and gentlemen, the moment you've all been
+          waiting for is here!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDgwIDpbbmFtZT1QYWxib2xza3ldOlVuIGNoYWxsZW5nZXIgYSBkw6libG9xdcOpIGxlIGRyb2l0IGRlIG1lIGNvbWJhdHRyZSAhIFJlc3RleiBkYW5zIGxlcyBlbnZpcm9ucyBwb3VyIGFzc2lzdGVyIMOgIHVuIG1hdGNoIGQnYW50aG9sb2dpZSAh
+        - 17, 80 :[name=Palbolsky]:A new challenger unlocked the right to fight me!
+          Stick around to assist to a match made in history!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3335,8 +3303,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDgxIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcGx1cyBxdSd1biBzZXVsIGNvbWJhdCDDoCBnYWduZXIgcG91ciBcTlsxXSBhdmFudCBkZSBwb3V2b2lyIG0nYWZmcm9udGVyICEgVGllbnMgbGUgY291cCwgZ3JhaW5lIGRlIFxmW2NoYW1waW9ubmXCp2NoYW1waW9uXSAh
+        - 17, 81 :[name=Palbolsky]:Oh! There's only one battle left for \N[1] before
+          they can battle me! Keep it up, champion in the making!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3349,8 +3317,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDgyIDpbbmFtZT1QYWxib2xza3ldOk9oICEgSWwgbmUgcmVzdGUgcXVlIFxWWzI2XSBjb21iYXRzIMOgIGdhZ25lciBwb3VyIFxOWzFdIGF2YW50IGRlIHBvdXZvaXIgbSdhZmZyb250ZXIgIQ==
+        - 17, 82 :[name=Palbolsky]:Oh! There's still \V[26] battles left to win for
+          \N[1] before they can challenge me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3379,8 +3347,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDgzIDpbbmFtZT1QYWxib2xza3ldOkxhIHZpY3RvaXJlIHJldmllbnQgw6AgW05BTUUxXSBldCBbTkFNRTJdICEgQyfDqXRhaXQgdW4gbWF0Y2ggY29tcGxleGUgZXQgXE5bMV0gbidhIHBhcyBkw6ltw6lyaXTDqSBwb3VyIGF1dGFudCAh
+        - 17, 83 :[name=Palbolsky]:Victory goes to [NAME1] and [NAME2]! This was a
+          really difficult match and \N[1] didn't disappoint us at any point!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3393,14 +3361,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDg0IDpbbmFtZT1QYWxib2xza3ldOkVuIHRvdXQgY2FzLCBjZSBmdXQgdW4gbWF0Y2ggZCd1bmUgZ3JhbmRlIGludGVuc2l0w6ksIGonZXNww6hyZSBxdWUgdm91cyBsJ2F2ZXogcmVzc2VudGkgYXVzc2kgZGFucyBsZXMgZ3JhZGlucyAh
+        - 17, 84 :[name=Palbolsky]:In any case, it was a match of great intensity,
+          I hope you felt it all the way to the stands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDg1IDpbbmFtZT1QYWxib2xza3ldOkNoYWxsZW5nZXJzLCBqZSB2YWlzIHNvaWduZXIgdm9zIFBva8OpbW9uIHBvdXIgcXVlIHZvdXMgbidheWV6IHBhcyDDoCBhbGxlciBhdSBDZW50cmUgUG9rw6ltb24u
+        - 17, 85 :[name=Palbolsky]:Challengers, I'll heal your Pokémon so you don't
+          have to go to the Pokémon Center.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3433,14 +3401,14 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDg2IDpbbmFtZT1QYWxib2xza3ldOk4naMOpc2l0ZXogcGFzIMOgIHJldmVuaXIgdm91cyBiYXR0cmUgc2kgdm91cyBsZSB2b3VsZXosIGMnZXN0IHRvdWpvdXJzIHVuIHBsYWlzaXIgZCdhc3Npc3RlciDDoCBkZXMgbWF0Y2hzIGF1c3NpIHBhc3Npb25uYW50cyAh
+        - 17, 86 :[name=Palbolsky]:Don't hesitate to come battle again if you want,
+          it's always a pleasure to assist to such passionating battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDg3IDpbbmFtZT1QYWxib2xza3ldOkNoZXJzIHNwZWN0YXRldXJzLCBtZXJjaSBkJ8OqdHJlIHZlbnVzLCBldCDDoCBsYSBwcm9jaGFpbmUgIQ==
+        - 17, 87 :[name=Palbolsky]:Dear spectators, thanks for coming, and see you
+          all next time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3740,48 +3708,46 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDg4IDpbbmFtZT1QYWxib2xza3ldOkJpZW52ZW51ZSDDoCB0b3VzIGNoZXJzIHNwZWN0YXRldXJzICE=
+        - 17, 88 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDg5IDpbbmFtZT1QYWxib2xza3ldOkNlIGNvbWJhdCBzZXJhIHVuIGNvbWJhdCBlbiBkZXV4IGNvbnRyZSB1biwgYXZlYyBhdWN1bmUgbGltaXRlIGVuIG5vbWJyZSBkZSBQb2vDqW1vbiAh
+        - 17, 89 :[name=Palbolsky]:This battle will be a two versus one, with no limit
+          in the number of usable Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDkwIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGdhdWNoZSwgdm91cyBwb3VycmV6IHkgcmV0cm91dmVyIFtDTEFTUzFdIFtOQU1FMV0sIHF1aSBkZXZyYSBzZSBiYXR0cmUgc2V1bCBjb250cmUgbCdhZHZlcnNpdMOpICE=
+        - 17, 90 :[name=Palbolsky]:On my left, you'll find [CLASS1] [NAME1], who's
+          going to battle alone against adversity!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDkxIDpbbmFtZT1QYWxib2xza3ldOsOAIG1hIGRyb2l0ZSwgXE5bMV0sIG1haXMgcGFzIHNldWxcRSBjZXR0ZSBmb2lzICE=
+        - 17, 91 :[name=Palbolsky]:On my right, \N[1], but not alone this time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 92 :[name=Palbolsky]:Je vous prie de bien accueillir... [NAME2] !
+        - 17, 92 :[name=Palbolsky]:I ask you to welcome... [NAME2]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDkzIDpbbmFtZT1QYWxib2xza3ldOlBldGl0ZSByw6hnbGUgc3VwcGzDqW1lbnRhaXJlIHBvdXIgcmVzdGVyIMOpcXVpdGFibGUgOiBcTlsxXSBwZXJkcmEgc2kgc29uIMOpcXVpcGUgZXN0IG1pc2UgS08sIGV0IGNlIG3Dqm1lIHNpIGNlbGxlIGRlIFtOQU1FMl0gZXN0IGVuY29yZSBhcHRlIMOgIGNvbWJhdHRyZSAh
+        - '17, 93 :[name=Palbolsky]:For this battle to remain fair, here''s a little
+          rule: \N[1] will lose if their team is unable to battle, even if [NAME2]''s
+          is still able to!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDk0IDpbbmFtZT1QYWxib2xza3ldOkRyZXNzZXVycywgw6p0ZXMtdm91cyBwcsOqdHMgPw==
+        - 17, 94 :[name=Palbolsky]:Trainers, are you ready?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 95 :[name=Palbolsky]:C'est parti !
+        - 17, 95 :[name=Palbolsky]:Begin!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3791,8 +3757,8 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDk2IDpbbmFtZT1bTkFNRTFdXTpTJ2lsIHZvdXMgcGxhw650LCBuZSB2b3VzIHJldGVuZXogcGFzLi4uIEplIHZldXggdm91cyB2YWluY3JlIMOgIHZvdHJlIG1heGltdW0u
+        - 17, 96 :[name=[NAME1]]:Please, don't hold back... I want to best you at
+          your maximum.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3884,7 +3850,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 97 :[name=Palbolsky]:Et c'est une victoire pour \N[1] et [NAME2] !
+        - 17, 97 :[name=Palbolsky]:Victory goes to \N[1] and [NAME2]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3895,8 +3861,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDk4IDpbbmFtZT1QYWxib2xza3ldOkonaW5zY3JpcyBjZXR0ZSB2aWN0b2lyZSDDoCBsJ29yZGluYXRldXIuLi4=
+        - 17, 98 :[name=Palbolsky]:I'll add this victory to the computer...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3950,20 +3915,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 99 :[name=Palbolsky]:Que vois-je ? \N[1] a vaincu tous mes apprentis
-          ?
+        - 17, 99 :[name=Palbolsky]:Oh, what do I see? \N[1] won against all my apprentices?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwMCA6W25hbWU9UGFsYm9sc2t5XTpNZXNkYW1lcyBldCBtZXNzaWV1cnMsIGxlIG1vbWVudCBxdWUgdm91cyBhdHRlbmRpZXogdG91cyBlc3QgYXJyaXbDqSAh
+        - 17, 100 :[name=Palbolsky]:Ladies and gentlemen, the moment you've all been
+          waiting for is here!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwMSA6W25hbWU9UGFsYm9sc2t5XTpVbiBjaGFsbGVuZ2VyIGEgZMOpYmxvcXXDqSBsZSBkcm9pdCBkZSBtZSBjb21iYXR0cmUgISBSZXN0ZXogZGFucyBsZXMgZW52aXJvbnMgcG91ciBhc3Npc3RlciDDoCB1biBtYXRjaCBkJ2FudGhvbG9naWUgIQ==
+        - 17, 101 :[name=Palbolsky]:A new challenger unlocked the right to fight me!
+          Stick around to assist to a match made in history!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3985,8 +3949,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwMiA6W25hbWU9UGFsYm9sc2t5XTpPaCAhIElsIG5lIHJlc3RlIHBsdXMgcXUndW4gc2V1bCBjb21iYXQgw6AgZ2FnbmVyIHBvdXIgXE5bMV0gYXZhbnQgZGUgcG91dm9pciBtJ2FmZnJvbnRlciAhIFRpZW5zIGxlIGNvdXAsIGdyYWluZSBkZSBcZltjaGFtcGlvbm5lwqdjaGFtcGlvbl0gIQ==
+        - 17, 102 :[name=Palbolsky]:Oh! There's only one battle left for \N[1] before
+          they can battle me! Keep it up, champion in the making!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3999,8 +3963,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwMyA6W25hbWU9UGFsYm9sc2t5XTpPaCAhIElsIG5lIHJlc3RlIHF1ZSBcVlsyNl0gY29tYmF0cyDDoCBnYWduZXIgcG91ciBcTlsxXSBhdmFudCBkZSBwb3V2b2lyIG0nYWZmcm9udGVyICE=
+        - 17, 103 :[name=Palbolsky]:Oh! There's still \V[26] battles left to win for
+          \N[1] before they can challenge me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4029,8 +3993,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwNCA6W25hbWU9UGFsYm9sc2t5XTpMYSB2aWN0b2lyZSByZXZpZW50IMOgIFtOQU1FMV0gcXVpIGEgcsOpdXNzaSDDoCBzJ2VuIHNvcnRpciwgY29udHJlIHRvdXRlIGF0dGVudGUgIQ==
+        - 17, 104 :[name=Palbolsky]:Victory goes to [NAME1] who managed to come out
+          on top against all the odds!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4043,14 +4007,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwNSA6W25hbWU9UGFsYm9sc2t5XTpFbiB0b3V0IGNhcywgY2UgZnV0IHVuIG1hdGNoIGQndW5lIGdyYW5kZSBpbnRlbnNpdMOpLCBqJ2VzcMOocmUgcXVlIHZvdXMgbCdhdmV6IHJlc3NlbnRpIGF1c3NpIGRhbnMgbGVzIGdyYWRpbnMgIQ==
+        - 17, 105 :[name=Palbolsky]:In any case, it was a match of great intensity,
+          I hope you felt it all the way to the stands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwNiA6W25hbWU9UGFsYm9sc2t5XTpDaGFsbGVuZ2VycywgamUgdmFpcyBzb2lnbmVyIHZvcyBQb2vDqW1vbiBwb3VyIHF1ZSB2b3VzIG4nYXlleiBwYXMgw6AgYWxsZXIgYXUgQ2VudHJlIFBva8OpbW9uLg==
+        - 17, 106 :[name=Palbolsky]:Challengers, I'll heal your Pokémon so you don't
+          have to go to the Pokémon Center.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4083,14 +4047,14 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwNyA6W25hbWU9UGFsYm9sc2t5XTpOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHZvdXMgYmF0dHJlIHNpIHZvdXMgbGUgdm91bGV6LCBjJ2VzdCB0b3Vqb3VycyB1biBwbGFpc2lyIGQnYXNzaXN0ZXIgw6AgZGVzIG1hdGNocyBhdXNzaSBwYXNzaW9ubmFudHMgIQ==
+        - 17, 107 :[name=Palbolsky]:Don't hesitate to come battle again if you want,
+          it's always a pleasure to assist to such passionating battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwOCA6W25hbWU9UGFsYm9sc2t5XTpDaGVycyBzcGVjdGF0ZXVycywgbWVyY2kgZCfDqnRyZSB2ZW51cywgZXQgw6AgbGEgcHJvY2hhaW5lICE=
+        - 17, 108 :[name=Palbolsky]:Dear spectators, thanks for coming, and see you
+          all next time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4457,49 +4421,47 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEwOSA6W25hbWU9UGFsYm9sc2t5XTpCaWVudmVudWUgw6AgdG91cyBjaGVycyBzcGVjdGF0ZXVycyAh
+        - 17, 109 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExMCA6W25hbWU9UGFsYm9sc2t5XTpDZSBjb21iYXQgc2VyYSB1biBjb21iYXQgZGV1eCBjb250cmUgZGV1eCwgYXZlYyBhdWN1bmUgbGltaXRlIGVuIG5vbWJyZSBkZSBQb2vDqW1vbiAh
+        - 17, 110 :[name=Palbolsky]:This battle will be a two versus two, with no
+          limit in the number of usable Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExMSA6W25hbWU9UGFsYm9sc2t5XTrDgCBtYSBnYXVjaGUsIHZvdXMgcG91cnJleiB5IHJldHJvdXZlciBbQ0xBU1MxXSBbTkFNRTFdIGV0IFtDTEFTUzJdIFtOQU1FMl0sIGxlIGR1byBkZSBjaG9jIHRvdWpvdXJzIMOgIGwnaGV1cmUgcG91ciBsJ2FjdHVhbGl0w6kgIQ==
+        - 17, 111 :[name=Palbolsky]:On my left, you'll find [CLASS1] [NAME1] and [CLASS2]
+          [NAME2], the power duo always on track for the newest news!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExMiA6W25hbWU9UGFsYm9sc2t5XTrDgCBtYSBkcm9pdGUsIHVuIGF1dHJlIGR1byBwcsOqdCDDoCBmYWlyZSBkZXMgw6l0aW5jZWxsZXMuLi4gXE5bMV0gZXQgW05BTUUzXSAh
+        - 17, 112 :[name=Palbolsky]:On my right, another duo ready to make some sparks...
+          \N[1] and [NAME3]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExMyA6W25hbWU9UGFsYm9sc2t5XTpQb3VyIGNlIGNvbWJhdCwgbGEgdmljdG9pcmUgcmV2aWVuZHJhIMOgIGwnw6lxdWlwZSBxdWkgYXVyYSBhdSBtb2lucyB1biBQb2vDqW1vbiBlbmNvcmUgZW4gw6l0YXQgZGUgY29tYmF0dHJlICE=
+        - 17, 113 :[name=Palbolsky]:For this battle, the victory will belong to the
+          team with at least one Pokémon still able to fight!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExNCA6W25hbWU9UGFsYm9sc2t5XTpDZSBxdWkgdmV1dCBkb25jIGRpcmUsIFxOWzFdLCBxdWUgc2kgdG9uIMOpcXVpcGUgZXN0IG1pc2UgS08sIFtOQU1FM10gcG91cnJhIHRlbnRlciBkZSBnYWduZXIgbWFsZ3LDqSB0b3V0ICE=
+        - 17, 114 :[name=Palbolsky]:This means that, if \N[1]'s team is wiped out
+          but [NAME3]'s is still able to fight, they will win nonetheless!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExNSA6W25hbWU9UGFsYm9sc2t5XTpBaS1qZSDDqXTDqSBzdWZmaXNhbW1lbnQgY2xhaXIgPw==
+        - 17, 115 :[name=Palbolsky]:Was I clear enough?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 116 :[name=Palbolsky]:Si oui, commencez !
+        - 17, 116 :[name=Palbolsky]:If yes, then begin!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4509,14 +4471,13 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExNyA6W25hbWU9W05BTUUxXV06RmFpc29ucyB2aXRlLCBqJ2FpIHVuIHRyYWluIMOgIHByZW5kcmUu
+        - 17, 117 :[name=[NAME1]]:Let's make this quick, I have a train to take.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDExOCA6W25hbWU9W05BTUUyXV06TGVzIHRyYWlucyBlbiByZXRhcmQgw6dhIHZhIGJpZW4gZGV1eCBtaW51dGVzLi4uIFZvdXMgYXVyaWV6IHBhcyB1biBzY29vcCBwb3VyIG1vaSA/
+        - 17, 118 :[name=[NAME2]]:Delayed trains don't sell well, don't you have a
+          scoop for me?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4625,7 +4586,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 119 :[name=Palbolsky]:Et c'est une victoire pour \N[1] et [NAME3] !
+        - 17, 119 :[name=Palbolsky]:Victory goes to \N[1] and [NAME3]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4636,8 +4597,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyMCA6W25hbWU9UGFsYm9sc2t5XTpKJ2luc2NyaXMgY2V0dGUgdmljdG9pcmUgw6AgbCdvcmRpbmF0ZXVyLi4u
+        - 17, 120 :[name=Palbolsky]:I'll add this victory to the computer...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4691,20 +4651,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 121 :[name=Palbolsky]:Que vois-je ? \N[1] a vaincu tous mes apprentis
-          ?
+        - 17, 121 :[name=Palbolsky]:Oh, what do I see? \N[1] won against all my apprentices?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyMiA6W25hbWU9UGFsYm9sc2t5XTpNZXNkYW1lcyBldCBtZXNzaWV1cnMsIGxlIG1vbWVudCBxdWUgdm91cyBhdHRlbmRpZXogdG91cyBlc3QgYXJyaXbDqSAh
+        - 17, 122 :[name=Palbolsky]:Ladies and gentlemen, the moment you've all been
+          waiting for is here!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyMyA6W25hbWU9UGFsYm9sc2t5XTpVbiBjaGFsbGVuZ2VyIGEgZMOpYmxvcXXDqSBsZSBkcm9pdCBkZSBtZSBjb21iYXR0cmUgISBSZXN0ZXogZGFucyBsZXMgZW52aXJvbnMgcG91ciBhc3Npc3RlciDDoCB1biBtYXRjaCBkJ2FudGhvbG9naWUgIQ==
+        - 17, 123 :[name=Palbolsky]:A new challenger unlocked the right to fight me!
+          Stick around to assist to a match made in history!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4726,8 +4685,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyNCA6W25hbWU9UGFsYm9sc2t5XTpPaCAhIElsIG5lIHJlc3RlIHBsdXMgcXUndW4gc2V1bCBjb21iYXQgw6AgZ2FnbmVyIHBvdXIgXE5bMV0gYXZhbnQgZGUgcG91dm9pciBtJ2FmZnJvbnRlciAhIFRpZW5zIGxlIGNvdXAsIGdyYWluZSBkZSBcZltjaGFtcGlvbm5lwqdjaGFtcGlvbl0gIQ==
+        - 17, 124 :[name=Palbolsky]:Oh! There's only one battle left for \N[1] before
+          they can battle me! Keep it up, champion in the making!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4740,8 +4699,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyNSA6W25hbWU9UGFsYm9sc2t5XTpPaCAhIElsIG5lIHJlc3RlIHF1ZSBcVlsyNl0gY29tYmF0cyDDoCBnYWduZXIgcG91ciBcTlsxXSBhdmFudCBkZSBwb3V2b2lyIG0nYWZmcm9udGVyICE=
+        - 17, 125 :[name=Palbolsky]:Oh! There's still \V[26] battles left to win for
+          \N[1] before they can challenge me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4770,8 +4729,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyNiA6W25hbWU9UGFsYm9sc2t5XTpMYSB2aWN0b2lyZSByZXZpZW50IMOgIFtOQU1FMV0gZXQgW05BTUUyXSAh
+        - 17, 126 :[name=Palbolsky]:The victory goes to [NAME1] and [NAME2]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4784,14 +4742,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyNyA6W25hbWU9UGFsYm9sc2t5XTpFbiB0b3V0IGNhcywgY2UgZnV0IHVuIG1hdGNoIGQndW5lIGdyYW5kZSBpbnRlbnNpdMOpLCBqJ2VzcMOocmUgcXVlIHZvdXMgbCdhdmV6IHJlc3NlbnRpIGF1c3NpIGRhbnMgbGVzIGdyYWRpbnMgIQ==
+        - 17, 127 :[name=Palbolsky]:In any case, it was a match of great intensity,
+          I hope you felt it all the way to the stands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyOCA6W25hbWU9UGFsYm9sc2t5XTpDaGFsbGVuZ2VycywgamUgdmFpcyBzb2lnbmVyIHZvcyBQb2vDqW1vbiBwb3VyIHF1ZSB2b3VzIG4nYXlleiBwYXMgw6AgYWxsZXIgYXUgQ2VudHJlIFBva8OpbW9uLg==
+        - 17, 128 :[name=Palbolsky]:Challengers, I'll heal your Pokémon so you don't
+          have to go to the Pokémon Center.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4824,14 +4782,14 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEyOSA6W25hbWU9UGFsYm9sc2t5XTpOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHZvdXMgYmF0dHJlIHNpIHZvdXMgbGUgdm91bGV6LCBjJ2VzdCB0b3Vqb3VycyB1biBwbGFpc2lyIGQnYXNzaXN0ZXIgw6AgZGVzIG1hdGNocyBhdXNzaSBwYXNzaW9ubmFudHMgIQ==
+        - 17, 129 :[name=Palbolsky]:Don't hesitate to come battle again if you want,
+          it's always a pleasure to assist to such passionating battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzMCA6W25hbWU9UGFsYm9sc2t5XTpDaGVycyBzcGVjdGF0ZXVycywgbWVyY2kgZCfDqnRyZSB2ZW51cywgZXQgw6AgbGEgcHJvY2hhaW5lICE=
+        - 17, 130 :[name=Palbolsky]:Dear spectators, thanks for coming, and see you
+          all next time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5088,38 +5046,36 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzMSA6W25hbWU9UGFsYm9sc2t5XTpCaWVudmVudWUgw6AgdG91cyBjaGVycyBzcGVjdGF0ZXVycyAh
+        - 17, 131 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzMiA6W25hbWU9UGFsYm9sc2t5XTpDZSBjb21iYXQgc2VyYSB1biBjb21iYXQgc29sbyB1biBwZXUgcGFydGljdWxpZXIsIGNhciBjZWx1aS1jaSBhIMOpdMOpIGNyw6nDqSDDoCBsYSB2b2zDqWUgw6AgbCdhaWRlIGRlIHNjcmlwdHMgIQ==
+        - 17, 132 :[name=Palbolsky]:This battle is a bit particular solo battle, as
+          it was entirely created using scripts!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzMyA6W25hbWU9UGFsYm9sc2t5XTpWb3VzIG5lIHZlcnJleiBwYXMgZGUgZGlmZsOpcmVuY2UgYXZlYyB1biBjb21iYXQgIm5vcm1hbCIsIG1haXMgc2FjaGV6IHF1ZSBjJ2VzdCB0b3V0IMOgIGZhaXQgcG9zc2libGUgZXQgcXUnaWxzIHBlcm1ldHRlbnQgZGUgZmFpcmUgYmllbiBwbHVzIGRlIGNob3NlcyAh
+        - 17, 133 :[name=Palbolsky]:You won't see any difference between with a "normal"
+          battle, but be aware that it's a thing and it allows you to make more things
+          than a regular battle!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzNCA6W25hbWU9UGFsYm9sc2t5XTrDgCBtYSBnYXVjaGUsIHZvdXMgcG91cnJleiB5IHJldHJvdXZlciBbQ0xBU1NdIFtOQU1FXSwgdW5lIGRvY3RldXJlIGVuIHJlY2hlcmNoZSBpbmZvcm1hdGlxdWUgIQ==
+        - 17, 134 :[name=Palbolsky]:On my left, you'll find [CLASS] [NAME], a doctorate
+          in computer science!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzNSA6W25hbWU9UGFsYm9sc2t5XTrDgCBtYSBkcm9pdGUsIFxOWzFdLCBwcsOqdFxFIMOgIGNvbWJhdHRyZSBsZXMgYnVncyBldCBsZXMgY3Jhc2hzICE=
+        - 17, 135 :[name=Palbolsky]:On my right, \N[1], ready to fight bugs and crashes!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzNiA6W25hbWU9UGFsYm9sc2t5XTpDaGFsbGVuZ2VycywgYydlc3Qgw6Agdm91cyAh
+        - 17, 136 :[name=Palbolsky]:Challengers, it's up to you!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5129,8 +5085,8 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 137 :[name=[NAME]]:L'analyse de tes patterns de combat me permettront
-          de te vaincre.
+        - 17, 137 :[name=[NAME]]:The analysis of your battle patterns will offer me
+          the way to beat you.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5221,8 +5177,9 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          YmkuYWRkX3BhcnR5KDEsIHBhcnR5LCAnTWFyaWUnLCAnU2NpZW50aWZpcXVlJywgJ2RwX3NjaWVudGlzdF9GJywgYmFnLCAyNTUsIDQsICIxNywgMjI1IEplIHQnYWkgcHLDqWRpdCBhdXNzaSBiaWVuIHF1ZSBsYSBsaXN0ZSBkZXMgbm9tYnJlcyBwcmVtaWVycy4iLCAiMTcsIDIyNiBUZXMgcGF0dGVybnMgc3VpdmVudCBsYSB0aMOpb3JpZSBkdSBjaGFvcywgamUgbmUgcG91dmFpcyByaWVuIGZhaXJlLi4uIik=
+        - bi.add_party(1, party, 'Marie', 'Scientifique', 'dp_scientist_F', bag, 255,
+          4, "17, 225 I predicted you as easily as I can predict the prime numbers.",
+          "17, 226 Your patterns follows the chaos theory, I couldn't do anything...")
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -5274,7 +5231,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 138 :[name=Palbolsky]:Et c'est une victoire pour \N[1] !
+        - 17, 138 :[name=Palbolsky]:Victory goes to \N[1]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5285,8 +5242,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDEzOSA6W25hbWU9UGFsYm9sc2t5XTpKJ2luc2NyaXMgY2V0dGUgdmljdG9pcmUgw6AgbCdvcmRpbmF0ZXVyLi4u
+        - 17, 139 :[name=Palbolsky]:I'll add this victory to the computer...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5340,20 +5296,19 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 140 :[name=Palbolsky]:Que vois-je ? \N[1] a vaincu tous mes apprentis
-          ?
+        - 17, 140 :[name=Palbolsky]:Oh, what do I see? \N[1] won against all my apprentices?
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0MSA6W25hbWU9UGFsYm9sc2t5XTpNZXNkYW1lcyBldCBtZXNzaWV1cnMsIGxlIG1vbWVudCBxdWUgdm91cyBhdHRlbmRpZXogdG91cyBlc3QgYXJyaXbDqSAh
+        - 17, 141 :[name=Palbolsky]:Ladies and gentlemen, the moment you've all been
+          waiting for is here!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0MiA6W25hbWU9UGFsYm9sc2t5XTpVbiBjaGFsbGVuZ2VyIGEgZMOpYmxvcXXDqSBsZSBkcm9pdCBkZSBtZSBjb21iYXR0cmUgISBSZXN0ZXogZGFucyBsZXMgZW52aXJvbnMgcG91ciBhc3Npc3RlciDDoCB1biBtYXRjaCBkJ2FudGhvbG9naWUgIQ==
+        - 17, 142 :[name=Palbolsky]:A new challenger unlocked the right to fight me!
+          Stick around to assist to a match made in history!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5375,8 +5330,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0MyA6W25hbWU9UGFsYm9sc2t5XTpPaCAhIElsIG5lIHJlc3RlIHBsdXMgcXUndW4gc2V1bCBjb21iYXQgw6AgZ2FnbmVyIHBvdXIgXE5bMV0gYXZhbnQgZGUgcG91dm9pciBtJ2FmZnJvbnRlciAhIFRpZW5zIGxlIGNvdXAsIGdyYWluZSBkZSBcZltjaGFtcGlvbm5lwqdjaGFtcGlvbl0gIQ==
+        - 17, 143 :[name=Palbolsky]:Oh! There's only one battle left for \N[1] before
+          they can battle me! Keep it up, champion in the making!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5389,8 +5344,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0NCA6W25hbWU9UGFsYm9sc2t5XTpPaCAhIElsIG5lIHJlc3RlIHF1ZSBcVlsyNl0gY29tYmF0cyDDoCBnYWduZXIgcG91ciBcTlsxXSBhdmFudCBkZSBwb3V2b2lyIG0nYWZmcm9udGVyICE=
+        - 17, 144 :[name=Palbolsky]:Oh! There's still \V[26] battles left to win for
+          \N[1] before they can challenge me!
         indent: 3
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5419,8 +5374,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0NSA6W25hbWU9UGFsYm9sc2t5XTpMYSB2aWN0b2lyZSByZXZpZW50IMOgIFtOQU1FXSAh
+        - 17, 145 :[name=Palbolsky]:The victory goes to [NAME]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5433,14 +5387,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0NiA6W25hbWU9UGFsYm9sc2t5XTpFbiB0b3V0IGNhcywgY2UgZnV0IHVuIG1hdGNoIGQndW5lIGdyYW5kZSBpbnRlbnNpdMOpLCBqJ2VzcMOocmUgcXVlIHZvdXMgbCdhdmV6IHJlc3NlbnRpIGF1c3NpIGRhbnMgbGVzIGdyYWRpbnMgIQ==
+        - 17, 146 :[name=Palbolsky]:In any case, it was a match of great intensity,
+          I hope you felt it all the way to the stands!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0NyA6W25hbWU9UGFsYm9sc2t5XTpDaGFsbGVuZ2VycywgamUgdmFpcyBzb2lnbmVyIHZvcyBQb2vDqW1vbiBwb3VyIHF1ZSB2b3VzIG4nYXlleiBwYXMgw6AgYWxsZXIgYXUgQ2VudHJlIFBva8OpbW9uLg==
+        - 17, 147 :[name=Palbolsky]:Challengers, I'll heal your Pokémon so you don't
+          have to go to the Pokémon Center.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5473,14 +5427,14 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0OCA6W25hbWU9UGFsYm9sc2t5XTpOJ2jDqXNpdGV6IHBhcyDDoCByZXZlbmlyIHZvdXMgYmF0dHJlIHNpIHZvdXMgbGUgdm91bGV6LCBjJ2VzdCB0b3Vqb3VycyB1biBwbGFpc2lyIGQnYXNzaXN0ZXIgw6AgZGVzIG1hdGNocyBhdXNzaSBwYXNzaW9ubmFudHMgIQ==
+        - 17, 148 :[name=Palbolsky]:Don't hesitate to come battle again if you want,
+          it's always a pleasure to assist to such passionating battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE0OSA6W25hbWU9UGFsYm9sc2t5XTpDaGVycyBzcGVjdGF0ZXVycywgbWVyY2kgZCfDqnRyZSB2ZW51cywgZXQgw6AgbGEgcHJvY2hhaW5lICE=
+        - 17, 149 :[name=Palbolsky]:Dear spectators, thanks for coming, and see you
+          all next time!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -5929,14 +5883,13 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1MCA6W25hbWU9UGFsYm9sc2t5XTpCaWVudmVudWUgw6AgdG91cyBjaGVycyBzcGVjdGF0ZXVycyAh
+        - 17, 150 :[name=Palbolsky]:Welcome to you all, dear spectators!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 151 :[name=Palbolsky]:Ce combat sera un combat d'anthologie... Pourquoi,
-          me demandez-vous ?
+        - 17, 151 :[name=Palbolsky]:This battle will be battle made in history...
+          Why, you'll ask me?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6055,13 +6008,13 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 152 :[name=Palbolsky]:Car aujourd'hui, je serai l'adversaire !
+        - 17, 152 :[name=Palbolsky]:Because today, I will be the opponent!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1MyA6W25hbWU9UGFsYm9sc2t5XTpKZSBsYWlzc2UgZG9uYyBtYSBwbGFjZSBkJ2FyYml0cmUgw6AgW05BTUVdLCBjZWxsZSBxdWkgYSBnYWduw6kgbGUgcHLDqWPDqWRlbnQgdG91cm5vaSAhIFtOQU1FXSwgamUgdGUgbGFpc3NlIGxhIHBhcm9sZS4=
+        - 17, 153 :[name=Palbolsky]:I leave my referee title to [NAME], the victor
+          of the last tournament! [NAME], the mic is yours!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6086,37 +6039,35 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 154 :[name=[NAME]]:Merci Palbolsky, je ferai de mon mieux !
+        - 17, 154 :[name=[NAME]]:Thanks Palbolsky, I'll do my best!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1NSA6W25hbWU9W05BTUVdXTpDaGVycyBzcGVjdGF0ZXVycywgbWVyY2kgZCfDqnRyZSB2ZW51cyBwb3VyIGFzc2lzdGVyIMOgIGNlIG1hdGNoICE=
+        - 17, 155 :[name=[NAME]]:Dear spectators, thanks for assisting this match!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1NiA6W25hbWU9W05BTUVdXTrDgCBtYSBnYXVjaGUsIGxlIHNldWwsIGwndW5pcXVlLCBsZSBNYcOudHJlIGRlcyBEcmFnb25zIGRlIGwnw45sZSwgaidhaSBub21tw6kuLi4gUGFsYm9sc2t5ICE=
+        - '17, 156 :[name=[NAME]]:On my left, the one and only Master of the Island''s
+          Dragons: Palbolsky!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1NyA6W25hbWU9W05BTUVdXTrDgCBtYSBkcm9pdGUsIFxmW2xhIGNoYWxsZW5nZXVzZcKnbGUgY2hhbGxlbmdlcl0gcXVpIGEgdmFpbGxhbW1lbnQgZ2FnbsOpIHNvbiB0aWNrZXQgcG91ciBjZSBtYXRjaC4uLg==
+        - 17, 157 :[name=[NAME]]:On my right, the challenger who valiantly gained
+          their ticket for this match...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1OCA6W25hbWU9W05BTUVdXTpWYS10LVxmW2VsbGXCp2lsXSBkw6lmYWlyZSBQYWxib2xza3kgPyBOb3VzIGxlIHNhdXJvbnMgw6AgbCdpc3N1ZSBkZSBjZSBtYXRjaCwgbWFpcyBlbiBhdHRlbmRhbnQsIG1lcmNpIGQnYWNjbGFtZXIgXE5bMV0gIQ==
+        - 17, 158 :[name=[NAME]]:Will they defeat Palbolsky? We'll know that at the
+          end of this battle, but for now, please cheer \N[1]!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE1OSA6W25hbWU9UGFsYm9sc2t5XTpEcmVzc2V1cnMsIGZhaXRlcyBjaGF1ZmZlciBjZXR0ZSBhcsOobmUgIQ==
+        - 17, 159 :[name=[NAME]]:Trainers, get this arena fired up!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6126,19 +6077,19 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE2MCA6W25hbWU9UGFsYm9sc2t5XTpFaCBiaWVuLCBhcHLDqHMgdW5lIHRlbGxlIHByw6lzZW50YXRpb24gb24gbmUgcGV1dCBxdWUgc2UgZG9ubmVyIMOgIGZvbmQu
+        - 17, 160 :[name=Palbolsky]:Well, after such a presentation we can give it
+          our all!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE2MSA6W25hbWU9UGFsYm9sc2t5XTpcTlsxXSwgdGVzIHLDqWNlbnRzIG1hdGNocyBvbnQgw6l0w6kgZXhjZXB0aW9ubmVscy4gSidhdHRlbmRzIGRlIHRvaSBxdWUgdHUgbWUgY29tYmF0dGVzIGF2ZWMgbGEgbcOqbWUgYXJkZXVyLCB2b2lyZSBwbHVzIGVuY29yZSAh
+        - 17, 161 :[name=Palbolsky]:\N[1], your recent battles were exceptional. I
+          expect you to fight me with the same ardor, or even more!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 162 :[name=Palbolsky]:Mais sache que je ne me laisserai pas faire !
+        - 17, 162 :[name=Palbolsky]:But know that I won't let you get me down!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6313,8 +6264,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE2MyA6W25hbWU9W05BTUVdXTpNZXNkYW1lcyBldCBtZXNzaWV1cnMsIGFwcsOocyBjZSBtYXRjaCBleGNlcHRpb25uZWwsIGplIHN1aXMgZmnDqHJlIGRlIHZvdXMgYW5ub25jZXIgbGEgdmljdG9pcmUgZGUuLi4gXE5bMV0gIQ==
+        - 17, 163 :[name=[NAME]]:Ladies and gentlemen, now that this fantastic match
+          is over, I am proud to announce the victory of... \N[1]!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6325,8 +6276,8 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE2NCA6W25hbWU9W05BTUVdXTpKJ2F1cmFpcyBiaWVuIGluc2NyaXQgbW9pLW3Dqm1lIGxhIHZpY3RvaXJlIGRhbnMgbCdvcmRpbmF0ZXVyLi4uIE1haXMgamUgbmUgc2FpcyBwYXMgY29tbWVudCBmYWlyZSwgamUgbGFpc3NlIGRvbmMgUGFsYm9sc2t5IHMnZW4gY2hhcmdlciAh
+        - 17, 164 :[name=[NAME]]:I would have entered the victory into the computer
+          myself, but I don't know how it works, so I'll let Palbolsky handle it!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6361,8 +6312,7 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE2NSA6W25hbWU9UGFsYm9sc2t5XTpOZSB0J2lucXVpw6h0ZSBwYXMsIFtOQU1FXSwgamUgbSdlbiBvY2N1cGUu
+        - 17, 165 :[name=Palbolsky]:Don't worry, [NAME], I got it.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6425,14 +6375,14 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE2NiA6W25hbWU9UGFsYm9sc2t5XTpBdmVjIGNldHRlIHZpY3RvaXJlLCBcTlsxXSwgdHUgYXMgb2ZmaWNpZWxsZW1lbnQgdHJpb21waMOpIGRlIGwnQXLDqG5lIGRlIENvbWJhdC4=
+        - 17, 166 :[name=Palbolsky]:After this victory, \N[1], you have officially
+          triumphed over the Battle Arena.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 167 :[name=Palbolsky]:C'est donc avec grand plaisir que je te donne
-          ma Pierre Insolite.
+        - 17, 167 :[name=Palbolsky]:It's with great pleasure I give you my Intriguing
+          Stone.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6442,7 +6392,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 168 :[name=Palbolsky]:Je voudrais aussi que tu acceptes ceci...
+        - 17, 168 :[name=Palbolsky]:I also would like you to accept this...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6472,14 +6422,15 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE2OSA6W25hbWU9UGFsYm9sc2t5XTpDJ2VzdCBsJ3VuIGRlcyBQb2vDqW1vbiDDiW9uLiBUdSBsJ2FzIGFmZnJvbnTDqSBwZW5kYW50IGNlIGNvbWJhdCwgZXQgamUgc2VucyBxdSdpbCBzZXJhIGJpZW4gYXZlYyB0b2kuIEwnYXV0cmUgUG9rw6ltb24gRW9uIGEgYXBwYXJlbW1lbnQgw6l0w6kgYXBlcsOndSBzdXIgbCfDjmxlLCBwZXV0LcOqdHJlIGwnYXMtdHUgZMOpasOgIHJlbmNvbnRyw6kgPw==
+        - 17, 169 :[name=Palbolsky]:It's one of the Eon Pokémon. You fought it during
+          the battle, and I feel it'll be fine with you. The other Eon Pokémon was
+          sighted on the Island, apparently, maybe you already encountered it?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3MCA6W25hbWU9UGFsYm9sc2t5XToqc291cGlyKi4uLiBNZXJjaSBwb3VyIGNlIG1hdGNoLCBqZSBuZSBtJ8OpdGFpcyBwYXMgYXV0YW50IGFtdXPDqSBkZXB1aXMgbG9uZ3RlbXBzICEgTidow6lzaXRlIHBhcyDDoCByZXZlbmlyIG0nYWZmcm9udGVyIMOgIGwnb2NjYXNpb24gIQ==
+        - 17, 170 :[name=Palbolsky]:*sigh*... Thanks for this match, it was a minute
+          since I had this much fun! Don't hesitate to come fight me again some time!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6492,8 +6443,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3MSA6W25hbWU9UGFsYm9sc2t5XTpCaWVuIGpvdcOpLCBcTlsxXSwgZW5jb3JlIHVuZSBiZWxsZSB2aWN0b2lyZSDDoCB0b24gYWN0aWYgIQ==
+        - 17, 171 :[name=Palbolsky]:Well done, \N[1], another fine victory to your
+          credit!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6514,8 +6465,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3MiA6W25hbWU9W05BTUVdXTpMYSB2aWN0b2lyZSByZXZpZW50IMOgIFBhbGJvbHNreSAh
+        - 17, 172 :[name=[NAME]]:Victory goes to Palbolsky!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6528,8 +6478,7 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3MyA6W25hbWU9W05BTUVdXTpKZSB2YWlzIHNvaWduZXIgdm9zIMOpcXVpcGVzIHBvdXIgcXVlIHZvdXMgbidheWV6IHBhcyDDoCBsZSBmYWlyZS4=
+        - 17, 173 :[name=[NAME]]:I will heal your Pokémon so you won't have to.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -6562,8 +6511,8 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3NCA6W25hbWU9W05BTUVdXTpNZXJjaSDDoCB0b3VzIGQnw6p0cmUgdmVudXMgcG91ciBhc3Npc3RlciDDoCBjZSBtYXRjaCwgb24gZXNww6hyZSB2b3VzIHZvaXIgcG91ciBsZXMgcHJvY2hhaW5zICE=
+        - 17, 174 :[name=[NAME]]:Thanks for coming to this match, we hope to see you
+          for the next ones!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7248,14 +7197,12 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3NSBVbmUgdm9peCByw6lzb25uZSBkYW5zIHZvdHJlIHTDqnRlLi4u
+        - 17, 175 A voice resonates in your mind...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3NiAiQ2V0dGUgcG9ydGUgbmUgc2VydCDDoCByaWVuIGV0IGVzdCBqdXN0ZSBsw6AgcG91ciBmYWlyZSBqb2xpLiI=
+        - 17, 176 "This door serves no purpose and is there just to look pretty."
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7638,14 +7585,13 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3NyA6W25hbWU9Pz8/LDNdOk9vb29vb29vaCAhIExlIFBva8OpbW9uIGR1IGNoYWxsZW5nZXIgZXN0IHRvbWLDqSBLTyAhIElsIG5lIGx1aSByZXN0ZSBwbHVzIHF1J3VuIFBva8OpbW9uIGVuIMOpdGF0IGRlIGNvbWJhdHRyZSwgZXQgc29uIGFkdmVyc2FpcmUgZXN0IGTDqWrDoCBzdXIgbGUgZGVybmllciBtZW1icmUgZGUgc29uIMOpcXVpcGUgIQ==
+        - '17, 177 :[name=???,3]:Ooooooooh! The challenger''s Pokémon is KO! He only
+          has one Pokémon left, and his opponent is already on her last Pokémon! '
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE3OCA6W25hbWU9Pz8/LDNdOlF1aSB2YSBkb25jIGdhZ25lciBjZSBtYXRjaCBhdSBkw6lub3VlbWVudCBpbmNlcnRhaW4gPyE=
+        - 17, 178 :[name=???,3]:Who's going to win this match with an uncertain outcome?!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7754,7 +7700,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 179 :[name=???,5]:Gallame, utilise Coupe Psycho !
+        - 17, 179 :[name=???,5]:Gallade, use Psycho Cut!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -7983,8 +7929,7 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE4MCA6W25hbWU9Pz8/LDFdOlJhdHRhdGFjLCB1dGlsaXNlIFZpdGVzc2UgRXh0csOqbWUgIQ==
+        - 17, 180 :[name=???,1]:Raticate, use Extreme Speed!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -8731,25 +8676,24 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE4MSA6W25hbWU9Pz8/LDVdOlZpdGVzc2UgRXh0csOqbWUgPyEgQ29tbWVudCBlc3QtY2UgcG9zc2libGUgPyE=
+        - 17, 181 :[name=???,5]:Extreme Speed?! How is it possible?!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 182 :[name=???,1]:Tu ne t'y attendais pas, mais mon Rattatac est le
-          plus rapide des Rattatac ! Un Rattatac de top niveau !
+        - 17, 182 :[name=???,1]:You weren't expecting that, but my Raticate is the
+          fastest Raticate! A top-level Raticate!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 183 :[name=???,5]:Je vois, dans ce cas, je me vois dans l'obligation
-          de finir ce combat au plus vite !
+        - 17, 183 :[name=???,5]:I see, in this case, I feel obliged to end this battle
+          as quickly as possible!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 184 :[name=???,5]:Gallame, utilise Psyko et aplatit ce rongeur !
+        - 17, 184 :[name=???,5]:Gallade, use Psychic and flatten this rodent!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9134,13 +9078,13 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 185 :[name=???,1]:Rattatac, non !
+        - 17, 185 :[name=???,1]:Raticate, no!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE4NiA6W25hbWU9Pz8/LDVdOkTDqXNvbMOpLCBtYWlzIGMnZXN0IHRyb3AgdGFyZCAhIEdhbGxhbWUsIGZhaXMgbGUgcyfDqWNyYXNlciBzdXIgbGUgc29sICE=
+        - 17, 186 :[name=???,5]:Sorry, but it's already too late! Gallade, make it
+          crash to the ground!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9198,7 +9142,7 @@ events:
         code: 223
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 187 :[name=???,1]:Nooooooooooooon !
+        - 17, 187 :[name=???,1]:Noooooooooooooo!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9276,8 +9220,8 @@ events:
         code: 241
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE4OCA6W25hbWU9Pz8/LDNdOkNlIG1hdGNoIGVzdCBtYWludGVuYW50IHRlcm1pbsOpICEgSWwgbm91cyBhdXJhIHRvdXMgdGVudSBlbiBoYWxlaW5lLCBtYWlzIGplIHN1aXMgZmllciBkZSBwb3V2b2lyIHZvdXMgcHLDqXNlbnRlciBsZSB2YWlucXVldXIgZGUgY2UgbWF0Y2guLi4=
+        - 17, 188 :[name=???,3]:This match is now over! It kept us all on our toes,
+          but I'm proud to announce you the victor of this match...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9302,8 +9246,7 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 189 :[name=???,3]:Veuillez applaudir notre grande gagnante de ce match
-          !
+        - 17, 189 :[name=???,3]:Please applaud the grand winner!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9321,8 +9264,8 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5MCA6W25hbWU9Pz8/LDNdOlF1YW50IMOgIG1vaSwgamUgdm91cyByZXRyb3V2ZSBwcm9jaGFpbmVtZW50IHBvdXIgYWZmcm9udGVyIG5vdHJlIHByb2NoYWluIGNoYWxsZW5nZXIgISBEJ2ljaSBsw6AsIGVudHJhaW5lei12b3VzLCBkZXZlbmV6IG1laWxsZXVyLCBldCBnYWduZXogdm90cmUgcGxhY2UgcG91ciB0ZW50ZXIgZGUgbWUgdmFpbmNyZSAh
+        - 17, 190 :[name=???,3]:As for me, I will see you soon to face the next challenger!
+          Until then, train, become better, and win your place to try to best me!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9448,8 +9391,8 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5MSA6W25hbWU9Pz8/XTpFbmNvcmUgdW4gY29tYmF0IHJvbmRlbWVudCBtZW7DqSAhIE1haW50ZW5hbnQsIGonZXNww6hyZSBxdWUgbm90cmUgcHJvY2hhaW5cRSBjaGFsbGVuZ2VyIG5lIHMnZXN0IHBhcyBwZXJkdVxFLi4u
+        - 17, 191 :[name=???]:Another battle well fought! Now, I hope our next challenger
+          aren't lost...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9484,7 +9427,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 193 :[name=???]:Quand on parle du loup !
+        - 17, 193 :[name=???]:Speak of the devil!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9576,8 +9519,8 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5NCA6W25hbWU9Pz8/XTpFeGN1c2UtbW9pIGRlIHRlIGTDqXJhbmdlciwgbWFpcyB0dSBuZSBzZXJhaXMgcGFzIGxhIHBlcnNvbm5lIHLDqWNlbW1lbnQgYXJyaXbDqWUgc3VyIGwnw45sZSwgcGFyIGhhc2FyZCA/
+        - 17, 194 :[name=???]:Sorry to bother you, but are you the recently arrived
+          newcomer of the Island, by any chance?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9607,49 +9550,49 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5NSA6W25hbWU9Pz8/XTrDh2EgbSdhIHRvdXQgbCdhaXIgZCfDqnRyZSBsZSBjYXMgIQ==
+        - 17, 195 :[name=???]:To me, it's seems like it's the case!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5NiA6W25hbWU9UGFsYm9sc2t5XTpKZSBtZSBwcsOpc2VudGUsIGplIHN1aXMgUGFsYm9sc2t5LCBtYWlzIFNpck1hbG8gYSBkw7sgdGUgcGFybGVyIHVuIHBldSBkZSBtb2kgZMOpasOgLg==
+        - '17, 196 :[name=Palbolsky]:Let me introduce myself: I am Palbolsky, I believe
+          SirMalo talked to you about me already.'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5NyA6W25hbWU9UGFsYm9sc2t5XTpKZSBzdWlzIGxlIHJlc3BvbnNhYmxlIGRlIGwnQXLDqG5lIGRlIENvbWJhdCwgdW5lIHNhbGxlIGTDqWRpw6llIMOgIGwnYXBwcmVudGlzc2FnZSBkdSBjb21iYXQgUG9rw6ltb24gZXQgZGVzIGRpdmVyc2VzIG1hbmnDqHJlcyBkJ2VuIG1ldHRyZSBlbiBwbGFjZS4=
+        - 17, 197 :[name=Palbolsky]:I'm the manager of the Battle Arena, a room dedicated
+          to learning Pokémon battles and the diverse ways to setup one.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5OCA6W25hbWU9UGFsYm9sc2t5XTpFdCwgw6AgbW9pbnMgcXVlIGplIG5lIG1lIHRyb21wZSBldCBxdWUgdHUgbidlbiBhaWVzIHJpZW4gw6AgZmFpcmUsIGplIHBvc3PDqGRlIGwndW5lIGRlcyBQaWVycmVzIEluc29saXRlcyBxdWUgdHUgY2hlcmNoZXMgIQ==
+        - 17, 198 :[name=Palbolsky]:And, unless I'm mistaken and you don't care about
+          that, I possess one of the Intriguing Stones you seek!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDE5OSA6W25hbWU9UGFsYm9sc2t5XTpKZSBuZSBjb21wdGUgcGFzIHRlIGxhIGRvbm5lciBjb21tZSDDp2EsIHR1IHRlIGRvdXRlcyBiaWVuLi4uIEMnZXN0IHBvdXJxdW9pIGplIHRlIHByb3Bvc2UgdW4gcGV0aXQgZMOpZmku
+        - 17, 199 :[name=Palbolsky]:I don't intend to give it to you like that, you
+          can imagine... That is why I propose you a little challenge.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIwMCA6W25hbWU9UGFsYm9sc2t5XTpMYSBjb25zb2xlIMOgIGPDtHTDqSBkdSBQQyBwZXJtZXQgZGUgImNvbW1hbmRlciIgdW4gY29tYmF0IGNvbnRyZSBsJ3VuIGRlIG1lcyBhcHByZW50aXMuIEJhdHMtbGVzIHRvdXMsIGV0IGplIHRlIGxhaXNzZXJhaSBtZSBkw6lmaWVyIGF2ZWMgZW4gamV1IG1hIFBpZXJyZSBJbnNvbGl0ZSAh
+        - 17, 200 :[name=Palbolsky]:The console aside of the PC allows us to "order"
+          a battle against one of my apprentices. Beat them all, and I'll let you
+          challenge me with my Intriguing Stone in play!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIwMSA6W25hbWU9UGFsYm9sc2t5XTpKZSBuZSBzdWlzIHBhcyBwcmVzc8OpLCBkb25jIHByZW5kcyB0b24gdGVtcHMgcG91ciBhcHByZW5kcmUgY29ycmVjdGVtZW50ICEgQm9uIGNvdXJhZ2UgcG91ciB0ZXMgZnV0dXJzIGNvbWJhdHMgIQ==
+        - 17, 201 :[name=Palbolsky]:I'm in no hurry, so take your time to correctly
+          learn! Good luck for future battles!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 17, 202 :[name=Palbolsky]:Oh et tiens, avant que je n'oublie !
+        - 17, 202 :[name=Palbolsky]:Before I forget, I want to give this to you!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9659,20 +9602,20 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIwMyA6W25hbWU9UGFsYm9sc2t5XTpTaSB0dSBhcyB1biBQb2vDqW1vbiDDoCBmYWlyZSBtw6lnYS3DqXZvbHVlciwgdHUgbGUgcG91cnJhcyBhdmVjIGNldCBvYmpldCAh
+        - 17, 203 :[name=Palbolsky]:If you have a Pokémon to Mega Evolve, you'll be
+          able to with this item!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIwNCA6W25hbWU9UGFsYm9sc2t5XTpQb3VyIGluZm9ybWF0aW9uLCBuJ2ltcG9ydGUgcXVlbCBvYmpldCAiTcOpZ2EiIHN1ZmZpdC4gRG9uYyB0dSBwZXV4IGF1c3NpIHV0aWxpc2VyIGxlcyBNw6lnYS1MdW5ldHRlcywgcGFyIGV4ZW1wbGUgIQ==
+        - 17, 204 :[name=Palbolsky]:For the info, any "Mega" item does the trick.
+          So you can even use the Mega-Glasses , for example!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIyNyA6W25hbWU9UGFsYm9sc2t5XTpPaCwgZXQgY29tbWUgdHUgbWUgcGxhaXMgYmllbiwgamUgdCdvZmZyZSBjZWNpIGVuIGNhZGVhdSBkJ2Fycml2w6llIGRhbnMgY2V0dGUgYXLDqG5lICE=
+        - 17, 227 :[name=Palbolsky]:Oh, and because I quite like you, I'm giving you
+          this as an arrival gift in this arena!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -9688,38 +9631,37 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIyOCA6W25hbWU9UGFsYm9sc2t5XTpDZSBSaW9sdSBhdmFpdCBsJ2FpciBkZSBiZWF1Y291cCB0J2FwcHLDqWNpZXIsIGlsIGRldnJhaXQgw6l2b2x1ZXIgdHLDqHMgdml0ZSAh
+        - 17, 228 :[name=Palbolsky]:That Riolu seemed to like you a lot, so it should
+          grow up very quickly!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIyOSA6W25hbWU9UGFsYm9sc2t5XTpQZW5zZSDDoCByZWdhcmRlciBsJ29iamV0IHF1J2lsIHRpZW50LCBkJ2FpbGxldXJzICE=
+        - 17, 229 :[name=Palbolsky]:Don't forget to look at the object it's holding!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIwNSA6W25hbWU9UGFsYm9sc2t5XTpTdXIgY2UsIGplIHZhaXMgYWxsZXIgbWUgcmVwb3NlciBsZXMgY29yZGVzIHZvY2FsZXMsIGZhaXJlIGwnYXJiaXRyZSBldCBsZSBwcsOpc2VudGF0ZXVyIGVuIG3Dqm1lIHRlbXBzIMOnYSB1c2UuLi4=
+        - 17, 205 :[name=Palbolsky]:You'll excuse me, I have to go rest my vocal cords.
+          Endosing the role of the referee and the announcer is tiring...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIzMCA6W25hbWU9UGFsYm9sc2t5XTpEZXJuaWVyIHBldGl0IGNvbnNlaWwgY2VsYSBkaXQuLi4gU2kgdHUgbidhcyBwYXMgZW5jb3JlIGV4cGxvcsOpIGxhIFRvdXIsIGplIHRlIGNvbnNlaWxsZSBkZSBsZSBmYWlyZSBhdmFudCBkZSB0ZSBmcm90dGVyIMOgIGwnQXLDqG5lLi4u
+        - 17, 230 :[name=Palbolsky]:A final word of advice... If you haven't explored
+          the Tower yet, I suggest you do so before tackling the Arena...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIzMSA6W25hbWU9UGFsYm9sc2t5XTpIaXN0b2lyZSBxdWUgdHUgcHVpc3NlcyBnYWduZXIgZW4gZXhww6lyaWVuY2UgZXQgdGUgY29uc3RydWlyZSB1bmUgcGV0aXRlIMOpcXVpcGUgIQ==
+        - 17, 231 :[name=Palbolsky]:So you can gain experience and build up a small
+          team!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MTcsIDIzMiA6W25hbWU9UGFsYm9sc2t5XTpNYWlzIHNpIHR1IHRlIHNlbnMgcHLDqnQgZGUgc3VpdGUsIGFsb3JzIGplIHRlIHNvdWhhaXRlIGJvbm5lIGNoYW5jZSAhIFN1ciBjZSwgaid5IHZhaXMgIQ==
+        - 17, 232 :[name=Palbolsky]:But if you feel up to it right away, then I wish
+          you the best of luck! On that note, I'm off!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand

@@ -583,7 +583,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 0 :[name=Chrysacier]:Ziaaaaoum[WAIT 60]
+        - 20, 0 :[name=Metapod]:Ziaaaaoum[WAIT 60]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -593,8 +593,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDEgVm91cyBhdmV6IHLDqXZlaWxsw6kgbGVzIFBva8OpbW9uIEluc2VjdGUgIQ==
+        - 20, 1 You've awakened the Bug Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -783,7 +782,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 2 :[name=Coconfort]:...[WAIT 90]
+        - 20, 2 :[name=Kakuna]:...[WAIT 90]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -793,8 +792,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDMgVm91cyBhdmV6IHLDqXZlaWxsw6kgbGVzIFBva8OpbW9uIEluc2VjdGUgIQ==
+        - 20, 3 You've awakened the Bug Pokémon!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1038,14 +1036,14 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 4 Je sais pas si tu sais comment cacher un objet et le rendre cherchable
-          par le Cherch'Objet ?
+        - 20, 4 Do you know how to hide an item and make it searchable using the Dowsing
+          Machine?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 5 Pour ce faire, le nom de l'event en question doit commencer par \c[5]"invisible_"\c[0]
-          ou se nommer \c[5]"OBJ_INVISIBLE"\c[0] exactement.
+        - 20, 5 To do that, the name of the event needs to start with \c[5]"invisible_"\c[0]
+          or be exactly named \c[5]"OBJ_INVISIBLE"\c[0].
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1058,25 +1056,24 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDYgU2FsdXQsIGpldW5lIFxmW2V4cGxvcmF0cmljZcKnZXhwbG9yYXRldXJdICE=
+        - 20, 6 Hello, young explorer!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VG9pIGF1c3NpIHR1IGNoZXJjaGVzIGxlcyB0csOpc29ycyBxdWkgam9uY2hlbnQgbGUgc29sID8=
+        - Are you also interested in the treasures that litters the ground?
         indent: 1
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDcgT24gbSdhcHBlbGxlIGxlIENoZXJjaGV1ciBkJ09iamV0cyBzdXIgY2V0dGUgw45sZSwgbm9tIHF1aSBtJ2Egw6l0w6kgZG9ubsOpIHBvdXIgbWVzIG5vbWJyZXVzZXMgaGV1cmVzIMOgIGNoZXJjaGVyIGRlcyByYXJldMOpcyBkYW5zIGxhIG5hdHVyZS4uLg==
+        - 20, 7 Everyone on this Island calls me the "Item Finder," name of which
+          was given to me for the countless hours I spent searching rarities in the
+          wild...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 8 ... avec l'aide de mon merveilleux Cherch'Objet !
+        - 20, 8 ... with the help of my marvelous Dowsing Machine!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1087,8 +1084,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDkgLi4uIEFoIG1haXMuLi4gVHUgZW4gYXMgdW4gYXVzc2kgPyBKZSB2b2lzIHF1ZSB0dSBlcyB0b2kgYXVzc2kgXGZbdW5lIGNoZXJjaGV1c2XCp3VuIGNoZXJjaGV1cl0gZGUgY3VsdHVyZSAh
+        - 20, 9 ... Wait... You have one too?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1101,24 +1097,22 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 10 Il a l'air de te plaire.
+        - 20, 10 You seem to like it.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          VG9pIGF1c3NpIHR1IHZldXggcGFydGljaXBlciDDoCBjZXR0ZSBiZWxsZSBjaGFzc2UgPw==
+        - Do you also want to be part of this great hunt?
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDExIEFsbGV6LCB0aWVucywgcHJlbmRzIMOnYSAh
+        - 20, 11 Here, take this!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Fais-en bon usage !
+        - Put it to good use!
         indent: 2
         code: 401
       - !ruby/object:RPG::EventCommand
@@ -1136,14 +1130,14 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 12 Je sais pas si tu sais comment cacher un objet et le rendre cherchable
-          par le Cherch'Objet ?
+        - 20, 12 Do you know how to hide an item and make it searchable using the
+          Dowsing Machine?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 13 Pour ce faire, le nom de l'event en question doit commencer par \c[5]"invisible_"\c[0]
-          ou se nommer \c[5]"OBJ_INVISIBLE"\c[0] exactement.
+        - 20, 13 To do that, the name of the said event needs to start with \c[5]"invisible_"\c[0]
+          or be exactly named \c[5]"OBJ_INVISIBLE"\c[0].
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1325,14 +1319,13 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDE0IDpbbmFtZT1SZXldOlR1IGwnYXMgcsOpY3Vww6lyw6kgPyBDaGFwZWF1LCBjJ2VzdCBwb3VydGFudCBwYXMgc2ltcGxlIGRlIHRyb3V2ZXIgdW4gUG9rw6ltb24gRW9uIHZ1IGxldXJzIGNhcGFjaXTDqXMu
+        - 20, 14 :[name=Rey]:Did you catch it? Good job! It's really not easy to find
+          an Eon Pokémon with their abilities.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDE1IDpbbmFtZT1SZXldOkR1IGNvdXAgYnJhdm8sIHZvaWzDoCBtYSBQaWVycmUgSW5zb2xpdGUgIQ==
+        - 20, 15 :[name=Rey]:Well, congratulations then, here's my Intriguing Stone!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1342,8 +1335,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDE2IDpbbmFtZT1SZXldOlZvaWzDoCBNYWtlciwgdHUgZW4gYXMgZmluaSBhdmVjIG1vaSwgY29udGludWUgY29tbWUgw6dhLCB0J2VzIHN1ciBsYSBib25uZSB2b2llIHBvdXIgcsOpY3Vww6lyZXIgdG91dGVzIGxlcyBQaWVycmVzIEluc29saXRlcyAh
+        - 20, 16 :[name=Rey]:Well then Maker, seems like we are done!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1383,19 +1375,18 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDE3IDpbbmFtZT1SZXldOkFoLCBqZSB2b2lzIHF1ZSB0dSBhcyB1biBwZXUgdHJvcCBtYXJ0eXJpc8OpIGxhIHBhdXZyZSBwZXRpdGUgYsOqdGUsIMOgIHRlbGxlIHBvaW50IHF1ZSB0dSBsJ2FzIG1pc2UgS08uLi4=
+        - 20, 17 :[name=Rey]:Oh, well, seems like someone might have been a little
+          too hard on the poor beast, to the point of defeating it...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDE4IDpbbmFtZT1SZXldOkMnZXN0IGRlcyBjaG9zZXMgcXVpIGFycml2ZW50LCBuZSB0J2lucXVpw6h0ZXMgcGFzLiBKZSB2YWlzIG0nYXNzdXJlciBkZSBsYSBzb2lnbmVyIHBvdXIgbSdhc3N1cmVyIHF1ZSB0dSBwdWlzc2VzIGxhIHJlY3JvaXNlciBzdXIgbCfDjmxlICE=
+        - 20, 18 :[name=Rey]:These things happen, don't worry.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 19 :[name=Rey]:C'est parti pour faire de la magie !
+        - 20, 19 :[name=Rey]:Time for a magic trick!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1458,8 +1449,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDIwIDpbbmFtZT1SZXldOkV0IHZvaWzDoCwgdHUgcGV1eCByZXBhcnRpciBsJ2VzcHJpdCB0cmFucXVpbGxlICE=
+        - 20, 20 :[name=Rey]:And done! You can go back to it with peace of mind!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1472,8 +1462,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDIxIDpbbmFtZT1SZXldOkhleSBcTlsxXSAhIEFsb3JzLCBwYXMgdHJvcCBsYSBnYWzDqHJlIGNldHRlIHBldGl0ZSBjaGFzc2UgYXUgZnV5YXJkID8gTmUgYmFpc3NlIHBhcyBsZXMgYnJhcywgdHUgZmluaXJhcyBwYXIgbCdhdm9pciAh
+        - 20, 21 :[name=Rey]:Hey \N[1]! So, hopefully not having too much trouble
+          with this little runaway Pokémon hunt?
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1538,14 +1528,13 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDIyIDpbbmFtZT1SZXldOlR1IHRlIHJlbmRzIGNvbXB0ZSBxdWFuZCBtw6ptZSA/IFR1IGZhaXMgcGFydGllIGRlcyBkZXV4IHNldWxlcyBwZXJzb25uZXMgZGUgY2V0dGUgw45sZSDDoCBhdm9pciB1biBsw6lnZW5kYWlyZS4=
+        - 20, 22 :[name=Rey]:Can you believe it?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDIzIDpbbmFtZT1SZXldOlF1aSBlc3QgbCdhdXRyZSA/IEEgw6dhLCBqZSBwZXV4IHBhcyB0ZSBsZSBkaXJlLCDDoCB0b2kgZGUgZMOpY291dnJpciBwYXIgdG9pIG3Dqm1lICE=
+        - 20, 23 :[name=Rey]:Who's the other? I can't tell you that, you'll have to
+          find by yourself!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1739,8 +1728,7 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          dHJhaW5lcl9leWVfc2VxdWVuY2UoIjIwLCA2MyBDJ8OpdGFpdCB1bmUgZW1idXNjYWRlICEiLA==
+        - trainer_eye_sequence("20, 63 I was waiting to ambush you!",
         indent: 0
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -1881,8 +1869,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDY0IETDqXNvbMOpLCBqJ2F1cmFpcyBwYXMgZMO7LCBjJ8OpdGFpdCBwYXMgc3ltcGEuLi4=
+        - 20, 64 Sorry, that was a mean thing to do...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -1943,7 +1930,7 @@ events:
         code: 106
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 24 Vei-veinard !
+        - 20, 24 Chan-chansey!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2146,8 +2133,7 @@ events:
         code: 249
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDI1IExldmVpbmFyZCBzb2lnbmUgdm90cmUgw6lxdWlwZS5bV0FJVCA5MF0=
+        - 20, 25 Chansey heals your team.[WAIT 90]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2337,8 +2323,8 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          dHJhaW5lcl9leWVfc2VxdWVuY2UoIjIwLCA2MCBDJ2VzdCBtb2kgb3UgdW4gUG9rw6ltb24gbMOpZ2VuZGFpcmUgdmllbnQgZGUgcGFzc2VyIGRldmFudCBtb2kgw6AgbCdpbnN0YW50ID8hIiw=
+        - trainer_eye_sequence("20, 60 Wait, did a legendary Pokémon just fly in front
+          of me just now?!",
         indent: 0
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -2391,20 +2377,18 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDI2IFR1IHRlIGRlbWFuZGVzIGNvbW1lbnQgamUgdCdhaSByZW1hcnF1w6kgPyBHcsOiY2Ugw6AgdHJhaW5lcl9zcG90dGVkKDQpLCBqZSBzdWlzIGNhcGFibGUgZGUgdGUgZMOpdGVjdGVyIMOgIDQgY2FzZXMgZGUgZGlzdGFuY2UgIQ==
+        - 20, 26 Wondering how I spotted you?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDI3IFBhciBjb250cmUgamUgbmUgbSdhdHRlbmRhaXMgcGFzIMOgIG1lIGZhaXJlIGJhdHRyZS4uLg==
+        - 20, 27 However, I didn't expect to lose...
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 28 Les prochains dresseurs sont forts mais tu peux les esquiver si tu
-          es suffisamment rapide !
+        - 20, 28 The next trainers are strong, but you can dodge them if you are fast
+          enough!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2417,8 +2401,7 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDI5IFR1IHRlIGRlbWFuZGVzIGNvbW1lbnQgamUgdCdhaSByZW1hcnF1w6kgPyBHcsOiY2Ugw6AgdHJhaW5lcl9zcG90dGVkKDQpLCBqZSBzdWlzIGNhcGFibGUgZGUgdGUgZMOpdGVjdGVyIMOgIDQgY2FzZXMgZGUgZGlzdGFuY2UgIQ==
+        - 20, 29 Wondering how I spotted you?
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2428,19 +2411,18 @@ events:
         code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDMwIFNpbm9uLCBtYWxncsOpIGxlIGZhaXQgcXVlIGplIHQnYWkgYmF0dHUsIGplIHZhaXMgdOKAmcOpdml0ZXIgdG91dCBsZSB0cmFqZXQganVzcXXigJlhdSBDZW50cmUgUG9rw6ltb24u
+        - 20, 30 By the way, despite the fact I beat you, I will heal your team to
+          save you the trip to the Pokémon Center.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 31 Les prochains dresseurs de la Route ne seront pas aussi gentils cela
-          dit !
+        - 20, 31 With that said, the next trainers of the Route won't be as kind.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 32 Tu peux cependant les esquiver si tu es suffisamment rapide !
+        - 20, 32 You can however dodge them if you're fast enough!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2463,7 +2445,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 33 Viens me parler si tu souhaites m'affronter de nouveau !
+        - 20, 33 Come talk to me if you want to challenge me again!
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2571,8 +2553,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDM0IEF1IGZpbmFsLCBpbCBlc3QgZGV2ZW51IHF1b2kgbGUgUG9rw6ltb24gbMOpZ2VuZGFpcmUgPw==
+        - 20, 34 In the end, what became of the legendary Pokémon?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2617,7 +2598,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 35 Tu souhaites avoir ta revanche ?
+        - 20, 35 You want to have a rematch?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2698,8 +2679,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDM2IEplIG5lIG0nYXR0ZW5kYWlzIHBhcyDDoCBtZSBmYWlyZSBiYXR0cmUuLi4=
+        - 20, 36 I didn't expect to lose...
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2724,8 +2704,8 @@ events:
         code: 411
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDM3IEplIHQnYWkgYmF0dHUgZGUgbm91dmVhdSwgbWFpcyBjb21tZSBqZSB0cm91dmUgY291cmFnZXV4IHF1ZSB0dSBzb2lzIHZlbnUgcHJlbmRyZSB0YSByZXZhbmNoZSwgamUgdmFpcyBkZSBub3V2ZWF1IHNvaWduZXIgdG9uIMOpcXVpcGUgIQ==
+        - 20, 37 I won again, and as you're courageous enough to come for a rematch,
+          I will heal you team once again!
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2753,7 +2733,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 38 Reviens me parler si tu souhaites m'affronter de nouveau.
+        - 20, 38 Come talk to me if you want to challenge me again.
         indent: 2
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2776,8 +2756,7 @@ events:
         code: 402
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDM5IFBhcyBkZSBwcm9ibMOobWUsIGplIGNvbXByZW5kcy4gUmV2aWVucyBtZSB2b2lyIHNpIHR1IGNoYW5nZXMgZCdhdmlzLg==
+        - 20, 39 No problem, I understand.
         indent: 1
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -2941,8 +2920,8 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          dHJhaW5lcl9leWVfc2VxdWVuY2UoIjIwLCA2MSBUdSBsZSB0cm91dmVzIHBhcyB0cm9wIGJlYXUgY2UgZ3JvcyBQb2vDqW1vbiBsw6AgPyIs
+        - trainer_eye_sequence("20, 61 Don't you think this huge Pokémon is just too
+          cute?",
         indent: 0
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -3029,8 +3008,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDQwIEF1IGZpbmFsLCBpbCBlc3QgZGV2ZW51IHF1b2kgbGUgUG9rw6ltb24gbMOpZ2VuZGFpcmUgPw==
+        - 20, 40 In the end, what became of the legendary Pokémon?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3182,8 +3160,8 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          dHJhaW5lcl9leWVfc2VxdWVuY2UoIjIwLCA2MiBKZSB2aWVucyBkZSBtZSBmYWlyZSBmcsO0bGVyIHBhciB1biBncm9zIHRydWMgISBDJ2VzdCBzYW5zIGRvdXRlIHVuIFBva8OpbW9uIHJhcmUgISIs
+        - trainer_eye_sequence("20, 62 I was just grazed by a huge beast!\nlIt's certainly
+          a rare Pokémon!",
         indent: 0
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -3238,7 +3216,7 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 41 Je devrais faire le plein d'Hyper Balls...
+        - 20, 41 I should refill my Ultra Balls stock...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -3904,101 +3882,95 @@ events:
         code: 210
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 42 Hey ! Toi aussi tu l'as vu ?
+        - 20, 42 :[name=???]:Hey, did you see that too?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDQzIFN1aXMtamUgYsOqdGUsIGZvcmPDqW1lbnQgcXVlIHR1IGwnYXMgdnUsIHB1aXNxdSdpbCBzZW1ibGFpdCB2b3Vsb2lyIHRlIGd1aWRlciBqdXNxdSdpY2kgIQ==
+        - 20, 43 :[name=???]:Sorry, rhetorical question, of course you saw it, as
+          it was guiding you here!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDQ0IEplIG0nYXBwZWxsZSBSZXksIGV0IGplIHN1aXMgbGUgUmFuZ2VyIGF0dGl0csOpIGRlIGwnw45sZSAh
+        - 20, 44 :[name=Rey]:My name's Rey, I'm the titular Ranger of the Island!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - '20, 45 :[name=Rey]:En d''autres termes : j''aide un peu tout le monde.'
+        - '20, 45 :[name=Rey]:In other terms: I help everyone.'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDQ2IDpbbmFtZT1SZXldOlR1IG1lIGNvbm5haXNzYWlzIGTDqWrDoCA/
+        - 20, 46 :[name=Rey]:Did you know about me already?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDQ3IDpbbmFtZT1SZXldOk9oLCBqZSB2b2lzLCBTaXJNYWxvIGEgZMO7IHRlIHBhcmxlciBkZSBtb2ku
+        - 20, 47 :[name=Rey]:I see, SirMalo talked to you about me, right?
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDQ4IDpbbmFtZT1SZXldOlR1IGRvaXMgZG9uYyDDqnRyZSBcZltsYSBub3V2ZWxsZcKnbGUgbm91dmVhdV0gTWFrZXIgIQ==
+        - 20, 48 :[name=Rey]:Then you should be the new Maker!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDQ5IDpbbmFtZT1SZXldOkV0IGonZW4gZMOpZHVpcyBkb25jIHF1ZSB0dSBkb2lzIMOqdHJlIGVuIHRyYWluIGRlIGZhaXJlIGxlIHRvdXIgZGUgbCfDjmxlIHBvdXIgcsOpY29sdGVyIGxlcyBQaWVycmVzIEluc29saXRlcy4uLg==
+        - 20, 49 :[name=Rey]:And I deduct that you are doing your tour of the Island
+          to collect the Intriguing Stones...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDUwIDpbbmFtZT1SZXldOkJpZW4gZW50ZW5kdSwgaidlbiBhaSB1bmUgc3VyIG1vaSBhdXNzaSwgbWFpcyBqZSBuZSBwZXV4IHBhcyB0ZSBsYSBjw6lkZXIgY29tbWUgw6dhLi4u
+        - 20, 50 :[name=Rey]:Of course, I have one on me, but I can't give it to you
+          just like that...
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 51 :[name=Rey]:Oh, je sais !
+        - 20, 51 :[name=Rey]:Oh, I know what to do!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDUyIDpbbmFtZT1SZXldOlZvaWzDoCBjZSBxdWUgamUgdGUgcHJvcG9zZSA6IHR1IGF0dHJhcGVzIGxlIFtQT0tFTU9OXSBldCB0dSBtZSBsZSBtb250cmVzLCBldCBqZSB0ZSBkb25uZSBtYSBQaWVycmUgSW5zb2xpdGUgIQ==
+        - '20, 52 :[name=Rey]:Here''s the deal I propose to you: you catch the [POKEMON]
+          and show it to me, and I''ll give you my Intriguing Stone!'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDUzIDpbbmFtZT1SZXldOkZyYW5jaGVtZW50LCB0dSBlcyBnYWduYW50IHN1ciB0b3VzIGxlcyBwb2ludHMgOiB0dSBham91dGVzIHVuIFBva8OpbW9uIHN1cGVyIHJhcmUgw6AgdG9uIMOpcXVpcGUgZXQgdHUgcsOpY3Vww6hyZXMgbGEgUGllcnJlLg==
+        - '20, 53 :[name=Rey]:Honestly, you are winning on every point: you add a
+          super rare Pokémon to your team and you get the Stone.'
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDU0IDpbbmFtZT1SZXldOkQnYWlsbGV1cnMsIGF1IGNhcyBvw7kgdHUgbWV0dHJhaXMgSy5PLiBsYSBwYXV2cmUgYmVzdGlvbGUgc2FucyBwb3V2b2lyIGxhIGNhcHR1cmVyLCB2aWVucyBtZSB2b2lyIGV0IGplIGZlcmFpIHVuIHBldSBkZSBtYWdpZS4=
+        - 20, 54 :[name=Rey]:Also, in case you were to knock out the poor thing without
+          being able to catch it, come see me and I'll do a bit of magic.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDU1IDpbbmFtZT1SZXldOlBvdXIgZmluaXIsIHNpIHR1IHJlZ2FyZGVzIHRhIGNhcnRlLCB0dSBwb3VycmFzIGZhY2lsZW1lbnQgc2F2b2lyIG/DuSBzZSB0cm91dmUgdW4gUG9rw6ltb24gZnV5YXJkLg==
+        - 20, 55 :[name=Rey]:Finally, if you take a look at the \c[5]Map\c[0], you'll
+          be able to easily see where the roaming Pokémon are.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDU2IDpbbmFtZT1SZXldOk1haXMgcG91ciDDqnRyZSBob25uw6p0ZSwgamUgbidpbWFnaW5lIFtQT0tFTU9OXSBzZSBiYWxhZGVyIHF1J2ljaSBldCDDoCBsJ8OpdGFnZSBkZSBsYSBQcmFpcmllIFJ1aXNzZWxhbnRlLi4u
+        - 20, 56 :[name=Rey]:Generally, it likes to hang out around this place and
+          those with encounters in the left wing of the Tower!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDU3IDpbbmFtZT1SZXldOlR1IGRldnJhaXMgZG9uYyBwb3V2b2lyIHQnZW4gc29ydGlyIHNhbnMgYXVjdW4gcHJvYmzDqG1lICE=
+        - 20, 57 :[name=Rey]:So you should be able to find it quite easily.
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
         parameters:
-        - !binary |-
-          MjAsIDU4IDpbbmFtZT1SZXldOkFsbGV6LCDDoCBsYSBjaGFzc2UsIE1ha2VyICE=
+        - 20, 58 :[name=Rey]:Alright, go hunting, Maker!
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
@@ -4200,7 +4172,7 @@ events:
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 20, 59 :[name=Rattata]:Krkrkrk ![WAIT 45]
+        - 20, 59 :[name=Rattata]:Krkrkrkr![WAIT 45]
         indent: 0
         code: 101
       - !ruby/object:RPG::EventCommand
