@@ -1,3 +1,11 @@
+#ifdef GL_ES
+precision mediump float;
+
+uniform mat4 sf_texture;
+uniform vec2 factor_npot;
+
+varying vec2 v_texCoord;
+#endif
 uniform sampler2D texture;
 uniform float time;
 uniform sampler2D bk0;
@@ -10,10 +18,15 @@ const vec2 bkDistr = vec2(10, 8);
 const vec4 blank = vec4(0, 0, 0, 0);
 void main()
 {
+#ifdef GL_ES
+  vec2 tc = (sf_texture * vec4(v_texCoord, 0.0, 1.0)).xy;
+#else
+  vec2 tc = gl_TexCoord[0].xy;
+#endif
   vec4 bkfrag;
-  vec2 bkCoord = mod(gl_TexCoord[0].xy * bkDistr, 1);
+  vec2 bkCoord = mod(tc * bkDistr, 1);
   float currentTime = time * (bkDistr.x + 6);
-  float currentPos = ceil((1 - gl_TexCoord[0].x) * bkDistr.x);
+  float currentPos = ceil((1 - tc.x) * bkDistr.x);
   if (currentTime >= currentPos) {
     float texIndex = floor(currentTime - currentPos);
     if (texIndex < 1) {
@@ -32,6 +45,6 @@ void main()
   } else {
     bkfrag = blank;
   }
-  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
+  vec4 frag = texture2D(texture, tc.xy);
   gl_FragColor = vec4(mix(frag, bkfrag, round(bkfrag.a * 6) / 6).rgb, 1);
 }
