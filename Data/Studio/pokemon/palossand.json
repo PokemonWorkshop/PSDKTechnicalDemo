@@ -50,6 +50,19 @@
         "sand_veil"
       ],
       "frontOffsetY": 0,
+      "resources": {
+        "icon": "770",
+        "iconShiny": "",
+        "front": "770",
+        "frontShiny": "770",
+        "back": "770",
+        "backShiny": "770",
+        "footprint": "",
+        "character": "770_0",
+        "characterShiny": "770s_0",
+        "cry": "770cry.ogg",
+        "hasFemale": false
+      },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
@@ -311,20 +324,7 @@
           "klass": "TechLearnableMove",
           "move": "secret_power"
         }
-      ],
-      "resources": {
-        "icon": "770",
-        "iconShiny": "",
-        "front": "770",
-        "frontShiny": "770",
-        "back": "770",
-        "backShiny": "770",
-        "footprint": "",
-        "character": "770_0",
-        "characterShiny": "770s_0",
-        "cry": "770cry.ogg",
-        "hasFemale": false
-      }
+      ]
     },
     {
       "form": 1,
@@ -357,14 +357,22 @@
       "hatchSteps": 3840,
       "babyDbSymbol": "sandygast",
       "babyForm": 1,
-      "itemHeld": [],
+      "itemHeld": [
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        },
+        {
+          "dbSymbol": "none",
+          "chance": 0
+        }
+      ],
       "abilities": [
         "water_compaction",
         "sand_veil",
         "sand_veil"
       ],
       "frontOffsetY": 0,
-      "moveSet": [],
       "resources": {
         "icon": "770",
         "iconShiny": "",
@@ -377,7 +385,8 @@
         "characterShiny": "",
         "cry": "770cry.ogg",
         "hasFemale": false
-      }
+      },
+      "moveSet": []
     }
   ]
 }
