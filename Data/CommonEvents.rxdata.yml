@@ -2205,14 +2205,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 3
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:surf)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 3
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 3
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -2721,14 +2731,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 4
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 4
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:strength)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 4
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 4
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -3096,14 +3116,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 1
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 1
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:dig)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 1
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 1
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -3166,9 +3196,14 @@
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:fly)
+    - index = pokemon_index(:has_skill?, :fly, true)
     indent: 0
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - hm_bar_animation_on_map($actors[index])
+    indent: 0
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -4971,14 +5006,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 2
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 2
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:headbutt)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 2
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 2
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -5180,14 +5225,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 3
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:cut)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 3
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 3
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -5675,14 +5730,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 3
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:rock_smash)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 3
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 3
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -6237,14 +6302,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 3
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:waterfall)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 3
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 3
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -6507,14 +6582,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 1
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 1
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:flash)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 1
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 1
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -6639,14 +6724,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 3
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:whirlpool)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 3
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 3
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -6956,14 +7051,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 4
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 4
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:dive)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 4
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 4
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -7054,14 +7159,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 4
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 4
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:dive)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 4
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 4
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -7229,14 +7344,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 3
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 3
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:rock_climb)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 3
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 3
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
@@ -7361,14 +7486,24 @@
     code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
+    - "@pokemon = $actors[index]"
+    indent: 2
+    code: 655
+  - !ruby/object:RPG::EventCommand
+    parameters:
     - 5
     indent: 2
     code: 106
   - !ruby/object:RPG::EventCommand
     parameters:
-    - hm_bar_animation(:teleport)
+    - hm_bar_animation_on_map(@pokemon)
     indent: 2
     code: 355
+  - !ruby/object:RPG::EventCommand
+    parameters:
+    - "@pokemon = nil"
+    indent: 2
+    code: 655
   - !ruby/object:RPG::EventCommand
     parameters:
     - 10
