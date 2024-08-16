@@ -214,7 +214,7 @@ You should have a look at some examples in the code to understand this nuance.
   from which every other Effect will inherit from.
   NOTE: I won't explain which subfolder you'll find there as the name of those subfolders are very self-explanatory.
 
-# A final word
+# Closing remarks
 
 Here you go, maker!
 
@@ -232,3 +232,5 @@ As long as you have fun while creating your fangame, and you advance at your own
 you and your fangame!
 
 Godspeed, maker, we hope to learn from you soon! :D
+
+-Rey

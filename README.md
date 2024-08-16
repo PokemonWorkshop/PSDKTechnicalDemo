@@ -80,3 +80,9 @@ Here are some information about this base project:
 Thank you for choosing to use PokémonSDK and Pokémon Studio to make your fangame, and we hope you'll enjoy this demo! ❤
 
 Let us know what you thought of it in either the [#💬🌎・psdk-talk](https://ptb.discord.com/channels/143824995867557888/520273477144412171) (EN channel) or [#💬🥖・psdk-discussions](https://ptb.discord.com/channels/143824995867557888/360856242111119360) (FR channel)!
+
+### Information about Tiled and its good practices
+Please read the [Tiled README](Data/Tiled/README_TILED.md)
+
+### Information about creating custom scripts
+Please read the [How to Create a Custom Script file](scripts/HOW_TO_CREATE_A_CUSTOM_SCRIPT.md)
