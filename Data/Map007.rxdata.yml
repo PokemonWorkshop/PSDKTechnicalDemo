@@ -5187,7 +5187,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - gp.enter_in_climbing_up_state
+=======
+        - gp.enter_in_climbing_down_state
+>>>>>>> Stashed changes
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -5207,7 +5211,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - -1
+=======
+            - 1
+>>>>>>> Stashed changes
           - !ruby/object:RPG::MoveCommand
             code: 0
             parameters: []
@@ -5239,7 +5247,11 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
+<<<<<<< Updated upstream
         - gm.system_tag_here?(gp.x, gp.y - 1, ::GameData::SystemTags::RClimb)
+=======
+        - gm.system_tag_here?(gp.x, gp.y + 1, ::GameData::SystemTags::RClimb)
+>>>>>>> Stashed changes
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -5262,7 +5274,11 @@ events:
               volume: 80
               pitch: 100
           - &119 !ruby/object:RPG::MoveCommand
+<<<<<<< Updated upstream
             code: 4
+=======
+            code: 1
+>>>>>>> Stashed changes
             parameters: []
           - !ruby/object:RPG::MoveCommand
             code: 0
@@ -5317,7 +5333,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - -1
+=======
+            - 1
+>>>>>>> Stashed changes
           - &121 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
@@ -5421,7 +5441,11 @@ events:
       through: false
     name: !binary |-
       wqdSb2NrIENsaW1iIDE=
+<<<<<<< Updated upstream
     y: 30
+=======
+    y: 27
+>>>>>>> Stashed changes
     x: 29
     id: 34
   35: !ruby/object:RPG::Event
@@ -5452,7 +5476,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - gp.enter_in_climbing_down_state
+=======
+        - gp.enter_in_climbing_up_state
+>>>>>>> Stashed changes
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -5472,7 +5500,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - 1
+=======
+            - -1
+>>>>>>> Stashed changes
           - !ruby/object:RPG::MoveCommand
             code: 0
             parameters: []
@@ -5504,7 +5536,11 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
+<<<<<<< Updated upstream
         - gm.system_tag_here?(gp.x, gp.y + 1, ::GameData::SystemTags::RClimb)
+=======
+        - gm.system_tag_here?(gp.x, gp.y - 1, ::GameData::SystemTags::RClimb)
+>>>>>>> Stashed changes
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -5527,7 +5563,11 @@ events:
               volume: 80
               pitch: 100
           - &127 !ruby/object:RPG::MoveCommand
+<<<<<<< Updated upstream
             code: 1
+=======
+            code: 4
+>>>>>>> Stashed changes
             parameters: []
           - !ruby/object:RPG::MoveCommand
             code: 0
@@ -5582,7 +5622,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - 1
+=======
+            - -1
+>>>>>>> Stashed changes
           - &129 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
@@ -5686,7 +5730,11 @@ events:
       through: false
     name: !binary |-
       wqdSb2NrIENsaW1iIDE=
+<<<<<<< Updated upstream
     y: 27
+=======
+    y: 30
+>>>>>>> Stashed changes
     x: 29
     id: 35
   4: !ruby/object:RPG::Event
