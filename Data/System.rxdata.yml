@@ -1,8 +1,4 @@
 --- !ruby/object:RPG::System
-cancel_se: !ruby/object:RPG::AudioFile
-  name: select
-  volume: 80
-  pitch: 90
 variables:
 -
 - Player raw ID
@@ -510,7 +506,6 @@ variables:
 - ''
 - ''
 - ''
-<<<<<<< Updated upstream
 cancel_se: !ruby/object:RPG::AudioFile
   name: select
   volume: 80
@@ -519,28 +514,38 @@ battle_end_me: !ruby/object:RPG::AudioFile
   name: ''
   volume: 100
   pitch: 100
-magic_number: 2218728
-=======
->>>>>>> Stashed changes
+magic_number: 48740226
 escape_se: !ruby/object:RPG::AudioFile
   name: Fleee
   volume: 80
   pitch: 70
-magic_number: 50867851
-battle_end_me: !ruby/object:RPG::AudioFile
-  name: ''
-  volume: 100
-  pitch: 100
+start_map_id: 2
+gameover_name: ''
 shop_se: !ruby/object:RPG::AudioFile
   name: Down
   volume: 80
   pitch: 100
-gameover_name: ''
-start_map_id: 2
-decision_se: !ruby/object:RPG::AudioFile
-  name: select
-  volume: 80
-  pitch: 100
+words: !ruby/object:RPG::System::Words
+  str: ''
+  armor3: ''
+  mdef: ''
+  gold: ''
+  sp: ''
+  skill: ''
+  int: ''
+  armor2: ''
+  equip: ''
+  hp: ''
+  pdef: ''
+  attack: ''
+  agi: ''
+  armor1: ''
+  atk: ''
+  item: ''
+  dex: ''
+  armor4: ''
+  weapon: ''
+  guard: ''
 switches:
 -
 - Plays female character
@@ -1049,7 +1054,6 @@ switches:
 - ''
 - ''
 - ''
-<<<<<<< Updated upstream
 decision_se: !ruby/object:RPG::AudioFile
   name: select
   volume: 80
@@ -1059,95 +1063,67 @@ battle_start_se: !ruby/object:RPG::AudioFile
   name: ''
   volume: 80
   pitch: 100
-=======
-words: !ruby/object:RPG::System::Words
-  armor3: ''
-  str: ''
-  sp: ''
-  gold: ''
-  mdef: ''
-  int: ''
-  skill: ''
-  armor2: ''
-  pdef: ''
-  hp: ''
-  equip: ''
-  agi: ''
-  attack: ''
-  armor1: ''
-  item: ''
-  atk: ''
-  armor4: ''
-  dex: ''
-  weapon: ''
-  guard: ''
->>>>>>> Stashed changes
 battle_bgm: !ruby/object:RPG::AudioFile
   name: PkmRB-Battle3
   volume: 100
   pitch: 100
-battle_start_se: !ruby/object:RPG::AudioFile
-  name: ''
-  volume: 80
-  pitch: 100
-edit_map_id: 7
-title_name: ''
+test_troop_id: 4
 equip_se: !ruby/object:RPG::AudioFile
   name: ''
   volume: 80
   pitch: 100
-test_troop_id: 4
-elements:
-- ''
-- ''
-cursor_se: !ruby/object:RPG::AudioFile
-  name: Choose
-  volume: 80
-  pitch: 100
+title_name: ''
 enemy_collapse_se: !ruby/object:RPG::AudioFile
   name: ''
   volume: 80
   pitch: 100
-_: 7829367
-title_bgm: !ruby/object:RPG::AudioFile
-  name: PkmRS-Oceanic
-  volume: 100
+cursor_se: !ruby/object:RPG::AudioFile
+  name: Choose
+  volume: 80
   pitch: 100
+elements:
+- ''
+- ''
+start_y: 17
+battler_hue: 0
 load_se: !ruby/object:RPG::AudioFile
   name: select
   volume: 80
   pitch: 100
-battler_hue: 0
-start_y: 17
+title_bgm: !ruby/object:RPG::AudioFile
+  name: PkmRS-Oceanic
+  volume: 100
+  pitch: 100
+buzzer_se: !ruby/object:RPG::AudioFile
+  name: GUI sel buzzer
+  volume: 100
+  pitch: 100
+windowskin_name: pokesys0
 test_battlers:
 - !ruby/object:RPG::System::TestBattler
-  actor_id: 1
   armor4_id: 0
+  actor_id: 1
   weapon_id: 0
   level: 50
   armor3_id: 0
   armor2_id: 0
   armor1_id: 0
-windowskin_name: pokesys0
-buzzer_se: !ruby/object:RPG::AudioFile
-  name: GUI sel buzzer
-  volume: 100
+battleback_name: battle8
+party_members:
+- 1
+actor_collapse_se: !ruby/object:RPG::AudioFile
+  name: ''
+  volume: 80
   pitch: 100
 gameover_me: !ruby/object:RPG::AudioFile
   name: ''
   volume: 100
   pitch: 100
-actor_collapse_se: !ruby/object:RPG::AudioFile
-  name: ''
-  volume: 80
-  pitch: 100
-party_members:
-- 1
-battleback_name: battle8
-start_x: 16
-battle_transition: ''
+battler_name: battler
 save_se: !ruby/object:RPG::AudioFile
   name: Nintendo
   volume: 80
   pitch: 150
-battler_name: battler
+battle_transition: ''
+start_x: 16
+_: 7829367
