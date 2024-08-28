@@ -9128,7 +9128,7 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdbej01XVtvZmZzZXRfeT0zMl1GYWxzZVBsYXRmb3Jt
+      wqdbej01XVtvZmZzZXRfeT0zMl1QbGF0Zm9ybQ==
     y: 44
     x: 42
     id: 34
@@ -9138,93 +9138,15 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - This platform is made for a very specific setup that
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - involves bridges and Z property modifications. For a setup
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'that does not require being able to go under these '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'platforms, please use the template events which are '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - located on the left side of this map.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - Yuki::FollowMe.smart_disable
         indent: 0
         code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Change this value for the ID of the blocker event linked
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - to this platform. This change is only done once, just here.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 27
-        - 27
-        - 0
-        - 0
-        - 38
-        indent: 0
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If the player is looking to the right
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
         - gp.direction == 6
         indent: 0
         code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - You only need to modify this variable to tell how many
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'cases this platform moves. Make sure to input the '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'negative value of this variable to the one a little lower '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - in this event (for the return trip).
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - 8
-        indent: 1
-        code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
         - -1
@@ -9328,7 +9250,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_x == gv[26] * 32
+        - gp.offset_screen_x == 256
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -9372,7 +9294,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.offset_screen_x += 4
+        - get_character(0).offset_screen_x += 4
         indent: 2
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -9395,12 +9317,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x - 1, gp.y)
+        - ge(38).moveto(gp.x - 1, gp.y)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x + gv[26], gp.y)
+        - gp.moveto(gp.x + 8, gp.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -9410,7 +9332,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x + gv[26], ge.y)
+        - ge.moveto(ge.x + 8, ge.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -9492,39 +9414,10 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - If the player is looking to the left
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - 12
         - gp.direction == 4
         indent: 0
         code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'Modify this variable and input the negative number of '
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the one you have set in the variable command at the
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - top of this event!
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - -8
-        indent: 1
-        code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
         - -1
@@ -9628,7 +9521,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_x == gv[26] * 32
+        - gp.offset_screen_x == -256
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -9695,12 +9588,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x + 1, gp.y)
+        - ge(38).moveto(gp.x + 1, gp.y)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x + gv[26], gp.y)
+        - gp.moveto(gp.x - 8, gp.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -9710,7 +9603,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x + gv[26], ge.y)
+        - ge.moveto(ge.x - 8, ge.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -9843,7 +9736,7 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdbej01XVtvZmZzZXRfeT0zMl1MYXRlcmFsUGxhdGZvcm0=
+      wqdbej01XVtvZmZzZXRfeT0zMl1QbGF0Zm9ybQ==
     y: 44
     x: 34
     id: 35
@@ -10061,93 +9954,15 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - These platforms are made for a very specific setup that
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - involves bridges and Z property modifications. For a setup
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - that does not require being able to go under these platforms,
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'please use the template events which are located on the '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - left side of this map.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - Yuki::FollowMe.smart_disable
         indent: 0
         code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Change this value for the ID of the blocker event linked
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - to this platform. This change is only done once, just here.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 27
-        - 27
-        - 0
-        - 0
-        - 36
-        indent: 0
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If the player is looking down.
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
         - gp.direction == 2
         indent: 0
         code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - You only need to modify this variable to tell how many
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'cases this platform moves. Make sure to input the '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'negative value of this variable to the one a little lower '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - in this event (for the return trip).
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - 9
-        indent: 1
-        code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
         - -1
@@ -10246,7 +10061,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_y == (gv[26] * 32)
+        - gp.offset_screen_y == 288
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -10313,12 +10128,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y - 1)
+        - ge(36).moveto(gp.x, gp.y - 1)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
+        - gp.moveto(gp.x, gp.y + 9)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -10328,7 +10143,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
+        - ge.moveto(ge.x, ge.y + 9)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -10410,39 +10225,10 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - If the player is looking up.
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - 12
         - gp.direction == 8
         indent: 0
         code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'Modify this variable and input the negative number of '
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the one you have set in the variable command at the
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - top of this event!
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - -9
-        indent: 1
-        code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
         - -1
@@ -10541,7 +10327,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_y == gv[26] * 32
+        - gp.offset_screen_y == -288
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -10608,12 +10394,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y + 1)
+        - ge(36).moveto(gp.x, gp.y + 1)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
+        - gp.moveto(gp.x, gp.y - 9)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -10623,7 +10409,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
+        - ge.moveto(ge.x, ge.y - 9)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -10756,7 +10542,7 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdbej01XVtvZmZzZXRfeT0zMl1WZXJ0aWNhbFBsYXRmb3Jt
+      wqdbej01XVtvZmZzZXRfeT0zMl1QbGF0Zm9ybQ==
     y: 41
     x: 17
     id: 4
@@ -10900,690 +10686,10 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdbej01XUZhbHNlQmxvY2tlcg==
+      wqdbej01XUJsb2NrZXI=
     y: 44
     x: 33
     id: 41
-  42: !ruby/object:RPG::Event
-    pages:
-    - !ruby/object:RPG::Event::Page
-      list:
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'This platform is the template version for the vertical '
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'platform, which means it''ll work in most situations as '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'long as you change the 3 Variable commands. If your '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'setup involves bridges, Z property modifications and '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - such, use the events from the parkour instead.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Yuki::FollowMe.smart_disable
-        indent: 0
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Change this value for the ID of the blocker event linked
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - to this platform. This change is only done once, just here.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 27
-        - 27
-        - 0
-        - 0
-        - 64
-        indent: 0
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.direction == 2
-        indent: 0
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - You only need to modify this variable to tell how many
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'cases this platform moves. Make sure to input the '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'negative value of this variable to the one a little lower '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - in this event (for the return trip).
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - 9
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &134 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &135 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - &136 !ruby/object:RPG::MoveCommand
-            code: 1
-            parameters: []
-          - &137 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *134
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *135
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *136
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *137
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &138 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *138
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 210
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 5
-        indent: 1
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_y = gp.offset_shadow_screen_y = 0
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.reset_follower
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-long
-          volume: 30
-          pitch: 100
-        indent: 1
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 112
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.offset_screen_y == (gv[26] * 32)
-        indent: 2
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 251
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 3
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-end
-          volume: 65
-          pitch: 100
-        indent: 3
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 113
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gm.scroll_down(16)
-        indent: 2
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_y += 4
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - get_character(0).offset_screen_y += 4
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_shadow_screen_y = gp.offset_screen_y
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 2
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 413
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y - 1)
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_y = gp.offset_shadow_screen_y = nil
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.offset_screen_y = ge.offset_shadow_screen_y = 32
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &139 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &140 !ruby/object:RPG::MoveCommand
-            code: 1
-            parameters: []
-          - &141 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - &142 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *139
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *140
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *141
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *142
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &143 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *143
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.direction == 8
-        indent: 0
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - -9
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &144 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &145 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - &146 !ruby/object:RPG::MoveCommand
-            code: 4
-            parameters: []
-          - &147 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *144
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *145
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *146
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *147
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &148 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *148
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 210
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 5
-        indent: 1
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_y = gp.offset_shadow_screen_y = 0
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.reset_follower
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-long
-          volume: 30
-          pitch: 100
-        indent: 1
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 112
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.offset_screen_y == gv[26] * 32
-        indent: 2
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 251
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 3
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-end
-          volume: 65
-          pitch: 100
-        indent: 3
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 113
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_y -= 4
-        indent: 2
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - get_character(0).offset_screen_y -= 4
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_shadow_screen_y = gp.offset_screen_y
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gm.scroll_up(16)
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 2
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 413
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y + 1)
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_y = gp.offset_shadow_screen_y = nil
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.offset_screen_y = ge.offset_shadow_screen_y = 32
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &149 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &150 !ruby/object:RPG::MoveCommand
-            code: 4
-            parameters: []
-          - &151 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - &152 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *149
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *150
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *151
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *152
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &153 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *153
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 210
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 5
-        indent: 0
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Yuki::FollowMe.smart_enable
-        indent: 0
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 0
-      move_type: 0
-      direction_fix: true
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch2_valid: false
-        self_switch_ch: A
-        switch1_id: 1
-        switch1_valid: false
-        variable_value: 0
-        self_switch_valid: false
-        variable_id: 1
-        variable_valid: false
-        switch2_id: 1
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        list:
-        - !ruby/object:RPG::MoveCommand
-          code: 0
-          parameters: []
-      trigger: 1
-      step_anime: false
-      move_frequency: 3
-      always_on_top: false
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        opacity: 255
-        character_name: fx-platforms
-        pattern: 1
-        tile_id: 0
-        direction: 2
-        blend_type: 0
-        character_hue: 0
-      walk_anime: false
-      move_speed: 3
-      through: false
-    name: !binary |-
-      wqdbb2Zmc2V0X3k9MzJdVmVydGljYWxQbGF0Zm9ybQ==
-    y: 36
-    x: 5
-    id: 42
   43: !ruby/object:RPG::Event
     pages:
     - !ruby/object:RPG::Event::Page
@@ -11621,13 +10727,13 @@ events:
           repeat: false
           skippable: false
           list:
-          - &154 !ruby/object:RPG::MoveCommand
+          - &134 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &155 !ruby/object:RPG::MoveCommand
+          - &135 !ruby/object:RPG::MoveCommand
             code: 3
             parameters: []
-          - &156 !ruby/object:RPG::MoveCommand
+          - &136 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -11637,17 +10743,17 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *154
+        - *134
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *155
+        - *135
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *156
+        - *136
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -11739,13 +10845,13 @@ events:
           repeat: false
           skippable: false
           list:
-          - &157 !ruby/object:RPG::MoveCommand
+          - &137 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &158 !ruby/object:RPG::MoveCommand
+          - &138 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &159 !ruby/object:RPG::MoveCommand
+          - &139 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -11755,17 +10861,17 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *157
+        - *137
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *158
+        - *138
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *159
+        - *139
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -12419,40 +11525,40 @@ events:
           repeat: false
           skippable: false
           list:
-          - &160 !ruby/object:RPG::MoveCommand
+          - &140 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &161 !ruby/object:RPG::MoveCommand
+          - &141 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &162 !ruby/object:RPG::MoveCommand
+          - &142 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &163 !ruby/object:RPG::MoveCommand
+          - &143 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &164 !ruby/object:RPG::MoveCommand
+          - &144 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &165 !ruby/object:RPG::MoveCommand
+          - &145 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &166 !ruby/object:RPG::MoveCommand
+          - &146 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &167 !ruby/object:RPG::MoveCommand
+          - &147 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &168 !ruby/object:RPG::MoveCommand
+          - &148 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &169 !ruby/object:RPG::MoveCommand
+          - &149 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &170 !ruby/object:RPG::MoveCommand
+          - &150 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
-          - &171 !ruby/object:RPG::MoveCommand
+          - &151 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -12462,62 +11568,62 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *160
+        - *140
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *161
+        - *141
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *162
+        - *142
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *163
+        - *143
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *164
+        - *144
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *165
+        - *145
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *166
+        - *146
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *167
+        - *147
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *168
+        - *148
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *169
+        - *149
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *170
+        - *150
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *171
+        - *151
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -12986,58 +12092,9 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - These platforms are made for a very specific setup that
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - involves bridges and Z property modifications. For a setup
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - that does not require being able to go under these platforms,
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'please use the template events which are located on the '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - left side of this map.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - Yuki::FollowMe.smart_disable
         indent: 0
         code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Change this value for the ID of the blocker event linked
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - to this platform. This change is only done once, just here.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 27
-        - 27
-        - 0
-        - 0
-        - 39
-        indent: 0
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If the player is looking down.
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
@@ -13046,50 +12103,21 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - You only need to modify this variable to tell how many
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'cases this platform moves. Make sure to input the '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'negative value of this variable to the one a little lower '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - in this event (for the return trip).
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - 5
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - -1
         - !ruby/object:RPG::MoveRoute
           repeat: false
           skippable: false
           list:
-          - &172 !ruby/object:RPG::MoveCommand
+          - &152 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &173 !ruby/object:RPG::MoveCommand
+          - &153 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &174 !ruby/object:RPG::MoveCommand
+          - &154 !ruby/object:RPG::MoveCommand
             code: 1
             parameters: []
-          - &175 !ruby/object:RPG::MoveCommand
+          - &155 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13099,22 +12127,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *172
+        - *152
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *173
+        - *153
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *174
+        - *154
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *175
+        - *155
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13124,7 +12152,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &176 !ruby/object:RPG::MoveCommand
+          - &156 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13134,7 +12162,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *176
+        - *156
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13171,7 +12199,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_y == (gv[26] * 32)
+        - gp.offset_screen_y == 160
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -13238,12 +12266,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y - 1)
+        - ge(39).moveto(gp.x, gp.y - 1)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
+        - gp.moveto(gp.x, gp.y + 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -13253,7 +12281,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
+        - ge.moveto(ge.x, ge.y + 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -13268,16 +12296,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &177 !ruby/object:RPG::MoveCommand
+          - &157 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &178 !ruby/object:RPG::MoveCommand
+          - &158 !ruby/object:RPG::MoveCommand
             code: 1
             parameters: []
-          - &179 !ruby/object:RPG::MoveCommand
+          - &159 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
-          - &180 !ruby/object:RPG::MoveCommand
+          - &160 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13287,22 +12315,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *177
+        - *157
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *178
+        - *158
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *179
+        - *159
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *180
+        - *160
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13312,7 +12340,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &181 !ruby/object:RPG::MoveCommand
+          - &161 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13322,7 +12350,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *181
+        - *161
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13335,39 +12363,10 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - If the player is looking up.
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - 12
         - gp.direction == 8
         indent: 0
         code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'Modify this variable and input the negative number of '
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the one you have set in the variable command at the
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - top of this event!
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - -5
-        indent: 1
-        code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
         - -1
@@ -13375,16 +12374,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &182 !ruby/object:RPG::MoveCommand
+          - &162 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &183 !ruby/object:RPG::MoveCommand
+          - &163 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &184 !ruby/object:RPG::MoveCommand
+          - &164 !ruby/object:RPG::MoveCommand
             code: 4
             parameters: []
-          - &185 !ruby/object:RPG::MoveCommand
+          - &165 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13394,22 +12393,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *182
+        - *162
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *183
+        - *163
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *184
+        - *164
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *185
+        - *165
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13419,7 +12418,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &186 !ruby/object:RPG::MoveCommand
+          - &166 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13429,7 +12428,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *186
+        - *166
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13466,7 +12465,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_y == gv[26] * 32
+        - gp.offset_screen_y == -160
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -13533,12 +12532,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y + 1)
+        - ge(39).moveto(gp.x, gp.y + 1)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
+        - gp.moveto(gp.x, gp.y - 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -13548,7 +12547,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
+        - ge.moveto(ge.x, ge.y - 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -13563,16 +12562,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &187 !ruby/object:RPG::MoveCommand
+          - &167 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &188 !ruby/object:RPG::MoveCommand
+          - &168 !ruby/object:RPG::MoveCommand
             code: 4
             parameters: []
-          - &189 !ruby/object:RPG::MoveCommand
+          - &169 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
-          - &190 !ruby/object:RPG::MoveCommand
+          - &170 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13582,22 +12581,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *187
+        - *167
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *188
+        - *168
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *189
+        - *169
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *190
+        - *170
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13607,7 +12606,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &191 !ruby/object:RPG::MoveCommand
+          - &171 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -13617,7 +12616,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *191
+        - *171
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -13681,7 +12680,7 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdbej01XVtvZmZzZXRfeT0zMl1WZXJ0aWNhbFBsYXRmb3Jt
+      wqdbej01XVtvZmZzZXRfeT0zMl1QbGF0Zm9ybQ==
     y: 41
     x: 45
     id: 5
@@ -14676,53 +13675,9 @@ events:
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - These platforms are made for a very specific setup that
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - involves bridges and Z property modifications. For a setup
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - that does not require being able to go under these platforms,
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'please use the template events which are located on the '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - left side of this map.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - Yuki::FollowMe.smart_disable
         indent: 0
         code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Change this value for the ID of the blocker event linked
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - to this platform. This change is only done once, just here.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 27
-        - 27
-        - 0
-        - 0
-        - 40
-        indent: 0
-        code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
@@ -14731,50 +13686,21 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - You only need to modify this variable to tell how many
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'cases this platform moves. Make sure to input the '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'negative value of this variable to the one a little lower '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - in this event (for the return trip).
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - 5
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - -1
         - !ruby/object:RPG::MoveRoute
           repeat: false
           skippable: false
           list:
-          - &192 !ruby/object:RPG::MoveCommand
+          - &172 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &193 !ruby/object:RPG::MoveCommand
+          - &173 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &194 !ruby/object:RPG::MoveCommand
+          - &174 !ruby/object:RPG::MoveCommand
             code: 1
             parameters: []
-          - &195 !ruby/object:RPG::MoveCommand
+          - &175 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -14784,22 +13710,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *192
+        - *172
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *193
+        - *173
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *194
+        - *174
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *195
+        - *175
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -14809,7 +13735,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &196 !ruby/object:RPG::MoveCommand
+          - &176 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -14819,7 +13745,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *196
+        - *176
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -14856,7 +13782,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_y == (gv[26] * 32)
+        - gp.offset_screen_y == 160
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -14923,12 +13849,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y - 1)
+        - ge(40).moveto(gp.x, gp.y - 1)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
+        - gp.moveto(gp.x, gp.y + 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -14938,7 +13864,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
+        - ge.moveto(ge.x, ge.y + 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -14953,16 +13879,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &197 !ruby/object:RPG::MoveCommand
+          - &177 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &198 !ruby/object:RPG::MoveCommand
+          - &178 !ruby/object:RPG::MoveCommand
             code: 1
             parameters: []
-          - &199 !ruby/object:RPG::MoveCommand
+          - &179 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
-          - &200 !ruby/object:RPG::MoveCommand
+          - &180 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -14972,22 +13898,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *197
+        - *177
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *198
+        - *178
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *199
+        - *179
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *200
+        - *180
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -14997,7 +13923,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &201 !ruby/object:RPG::MoveCommand
+          - &181 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -15007,7 +13933,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *201
+        - *181
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15026,45 +13952,21 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - 'Modify this variable and input the negative number of '
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the one you have set in the variable command at the
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - top of this event!
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - -5
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - -1
         - !ruby/object:RPG::MoveRoute
           repeat: false
           skippable: false
           list:
-          - &202 !ruby/object:RPG::MoveCommand
+          - &182 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &203 !ruby/object:RPG::MoveCommand
+          - &183 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &204 !ruby/object:RPG::MoveCommand
+          - &184 !ruby/object:RPG::MoveCommand
             code: 4
             parameters: []
-          - &205 !ruby/object:RPG::MoveCommand
+          - &185 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -15074,22 +13976,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *202
+        - *182
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *203
+        - *183
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *204
+        - *184
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *205
+        - *185
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15099,7 +14001,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &206 !ruby/object:RPG::MoveCommand
+          - &186 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -15109,7 +14011,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *206
+        - *186
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15146,7 +14048,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_y == gv[26] * 32
+        - gp.offset_screen_y == -160
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -15213,12 +14115,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x, gp.y + 1)
+        - ge(40).moveto(gp.x, gp.y + 1)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x, gp.y + gv[26])
+        - gp.moveto(gp.x, gp.y - 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -15228,7 +14130,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x, ge.y + gv[26])
+        - ge.moveto(ge.x, ge.y - 5)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -15243,16 +14145,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &207 !ruby/object:RPG::MoveCommand
+          - &187 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &208 !ruby/object:RPG::MoveCommand
+          - &188 !ruby/object:RPG::MoveCommand
             code: 4
             parameters: []
-          - &209 !ruby/object:RPG::MoveCommand
+          - &189 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
-          - &210 !ruby/object:RPG::MoveCommand
+          - &190 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -15262,22 +14164,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *207
+        - *187
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *208
+        - *188
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *209
+        - *189
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *210
+        - *190
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15287,7 +14189,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &211 !ruby/object:RPG::MoveCommand
+          - &191 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -15297,7 +14199,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *211
+        - *191
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15361,7 +14263,7 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdbej01XVtvZmZzZXRfeT0zMl1WZXJ0aWNhbFBsYXRmb3Jt
+      wqdbej01XVtvZmZzZXRfeT0zMl1QbGF0Zm9ybQ==
     y: 36
     x: 31
     id: 6
@@ -15451,10 +14353,10 @@ events:
           repeat: false
           skippable: false
           list:
-          - &212 !ruby/object:RPG::MoveCommand
+          - &192 !ruby/object:RPG::MoveCommand
             code: 19
             parameters: []
-          - &213 !ruby/object:RPG::MoveCommand
+          - &193 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 4
@@ -15465,12 +14367,12 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *212
+        - *192
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *213
+        - *193
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15526,7 +14428,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &214 !ruby/object:RPG::MoveCommand
+          - &194 !ruby/object:RPG::MoveCommand
             code: 16
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -15536,7 +14438,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *214
+        - *194
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15572,21 +14474,21 @@ events:
           repeat: false
           skippable: false
           list:
-          - &215 !ruby/object:RPG::MoveCommand
+          - &195 !ruby/object:RPG::MoveCommand
             code: 17
             parameters: []
-          - &216 !ruby/object:RPG::MoveCommand
+          - &196 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 20
-          - &217 !ruby/object:RPG::MoveCommand
+          - &197 !ruby/object:RPG::MoveCommand
             code: 18
             parameters: []
-          - &218 !ruby/object:RPG::MoveCommand
+          - &198 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 20
-          - &219 !ruby/object:RPG::MoveCommand
+          - &199 !ruby/object:RPG::MoveCommand
             code: 19
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -15596,27 +14498,27 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *215
+        - *195
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *216
+        - *196
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *217
+        - *197
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *218
+        - *198
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *219
+        - *199
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15651,10 +14553,10 @@ events:
           repeat: false
           skippable: false
           list:
-          - &220 !ruby/object:RPG::MoveCommand
+          - &200 !ruby/object:RPG::MoveCommand
             code: 18
             parameters: []
-          - &221 !ruby/object:RPG::MoveCommand
+          - &201 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 4
@@ -15665,12 +14567,12 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *220
+        - *200
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *221
+        - *201
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15725,10 +14627,10 @@ events:
           repeat: false
           skippable: false
           list:
-          - &222 !ruby/object:RPG::MoveCommand
+          - &202 !ruby/object:RPG::MoveCommand
             code: 16
             parameters: []
-          - &223 !ruby/object:RPG::MoveCommand
+          - &203 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 4
@@ -15739,12 +14641,12 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *222
+        - *202
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *223
+        - *203
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15758,11 +14660,11 @@ events:
           repeat: false
           skippable: false
           list:
-          - &224 !ruby/object:RPG::MoveCommand
+          - &204 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 255
-          - &225 !ruby/object:RPG::MoveCommand
+          - &205 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 1
@@ -15773,12 +14675,12 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *224
+        - *204
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *225
+        - *205
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15798,7 +14700,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &226 !ruby/object:RPG::MoveCommand
+          - &206 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 0
@@ -15809,7 +14711,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *226
+        - *206
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -15824,7 +14726,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &227 !ruby/object:RPG::MoveCommand
+          - &207 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 0
@@ -15835,7 +14737,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *227
+        - *207
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -16245,13 +15147,13 @@ events:
           repeat: false
           skippable: false
           list:
-          - &228 !ruby/object:RPG::MoveCommand
+          - &208 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &229 !ruby/object:RPG::MoveCommand
+          - &209 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &230 !ruby/object:RPG::MoveCommand
+          - &210 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -16261,17 +15163,17 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *228
+        - *208
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *229
+        - *209
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *230
+        - *210
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -16358,932 +15260,15 @@ events:
     y: 22
     x: 27
     id: 63
-  64: !ruby/object:RPG::Event
-    pages:
-    - !ruby/object:RPG::Event::Page
-      list:
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - This event serves as a blocker when the platform isn't here
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Make sure to put this event at a proper distance from
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the platform event and reference it properly in the platform
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - event!
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If you're using the platform from the parkour, use the
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - blocker from the parkour too!
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 0
-      move_type: 0
-      direction_fix: false
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch2_valid: false
-        self_switch_ch: A
-        switch1_id: 1
-        switch1_valid: false
-        variable_value: 0
-        self_switch_valid: false
-        variable_id: 1
-        variable_valid: false
-        switch2_id: 1
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        list:
-        - !ruby/object:RPG::MoveCommand
-          code: 0
-          parameters: []
-      trigger: 0
-      step_anime: false
-      move_frequency: 3
-      always_on_top: false
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        opacity: 255
-        character_name: zz_blocker
-        pattern: 0
-        tile_id: 0
-        direction: 2
-        blend_type: 0
-        character_hue: 0
-      walk_anime: true
-      move_speed: 3
-      through: false
-    name: !binary |-
-      wqdCbG9ja2Vy
-    y: 35
-    x: 5
-    id: 64
-  65: !ruby/object:RPG::Event
-    pages:
-    - !ruby/object:RPG::Event::Page
-      list:
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'This platform is the template version for the lateral '
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'platform, which means it''ll work in most situations as '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'long as you change the 3 Variable commands. If your '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'setup involves bridges, Z property modifications and '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - such, use the events from the parkour instead.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Yuki::FollowMe.smart_disable
-        indent: 0
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Change this value for the ID of the blocker event linked
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - to this platform. This change is only done once, just here.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 27
-        - 27
-        - 0
-        - 0
-        - 66
-        indent: 0
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If the player is looking to the right
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.direction == 6
-        indent: 0
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - You only need to modify this variable to tell how many
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'cases this platform moves. Make sure to input the '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'negative value of this variable to the one a little lower '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - in this event (for the return trip).
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - 8
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &231 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &232 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - &233 !ruby/object:RPG::MoveCommand
-            code: 3
-            parameters: []
-          - &234 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *231
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *232
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *233
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *234
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &235 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *235
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 210
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 5
-        indent: 1
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_x = gp.offset_shadow_screen_x = 0
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.reset_follower
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.offset_screen_x = ge.offset_shadow_screen_x = 0
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-long
-          volume: 30
-          pitch: 100
-        indent: 1
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 112
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.offset_screen_x == gv[26] * 32
-        indent: 2
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 251
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 3
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-end
-          volume: 65
-          pitch: 100
-        indent: 3
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 113
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gm.scroll_right(16)
-        indent: 2
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_x += 4
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.offset_screen_x += 4
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_shadow_screen_x = gp.offset_screen_x
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 2
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 413
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge(gv[27]).moveto(gp.x - 1, gp.y)
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.moveto(gp.x + gv[26], gp.y)
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_x = gp.offset_shadow_screen_x = nil
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.moveto(ge.x + gv[26], ge.y)
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.offset_screen_x = ge.offset_shadow_screen_x = 0
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &236 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &237 !ruby/object:RPG::MoveCommand
-            code: 3
-            parameters: []
-          - &238 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - &239 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *236
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *237
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *238
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *239
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &240 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *240
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If the player is looking to the left
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.direction == 4
-        indent: 0
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'Modify this variable and input the negative number of '
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the one you have set in the variable command at the
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - top of this event!
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - -8
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &241 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &242 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - &243 !ruby/object:RPG::MoveCommand
-            code: 2
-            parameters: []
-          - &244 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *241
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *242
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *243
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *244
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &245 !ruby/object:RPG::MoveCommand
-            code: 39
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *245
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 210
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 5
-        indent: 1
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_x = gp.offset_shadow_screen_x = 0
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.reset_follower
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.offset_screen_x = ge.offset_shadow_screen_x = 0
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-long
-          volume: 30
-          pitch: 100
-        indent: 1
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 112
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 12
-        - gp.offset_screen_x == gv[26] * 32
-        indent: 2
-        code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 251
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 3
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:RPG::AudioFile
-          name: se_platform-end
-          volume: 65
-          pitch: 100
-        indent: 3
-        code: 250
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 113
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 3
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_x -= 4
-        indent: 2
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - get_character(0).offset_screen_x -= 4
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_shadow_screen_x = gp.offset_screen_x
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gm.scroll_left(16)
-        indent: 2
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 1
-        indent: 2
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 413
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge(gv[27]).moveto(gp.x + 1, gp.y)
-        indent: 1
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.moveto(gp.x + gv[26], gp.y)
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - gp.offset_screen_x = gp.offset_shadow_screen_x = nil
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.moveto(ge.x + gv[26], ge.y)
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge.offset_screen_x = ge.offset_shadow_screen_x = 0
-        indent: 1
-        code: 655
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - -1
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &246 !ruby/object:RPG::MoveCommand
-            code: 37
-            parameters: []
-          - &247 !ruby/object:RPG::MoveCommand
-            code: 2
-            parameters: []
-          - &248 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - &249 !ruby/object:RPG::MoveCommand
-            code: 38
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *246
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *247
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *248
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *249
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 0
-        - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
-          list:
-          - &250 !ruby/object:RPG::MoveCommand
-            code: 40
-            parameters: []
-          - !ruby/object:RPG::MoveCommand
-            code: 0
-            parameters: []
-        indent: 1
-        code: 209
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - *250
-        indent: 1
-        code: 509
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
-        code: 0
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 412
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 210
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 5
-        indent: 0
-        code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Yuki::FollowMe.smart_enable
-        indent: 0
-        code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 0
-      move_type: 0
-      direction_fix: true
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch2_valid: false
-        self_switch_ch: A
-        switch1_id: 1
-        switch1_valid: false
-        variable_value: 0
-        self_switch_valid: false
-        variable_id: 1
-        variable_valid: false
-        switch2_id: 1
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        list:
-        - !ruby/object:RPG::MoveCommand
-          code: 0
-          parameters: []
-      trigger: 1
-      step_anime: false
-      move_frequency: 3
-      always_on_top: false
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        opacity: 255
-        character_name: fx-platforms
-        pattern: 0
-        tile_id: 0
-        direction: 2
-        blend_type: 0
-        character_hue: 0
-      walk_anime: false
-      move_speed: 3
-      through: false
-    name: "$[offset_y=32]LateralPlatform"
-    y: 36
-    x: 7
-    id: 65
-  66: !ruby/object:RPG::Event
-    pages:
-    - !ruby/object:RPG::Event::Page
-      list:
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - This event serves as a blocker when the platform isn't here
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Make sure to put this event at a proper distance from
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the platform event and reference it properly in the platform
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - event!
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If you're using the platform from the parkour, use the
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - blocker from the parkour too!
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
-        code: 0
-      move_type: 0
-      direction_fix: false
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch2_valid: false
-        self_switch_ch: A
-        switch1_id: 1
-        switch1_valid: false
-        variable_value: 0
-        self_switch_valid: false
-        variable_id: 1
-        variable_valid: false
-        switch2_id: 1
-      move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
-        list:
-        - !ruby/object:RPG::MoveCommand
-          code: 0
-          parameters: []
-      trigger: 0
-      step_anime: false
-      move_frequency: 3
-      always_on_top: false
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        opacity: 255
-        character_name: zz_blocker
-        pattern: 0
-        tile_id: 0
-        direction: 2
-        blend_type: 0
-        character_hue: 0
-      walk_anime: true
-      move_speed: 3
-      through: false
-    name: !binary |-
-      wqdCbG9ja2Vy
-    y: 36
-    x: 8
-    id: 66
   7: !ruby/object:RPG::Event
     pages:
     - !ruby/object:RPG::Event::Page
       list:
       - !ruby/object:RPG::EventCommand
         parameters:
-        - This platform is made for a very specific setup that
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - involves bridges and Z property modifications. For a setup
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'that does not require being able to go under these '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'platforms, please use the template events which are '
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - located on the left side of this map.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - Yuki::FollowMe.smart_disable
         indent: 0
         code: 355
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - Change this value for the ID of the blocker event linked
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - to this platform. This change is only done once, just here.
-        indent: 0
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 27
-        - 27
-        - 0
-        - 0
-        - 37
-        indent: 0
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - If the player is looking to the right
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
@@ -17292,50 +15277,21 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - You only need to modify this variable to tell how many
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'cases this platform moves. Make sure to input the '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'negative value of this variable to the one a little lower '
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - in this event (for the return trip).
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - 8
-        indent: 1
-        code: 122
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - -1
         - !ruby/object:RPG::MoveRoute
           repeat: false
           skippable: false
           list:
-          - &251 !ruby/object:RPG::MoveCommand
+          - &211 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &252 !ruby/object:RPG::MoveCommand
+          - &212 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &253 !ruby/object:RPG::MoveCommand
+          - &213 !ruby/object:RPG::MoveCommand
             code: 3
             parameters: []
-          - &254 !ruby/object:RPG::MoveCommand
+          - &214 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17345,22 +15301,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *251
+        - *211
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *252
+        - *212
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *253
+        - *213
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *254
+        - *214
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17370,7 +15326,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &255 !ruby/object:RPG::MoveCommand
+          - &215 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17380,7 +15336,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *255
+        - *215
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17422,7 +15378,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_x == gv[26] * 32
+        - gp.offset_screen_x == 256
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -17489,12 +15445,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x - 1, gp.y)
+        - ge(37).moveto(gp.x - 1, gp.y)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x + gv[26], gp.y)
+        - gp.moveto(gp.x + 8, gp.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -17504,7 +15460,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x + gv[26], ge.y)
+        - ge.moveto(ge.x + 8, ge.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -17519,16 +15475,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &256 !ruby/object:RPG::MoveCommand
+          - &216 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &257 !ruby/object:RPG::MoveCommand
+          - &217 !ruby/object:RPG::MoveCommand
             code: 3
             parameters: []
-          - &258 !ruby/object:RPG::MoveCommand
+          - &218 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
-          - &259 !ruby/object:RPG::MoveCommand
+          - &219 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17538,22 +15494,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *256
+        - *216
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *257
+        - *217
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *258
+        - *218
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *259
+        - *219
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17563,7 +15519,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &260 !ruby/object:RPG::MoveCommand
+          - &220 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17573,7 +15529,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *260
+        - *220
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17586,39 +15542,10 @@ events:
         code: 412
       - !ruby/object:RPG::EventCommand
         parameters:
-        - If the player is looking to the left
-        indent: 0
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
         - 12
         - gp.direction == 4
         indent: 0
         code: 111
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 'Modify this variable and input the negative number of '
-        indent: 1
-        code: 108
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - the one you have set in the variable command at the
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - top of this event!
-        indent: 1
-        code: 408
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - 26
-        - 26
-        - 0
-        - 0
-        - -8
-        indent: 1
-        code: 122
       - !ruby/object:RPG::EventCommand
         parameters:
         - -1
@@ -17626,16 +15553,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &261 !ruby/object:RPG::MoveCommand
+          - &221 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &262 !ruby/object:RPG::MoveCommand
+          - &222 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &263 !ruby/object:RPG::MoveCommand
+          - &223 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &264 !ruby/object:RPG::MoveCommand
+          - &224 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17645,22 +15572,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *261
+        - *221
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *262
+        - *222
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *263
+        - *223
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *264
+        - *224
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17670,7 +15597,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &265 !ruby/object:RPG::MoveCommand
+          - &225 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17680,7 +15607,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *265
+        - *225
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17722,7 +15649,7 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gp.offset_screen_x == gv[26] * 32
+        - gp.offset_screen_x == -256
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
@@ -17789,12 +15716,12 @@ events:
         code: 413
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge(gv[27]).moveto(gp.x + 1, gp.y)
+        - ge(37).moveto(gp.x + 1, gp.y)
         indent: 1
         code: 355
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.moveto(gp.x + gv[26], gp.y)
+        - gp.moveto(gp.x - 8, gp.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -17804,7 +15731,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - ge.moveto(ge.x + gv[26], ge.y)
+        - ge.moveto(ge.x - 8, ge.y)
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -17819,16 +15746,16 @@ events:
           repeat: false
           skippable: false
           list:
-          - &266 !ruby/object:RPG::MoveCommand
+          - &226 !ruby/object:RPG::MoveCommand
             code: 37
             parameters: []
-          - &267 !ruby/object:RPG::MoveCommand
+          - &227 !ruby/object:RPG::MoveCommand
             code: 2
             parameters: []
-          - &268 !ruby/object:RPG::MoveCommand
+          - &228 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
-          - &269 !ruby/object:RPG::MoveCommand
+          - &229 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17838,22 +15765,22 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *266
+        - *226
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *267
+        - *227
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *268
+        - *228
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *269
+        - *229
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17863,7 +15790,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &270 !ruby/object:RPG::MoveCommand
+          - &230 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -17873,7 +15800,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *270
+        - *230
         indent: 1
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -17937,7 +15864,7 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdbej01XVtvZmZzZXRfeT0zMl1MYXRlcmFsUGxhdGZvcm0=
+      wqdbej01XVtvZmZzZXRfeT0zMl1QbGF0Zm9ybQ==
     y: 44
     x: 28
     id: 7
@@ -18087,7 +16014,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &271 !ruby/object:RPG::MoveCommand
+          - &231 !ruby/object:RPG::MoveCommand
             code: 20
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -18097,7 +16024,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *271
+        - *231
         indent: 2
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -18143,7 +16070,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &272 !ruby/object:RPG::MoveCommand
+          - &232 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 0
@@ -18154,7 +16081,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *272
+        - *232
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -18331,10 +16258,10 @@ events:
           repeat: false
           skippable: false
           list:
-          - &273 !ruby/object:RPG::MoveCommand
+          - &233 !ruby/object:RPG::MoveCommand
             code: 39
             parameters: []
-          - &274 !ruby/object:RPG::MoveCommand
+          - &234 !ruby/object:RPG::MoveCommand
             code: 18
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -18344,12 +16271,12 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *273
+        - *233
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *274
+        - *234
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -18374,7 +16301,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &275 !ruby/object:RPG::MoveCommand
+          - &235 !ruby/object:RPG::MoveCommand
             code: 42
             parameters:
             - 255
@@ -18385,7 +16312,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *275
+        - *235
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -18455,7 +16382,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &276 !ruby/object:RPG::MoveCommand
+          - &236 !ruby/object:RPG::MoveCommand
             code: 20
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -18465,7 +16392,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *276
+        - *236
         indent: 2
         code: 509
       - !ruby/object:RPG::EventCommand
@@ -18496,7 +16423,7 @@ events:
           repeat: false
           skippable: false
           list:
-          - &277 !ruby/object:RPG::MoveCommand
+          - &237 !ruby/object:RPG::MoveCommand
             code: 40
             parameters: []
           - !ruby/object:RPG::MoveCommand
@@ -18506,7 +16433,7 @@ events:
         code: 209
       - !ruby/object:RPG::EventCommand
         parameters:
-        - *277
+        - *237
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
