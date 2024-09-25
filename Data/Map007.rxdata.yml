@@ -4,7 +4,7 @@ width: 64
 height: 80
 autoplay_bgm: true
 bgm: !ruby/object:RPG::AudioFile
-  name: Olivine Lighthouse.ogg
+  name: Olivine Lighthouse
   volume: 100
   pitch: 100
 autoplay_bgs: false
@@ -4425,7 +4425,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -4439,7 +4439,7 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
-              name: HM_Climb
+              name: hm_climb
               volume: 80
               pitch: 100
           - &83 !ruby/object:RPG::MoveCommand
@@ -4484,7 +4484,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -4633,7 +4633,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.enter_in_climbing_down_state
+        - gp.enter_in_climbing_up_state
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -4690,7 +4690,7 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -4704,7 +4704,7 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
-              name: HM_Climb
+              name: hm_climb
               volume: 80
               pitch: 100
           - &91 !ruby/object:RPG::MoveCommand
@@ -4749,7 +4749,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5187,7 +5187,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - gp.enter_in_climbing_down_state
+        - gp.enter_in_climbing_up_state
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -5207,7 +5207,7 @@ events:
             code: 14
             parameters:
             - 0
-            - 1
+            - -1
           - !ruby/object:RPG::MoveCommand
             code: 0
             parameters: []
@@ -5239,12 +5239,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gm.system_tag_here?(gp.x, gp.y + 1, ::GameData::SystemTags::RClimb)
+        - gm.system_tag_here?(gp.x, gp.y - 1, ::GameData::SystemTags::RClimb)
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5258,11 +5258,11 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
-              name: HM_Climb
+              name: hm_climb
               volume: 80
               pitch: 100
           - &119 !ruby/object:RPG::MoveCommand
-            code: 1
+            code: 4
             parameters: []
           - !ruby/object:RPG::MoveCommand
             code: 0
@@ -5303,7 +5303,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5317,7 +5317,7 @@ events:
             code: 14
             parameters:
             - 0
-            - 1
+            - -1
           - &121 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
@@ -5404,7 +5404,7 @@ events:
         - !ruby/object:RPG::MoveCommand
           code: 0
           parameters: []
-      trigger: 1
+      trigger: 0
       step_anime: false
       move_frequency: 3
       always_on_top: false
@@ -5420,8 +5420,8 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdSb2NrIENsaW1iIDE=
-    y: 27
+      wqdSb2NrIENsaW1iIDM=
+    y: 30
     x: 29
     id: 34
   35: !ruby/object:RPG::Event
@@ -5472,7 +5472,7 @@ events:
             code: 14
             parameters:
             - 0
-            - -1
+            - 1
           - !ruby/object:RPG::MoveCommand
             code: 0
             parameters: []
@@ -5504,12 +5504,12 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
-        - gm.system_tag_here?(gp.x, gp.y - 1, ::GameData::SystemTags::RClimb)
+        - gm.system_tag_here?(gp.x, gp.y + 1, ::GameData::SystemTags::RClimb)
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5523,11 +5523,11 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
-              name: HM_Climb
+              name: hm_climb
               volume: 80
               pitch: 100
           - &127 !ruby/object:RPG::MoveCommand
-            code: 4
+            code: 1
             parameters: []
           - !ruby/object:RPG::MoveCommand
             code: 0
@@ -5568,7 +5568,7 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Yuki::Particles.add_particle($game_player, :rock_climb)
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5582,7 +5582,7 @@ events:
             code: 14
             parameters:
             - 0
-            - -1
+            - 1
           - &129 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
@@ -5669,7 +5669,7 @@ events:
         - !ruby/object:RPG::MoveCommand
           code: 0
           parameters: []
-      trigger: 1
+      trigger: 0
       step_anime: false
       move_frequency: 3
       always_on_top: false
@@ -5685,8 +5685,8 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
-      wqdSb2NrIENsaW1iIDE=
-    y: 30
+      wqdSb2NrIENsaW1iIDQ=
+    y: 27
     x: 29
     id: 35
   4: !ruby/object:RPG::Event

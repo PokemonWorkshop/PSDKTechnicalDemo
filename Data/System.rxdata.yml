@@ -510,20 +510,11 @@ variables:
 - ''
 - ''
 - ''
-cancel_se: !ruby/object:RPG::AudioFile
-  name: select
-  volume: 80
-  pitch: 90
-battle_end_me: !ruby/object:RPG::AudioFile
-  name: ''
-  volume: 100
-  pitch: 100
-magic_number: 48740226
 escape_se: !ruby/object:RPG::AudioFile
   name: Fleee
   volume: 80
   pitch: 70
-magic_number: 44205131
+magic_number: 43723272
 battle_end_me: !ruby/object:RPG::AudioFile
   name: ''
   volume: 100
@@ -1046,15 +1037,27 @@ switches:
 - ''
 - ''
 - ''
-decision_se: !ruby/object:RPG::AudioFile
-  name: select
-  volume: 80
-  pitch: 100
-edit_map_id: 7
-battle_start_se: !ruby/object:RPG::AudioFile
-  name: ''
-  volume: 80
-  pitch: 100
+words: !ruby/object:RPG::System::Words
+  armor3: ''
+  str: ''
+  sp: ''
+  gold: ''
+  mdef: ''
+  int: ''
+  skill: ''
+  armor2: ''
+  pdef: ''
+  hp: ''
+  equip: ''
+  agi: ''
+  attack: ''
+  armor1: ''
+  item: ''
+  atk: ''
+  armor4: ''
+  dex: ''
+  weapon: ''
+  guard: ''
 battle_bgm: !ruby/object:RPG::AudioFile
   name: PkmRB-Battle3
   volume: 100
