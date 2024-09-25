@@ -4,7 +4,7 @@ width: 64
 height: 80
 autoplay_bgm: true
 bgm: !ruby/object:RPG::AudioFile
-  name: Olivine Lighthouse.ogg
+  name: Olivine Lighthouse
   volume: 100
   pitch: 100
 autoplay_bgs: false
@@ -4425,7 +4425,11 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -4439,7 +4443,11 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
+<<<<<<< Updated upstream
               name: HM_Climb
+=======
+              name: hm_climb
+>>>>>>> Stashed changes
               volume: 80
               pitch: 100
           - &83 !ruby/object:RPG::MoveCommand
@@ -4484,7 +4492,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -4633,7 +4645,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - gp.enter_in_climbing_down_state
+=======
+        - gp.enter_in_climbing_up_state
+>>>>>>> Stashed changes
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -4690,7 +4706,11 @@ events:
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -4704,7 +4724,11 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
+<<<<<<< Updated upstream
               name: HM_Climb
+=======
+              name: hm_climb
+>>>>>>> Stashed changes
               volume: 80
               pitch: 100
           - &91 !ruby/object:RPG::MoveCommand
@@ -4749,7 +4773,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5187,7 +5215,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - gp.enter_in_climbing_down_state
+=======
+        - gp.enter_in_climbing_up_state
+>>>>>>> Stashed changes
         indent: 1
         code: 655
       - !ruby/object:RPG::EventCommand
@@ -5207,7 +5239,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - 1
+=======
+            - -1
+>>>>>>> Stashed changes
           - !ruby/object:RPG::MoveCommand
             code: 0
             parameters: []
@@ -5239,12 +5275,20 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
+<<<<<<< Updated upstream
         - gm.system_tag_here?(gp.x, gp.y + 1, ::GameData::SystemTags::RClimb)
+=======
+        - gm.system_tag_here?(gp.x, gp.y - 1, ::GameData::SystemTags::RClimb)
+>>>>>>> Stashed changes
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5258,11 +5302,19 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
+<<<<<<< Updated upstream
               name: HM_Climb
               volume: 80
               pitch: 100
           - &119 !ruby/object:RPG::MoveCommand
             code: 1
+=======
+              name: hm_climb
+              volume: 80
+              pitch: 100
+          - &119 !ruby/object:RPG::MoveCommand
+            code: 4
+>>>>>>> Stashed changes
             parameters: []
           - !ruby/object:RPG::MoveCommand
             code: 0
@@ -5303,7 +5355,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5317,7 +5373,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - 1
+=======
+            - -1
+>>>>>>> Stashed changes
           - &121 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
@@ -5404,7 +5464,11 @@ events:
         - !ruby/object:RPG::MoveCommand
           code: 0
           parameters: []
+<<<<<<< Updated upstream
       trigger: 1
+=======
+      trigger: 0
+>>>>>>> Stashed changes
       step_anime: false
       move_frequency: 3
       always_on_top: false
@@ -5420,8 +5484,13 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
+<<<<<<< Updated upstream
       wqdSb2NrIENsaW1iIDE=
     y: 27
+=======
+      wqdSb2NrIENsaW1iIDM=
+    y: 30
+>>>>>>> Stashed changes
     x: 29
     id: 34
   35: !ruby/object:RPG::Event
@@ -5472,7 +5541,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - -1
+=======
+            - 1
+>>>>>>> Stashed changes
           - !ruby/object:RPG::MoveCommand
             code: 0
             parameters: []
@@ -5504,12 +5577,20 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - 12
+<<<<<<< Updated upstream
         - gm.system_tag_here?(gp.x, gp.y - 1, ::GameData::SystemTags::RClimb)
+=======
+        - gm.system_tag_here?(gp.x, gp.y + 1, ::GameData::SystemTags::RClimb)
+>>>>>>> Stashed changes
         indent: 2
         code: 111
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5523,11 +5604,19 @@ events:
             code: 44
             parameters:
             - !ruby/object:RPG::AudioFile
+<<<<<<< Updated upstream
               name: HM_Climb
               volume: 80
               pitch: 100
           - &127 !ruby/object:RPG::MoveCommand
             code: 4
+=======
+              name: hm_climb
+              volume: 80
+              pitch: 100
+          - &127 !ruby/object:RPG::MoveCommand
+            code: 1
+>>>>>>> Stashed changes
             parameters: []
           - !ruby/object:RPG::MoveCommand
             code: 0
@@ -5568,7 +5657,11 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
+<<<<<<< Updated upstream
         - Yuki::Particles.add_particle($game_player, :rock_climb)
+=======
+        - Yuki::Particles.add_particles($game_player, :rock_climb)
+>>>>>>> Stashed changes
         indent: 3
         code: 355
       - !ruby/object:RPG::EventCommand
@@ -5582,7 +5675,11 @@ events:
             code: 14
             parameters:
             - 0
+<<<<<<< Updated upstream
             - -1
+=======
+            - 1
+>>>>>>> Stashed changes
           - &129 !ruby/object:RPG::MoveCommand
             code: 38
             parameters: []
@@ -5669,7 +5766,11 @@ events:
         - !ruby/object:RPG::MoveCommand
           code: 0
           parameters: []
+<<<<<<< Updated upstream
       trigger: 1
+=======
+      trigger: 0
+>>>>>>> Stashed changes
       step_anime: false
       move_frequency: 3
       always_on_top: false
@@ -5685,8 +5786,13 @@ events:
       move_speed: 3
       through: false
     name: !binary |-
+<<<<<<< Updated upstream
       wqdSb2NrIENsaW1iIDE=
     y: 30
+=======
+      wqdSb2NrIENsaW1iIDQ=
+    y: 27
+>>>>>>> Stashed changes
     x: 29
     id: 35
   4: !ruby/object:RPG::Event
