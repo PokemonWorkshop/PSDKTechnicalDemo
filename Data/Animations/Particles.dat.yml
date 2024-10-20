@@ -1384,6 +1384,1015 @@
       - :state: :leave
     :stay: *3
     :leave: *3
+  :waterfall:
+    :enter:
+      :max_counter: 8
+      :loop: false
+      :data:
+      - :file: waterfall_above
+        :rect:
+        - 0
+        - 0
+        - 32
+        - 32
+        :zoom: 1
+        :add_z: -32
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 3
+      - :file: waterfall_above
+        :rect:
+        - 32
+        - 0
+        - 32
+        - 32
+        :zoom: 1
+        :add_z: -32
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+    :stay:
+      :max_counter: 12
+      :loop: true
+      :data:
+      - :file: waterfall
+        :rect:
+        - 0
+        - 0
+        - 32
+        - 64
+        :zoom: 1
+        :add_z: -32
+        :position: :character_pos
+        :oy_offset: -32
+        :opacity: 255
+      - :wait: 4
+      - :rect:
+        - 32
+        - 0
+        - 32
+        - 64
+        :zoom: 1
+        :add_z: -32
+        :position: :character_pos
+        :oy_offset: -32
+        :opacity: 255
+    :leave:
+      :max_counter: 5
+      :loop: false
+      :data:
+      - :file: waterfall_above
+        :rect:
+        - 0
+        - 0
+        - 32
+        - 32
+        :zoom: 1
+        :add_z: -32
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 3
+      - :file: waterfall_above
+        :rect:
+        - 32
+        - 0
+        - 32
+        - 32
+        :zoom: 1
+        :add_z: -32
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+  :rock_climb:
+    :enter:
+      :max_counter: 34
+      :loop: false
+      :data:
+      - :file: rock_climb
+        :rect:
+        - 0
+        - 0
+        - 64
+        - 64
+        :zoom: 1
+        :add_z: 0
+        :position: :grass_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 2
+      - :rect:
+        - 64
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 128
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 192
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 256
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 320
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 384
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 448
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 512
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 576
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 640
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 704
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 768
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 832
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 896
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 960
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 1024
+        - 0
+        - 64
+        - 64
+      - :wait: 1
+      - :rect:
+        - 1088
+        - 0
+        - 64
+        - 64
+    :stay: *3
+    :leave: *3
+  :whirlpool_l:
+    :enter:
+      :max_counter: 1
+      :loop: true
+      :data:
+      - :file: Whirlpool_l
+        :rect:
+        - 0
+        - 0
+        - 56
+        - 38
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+    :stay:
+      :max_counter: 13
+      :loop: true
+      :data:
+      - :file: Whirlpool_l
+        :rect:
+        - 0
+        - 0
+        - 56
+        - 38
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 56
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 112
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 168
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 224
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 280
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 336
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 392
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 448
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 504
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 560
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 616
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 672
+        - 0
+        - 56
+        - 38
+    :leave:
+      :max_counter: 13
+      :loop: false
+      :data:
+      - :file: Whirlpool_l
+        :rect:
+        - 0
+        - 0
+        - 56
+        - 38
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 56
+        - 0
+        - 56
+        - 38
+        :opacity: 220
+      - :wait: 1
+      - :rect:
+        - 112
+        - 0
+        - 56
+        - 38
+        :opacity: 200
+      - :wait: 1
+      - :rect:
+        - 168
+        - 0
+        - 56
+        - 38
+        :opacity: 180
+      - :wait: 1
+      - :rect:
+        - 224
+        - 0
+        - 56
+        - 38
+        :opacity: 160
+      - :wait: 1
+      - :rect:
+        - 280
+        - 0
+        - 56
+        - 38
+        :opacity: 140
+      - :wait: 1
+      - :rect:
+        - 336
+        - 0
+        - 56
+        - 38
+        :opacity: 120
+      - :wait: 1
+      - :rect:
+        - 392
+        - 0
+        - 56
+        - 38
+        :opacity: 100
+      - :wait: 1
+      - :rect:
+        - 448
+        - 0
+        - 56
+        - 38
+        :opacity: 80
+      - :wait: 1
+      - :rect:
+        - 504
+        - 0
+        - 56
+        - 38
+        :opacity: 60
+      - :wait: 1
+      - :rect:
+        - 560
+        - 0
+        - 56
+        - 38
+        :opacity: 40
+      - :wait: 1
+      - :rect:
+        - 616
+        - 0
+        - 56
+        - 38
+        :opacity: 20
+      - :wait: 1
+      - :rect:
+        - 672
+        - 0
+        - 56
+        - 38
+        :opacity: 0
+  :whirlpool_r:
+    :enter:
+      :max_counter: 1
+      :loop: true
+      :data:
+      - :file: Whirlpool_r
+        :rect:
+        - 0
+        - 0
+        - 56
+        - 38
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+    :stay:
+      :max_counter: 13
+      :loop: true
+      :data:
+      - :file: Whirlpool_r
+        :rect:
+        - 0
+        - 0
+        - 56
+        - 38
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 56
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 112
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 168
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 224
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 280
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 336
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 392
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 448
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 504
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 560
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 616
+        - 0
+        - 56
+        - 38
+      - :wait: 1
+      - :rect:
+        - 672
+        - 0
+        - 56
+        - 38
+    :leave:
+      :max_counter: 13
+      :loop: false
+      :data:
+      - :file: Whirlpool_r
+        :rect:
+        - 0
+        - 0
+        - 56
+        - 38
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 56
+        - 0
+        - 56
+        - 38
+        :opacity: 220
+      - :wait: 1
+      - :rect:
+        - 112
+        - 0
+        - 56
+        - 38
+        :opacity: 200
+      - :wait: 1
+      - :rect:
+        - 168
+        - 0
+        - 56
+        - 38
+        :opacity: 180
+      - :wait: 1
+      - :rect:
+        - 224
+        - 0
+        - 56
+        - 38
+        :opacity: 160
+      - :wait: 1
+      - :rect:
+        - 280
+        - 0
+        - 56
+        - 38
+        :opacity: 140
+      - :wait: 1
+      - :rect:
+        - 336
+        - 0
+        - 56
+        - 38
+        :opacity: 120
+      - :wait: 1
+      - :rect:
+        - 392
+        - 0
+        - 56
+        - 38
+        :opacity: 100
+      - :wait: 1
+      - :rect:
+        - 448
+        - 0
+        - 56
+        - 38
+        :opacity: 80
+      - :wait: 1
+      - :rect:
+        - 504
+        - 0
+        - 56
+        - 38
+        :opacity: 60
+      - :wait: 1
+      - :rect:
+        - 560
+        - 0
+        - 56
+        - 38
+        :opacity: 40
+      - :wait: 1
+      - :rect:
+        - 616
+        - 0
+        - 56
+        - 38
+        :opacity: 20
+      - :wait: 1
+      - :rect:
+        - 672
+        - 0
+        - 56
+        - 38
+        :opacity: 0
+  :whirlpool_d:
+    :enter:
+      :max_counter: 1
+      :loop: true
+      :data:
+      - :file: Whirlpool_d
+        :rect:
+        - 0
+        - 0
+        - 46
+        - 46
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+    :stay:
+      :max_counter: 13
+      :loop: true
+      :data:
+      - :file: Whirlpool_d
+        :rect:
+        - 0
+        - 0
+        - 46
+        - 46
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 46
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 92
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 138
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 184
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 230
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 276
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 322
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 368
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 414
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 460
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 506
+        - 0
+        - 46
+        - 46
+      - :wait: 1
+      - :rect:
+        - 552
+        - 0
+        - 46
+        - 46
+    :leave:
+      :max_counter: 13
+      :loop: false
+      :data:
+      - :file: Whirlpool_d
+        :rect:
+        - 0
+        - 0
+        - 46
+        - 46
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -10
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 46
+        - 0
+        - 46
+        - 46
+        :opacity: 220
+      - :wait: 1
+      - :rect:
+        - 92
+        - 0
+        - 46
+        - 46
+        :opacity: 200
+      - :wait: 1
+      - :rect:
+        - 138
+        - 0
+        - 46
+        - 46
+        :opacity: 180
+      - :wait: 1
+      - :rect:
+        - 184
+        - 0
+        - 46
+        - 46
+        :opacity: 160
+      - :wait: 1
+      - :rect:
+        - 230
+        - 0
+        - 46
+        - 46
+        :opacity: 140
+      - :wait: 1
+      - :rect:
+        - 276
+        - 0
+        - 46
+        - 46
+        :opacity: 120
+      - :wait: 1
+      - :rect:
+        - 322
+        - 0
+        - 46
+        - 46
+        :opacity: 100
+      - :wait: 1
+      - :rect:
+        - 368
+        - 0
+        - 46
+        - 46
+        :opacity: 80
+      - :wait: 1
+      - :rect:
+        - 414
+        - 0
+        - 46
+        - 46
+        :opacity: 60
+      - :wait: 1
+      - :rect:
+        - 460
+        - 0
+        - 46
+        - 46
+        :opacity: 40
+      - :wait: 1
+      - :rect:
+        - 506
+        - 0
+        - 46
+        - 46
+        :opacity: 20
+      - :wait: 1
+      - :rect:
+        - 552
+        - 0
+        - 46
+        - 46
+        :opacity: 0
+  :whirlpool_u:
+    :enter:
+      :max_counter: 1
+      :loop: true
+      :data:
+      - :file: Whirlpool_u
+        :rect:
+        - 0
+        - 0
+        - 89
+        - 83
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -37
+        :opacity: 255
+    :stay:
+      :max_counter: 13
+      :loop: true
+      :data:
+      - :file: Whirlpool_u
+        :rect:
+        - 0
+        - 0
+        - 89
+        - 83
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -37
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 89
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 178
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 267
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 356
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 445
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 534
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 623
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 712
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 801
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 890
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 979
+        - 0
+        - 89
+        - 83
+      - :wait: 1
+      - :rect:
+        - 1068
+        - 0
+        - 89
+        - 83
+    :leave:
+      :max_counter: 13
+      :loop: false
+      :data:
+      - :file: Whirlpool_u
+        :rect:
+        - 0
+        - 0
+        - 89
+        - 83
+        :zoom: 1
+        :add_z: -1
+        :position: :character_pos
+        :oy_offset: -37
+        :opacity: 255
+      - :wait: 1
+      - :rect:
+        - 89
+        - 0
+        - 89
+        - 83
+        :opacity: 220
+      - :wait: 1
+      - :rect:
+        - 178
+        - 0
+        - 89
+        - 83
+        :opacity: 200
+      - :wait: 1
+      - :rect:
+        - 267
+        - 0
+        - 89
+        - 83
+        :opacity: 180
+      - :wait: 1
+      - :rect:
+        - 356
+        - 0
+        - 89
+        - 83
+        :opacity: 160
+      - :wait: 1
+      - :rect:
+        - 445
+        - 0
+        - 89
+        - 83
+        :opacity: 140
+      - :wait: 1
+      - :rect:
+        - 534
+        - 0
+        - 89
+        - 83
+        :opacity: 120
+      - :wait: 1
+      - :rect:
+        - 623
+        - 0
+        - 89
+        - 83
+        :opacity: 100
+      - :wait: 1
+      - :rect:
+        - 712
+        - 0
+        - 89
+        - 83
+        :opacity: 80
+      - :wait: 1
+      - :rect:
+        - 801
+        - 0
+        - 89
+        - 83
+        :opacity: 60
+      - :wait: 1
+      - :rect:
+        - 890
+        - 0
+        - 89
+        - 83
+        :opacity: 40
+      - :wait: 1
+      - :rect:
+        - 979
+        - 0
+        - 89
+        - 83
+        :opacity: 20
+      - :wait: 1
+      - :rect:
+        - 1068
+        - 0
+        - 89
+        - 83
+        :opacity: 0
 - :puddle:
     :enter:
       :max_counter: 7
