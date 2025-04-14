@@ -3,7 +3,7 @@
   "id": 668,
   "dbSymbol": "strength_sap",
   "mapUse": 0,
-  "battleEngineMethod": "s_basic",
+  "battleEngineMethod": "s_strength_sap",
   "type": "grass",
   "power": 0,
   "accuracy": 100,
@@ -35,7 +35,12 @@
   "isSoundAttack": false,
   "isUnfreeze": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
-  "battleStageMod": [],
+  "battleStageMod": [
+    {
+      "battleStage": "ATK_STAGE",
+      "modificator": -1
+    }
+  ],
   "moveStatus": [],
   "effectChance": 0,
   "isSlicingAttack": false,

@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 519,
-        "description": 0
-      },
       "height": 0.9,
       "weight": 10,
       "type1": "water",
@@ -66,45 +62,51 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "129",
-        "iconShiny": "129s",
-        "front": "129",
-        "frontF": "129f",
-        "frontShiny": "129",
-        "frontShinyF": "129f",
-        "back": "129",
-        "backF": "129f",
-        "backShiny": "129",
-        "backShinyF": "129f",
-        "footprint": "129",
-        "character": "129_0",
-        "characterShiny": "129s_0",
-        "cry": "129cry.ogg",
-        "hasFemale": true,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0129",
+        "iconF": "0129",
+        "iconShiny": "0129s",
+        "iconShinyF": "0129s",
+        "front": "0129",
+        "frontF": "0129f",
+        "frontShiny": "0129s",
+        "frontShinyF": "0129sf",
+        "back": "0129",
+        "backF": "0129f",
+        "backShiny": "0129s",
+        "backShinyF": "0129sf",
+        "footprint": "0129",
+        "character": "0129",
+        "characterF": "0129",
+        "characterShiny": "0129s",
+        "characterShinyF": "0129s",
+        "cry": "0129.ogg",
+        "hasFemale": true
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "splash",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "tackle",
+          "klass": "LevelLearnableMove",
           "level": 15
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "flail",
+          "klass": "LevelLearnableMove",
           "level": 30
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bounce"
+          "move": "bounce",
+          "klass": "TutorLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 164,
+        "description": 0
+      }
     }
   ]
 }

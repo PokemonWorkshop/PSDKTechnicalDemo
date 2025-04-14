@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 954,
-        "description": 0
-      },
       "height": 0.2,
       "weight": 0.3,
       "type1": "electric",
@@ -66,54 +62,56 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "602",
-        "iconShiny": "",
-        "front": "602",
-        "frontShiny": "602",
-        "back": "602",
-        "backShiny": "602",
-        "footprint": "602",
-        "character": "602_0",
-        "characterShiny": "602s_0",
-        "cry": "602cry.ogg",
-        "hasFemale": false,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0602",
+        "iconShiny": "0602s",
+        "front": "0602",
+        "frontShiny": "0602s",
+        "back": "0602",
+        "backShiny": "0602s",
+        "footprint": "0602",
+        "character": "0602",
+        "characterShiny": "0602s",
+        "cry": "0602.ogg",
+        "hasFemale": false
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
-          "move": "thunder_wave",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
           "move": "tackle",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "move": "thunder_wave",
           "klass": "LevelLearnableMove",
+          "level": 1
+        },
+        {
           "move": "spark",
-          "level": 1
-        },
-        {
           "klass": "LevelLearnableMove",
-          "move": "charge_beam",
           "level": 1
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "magnet_rise"
+          "move": "charge_beam",
+          "klass": "LevelLearnableMove",
+          "level": 1
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "charge_beam"
+          "move": "thunder_wave",
+          "klass": "TechLearnableMove"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "thunder_wave"
+          "move": "magnet_rise",
+          "klass": "TutorLearnableMove"
+        },
+        {
+          "move": "charge_beam",
+          "klass": "TechLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 747,
+        "description": 0
+      }
     }
   ]
 }

@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 866,
-        "description": 0
-      },
       "height": 0.3,
       "weight": 8.4,
       "type1": "bug",
@@ -66,52 +62,54 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "665",
-        "iconShiny": "",
-        "front": "665",
-        "frontShiny": "665",
-        "back": "665",
-        "backShiny": "665",
-        "footprint": "",
-        "character": "665_0",
-        "characterShiny": "665s_0",
-        "cry": "665cry.ogg",
-        "hasFemale": false,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0665",
+        "iconShiny": "0665s",
+        "front": "0665",
+        "frontShiny": "0665s",
+        "back": "0665",
+        "backShiny": "0665s",
+        "footprint": "0665",
+        "character": "0665",
+        "characterShiny": "0665s",
+        "cry": "0665.ogg",
+        "hasFemale": false
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "harden",
-          "level": 1
-        },
-        {
           "klass": "LevelLearnableMove",
-          "move": "protect",
           "level": 1
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
+          "move": "protect",
+          "klass": "LevelLearnableMove",
+          "level": 1
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "electroweb"
+          "move": "protect",
+          "klass": "EvolutionLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "iron_defense"
+          "move": "protect",
+          "klass": "TechLearnableMove"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "protect"
+          "move": "iron_defense",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "EvolutionLearnableMove",
-          "move": "protect"
+          "move": "bug_bite",
+          "klass": "TutorLearnableMove"
+        },
+        {
+          "move": "electroweb",
+          "klass": "TutorLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 822,
+        "description": 0
+      }
     }
   ]
 }

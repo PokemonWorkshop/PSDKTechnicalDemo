@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 122,
-        "description": 0
-      },
       "height": 0.7,
       "weight": 11.5,
       "type1": "bug",
@@ -66,43 +62,45 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "268",
-        "iconShiny": "",
-        "front": "268",
-        "frontShiny": "268",
-        "back": "268",
-        "backShiny": "268",
-        "footprint": "268",
-        "character": "268_0",
-        "characterShiny": "268s_0",
-        "cry": "268cry.ogg",
-        "hasFemale": false,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0268",
+        "iconShiny": "0268s",
+        "front": "0268",
+        "frontShiny": "0268s",
+        "back": "0268",
+        "backShiny": "0268s",
+        "footprint": "0268",
+        "character": "0268",
+        "characterShiny": "0268s",
+        "cry": "0268.ogg",
+        "hasFemale": false
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "harden",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
+          "move": "harden",
+          "klass": "EvolutionLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "iron_defense"
+          "move": "iron_defense",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "electroweb"
+          "move": "bug_bite",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "EvolutionLearnableMove",
-          "move": "harden"
+          "move": "electroweb",
+          "klass": "TutorLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 343,
+        "description": 0
+      }
     }
   ]
 }

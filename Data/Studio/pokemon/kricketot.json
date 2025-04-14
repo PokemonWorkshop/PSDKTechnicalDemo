@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 459,
-        "description": 0
-      },
       "height": 0.3,
       "weight": 2.2,
       "type1": "bug",
@@ -66,62 +62,68 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "401",
-        "iconShiny": "",
-        "front": "401",
-        "frontF": "401f",
-        "frontShiny": "401",
-        "frontShinyF": "401f",
-        "back": "401",
-        "backF": "401f",
-        "backShiny": "401",
-        "backShinyF": "401f",
-        "footprint": "401",
-        "character": "401_0",
-        "characterShiny": "401s_0",
-        "cry": "401cry.ogg",
-        "hasFemale": true,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0401",
+        "iconF": "0401",
+        "iconShiny": "0401s",
+        "iconShinyF": "0401s",
+        "front": "0401",
+        "frontF": "0401f",
+        "frontShiny": "0401s",
+        "frontShinyF": "0401sf",
+        "back": "0401",
+        "backF": "0401f",
+        "backShiny": "0401s",
+        "backShinyF": "0401sf",
+        "footprint": "0401",
+        "character": "0401",
+        "characterF": "0401",
+        "characterShiny": "0401s",
+        "characterShinyF": "0401s",
+        "cry": "0401.ogg",
+        "hasFemale": true
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
-          "move": "bide",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
           "move": "growl",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "move": "bide",
           "klass": "LevelLearnableMove",
+          "level": 1
+        },
+        {
           "move": "struggle_bug",
+          "klass": "LevelLearnableMove",
           "level": 6
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "bug_bite",
+          "klass": "LevelLearnableMove",
           "level": 16
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "endeavor"
+          "move": "snore",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
+          "move": "uproar",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
+          "move": "endeavor",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "uproar"
+          "move": "bug_bite",
+          "klass": "TutorLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 501,
+        "description": 0
+      }
     }
   ]
 }

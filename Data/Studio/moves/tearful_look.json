@@ -3,7 +3,7 @@
   "id": 715,
   "dbSymbol": "tearful_look",
   "mapUse": 0,
-  "battleEngineMethod": "s_basic",
+  "battleEngineMethod": "s_stat",
   "type": "normal",
   "power": 0,
   "accuracy": 0,
@@ -35,9 +35,18 @@
   "isSoundAttack": false,
   "isUnfreeze": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
-  "battleStageMod": [],
+  "battleStageMod": [
+    {
+      "battleStage": "ATK_STAGE",
+      "modificator": -1
+    },
+    {
+      "battleStage": "ATS_STAGE",
+      "modificator": -1
+    }
+  ],
   "moveStatus": [],
-  "effectChance": 0,
+  "effectChance": 100,
   "isSlicingAttack": false,
   "isWind": false
 }

@@ -3,7 +3,7 @@
   "id": 700,
   "dbSymbol": "stoked_sparksurfer",
   "mapUse": 0,
-  "battleEngineMethod": "s_basic",
+  "battleEngineMethod": "s_z_move",
   "type": "electric",
   "power": 175,
   "accuracy": 0,
@@ -22,7 +22,7 @@
   "isEffectChance": false,
   "isGravity": false,
   "isHeal": false,
-  "isKingRockUtility": false,
+  "isKingRockUtility": true,
   "isMagicCoatAffected": false,
   "isMental": false,
   "isMirrorMove": false,
@@ -36,8 +36,13 @@
   "isUnfreeze": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
   "battleStageMod": [],
-  "moveStatus": [],
-  "effectChance": 0,
+  "moveStatus": [
+    {
+      "status": "PARALYZED",
+      "luckRate": 100
+    }
+  ],
+  "effectChance": 100,
   "isSlicingAttack": false,
   "isWind": false
 }

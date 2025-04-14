@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 215,
-        "description": 0
-      },
       "height": 0.3,
       "weight": 4,
       "type1": "normal",
@@ -40,12 +36,12 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "metal_powder",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
-          "dbSymbol": "quick_powder",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         }
       ],
       "abilities": [
@@ -55,27 +51,29 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "132",
-        "iconShiny": "",
-        "front": "132",
-        "frontShiny": "132",
-        "back": "132",
-        "backShiny": "132",
-        "footprint": "132",
-        "character": "132_0",
-        "characterShiny": "132s_0",
-        "cry": "132cry.ogg",
-        "hasFemale": false,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0132",
+        "iconShiny": "0132s",
+        "front": "0132",
+        "frontShiny": "0132s",
+        "back": "0132",
+        "backShiny": "0132s",
+        "footprint": "0132",
+        "character": "0132",
+        "characterShiny": "0132s",
+        "cry": "0132.ogg",
+        "hasFemale": false
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "transform",
+          "klass": "LevelLearnableMove",
           "level": 1
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 168,
+        "description": 0
+      }
     }
   ]
 }

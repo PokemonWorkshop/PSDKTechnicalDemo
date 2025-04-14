@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 1061,
-        "description": 0
-      },
       "height": 1.3,
       "weight": 28.5,
       "type1": "psychic",
@@ -55,50 +51,56 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "202",
-        "iconShiny": "",
-        "front": "202",
-        "frontF": "202f",
-        "frontShiny": "202",
-        "frontShinyF": "202f",
-        "back": "202",
-        "backShiny": "202",
-        "footprint": "202",
-        "character": "202_0",
-        "characterF": "202f_0",
-        "characterShiny": "202s_0",
-        "characterShinyF": "202fs_0",
-        "cry": "202cry.ogg",
-        "hasFemale": true,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0202",
+        "iconF": "0202",
+        "iconShiny": "0202s",
+        "iconShinyF": "0202s",
+        "front": "0202",
+        "frontF": "0202f",
+        "frontShiny": "0202s",
+        "frontShinyF": "0202sf",
+        "back": "0202",
+        "backF": "0202",
+        "backShiny": "0202s",
+        "backShinyF": "0202s",
+        "footprint": "0202",
+        "character": "0202",
+        "characterF": "0202",
+        "characterShiny": "0202s",
+        "characterShinyF": "0202s",
+        "cry": "0202.ogg",
+        "hasFemale": true
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
-          "move": "destiny_bond",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
           "move": "counter",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "move": "destiny_bond",
           "klass": "LevelLearnableMove",
+          "level": 1
+        },
+        {
           "move": "safeguard",
-          "level": 1
-        },
-        {
           "klass": "LevelLearnableMove",
-          "move": "mirror_coat",
           "level": 1
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "safeguard"
+          "move": "mirror_coat",
+          "klass": "LevelLearnableMove",
+          "level": 1
+        },
+        {
+          "move": "safeguard",
+          "klass": "TechLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 269,
+        "description": 0
+      }
     }
   ]
 }

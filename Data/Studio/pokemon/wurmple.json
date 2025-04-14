@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 1068,
-        "description": 0
-      },
       "height": 0.3,
       "weight": 3.6,
       "type1": "bug",
@@ -69,8 +65,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "pecha_berry",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -84,54 +80,56 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "265",
-        "iconShiny": "",
-        "front": "265",
-        "frontShiny": "265",
-        "back": "265",
-        "backShiny": "265",
-        "footprint": "265",
-        "character": "265_0",
-        "characterShiny": "265s_0",
-        "cry": "265cry.ogg",
-        "hasFemale": false,
-        "egg": "egg",
-        "iconEgg": "egg"
+        "icon": "0265",
+        "iconShiny": "0265s",
+        "front": "0265",
+        "frontShiny": "0265s",
+        "back": "0265",
+        "backShiny": "0265s",
+        "footprint": "0265",
+        "character": "0265",
+        "characterShiny": "0265s",
+        "cry": "0265.ogg",
+        "hasFemale": false
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "tackle",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "string_shot",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "poison_sting",
+          "klass": "LevelLearnableMove",
           "level": 5
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "bug_bite",
+          "klass": "LevelLearnableMove",
           "level": 15
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
+          "move": "snore",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "electroweb"
+          "move": "bug_bite",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
+          "move": "electroweb",
+          "klass": "TutorLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 340,
+        "description": 0
+      }
     }
   ]
 }
