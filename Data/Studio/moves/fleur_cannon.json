@@ -3,7 +3,7 @@
   "id": 705,
   "dbSymbol": "fleur_cannon",
   "mapUse": 0,
-  "battleEngineMethod": "s_basic",
+  "battleEngineMethod": "s_self_stat",
   "type": "fairy",
   "power": 130,
   "accuracy": 90,
@@ -22,7 +22,7 @@
   "isEffectChance": false,
   "isGravity": false,
   "isHeal": false,
-  "isKingRockUtility": false,
+  "isKingRockUtility": true,
   "isMagicCoatAffected": false,
   "isMental": false,
   "isMirrorMove": true,
@@ -35,9 +35,14 @@
   "isSoundAttack": false,
   "isUnfreeze": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
-  "battleStageMod": [],
+  "battleStageMod": [
+    {
+      "battleStage": "ATS_STAGE",
+      "modificator": -2
+    }
+  ],
   "moveStatus": [],
-  "effectChance": 0,
+  "effectChance": 100,
   "isSlicingAttack": false,
   "isWind": false
 }

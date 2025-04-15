@@ -3,7 +3,7 @@
   "id": 672,
   "dbSymbol": "toxic_thread",
   "mapUse": 0,
-  "battleEngineMethod": "s_basic",
+  "battleEngineMethod": "s_toxic_thread",
   "type": "poison",
   "power": 0,
   "accuracy": 100,
@@ -35,8 +35,18 @@
   "isSoundAttack": false,
   "isUnfreeze": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
-  "battleStageMod": [],
-  "moveStatus": [],
+  "battleStageMod": [
+    {
+      "battleStage": "SPD_STAGE",
+      "modificator": -1
+    }
+  ],
+  "moveStatus": [
+    {
+      "status": "POISONED",
+      "luckRate": 100
+    }
+  ],
   "effectChance": 0,
   "isSlicingAttack": false,
   "isWind": false
