@@ -2334,7 +2334,47 @@ events:
         code: 655
       - !ruby/object:RPG::EventCommand
         parameters:
-        - Here we start the battle with trainer 10 from the project's
+        - For this battle, we'll allow the player to lose so they're not
+        indent: 0
+        code: 108
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - sent back to the Pokemon Center
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - Because the player might be in Nuzlocke mode, we need
+        indent: 0
+        code: 108
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - to ensure the player won't be teleported if they were to
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - lose the battle. So we store a temp reference to the state
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - of the Nuzlocke and then disable it before the combat.
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - "@nuzlocke_state = PFM.game_state.nuzlocke.enabled?"
+        indent: 0
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - PFM.game_state.nuzlocke.disable
+        indent: 0
+        code: 655
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - Finally we start the battle with trainer 10 from the project's
         indent: 0
         code: 108
       - !ruby/object:RPG::EventCommand
@@ -2345,12 +2385,17 @@ events:
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - We're allowing the player to lose so
+        - 'After the start_trainer_battle line, we add the '
         indent: 0
         code: 408
       - !ruby/object:RPG::EventCommand
         parameters:
-        - they're not sent back to the Pokemon Center
+        - '"$game_temp.battle_can_lose = true" line to tell the'
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - system the battle can be lost (active for one battle only)
         indent: 0
         code: 408
       - !ruby/object:RPG::EventCommand
@@ -2366,6 +2411,31 @@ events:
       - !ruby/object:RPG::EventCommand
         parameters:
         - "$game_temp.battle_can_lose = true"
+        indent: 0
+        code: 655
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - After the battle, we make sure to switch back the
+        indent: 0
+        code: 108
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - Nuzlocke if needed, and make sure to clean the variable
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - we used to store the Nuzlocke's state
+        indent: 0
+        code: 408
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - PFM.game_state.nuzlocke.enable if @nuzlocke_state
+        indent: 0
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - "@nuzlocke_state = nil"
         indent: 0
         code: 655
       - !ruby/object:RPG::EventCommand
