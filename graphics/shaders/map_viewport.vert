@@ -1,5 +1,6 @@
 uniform bool in_snapshot = false;
 
+ // Entry point function
 void main()
 {
   vec2 position = (gl_TextureMatrix[0] * gl_MultiTexCoord0).xy;
