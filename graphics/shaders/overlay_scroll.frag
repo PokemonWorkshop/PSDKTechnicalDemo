@@ -8,7 +8,6 @@
 uniform int blend_mode = 0;
 
 // Compatibility with other SpritesetMap shaders
-
 const vec3 lumaF = vec3(.299, .587, .114);
 
 uniform vec4 color = vec4(0.0,0.0,0.0,0.0);
@@ -49,14 +48,13 @@ vec4 screen(vec4 base, vec4 blend){
 // Function to computer the distance to center to leave the middle of the screen free
 float compute_distance(vec2 pixPos, vec2 to){
   vec2 result = pixPos - to;
- return length(result);
+  return length(result);
 }
 
 // Scroll preset
 vec4 scroll(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
   float dist = clamp(compute_distance(pixPos,CENTER) * dist_factor,0.0,1.0);
-
   return vec4(texture2D(extra_texture, mod(pixPos + direction1 * time,vec2(1.0))).rgb,dist);
 }
 
