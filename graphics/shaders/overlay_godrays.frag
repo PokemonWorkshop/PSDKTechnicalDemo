@@ -31,37 +31,37 @@ const float SMALL_NUMBER = 0.0001;
 
 // Random and noise functions from Book of Shader's chapter on Noise.
 float random(vec2 _uv) {
-  return fract(sin(dot(_uv.xy,
-             vec2(12.9898, 78.233))) *
-    43758.5453123);
+	return fract(sin(dot(_uv.xy,
+		 vec2(12.9898, 78.233))) *
+		43758.5453123);
 }
 
 // Function to compute a rotation matrix
 mat2 rotate(float _angle){
-  return mat2(vec2(cos(_angle), -sin(_angle)),
-        vec2(sin(_angle), cos(_angle)));
+	return mat2(vec2(cos(_angle), -sin(_angle)),
+					vec2(sin(_angle), cos(_angle)));
 }
 
 float noise_gen(in vec2 pixPos) {
-  vec2 i = floor(pixPos);
-  vec2 f = fract(pixPos);
+	vec2 i = floor(pixPos);
+	vec2 f = fract(pixPos);
 
-  // Four corners in 2D of a tile
-  float a = random(i);
-  float b = random(i + vec2(1.0, 0.0));
-  float c = random(i + vec2(0.0, 1.0));
-  float d = random(i + vec2(1.0, 1.0));
+	// Four corners in 2D of a tile
+	float a = random(i);
+	float b = random(i + vec2(1.0, 0.0));
+	float c = random(i + vec2(0.0, 1.0));
+	float d = random(i + vec2(1.0, 1.0));
 
 
-  // Smooth Interpolation
+	// Smooth Interpolation
 
-  // Cubic Hermine Curve. Same as SmoothStep()
-  vec2 u = f * f * (3.0-2.0 * f);
+	// Cubic Hermine Curve. Same as SmoothStep()
+	vec2 u = f * f * (3.0-2.0 * f);
 
-  // Mix 4 coorners percentages
-  return mix(a, b, u.x) +
-      (c - a)* u.y * (1.0 - u.x) +
-      (d - b) * u.x * u.y;
+	// Mix 4 corners percentages
+	return mix(a, b, u.x) +
+			(c - a)* u.y * (1.0 - u.x) +
+			(d - b) * u.x * u.y;
 }
 
 
@@ -95,7 +95,7 @@ vec4 godrays(vec2 pixPos)
 	// Rotate, skew and move the UVs
 	vec2 transformed_uv = (rotate(angle) * (pixPos - position) ) / ( (1.0 - pixPos.y + spread) - ((1.0 - pixPos.y) * spread));
 
-	 // Animate the ray according the the new transformed UVs
+	// Animate the ray according the the new transformed UVs
 	vec2 ray1 = vec2(transformed_uv.x * ray1_density + sin(time * 0.3 * speed) * (ray1_density * 0.2), 1.0);
 	vec2 ray2 = vec2(transformed_uv.x * ray2_density + sin(time * 0.6 * speed) * (ray1_density * 0.2), 1.0);
 
@@ -104,7 +104,7 @@ vec4 godrays(vec2 pixPos)
 	ray1 *= cut;
 	ray2 *= cut;
 
-	 // Apply the noise pattern (i.e. create the rays)
+	// Apply the noise pattern (i.e. create the rays)
 	float rays = clamp(noise_gen(ray1) + (noise_gen(ray2) * ray2_intensity), 0., 1.);
 
 	// Fade out edges
@@ -118,7 +118,7 @@ vec4 godrays(vec2 pixPos)
 	return vec4(shine, rays * sample_color.a);
 }
 
- // Account for opacity in blend modes
+// Account for opacity in blend modes
 vec3 blend(vec3 frag, vec3 overlay, float overlay_opacity)
 {
 	float base_opacity = 1.0 - overlay_opacity;
@@ -143,7 +143,7 @@ vec4 account_for_blend_mode(vec4 frag, vec4 overlay)
 	return vec4(blend(frag.rgb, overlay.rgb, overlay_opacity),frag.a);
 }
 
- // Entry point function
+// Entry point function
 void main() {
 	// Load the base texture
  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
@@ -152,10 +152,10 @@ void main() {
 	vec4 overlay = godrays(gl_TexCoord[1].xy);
 	frag = account_for_blend_mode(frag, overlay);
 
-	// Compability with color_process
+	// Compatibility with color_process
 	frag.rgb = mix(frag.rgb, color.rgb, color.a);
 
-	// Compability with tone_process
+	// Compatibility with tone_process
 	float luma = dot(frag.rgb, lumaF);
 	frag.rgb = mix(frag.rgb, vec3(luma), tone.a);
 	frag.rgb += tone.rgb;

@@ -42,8 +42,8 @@ vec4 screen(vec4 base, vec4 blend){
 
 // Function to compute a rotation matrix
 mat2 rotate(float _angle){
-  return mat2(vec2(cos(_angle), -sin(_angle)),
-        vec2(sin(_angle), cos(_angle)));
+	return mat2(vec2(cos(_angle), -sin(_angle)),
+					vec2(sin(_angle), cos(_angle)));
 }
 
 // Nausea overlay preset
@@ -86,7 +86,7 @@ vec4 account_for_blend_mode(vec4 frag, vec4 overlay)
 	return vec4(blend(frag.rgb, overlay.rgb, overlay_opacity),frag.a);
 }
 
- // Entry point function
+// Entry point function
 void main() {
 	// Load the base texture
  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
@@ -95,10 +95,10 @@ void main() {
 	vec4 overlay = nausea(gl_TexCoord[0].xy);
 	frag = account_for_blend_mode(frag, overlay);
 
-	// Compability with color_process
+	// Compatibility with color_process
 	frag.rgb = mix(frag.rgb, color.rgb, color.a);
 
-	// Compability with tone_process
+	// Compatibility with tone_process
 	float luma = dot(frag.rgb, lumaF);
 	frag.rgb = mix(frag.rgb, vec3(luma), tone.a);
 	frag.rgb += tone.rgb;

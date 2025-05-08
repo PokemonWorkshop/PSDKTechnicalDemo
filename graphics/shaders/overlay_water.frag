@@ -60,7 +60,7 @@ float compute_distance(vec2 pixPos, vec2 to){
 // Water overlay preset
 vec4 water(vec2 pixPos){
 	// Modulate alpha channel according to distance to center and a factor so we can see the player
- float dist = compute_distance(pixPos,CENTER) * dist_factor;
+	float dist = compute_distance(pixPos,CENTER) * dist_factor;
 	// Wobble disruption according to time
 	vec2 wobble = vec2(cos(time)*0.03,sin(time)*0.05);
 
@@ -102,7 +102,7 @@ vec4 account_for_blend_mode(vec4 frag, vec4 overlay)
 	return vec4(blend(frag.rgb, overlay.rgb, overlay_opacity),frag.a);
 }
 
- // Entry point function
+// Entry point function
 void main() {
 	// Load the base texture
  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
@@ -111,10 +111,10 @@ void main() {
 	vec4 overlay = water(gl_TexCoord[1].xy);
 	frag = account_for_blend_mode(frag, overlay);
 
-	 // Compability with color_process
+	 // Compatibility with color_process
 	frag.rgb = mix(frag.rgb, color.rgb, color.a);
 
-	 // Compability with tone_process
+	 // Compatibility with tone_process
 	float luma = dot(frag.rgb, lumaF);
 	frag.rgb = mix(frag.rgb, vec3(luma), tone.a);
 	frag.rgb += tone.rgb;

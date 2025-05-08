@@ -60,7 +60,7 @@ vec4 scroll(vec2 pixPos){
 	return vec4(texture2D(extra_texture, mod(pixPos + direction1 * time,vec2(1.0))).rgb,dist);
 }
 
- // Account for opacity in blend modes
+// Account for opacity in blend modes
 vec3 blend(vec3 frag, vec3 overlay, float overlay_opacity)
 {
 	float base_opacity = 1.0 - overlay_opacity;
@@ -85,7 +85,7 @@ vec4 account_for_blend_mode(vec4 frag, vec4 overlay)
 	return vec4(blend(frag.rgb, overlay.rgb, overlay_opacity),frag.a);
 }
 
- // Entry point function
+// Entry point function
 void main() {
 	// Load the base texture
  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
@@ -94,10 +94,10 @@ void main() {
 	vec4 overlay = scroll(gl_TexCoord[1].xy);
 	frag = account_for_blend_mode(frag, overlay);
 
-	// Compability with color_process
+	// Compatibility with color_process
 	frag.rgb = mix(frag.rgb, color.rgb, color.a);
 
-	// Compability with tone_process
+	// Compatibility with tone_process
 	float luma = dot(frag.rgb, lumaF);
 	frag.rgb = mix(frag.rgb, vec3(luma), tone.a);
 	frag.rgb += tone.rgb;
