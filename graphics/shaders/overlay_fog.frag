@@ -11,11 +11,11 @@ uniform int blend_mode = 0;
 
 const vec3 lumaF = vec3(.299, .587, .114);
 
-uniform vec4 color = vec4(0.0,0.0,0.0,0.0);
-uniform vec4 tone = vec4(0.0,0.0,0.0,0.0);
+uniform vec4 color = vec4(0.0, 0.0, 0.0, 0.0);
+uniform vec4 tone = vec4(0.0, 0.0, 0.0, 0.0);
 
 // Uniform keeping track of a sample color
-uniform vec4 sample_color = vec4(0.9,0.9,1.0,1.0);
+uniform vec4 sample_color = vec4(0.9, 0.9, 1.0, 1.0);
 
 // Uniform keeping track of base texture
 uniform sampler2D texture;
@@ -54,7 +54,7 @@ vec4 screen(vec4 base, vec4 blend){
 // Function to computer the distance to center to leave the middle of the screen free
 float compute_distance(vec2 pixPos, vec2 to){
   vec2 result = pixPos - to;
- return length(result);
+  return length(result);
 }
 
 // Fog overlay preset
@@ -82,8 +82,8 @@ vec3 blend(vec3 frag, vec3 overlay, float overlay_opacity)
       +   step(SMALL_NUMBER, float(blend_mode==1)) * (frag * base_opacity + (overlay + frag) * overlay_opacity)
       +   step(SMALL_NUMBER, float(blend_mode==2)) * (frag * base_opacity + (overlay - frag) * overlay_opacity)
       +   step(SMALL_NUMBER, float(blend_mode==3)) * (frag * base_opacity + (overlay * frag) * overlay_opacity)
-      +   step(SMALL_NUMBER, float(blend_mode==4)) * overlay_blend_mode(vec4(frag,1.0),vec4(overlay.rgb, overlay_opacity)).rgb
-      +   step(SMALL_NUMBER, float(blend_mode==5)) * screen(vec4(frag,1.0),vec4(overlay.rgb, overlay_opacity)).rgb;
+      +   step(SMALL_NUMBER, float(blend_mode==4)) * overlay_blend_mode(vec4(frag, 1.0), vec4(overlay.rgb, overlay_opacity)).rgb
+      +   step(SMALL_NUMBER, float(blend_mode==5)) * screen(vec4(frag, 1.0), vec4(overlay.rgb, overlay_opacity)).rgb;
 }
 
 // Account for blend mode
