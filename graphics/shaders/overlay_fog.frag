@@ -102,7 +102,7 @@ vec4 account_for_blend_mode(vec4 frag, vec4 overlay)
 // Entry point function
 void main() {
 	// Load the base texture
- vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
+	vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
 
 	// Process overlay preset function + blend mode
 	vec4 overlay = fog(gl_TexCoord[1].xy);
