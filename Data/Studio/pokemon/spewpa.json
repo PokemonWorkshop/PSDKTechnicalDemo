@@ -5,6 +5,10 @@
   "forms": [
     {
       "form": 0,
+      "formTextId": {
+        "name": 822,
+        "description": 0
+      },
       "height": 0.3,
       "weight": 8.4,
       "type1": "bug",
@@ -72,44 +76,42 @@
         "character": "0665",
         "characterShiny": "0665s",
         "cry": "0665.ogg",
-        "hasFemale": false
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
+          "klass": "LevelLearnableMove",
           "move": "harden",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "move": "protect",
           "klass": "LevelLearnableMove",
+          "move": "protect",
           "level": 1
         },
         {
-          "move": "protect",
-          "klass": "EvolutionLearnableMove"
+          "klass": "EvolutionLearnableMove",
+          "move": "protect"
         },
         {
-          "move": "protect",
-          "klass": "TechLearnableMove"
+          "klass": "TechLearnableMove",
+          "move": "protect"
         },
         {
-          "move": "iron_defense",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "iron_defense"
         },
         {
-          "move": "bug_bite",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
         },
         {
-          "move": "electroweb",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "electroweb"
         }
-      ],
-      "formTextId": {
-        "name": 822,
-        "description": 0
-      }
+      ]
     }
   ]
 }

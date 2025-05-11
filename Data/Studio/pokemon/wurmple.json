@@ -5,6 +5,10 @@
   "forms": [
     {
       "form": 0,
+      "formTextId": {
+        "name": 340,
+        "description": 0
+      },
       "height": 0.3,
       "weight": 3.6,
       "type1": "bug",
@@ -90,46 +94,44 @@
         "character": "0265",
         "characterShiny": "0265s",
         "cry": "0265.ogg",
-        "hasFemale": false
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
+          "klass": "LevelLearnableMove",
           "move": "tackle",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "klass": "LevelLearnableMove",
           "move": "string_shot",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "move": "poison_sting",
           "klass": "LevelLearnableMove",
+          "move": "poison_sting",
           "level": 5
         },
         {
-          "move": "bug_bite",
           "klass": "LevelLearnableMove",
+          "move": "bug_bite",
           "level": 15
         },
         {
-          "move": "snore",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "snore"
         },
         {
-          "move": "bug_bite",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
         },
         {
-          "move": "electroweb",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "electroweb"
         }
-      ],
-      "formTextId": {
-        "name": 340,
-        "description": 0
-      }
+      ]
     }
   ]
 }
