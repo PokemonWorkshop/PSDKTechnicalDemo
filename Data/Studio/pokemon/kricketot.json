@@ -5,6 +5,10 @@
   "forms": [
     {
       "form": 0,
+      "formTextId": {
+        "name": 501,
+        "description": 0
+      },
       "height": 0.3,
       "weight": 2.2,
       "type1": "bug",
@@ -80,50 +84,48 @@
         "characterShiny": "0401s",
         "characterShinyF": "0401s",
         "cry": "0401.ogg",
-        "hasFemale": true
+        "hasFemale": true,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
+          "klass": "LevelLearnableMove",
           "move": "growl",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "klass": "LevelLearnableMove",
           "move": "bide",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "move": "struggle_bug",
           "klass": "LevelLearnableMove",
+          "move": "struggle_bug",
           "level": 6
         },
         {
-          "move": "bug_bite",
           "klass": "LevelLearnableMove",
+          "move": "bug_bite",
           "level": 16
         },
         {
-          "move": "snore",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "snore"
         },
         {
-          "move": "uproar",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "uproar"
         },
         {
-          "move": "endeavor",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "endeavor"
         },
         {
-          "move": "bug_bite",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
         }
-      ],
-      "formTextId": {
-        "name": 501,
-        "description": 0
-      }
+      ]
     }
   ]
 }

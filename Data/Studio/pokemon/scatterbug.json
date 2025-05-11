@@ -5,6 +5,10 @@
   "forms": [
     {
       "form": 0,
+      "formTextId": {
+        "name": 821,
+        "description": 0
+      },
       "height": 0.3,
       "weight": 2.5,
       "type1": "bug",
@@ -72,50 +76,48 @@
         "character": "0664",
         "characterShiny": "0664s",
         "cry": "0664.ogg",
-        "hasFemale": false
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
+          "klass": "LevelLearnableMove",
           "move": "tackle",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
+          "klass": "LevelLearnableMove",
           "move": "string_shot",
-          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "move": "stun_spore",
           "klass": "LevelLearnableMove",
+          "move": "stun_spore",
           "level": 6
         },
         {
-          "move": "bug_bite",
           "klass": "LevelLearnableMove",
+          "move": "bug_bite",
           "level": 15
         },
         {
-          "move": "poison_powder",
-          "klass": "BreedLearnableMove"
+          "klass": "BreedLearnableMove",
+          "move": "poison_powder"
         },
         {
-          "move": "stun_spore",
-          "klass": "BreedLearnableMove"
+          "klass": "BreedLearnableMove",
+          "move": "stun_spore"
         },
         {
-          "move": "bug_bite",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
         },
         {
-          "move": "rage_powder",
-          "klass": "BreedLearnableMove"
+          "klass": "BreedLearnableMove",
+          "move": "rage_powder"
         }
-      ],
-      "formTextId": {
-        "name": 821,
-        "description": 0
-      }
+      ]
     }
   ]
 }

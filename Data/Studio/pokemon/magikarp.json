@@ -5,6 +5,10 @@
   "forms": [
     {
       "form": 0,
+      "formTextId": {
+        "name": 164,
+        "description": 0
+      },
       "height": 0.9,
       "weight": 10,
       "type1": "water",
@@ -80,33 +84,31 @@
         "characterShiny": "0129s",
         "characterShinyF": "0129s",
         "cry": "0129.ogg",
-        "hasFemale": true
+        "hasFemale": true,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
-          "move": "splash",
           "klass": "LevelLearnableMove",
+          "move": "splash",
           "level": 1
         },
         {
-          "move": "tackle",
           "klass": "LevelLearnableMove",
+          "move": "tackle",
           "level": 15
         },
         {
-          "move": "flail",
           "klass": "LevelLearnableMove",
+          "move": "flail",
           "level": 30
         },
         {
-          "move": "bounce",
-          "klass": "TutorLearnableMove"
+          "klass": "TutorLearnableMove",
+          "move": "bounce"
         }
-      ],
-      "formTextId": {
-        "name": 164,
-        "description": 0
-      }
+      ]
     }
   ]
 }
