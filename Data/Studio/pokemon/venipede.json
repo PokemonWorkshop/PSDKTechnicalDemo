@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 998,
+        "name": 680,
         "description": 0
       },
       "height": 0.4,
@@ -51,8 +51,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "poison_barb",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -66,17 +66,19 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "543",
-        "iconShiny": "",
-        "front": "543",
-        "frontShiny": "543",
-        "back": "543",
-        "backShiny": "543",
-        "footprint": "543",
-        "character": "543_0",
-        "characterShiny": "543s_0",
-        "cry": "543cry.ogg",
-        "hasFemale": false
+        "icon": "0543",
+        "iconShiny": "0543s",
+        "front": "0543",
+        "frontShiny": "0543s",
+        "back": "0543",
+        "backShiny": "0543s",
+        "footprint": "0543",
+        "character": "0543",
+        "characterShiny": "0543s",
+        "cry": "0543.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
@@ -155,24 +157,20 @@
           "level": 43
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "endeavor"
+          "klass": "BreedLearnableMove",
+          "move": "take_down"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "iron_defense"
+          "klass": "BreedLearnableMove",
+          "move": "twineedle"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
+          "klass": "BreedLearnableMove",
+          "move": "pin_missile"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "signal_beam"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
+          "klass": "TechLearnableMove",
+          "move": "solar_beam"
         },
         {
           "klass": "TechLearnableMove",
@@ -180,7 +178,51 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "venoshock"
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "snore"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "protect"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sludge_bomb"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "spikes"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
         },
         {
           "klass": "TechLearnableMove",
@@ -192,47 +234,19 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "protect"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "solar_beam"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "return"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sludge_bomb"
-        },
-        {
-          "klass": "TechLearnableMove",
           "move": "facade"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "rest"
+          "klass": "TutorLearnableMove",
+          "move": "endeavor"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "attract"
+          "klass": "TutorLearnableMove",
+          "move": "signal_beam"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "round"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "payback"
+          "klass": "TutorLearnableMove",
+          "move": "iron_defense"
         },
         {
           "klass": "TechLearnableMove",
@@ -240,23 +254,31 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "infestation"
+          "move": "payback"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "toxic_spikes"
         },
         {
           "klass": "TechLearnableMove",
           "move": "poison_jab"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
+          "klass": "BreedLearnableMove",
+          "move": "rock_climb"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "sleep_talk"
+          "move": "venoshock"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "substitute"
+          "move": "round"
         },
         {
           "klass": "TechLearnableMove",
@@ -264,11 +286,7 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "struggle_bug"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "move": "infestation"
         },
         {
           "klass": "TechLearnableMove",
@@ -277,30 +295,6 @@
         {
           "klass": "TechLearnableMove",
           "move": "rock_climb"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "pin_missile"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "rock_climb"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "spikes"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "take_down"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "toxic_spikes"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "twineedle"
         }
       ]
     }

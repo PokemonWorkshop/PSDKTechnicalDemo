@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 619,
+        "name": 367,
         "description": 0
       },
       "height": 0.8,
@@ -55,24 +55,21 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "291",
-        "iconShiny": "",
-        "front": "291",
-        "frontShiny": "291",
-        "back": "291",
-        "backShiny": "291",
-        "footprint": "291",
-        "character": "291_0",
-        "characterShiny": "291s_0",
-        "cry": "291cry.ogg",
-        "hasFemale": false
+        "icon": "0291",
+        "iconShiny": "0291s",
+        "front": "0291",
+        "frontShiny": "0291s",
+        "back": "0291",
+        "backShiny": "0291s",
+        "footprint": "0291",
+        "character": "0291",
+        "characterShiny": "0291s",
+        "cry": "0291.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
-        {
-          "klass": "LevelLearnableMove",
-          "move": "harden",
-          "level": 1
-        },
         {
           "klass": "LevelLearnableMove",
           "move": "scratch",
@@ -90,12 +87,7 @@
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "bug_bite",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "fury_cutter",
+          "move": "screech",
           "level": 1
         },
         {
@@ -105,7 +97,17 @@
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "screech",
+          "move": "harden",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "fury_cutter",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "bug_bite",
           "level": 1
         },
         {
@@ -154,24 +156,48 @@
           "level": 47
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "laser_focus"
+          "klass": "TechLearnableMove",
+          "move": "swords_dance"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "defog"
+          "klass": "TechLearnableMove",
+          "move": "hyper_beam"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "spite"
+          "klass": "TechLearnableMove",
+          "move": "solar_beam"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "giga_drain"
+          "klass": "TechLearnableMove",
+          "move": "toxic"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
+          "klass": "EvolutionLearnableMove",
+          "move": "screech"
+        },
+        {
+          "klass": "EvolutionLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "leech_life"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "thief"
         },
         {
           "klass": "TutorLearnableMove",
@@ -179,11 +205,47 @@
         },
         {
           "klass": "TutorLearnableMove",
-          "move": "uproar"
+          "move": "spite"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "toxic"
+          "move": "protect"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sandstorm"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "giga_drain"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "false_swipe"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "swagger"
+        },
+        {
+          "klass": "EvolutionLearnableMove",
+          "move": "fury_cutter"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
         },
         {
           "klass": "TechLearnableMove",
@@ -195,47 +257,11 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "hyper_beam"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "protect"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "roost"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "solar_beam"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "return"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "leech_life"
-        },
-        {
-          "klass": "TechLearnableMove",
           "move": "shadow_ball"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sandstorm"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "aerial_ace"
+          "klass": "TutorLearnableMove",
+          "move": "uproar"
         },
         {
           "klass": "TechLearnableMove",
@@ -243,43 +269,11 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "rest"
+          "move": "aerial_ace"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "attract"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "thief"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "round"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "false_swipe"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "giga_impact"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swords_dance"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "x_scissor"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
+          "move": "roost"
         },
         {
           "klass": "TechLearnableMove",
@@ -287,35 +281,39 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "substitute"
+          "move": "x_scissor"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "giga_impact"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "defog"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "round"
         },
         {
           "klass": "TechLearnableMove",
           "move": "confide"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "struggle_bug"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "klass": "TutorLearnableMove",
+          "move": "laser_focus"
         },
         {
           "klass": "TechLearnableMove",
           "move": "cut"
         },
         {
-          "klass": "EvolutionLearnableMove",
-          "move": "double_team"
-        },
-        {
-          "klass": "EvolutionLearnableMove",
-          "move": "fury_cutter"
-        },
-        {
-          "klass": "EvolutionLearnableMove",
-          "move": "screech"
+          "klass": "TechLearnableMove",
+          "move": "flash"
         }
       ]
     }

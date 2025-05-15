@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 161,
+        "name": 519,
         "description": 0
       },
       "height": 0.3,
@@ -55,8 +55,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "honey",
-          "chance": 25
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -70,31 +70,37 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "415",
-        "iconShiny": "",
-        "front": "415",
-        "frontF": "415f",
-        "frontShiny": "415",
-        "frontShinyF": "415f",
-        "back": "415",
-        "backShiny": "415",
-        "footprint": "415",
-        "character": "415_0",
-        "characterF": "415f_0",
-        "characterShiny": "415s_0",
-        "characterShinyF": "415fs_0",
-        "cry": "415cry.ogg",
-        "hasFemale": true
+        "icon": "0415",
+        "iconF": "0415",
+        "iconShiny": "0415s",
+        "iconShinyF": "0415s",
+        "front": "0415",
+        "frontF": "0415f",
+        "frontShiny": "0415s",
+        "frontShinyF": "0415sf",
+        "back": "0415",
+        "backF": "0415",
+        "backShiny": "0415s",
+        "backShinyF": "0415s",
+        "footprint": "0415",
+        "character": "0415",
+        "characterF": "0415",
+        "characterShiny": "0415s",
+        "characterShinyF": "0415s",
+        "cry": "0415.ogg",
+        "hasFemale": true,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
-          "move": "sweet_scent",
+          "move": "gust",
           "level": 1
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "gust",
+          "move": "sweet_scent",
           "level": 1
         },
         {
@@ -109,19 +115,19 @@
         },
         {
           "klass": "TutorLearnableMove",
-          "move": "endeavor"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
-        },
-        {
-          "klass": "TutorLearnableMove",
           "move": "snore"
         },
         {
           "klass": "TutorLearnableMove",
+          "move": "endeavor"
+        },
+        {
+          "klass": "TutorLearnableMove",
           "move": "tailwind"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "bug_bite"
         }
       ]
     }

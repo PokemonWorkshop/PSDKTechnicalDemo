@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 169,
+        "name": 683,
         "description": 0
       },
       "height": 0.3,
@@ -51,8 +51,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "absorb_bulb",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -66,27 +66,29 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "546",
-        "iconShiny": "",
-        "front": "546",
-        "frontShiny": "546",
-        "back": "546",
-        "backShiny": "546",
-        "footprint": "546",
-        "character": "546_0",
-        "characterShiny": "546s_0",
-        "cry": "546cry.ogg",
-        "hasFemale": false
+        "icon": "0546",
+        "iconShiny": "0546s",
+        "front": "0546",
+        "frontShiny": "0546s",
+        "back": "0546",
+        "backShiny": "0546s",
+        "footprint": "0546",
+        "character": "0546",
+        "characterShiny": "0546s",
+        "cry": "0546.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
-          "move": "fairy_wind",
+          "move": "absorb",
           "level": 1
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "absorb",
+          "move": "fairy_wind",
           "level": 1
         },
         {
@@ -165,48 +167,68 @@
           "level": 46
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "defog"
+          "klass": "TechLearnableMove",
+          "move": "solar_beam"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "seed_bomb"
+          "klass": "TechLearnableMove",
+          "move": "toxic"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "helping_hand"
+          "klass": "TechLearnableMove",
+          "move": "double_team"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "endeavor"
+          "klass": "TechLearnableMove",
+          "move": "dream_eater"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "giga_drain"
+          "klass": "TechLearnableMove",
+          "move": "rest"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "covet"
+          "klass": "TechLearnableMove",
+          "move": "substitute"
         },
         {
           "klass": "TutorLearnableMove",
           "move": "snore"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "knock_off"
+          "klass": "TechLearnableMove",
+          "move": "protect"
         },
         {
           "klass": "TutorLearnableMove",
-          "move": "worry_seed"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "tailwind"
+          "move": "giga_drain"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "toxic"
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "safeguard"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "encore"
         },
         {
           "klass": "TechLearnableMove",
@@ -217,32 +239,12 @@
           "move": "sunny_day"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "taunt"
+          "klass": "BreedLearnableMove",
+          "move": "beat_up"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "protect"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "safeguard"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "solar_beam"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "return"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
+          "klass": "BreedLearnableMove",
+          "move": "memento"
         },
         {
           "klass": "TechLearnableMove",
@@ -250,67 +252,23 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "rest"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "attract"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "round"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "energy_ball"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "dream_eater"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "grass_knot"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
-        },
-        {
-          "klass": "TechLearnableMove",
           "move": "nature_power"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "dazzling_gleam"
+          "move": "taunt"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "confide"
+          "klass": "TutorLearnableMove",
+          "move": "helping_hand"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "klass": "TutorLearnableMove",
+          "move": "knock_off"
         },
         {
-          "klass": "BreedLearnableMove",
-          "move": "beat_up"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "captivate"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "encore"
+          "klass": "TutorLearnableMove",
+          "move": "endeavor"
         },
         {
           "klass": "BreedLearnableMove",
@@ -322,27 +280,71 @@
         },
         {
           "klass": "BreedLearnableMove",
-          "move": "memento"
+          "move": "tickle"
         },
         {
-          "klass": "BreedLearnableMove",
-          "move": "misty_terrain"
+          "klass": "TutorLearnableMove",
+          "move": "covet"
         },
         {
           "klass": "BreedLearnableMove",
           "move": "natural_gift"
         },
         {
-          "klass": "BreedLearnableMove",
-          "move": "switcheroo"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "tickle"
+          "klass": "TutorLearnableMove",
+          "move": "tailwind"
         },
         {
           "klass": "BreedLearnableMove",
           "move": "worry_seed"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "worry_seed"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "seed_bomb"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "energy_ball"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "switcheroo"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "defog"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "captivate"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "grass_knot"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "round"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "misty_terrain"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "confide"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "dazzling_gleam"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "flash"
         }
       ]
     }

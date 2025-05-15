@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 590,
+        "name": 972,
         "description": 0
       },
       "height": 0.2,
@@ -51,12 +51,12 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "tiny_mushroom",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
-          "dbSymbol": "big_mushroom",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         }
       ],
       "abilities": [
@@ -66,17 +66,19 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "755",
-        "iconShiny": "",
-        "front": "755",
-        "frontShiny": "755",
-        "back": "755",
-        "backShiny": "755",
-        "footprint": "",
-        "character": "755_0",
-        "characterShiny": "755s_0",
-        "cry": "755cry.ogg",
-        "hasFemale": false
+        "icon": "0755",
+        "iconShiny": "0755s",
+        "front": "0755",
+        "frontShiny": "0755s",
+        "back": "0755",
+        "backShiny": "0755s",
+        "footprint": "0755",
+        "character": "0755",
+        "characterShiny": "0755s",
+        "cry": "0755.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
@@ -150,52 +152,100 @@
           "level": 46
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "after_you"
+          "klass": "BreedLearnableMove",
+          "move": "leech_seed"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "seed_bomb"
+          "klass": "BreedLearnableMove",
+          "move": "growth"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "giga_drain"
+          "klass": "TechLearnableMove",
+          "move": "solar_beam"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "signal_beam"
+          "klass": "BreedLearnableMove",
+          "move": "poison_powder"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "recycle"
+          "klass": "BreedLearnableMove",
+          "move": "stun_spore"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "magic_coat"
+          "klass": "TechLearnableMove",
+          "move": "thunder_wave"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "toxic"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "light_screen"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "amnesia"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "dream_eater"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
         },
         {
           "klass": "TutorLearnableMove",
           "move": "snore"
         },
         {
+          "klass": "TechLearnableMove",
+          "move": "protect"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sludge_bomb"
+        },
+        {
           "klass": "TutorLearnableMove",
-          "move": "worry_seed"
+          "move": "giga_drain"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "safeguard"
         },
         {
           "klass": "TutorLearnableMove",
           "move": "synthesis"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "wonder_room"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "magic_room"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "toxic"
         },
         {
           "klass": "TechLearnableMove",
@@ -207,47 +257,27 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "light_screen"
+          "move": "nature_power"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "protect"
+          "klass": "TutorLearnableMove",
+          "move": "magic_coat"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "safeguard"
+          "klass": "TutorLearnableMove",
+          "move": "recycle"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
+          "klass": "TutorLearnableMove",
+          "move": "signal_beam"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "solar_beam"
+          "klass": "TutorLearnableMove",
+          "move": "worry_seed"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "return"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sludge_bomb"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rest"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "attract"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "round"
+          "klass": "TutorLearnableMove",
+          "move": "seed_bomb"
         },
         {
           "klass": "TechLearnableMove",
@@ -255,35 +285,23 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "thunder_wave"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "dream_eater"
-        },
-        {
-          "klass": "TechLearnableMove",
           "move": "grass_knot"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
+          "klass": "TutorLearnableMove",
+          "move": "wonder_room"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "magic_room"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "after_you"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "nature_power"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "dazzling_gleam"
+          "move": "round"
         },
         {
           "klass": "TechLearnableMove",
@@ -291,27 +309,11 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "move": "dazzling_gleam"
         },
         {
-          "klass": "BreedLearnableMove",
-          "move": "amnesia"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "growth"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "leech_seed"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "poison_powder"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "stun_spore"
+          "klass": "TechLearnableMove",
+          "move": "flash"
         }
       ]
     }

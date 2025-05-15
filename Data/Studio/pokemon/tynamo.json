@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 954,
+        "name": 747,
         "description": 0
       },
       "height": 0.2,
@@ -66,27 +66,29 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "602",
-        "iconShiny": "",
-        "front": "602",
-        "frontShiny": "602",
-        "back": "602",
-        "backShiny": "602",
-        "footprint": "602",
-        "character": "602_0",
-        "characterShiny": "602s_0",
-        "cry": "602cry.ogg",
-        "hasFemale": false
+        "icon": "0602",
+        "iconShiny": "0602s",
+        "front": "0602",
+        "frontShiny": "0602s",
+        "back": "0602",
+        "backShiny": "0602s",
+        "footprint": "0602",
+        "character": "0602",
+        "characterShiny": "0602s",
+        "cry": "0602.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
-          "move": "thunder_wave",
+          "move": "tackle",
           "level": 1
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "tackle",
+          "move": "thunder_wave",
           "level": 1
         },
         {
@@ -100,16 +102,16 @@
           "level": 1
         },
         {
+          "klass": "TechLearnableMove",
+          "move": "thunder_wave"
+        },
+        {
           "klass": "TutorLearnableMove",
           "move": "magnet_rise"
         },
         {
           "klass": "TechLearnableMove",
           "move": "charge_beam"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "thunder_wave"
         }
       ]
     }
