@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 692,
+        "name": 104,
         "description": 0
       },
       "height": 1,
@@ -64,19 +64,21 @@
         "run_away",
         "flame_body"
       ],
-      "frontOffsetY": 0,
+      "frontOffsetY": 19,
       "resources": {
-        "icon": "077",
-        "iconShiny": "",
-        "front": "077",
-        "frontShiny": "077",
-        "back": "077",
-        "backShiny": "077",
-        "footprint": "077",
-        "character": "077_0",
-        "characterShiny": "077s_0",
-        "cry": "077cry.ogg",
-        "hasFemale": false
+        "icon": "0077",
+        "iconShiny": "0077s",
+        "front": "0077",
+        "frontShiny": "0077s",
+        "back": "0077",
+        "backShiny": "0077s",
+        "footprint": "0077",
+        "character": "0077",
+        "characterShiny": "0077s",
+        "cry": "0077.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
@@ -150,24 +152,64 @@
           "level": 49
         },
         {
-          "klass": "TutorLearnableMove",
+          "klass": "BreedLearnableMove",
+          "move": "double_kick"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "horn_drill"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "thrash"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "double_edge"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "flamethrower"
+        },
+        {
+          "klass": "BreedLearnableMove",
           "move": "low_kick"
         },
         {
           "klass": "TutorLearnableMove",
-          "move": "heat_wave"
+          "move": "low_kick"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "ally_switch"
+          "klass": "TechLearnableMove",
+          "move": "solar_beam"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "iron_tail"
+          "klass": "TechLearnableMove",
+          "move": "toxic"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bounce"
+          "klass": "BreedLearnableMove",
+          "move": "hypnosis"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "fire_blast"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "flame_wheel"
         },
         {
           "klass": "TutorLearnableMove",
@@ -175,7 +217,39 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "toxic"
+          "move": "protect"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "charm"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "iron_tail"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "morning_sun"
         },
         {
           "klass": "TechLearnableMove",
@@ -186,32 +260,12 @@
           "move": "sunny_day"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "protect"
+          "klass": "TutorLearnableMove",
+          "move": "heat_wave"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "frustration"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "solar_beam"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "return"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "flamethrower"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "fire_blast"
+          "move": "will_o_wisp"
         },
         {
           "klass": "TechLearnableMove",
@@ -219,15 +273,19 @@
         },
         {
           "klass": "TechLearnableMove",
+          "move": "overheat"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "bounce"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "captivate"
+        },
+        {
+          "klass": "TechLearnableMove",
           "move": "flame_charge"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rest"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "attract"
         },
         {
           "klass": "TechLearnableMove",
@@ -238,24 +296,12 @@
           "move": "echoed_voice"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "overheat"
+          "klass": "BreedLearnableMove",
+          "move": "ally_switch"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "will_o_wisp"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
+          "klass": "TutorLearnableMove",
+          "move": "ally_switch"
         },
         {
           "klass": "TechLearnableMove",
@@ -266,60 +312,12 @@
           "move": "confide"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "klass": "BreedLearnableMove",
+          "move": "high_horsepower"
         },
         {
           "klass": "TechLearnableMove",
           "move": "strength"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "morning_sun"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "low_kick"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "charm"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "double_edge"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "double_kick"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "horn_drill"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "hypnosis"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "ally_switch"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "thrash"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "flame_wheel"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "captivate"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "high_horsepower"
         }
       ]
     }

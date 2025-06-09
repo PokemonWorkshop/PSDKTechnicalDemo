@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 783,
+        "name": 151,
         "description": 0
       },
       "height": 1.2,
@@ -55,8 +55,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "dragon_scale",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -70,32 +70,29 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "117",
-        "iconShiny": "",
-        "front": "117",
-        "frontShiny": "117",
-        "back": "117",
-        "backShiny": "117",
-        "footprint": "117",
-        "character": "117_0",
-        "characterShiny": "117s_0",
-        "cry": "117cry.ogg",
-        "hasFemale": false
+        "icon": "0117",
+        "iconShiny": "0117s",
+        "front": "0117",
+        "frontShiny": "0117s",
+        "back": "0117",
+        "backShiny": "0117s",
+        "footprint": "0117",
+        "character": "0117",
+        "characterShiny": "0117s",
+        "cry": "0117.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
-          "move": "bubble",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "smokescreen",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
           "move": "leer",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "water_gun",
           "level": 1
         },
         {
@@ -105,7 +102,12 @@
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "water_gun",
+          "move": "smokescreen",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "bubble",
           "level": 1
         },
         {
@@ -164,48 +166,8 @@
           "level": 60
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "outrage"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "dragon_pulse"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "signal_beam"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "bounce"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "laser_focus"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "icy_wind"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "water_pulse"
-        },
-        {
           "klass": "TechLearnableMove",
-          "move": "toxic"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "hail"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "hidden_power"
+          "move": "surf"
         },
         {
           "klass": "TechLearnableMove",
@@ -221,19 +183,7 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "protect"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rain_dance"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "return"
+          "move": "toxic"
         },
         {
           "klass": "TechLearnableMove",
@@ -241,7 +191,7 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "facade"
+          "move": "waterfall"
         },
         {
           "klass": "TechLearnableMove",
@@ -249,7 +199,83 @@
         },
         {
           "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "snore"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "protect"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "icy_wind"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "outrage"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
           "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hidden_power"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rain_dance"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hail"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "facade"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "signal_beam"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "bounce"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "water_pulse"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "dragon_pulse"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "giga_impact"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "flash_cannon"
         },
         {
           "klass": "TechLearnableMove",
@@ -261,43 +287,15 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "giga_impact"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "flash_cannon"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "surf"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "waterfall"
-        },
-        {
-          "klass": "TechLearnableMove",
           "move": "confide"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "klass": "TutorLearnableMove",
+          "move": "laser_focus"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "whirlpool"
+          "move": "dive"
         }
       ]
     }

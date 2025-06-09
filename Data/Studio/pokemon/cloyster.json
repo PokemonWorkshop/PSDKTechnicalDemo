@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 158,
+        "name": 121,
         "description": 0
       },
       "height": 1.5,
@@ -40,12 +40,12 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "pearl",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
-          "dbSymbol": "big_pearl",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         }
       ],
       "abilities": [
@@ -55,27 +55,24 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "091",
-        "iconShiny": "",
-        "front": "091",
-        "frontShiny": "091",
-        "back": "091",
-        "backShiny": "091",
-        "footprint": "091",
-        "character": "091_0",
-        "characterShiny": "091s_0",
-        "cry": "091cry.ogg",
-        "hasFemale": false
+        "icon": "0091",
+        "iconShiny": "0091s",
+        "front": "0091",
+        "frontShiny": "0091s",
+        "back": "0091",
+        "backShiny": "0091s",
+        "footprint": "0091",
+        "character": "0091",
+        "characterShiny": "0091s",
+        "cry": "0091.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
-          "move": "protect",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "shell_smash",
+          "move": "supersonic",
           "level": 1
         },
         {
@@ -90,17 +87,22 @@
         },
         {
           "klass": "LevelLearnableMove",
+          "move": "withdraw",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "protect",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
           "move": "toxic_spikes",
           "level": 1
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "supersonic",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "withdraw",
+          "move": "shell_smash",
           "level": 1
         },
         {
@@ -119,40 +121,8 @@
           "level": 50
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "liquidation"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "iron_defense"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "signal_beam"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "icy_wind"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "water_pulse"
-        },
-        {
           "klass": "TechLearnableMove",
-          "move": "toxic"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "hail"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "hidden_power"
+          "move": "surf"
         },
         {
           "klass": "TechLearnableMove",
@@ -168,15 +138,47 @@
         },
         {
           "klass": "TechLearnableMove",
+          "move": "toxic"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "explosion"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "snore"
+        },
+        {
+          "klass": "TechLearnableMove",
           "move": "protect"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "rain_dance"
+          "klass": "TutorLearnableMove",
+          "move": "icy_wind"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "frustration"
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
         },
         {
           "klass": "TechLearnableMove",
@@ -184,7 +186,19 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "double_team"
+          "move": "frustration"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hidden_power"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rain_dance"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hail"
         },
         {
           "klass": "TechLearnableMove",
@@ -195,20 +209,16 @@
           "move": "facade"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "rest"
+          "klass": "TutorLearnableMove",
+          "move": "signal_beam"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "attract"
+          "klass": "TutorLearnableMove",
+          "move": "iron_defense"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "round"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "explosion"
+          "klass": "TutorLearnableMove",
+          "move": "water_pulse"
         },
         {
           "klass": "TechLearnableMove",
@@ -216,7 +226,7 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "smart_strike"
+          "move": "poison_jab"
         },
         {
           "klass": "TechLearnableMove",
@@ -224,27 +234,11 @@
         },
         {
           "klass": "TechLearnableMove",
+          "move": "round"
+        },
+        {
+          "klass": "TechLearnableMove",
           "move": "frost_breath"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "poison_jab"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "surf"
         },
         {
           "klass": "TechLearnableMove",
@@ -252,11 +246,19 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "move": "smart_strike"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "liquidation"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "whirlpool"
+          "move": "waterfall"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "dive"
         }
       ]
     }

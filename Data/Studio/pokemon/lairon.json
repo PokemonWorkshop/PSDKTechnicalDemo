@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 468,
+        "name": 383,
         "description": 0
       },
       "height": 0.9,
@@ -51,8 +51,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "hard_stone",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -66,22 +66,24 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "305",
-        "iconShiny": "",
-        "front": "305",
-        "frontShiny": "305",
-        "back": "305",
-        "backShiny": "305",
-        "footprint": "305",
-        "character": "305_0",
-        "characterShiny": "305s_0",
-        "cry": "305cry.ogg",
-        "hasFemale": false
+        "icon": "0305",
+        "iconShiny": "0305s",
+        "front": "0305",
+        "frontShiny": "0305s",
+        "back": "0305",
+        "backShiny": "0305s",
+        "footprint": "0305",
+        "character": "0305",
+        "characterShiny": "0305s",
+        "cry": "0305.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
-          "move": "harden",
+          "move": "headbutt",
           "level": 1
         },
         {
@@ -91,12 +93,12 @@
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "mud_slap",
+          "move": "harden",
           "level": 1
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "headbutt",
+          "move": "mud_slap",
           "level": 1
         },
         {
@@ -180,16 +182,108 @@
           "level": 55
         },
         {
+          "klass": "TechLearnableMove",
+          "move": "roar"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "earthquake"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "toxic"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rock_slide"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
           "klass": "TutorLearnableMove",
-          "move": "uproar"
+          "move": "snore"
         },
         {
           "klass": "TutorLearnableMove",
           "move": "spite"
         },
         {
+          "klass": "TechLearnableMove",
+          "move": "protect"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sandstorm"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "iron_tail"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hidden_power"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rain_dance"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sunny_day"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "uproar"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "facade"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "superpower"
+        },
+        {
           "klass": "TutorLearnableMove",
           "move": "endeavor"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rock_tomb"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "aerial_ace"
         },
         {
           "klass": "TutorLearnableMove",
@@ -201,34 +295,6 @@
         },
         {
           "klass": "TutorLearnableMove",
-          "move": "stealth_rock"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "iron_tail"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "superpower"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "earth_power"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "iron_head"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "stomping_tantrum"
-        },
-        {
-          "klass": "TutorLearnableMove",
           "move": "water_pulse"
         },
         {
@@ -237,67 +303,27 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "roar"
+          "move": "rock_polish"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "earth_power"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "toxic"
+          "move": "shadow_claw"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "iron_head"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "hidden_power"
+          "move": "stone_edge"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "sunny_day"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "protect"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rain_dance"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "earthquake"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "return"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sandstorm"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rock_tomb"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "aerial_ace"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "facade"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rest"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "attract"
+          "klass": "TutorLearnableMove",
+          "move": "stealth_rock"
         },
         {
           "klass": "TechLearnableMove",
@@ -305,43 +331,19 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "shadow_claw"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rock_polish"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "stone_edge"
-        },
-        {
-          "klass": "TechLearnableMove",
           "move": "bulldoze"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rock_slide"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
         },
         {
           "klass": "TechLearnableMove",
           "move": "confide"
         },
         {
+          "klass": "TutorLearnableMove",
+          "move": "stomping_tantrum"
+        },
+        {
           "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "move": "rock_smash"
         },
         {
           "klass": "TechLearnableMove",
@@ -350,10 +352,6 @@
         {
           "klass": "TechLearnableMove",
           "move": "strength"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rock_smash"
         }
       ]
     }

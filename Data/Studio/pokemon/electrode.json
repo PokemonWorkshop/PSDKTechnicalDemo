@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 250,
+        "name": 132,
         "description": 0
       },
       "height": 1.2,
@@ -49,28 +49,35 @@
         }
       ],
       "abilities": [
-        "static",
         "soundproof",
+        "static",
         "aftermath"
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "101",
-        "iconShiny": "",
-        "front": "101",
-        "frontShiny": "101",
-        "back": "101",
-        "backShiny": "101",
-        "footprint": "101",
-        "character": "101_0",
-        "characterShiny": "101s_0",
-        "cry": "101cry.ogg",
-        "hasFemale": false
+        "icon": "0101",
+        "iconShiny": "0101s",
+        "front": "0101",
+        "frontShiny": "0101s",
+        "back": "0101",
+        "backShiny": "0101s",
+        "footprint": "0101",
+        "character": "0101",
+        "characterShiny": "0101s",
+        "cry": "0101.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
           "move": "tackle",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "sonic_boom",
           "level": 1
         },
         {
@@ -86,11 +93,6 @@
         {
           "klass": "LevelLearnableMove",
           "move": "magnetic_flux",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "sonic_boom",
           "level": 1
         },
         {
@@ -169,64 +171,8 @@
           "level": 58
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "shock_wave"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "signal_beam"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "magic_coat"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "telekinesis"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "foul_play"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "magnet_rise"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "toxic"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "hidden_power"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "taunt"
-        },
-        {
           "klass": "TechLearnableMove",
           "move": "hyper_beam"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "light_screen"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "protect"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rain_dance"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
         },
         {
           "klass": "TechLearnableMove",
@@ -234,11 +180,15 @@
         },
         {
           "klass": "TechLearnableMove",
+          "move": "thunder_wave"
+        },
+        {
+          "klass": "TechLearnableMove",
           "move": "thunder"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "return"
+          "move": "toxic"
         },
         {
           "klass": "TechLearnableMove",
@@ -246,27 +196,7 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "torment"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "facade"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rest"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "thief"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "round"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "charge_beam"
+          "move": "light_screen"
         },
         {
           "klass": "TechLearnableMove",
@@ -274,19 +204,23 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "giga_impact"
+          "move": "rest"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "volt_switch"
+          "move": "substitute"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "thunder_wave"
+          "move": "thief"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "snore"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "gyro_ball"
+          "move": "protect"
         },
         {
           "klass": "TechLearnableMove",
@@ -298,7 +232,75 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "substitute"
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hidden_power"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rain_dance"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "torment"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "facade"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "taunt"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "magic_coat"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "signal_beam"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "shock_wave"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "gyro_ball"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "magnet_rise"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "giga_impact"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "charge_beam"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "telekinesis"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "foul_play"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "round"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "volt_switch"
         },
         {
           "klass": "TechLearnableMove",
@@ -310,7 +312,7 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "move": "flash"
         }
       ]
     }

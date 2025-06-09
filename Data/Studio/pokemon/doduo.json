@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 217,
+        "name": 112,
         "description": 0
       },
       "height": 1.4,
@@ -51,8 +51,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "sharp_beak",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -66,31 +66,37 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "084",
-        "iconShiny": "",
-        "front": "084",
-        "frontF": "084f",
-        "frontShiny": "084",
-        "frontShinyF": "084f",
-        "back": "084",
-        "backF": "084f",
-        "backShiny": "084",
-        "backShinyF": "084f",
-        "footprint": "084",
-        "character": "084_0",
-        "characterShiny": "084s_0",
-        "cry": "084cry.ogg",
-        "hasFemale": true
+        "icon": "0084",
+        "iconF": "0084",
+        "iconShiny": "0084s",
+        "iconShinyF": "0084s",
+        "front": "0084",
+        "frontF": "0084f",
+        "frontShiny": "0084s",
+        "frontShinyF": "0084sf",
+        "back": "0084",
+        "backF": "0084f",
+        "backShiny": "0084s",
+        "backShinyF": "0084sf",
+        "footprint": "0084",
+        "character": "0084",
+        "characterF": "0084",
+        "characterShiny": "0084s",
+        "characterShinyF": "0084s",
+        "cry": "0084.ogg",
+        "hasFemale": true,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
-          "move": "peck",
+          "move": "growl",
           "level": 1
         },
         {
           "klass": "LevelLearnableMove",
-          "move": "growl",
+          "move": "peck",
           "level": 1
         },
         {
@@ -164,28 +170,88 @@
           "level": 50
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "endeavor"
+          "klass": "TechLearnableMove",
+          "move": "swords_dance"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "fly"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "supersonic"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "toxic"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "quick_attack"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "double_team"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "haze"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "mirror_move"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "rest"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "substitute"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "thief"
         },
         {
           "klass": "TutorLearnableMove",
           "move": "snore"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "knock_off"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "uproar"
+          "klass": "BreedLearnableMove",
+          "move": "flail"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "work_up"
+          "move": "protect"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "feint_attack"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "toxic"
+          "move": "swagger"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "steel_wing"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "return"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "frustration"
         },
         {
           "klass": "TechLearnableMove",
@@ -196,24 +262,24 @@
           "move": "sunny_day"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "protect"
+          "klass": "TutorLearnableMove",
+          "move": "uproar"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "roost"
+          "move": "facade"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "frustration"
+          "klass": "TutorLearnableMove",
+          "move": "knock_off"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "return"
+          "klass": "BreedLearnableMove",
+          "move": "endeavor"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
+          "klass": "TutorLearnableMove",
+          "move": "endeavor"
         },
         {
           "klass": "TechLearnableMove",
@@ -221,19 +287,19 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "facade"
+          "move": "roost"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "rest"
+          "klass": "BreedLearnableMove",
+          "move": "natural_gift"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "attract"
+          "klass": "BreedLearnableMove",
+          "move": "assurance"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "thief"
+          "klass": "BreedLearnableMove",
+          "move": "brave_bird"
         },
         {
           "klass": "TechLearnableMove",
@@ -245,75 +311,11 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "steel_wing"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swords_dance"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "fly"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "swagger"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
+          "move": "work_up"
         },
         {
           "klass": "TechLearnableMove",
           "move": "confide"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "secret_power"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "assurance"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "haze"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "natural_gift"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "endeavor"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "feint_attack"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "flail"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "mirror_move"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "brave_bird"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "supersonic"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "quick_attack"
         }
       ]
     }

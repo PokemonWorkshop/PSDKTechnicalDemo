@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 687,
+        "name": 1048,
         "description": 0
       },
       "height": 0.6,
@@ -47,7 +47,7 @@
         15
       ],
       "hatchSteps": 30720,
-      "babyDbSymbol": "__undef__",
+      "babyDbSymbol": "poipole",
       "babyForm": 0,
       "itemHeld": [
         {
@@ -66,29 +66,21 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "803",
-        "iconShiny": "",
-        "front": "803",
-        "frontShiny": "803",
-        "back": "803",
-        "backShiny": "803",
-        "footprint": "",
-        "character": "803_0",
-        "characterShiny": "803s_0",
-        "cry": "803cry.ogg",
-        "hasFemale": false
+        "icon": "0803",
+        "iconShiny": "0803s",
+        "front": "0803",
+        "frontShiny": "0803s",
+        "back": "0803",
+        "backShiny": "0803s",
+        "footprint": "0803",
+        "character": "0803",
+        "characterShiny": "0803s",
+        "cry": "0803.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
-        {
-          "klass": "LevelLearnableMove",
-          "move": "dragon_pulse",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "peck",
-          "level": 1
-        },
         {
           "klass": "LevelLearnableMove",
           "move": "growl",
@@ -101,7 +93,17 @@
         },
         {
           "klass": "LevelLearnableMove",
+          "move": "peck",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
           "move": "helping_hand",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "dragon_pulse",
           "level": 1
         },
         {
@@ -145,56 +147,20 @@
           "level": 47
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "helping_hand"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "gunk_shot"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "dragon_pulse"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "covet"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "iron_tail"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "signal_beam"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snatch"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "gastro_acid"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "uproar"
-        },
-        {
           "klass": "TechLearnableMove",
           "move": "toxic"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "venoshock"
+          "move": "rest"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "hidden_power"
+          "move": "substitute"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "snore"
         },
         {
           "klass": "TechLearnableMove",
@@ -202,7 +168,11 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "frustration"
+          "move": "sludge_bomb"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sleep_talk"
         },
         {
           "klass": "TechLearnableMove",
@@ -210,19 +180,63 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "sludge_wave"
+          "move": "frustration"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "iron_tail"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "sludge_bomb"
+          "move": "hidden_power"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "uproar"
         },
         {
           "klass": "TechLearnableMove",
           "move": "facade"
         },
         {
+          "klass": "TutorLearnableMove",
+          "move": "helping_hand"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "snatch"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "signal_beam"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "covet"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "gastro_acid"
+        },
+        {
           "klass": "TechLearnableMove",
-          "move": "rest"
+          "move": "poison_jab"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "dragon_pulse"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "gunk_shot"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "venoshock"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "sludge_wave"
         },
         {
           "klass": "TechLearnableMove",
@@ -234,23 +248,7 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "poison_jab"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "sleep_talk"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "substitute"
-        },
-        {
-          "klass": "TechLearnableMove",
           "move": "confide"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "secret_power"
         }
       ]
     }

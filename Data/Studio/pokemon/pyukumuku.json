@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 711,
+        "name": 988,
         "description": 0
       },
       "height": 0.3,
@@ -55,32 +55,24 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "771",
-        "iconShiny": "",
-        "front": "771",
-        "frontShiny": "771",
-        "back": "771",
-        "backShiny": "771",
-        "footprint": "",
-        "character": "771_0",
-        "characterShiny": "771s_0",
-        "cry": "771cry.ogg",
-        "hasFemale": false
+        "icon": "0771",
+        "iconShiny": "0771s",
+        "front": "0771",
+        "frontShiny": "0771s",
+        "back": "0771",
+        "backShiny": "0771s",
+        "footprint": "0771",
+        "character": "0771",
+        "characterShiny": "0771s",
+        "cry": "0771.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
           "klass": "LevelLearnableMove",
           "move": "harden",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "water_sport",
-          "level": 1
-        },
-        {
-          "klass": "LevelLearnableMove",
-          "move": "mud_sport",
           "level": 1
         },
         {
@@ -91,6 +83,16 @@
         {
           "klass": "LevelLearnableMove",
           "move": "baton_pass",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "mud_sport",
+          "level": 1
+        },
+        {
+          "klass": "LevelLearnableMove",
+          "move": "water_sport",
           "level": 1
         },
         {
@@ -154,60 +156,16 @@
           "level": 49
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "pain_split"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "block"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "helping_hand"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "recycle"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "gastro_acid"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "spite"
-        },
-        {
           "klass": "TechLearnableMove",
           "move": "toxic"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "hail"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "taunt"
+          "move": "double_team"
         },
         {
           "klass": "TechLearnableMove",
           "move": "light_screen"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "protect"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "rain_dance"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "safeguard"
-        },
-        {
-          "klass": "TechLearnableMove",
-          "move": "double_team"
         },
         {
           "klass": "TechLearnableMove",
@@ -219,15 +177,23 @@
         },
         {
           "klass": "TechLearnableMove",
-          "move": "attract"
+          "move": "substitute"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "spite"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "spite"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "quash"
+          "move": "protect"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "psych_up"
+          "klass": "BreedLearnableMove",
+          "move": "endure"
         },
         {
           "klass": "TechLearnableMove",
@@ -235,35 +201,67 @@
         },
         {
           "klass": "TechLearnableMove",
+          "move": "attract"
+        },
+        {
+          "klass": "TechLearnableMove",
           "move": "sleep_talk"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "substitute"
+          "move": "safeguard"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "pain_split"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "confide"
+          "move": "rain_dance"
         },
         {
           "klass": "TechLearnableMove",
-          "move": "secret_power"
+          "move": "psych_up"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "hail"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "taunt"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "helping_hand"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "recycle"
+        },
+        {
+          "klass": "BreedLearnableMove",
+          "move": "tickle"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "block"
+        },
+        {
+          "klass": "TutorLearnableMove",
+          "move": "gastro_acid"
+        },
+        {
+          "klass": "TechLearnableMove",
+          "move": "quash"
         },
         {
           "klass": "BreedLearnableMove",
           "move": "bestow"
         },
         {
-          "klass": "BreedLearnableMove",
-          "move": "endure"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "spite"
-        },
-        {
-          "klass": "BreedLearnableMove",
-          "move": "tickle"
+          "klass": "TechLearnableMove",
+          "move": "confide"
         },
         {
           "klass": "BreedLearnableMove",

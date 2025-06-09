@@ -6,7 +6,7 @@
     {
       "form": 0,
       "formTextId": {
-        "name": 1068,
+        "name": 340,
         "description": 0
       },
       "height": 0.3,
@@ -69,8 +69,8 @@
       "babyForm": 0,
       "itemHeld": [
         {
-          "dbSymbol": "pecha_berry",
-          "chance": 5
+          "dbSymbol": "none",
+          "chance": 0
         },
         {
           "dbSymbol": "none",
@@ -84,17 +84,19 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "265",
-        "iconShiny": "",
-        "front": "265",
-        "frontShiny": "265",
-        "back": "265",
-        "backShiny": "265",
-        "footprint": "265",
-        "character": "265_0",
-        "characterShiny": "265s_0",
-        "cry": "265cry.ogg",
-        "hasFemale": false
+        "icon": "0265",
+        "iconShiny": "0265s",
+        "front": "0265",
+        "frontShiny": "0265s",
+        "back": "0265",
+        "backShiny": "0265s",
+        "footprint": "0265",
+        "character": "0265",
+        "characterShiny": "0265s",
+        "cry": "0265.ogg",
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
@@ -119,15 +121,15 @@
         },
         {
           "klass": "TutorLearnableMove",
+          "move": "snore"
+        },
+        {
+          "klass": "TutorLearnableMove",
           "move": "bug_bite"
         },
         {
           "klass": "TutorLearnableMove",
           "move": "electroweb"
-        },
-        {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
         }
       ]
     }
