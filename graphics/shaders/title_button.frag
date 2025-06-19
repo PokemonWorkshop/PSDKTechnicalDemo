@@ -1,13 +1,4 @@
-#ifdef GL_ES
-precision mediump float;
-
-uniform mat4 sf_texture;
-uniform vec2 factor_npot;
-
-varying vec2 v_texCoord;
-#else
-const vec2 factor_npot = vec2(1.0, 1.0);
-#endif
+varying vec2 v_factor_npot;
 
 uniform float t;
 
@@ -23,20 +14,16 @@ void main() {
   COLORS[5] = vec4(0.4824, 0.2118, 0.8549, 1.0);
   COLORS[6] = vec4(1.0000, 0.1490, 0.2196, 1.0);
 
-#ifdef GL_ES
-  vec2 tc = (sf_texture * vec4(v_texCoord / factor_npot, 0.0, 1.0)).xy;
-#else
-  vec2 tc = gl_TexCoord[0].xy;
-#endif
+  vec2 adjusted_coordinates = gl_TexCoord[0].xy / v_factor_npot;
 
-  float circleX = mod((tc.x - t) * 6.0, 1.0);
-  float colorIndex = mod((tc.x - t) * 6.0, 6.0);
+  float circleX = mod((adjusted_coordinates.x - t) * 6.0, 1.0);
+  float colorIndex = mod((adjusted_coordinates.x - t) * 6.0, 6.0);
   vec4 frag = mix(
     COLORS[int(floor(colorIndex))],
     COLORS[int(floor(colorIndex)) + 1],
     fract(colorIndex)
   );
-  float circleRadius = pow(sin(tc.x * PI), 3.0);
-  frag.a = 1.0 - (sqrt(pow((tc.y * 2.0 - 1.0) / circleRadius, 2.0) + pow(circleX * 2.0 - 1.0, 2.0)));
+  float circleRadius = pow(sin(adjusted_coordinates.x * PI), 3.0);
+  frag.a = 1.0 - (sqrt(pow((adjusted_coordinates.y * 2.0 - 1.0) / circleRadius, 2.0) + pow(circleX * 2.0 - 1.0, 2.0)));
   gl_FragColor = frag;
 }

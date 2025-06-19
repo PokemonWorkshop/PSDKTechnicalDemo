@@ -1,11 +1,3 @@
-#ifdef GL_ES
-precision mediump float;
-
-uniform mat4 sf_texture;
-uniform vec2 factor_npot;
-
-varying vec2 v_texCoord;
-#endif
 uniform sampler2D texture;
 uniform float time;
 uniform sampler2D bk0;
@@ -18,11 +10,7 @@ const vec2 bkDistr = vec2(10, 8);
 const vec4 blank = vec4(0, 0, 0, 0);
 void main()
 {
-#ifdef GL_ES
-  vec2 tc = (sf_texture * vec4(v_texCoord, 0.0, 1.0)).xy;
-#else
   vec2 tc = gl_TexCoord[0].xy;
-#endif
   vec4 bkfrag;
   vec2 bkCoord = mod(tc * bkDistr, 1);
   float currentTime = time * (bkDistr.x + 6);
