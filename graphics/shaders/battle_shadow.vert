@@ -12,6 +12,8 @@ uniform vec2 factor_npot;
 
 varying vec2 v_texCoord;
 varying vec4 v_color;
+
+varying vec2 v_texture_coordinates;
 #endif
 const vec4 shadowVect = vec4(0.2, -0.2, 0, 0);
 
@@ -22,11 +24,13 @@ void main()
   float invY = 1.0 - tc.y;
   v_texCoord = texCoord;
   v_color = color;
+  v_texture_coordinates = tc;
   gl_Position = sf_projection * sf_modelview * vec4(position.xy, 0.0, 1.0) + shadowVect * invY;
 #else
   gl_TexCoord[0] = gl_TextureMatrix[0] * gl_MultiTexCoord0;
   gl_FrontColor = gl_Color;
   float invY = 1.0 - gl_TexCoord[0].y;
+  v_texture_coordinates = gl_TexCoord[0].xy;
   gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex + shadowVect * invY;
 #endif
 }
