@@ -10,13 +10,11 @@ attribute vec4 color;
 uniform mat4 sf_modelview;
 uniform mat4 sf_projection;
 
-varying vec2 v_texCoord;
 varying vec4 sf_color;
 
 varying vec2 v_texture_coordinates;
 
 void main() {
-    v_texCoord = texCoord;
     sf_color = color;
 #ifdef GL_ES
     v_texture_coordinates = (sf_texture * vec4(texCoord / factor_npot, 0.0, 1.0)).xy;
