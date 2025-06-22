@@ -1,3 +1,6 @@
+varying vec2 v_texCoord;
+
+varying vec2 v_factor_npot;
 uniform float r4;
 uniform float r3;
 uniform float r2;
@@ -7,9 +10,10 @@ uniform sampler2D texture;
 const vec4 dark = vec4(.0, .0, .0, 1.);
 void main()
 {
-  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
-  float x = gl_TexCoord[0].x - .5;
-  float y = gl_TexCoord[0].y - .5;
+  vec2 tc = gl_TexCoord[0].xy;
+  vec4 frag = texture2D(texture, tc);
+  float x = tc.x / v_factor_npot.x - .5;
+  float y = tc.y / v_factor_npot.y - .5;
   x *= xfactor;
   x *= x;
   y *= y;
