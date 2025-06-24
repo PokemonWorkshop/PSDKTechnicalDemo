@@ -28,7 +28,6 @@ void main()
   gl_TexCoord[0] = gl_TextureMatrix[0] * gl_MultiTexCoord0;
   gl_FrontColor = gl_Color;
   float invY = 1.0 - gl_TexCoord[0].y;
-  v_texture_coordinates = gl_TexCoord[0].xy;
   gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex + shadowVect * invY;
 #endif
 }

@@ -1,5 +1,8 @@
+#ifdef GL_ES
 varying vec2 v_factor_npot;
-
+#else
+const vec2 v_factor_npot = vec2(1.0, 1.0);
+#endif
 uniform float t;
 
 const float PI = 3.14159265359;
