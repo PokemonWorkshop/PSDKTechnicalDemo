@@ -17,10 +17,13 @@ def zip_all_recursive(zipfile, path)
 
 end
 
+folders = ['graphics', 'Fonts', 'Data', 'audio', 'pokemonsdk', 'scripts']
+folders = folders.concat(["Saves"]) if ARGV.include?('--with_saves')
+
 ARCHIVE_NAME = "project.psa"
 File.delete(ARCHIVE_NAME) if File.exist? ARCHIVE_NAME
 
 Zip::File.open(ARCHIVE_NAME, create: true) do |zipfile|
-    zip_all_recursive(zipfile, "{graphics,Fonts,Data,audio,pokemonsdk,scripts}")
+    zip_all_recursive(zipfile, '{' + folders.join(',') + '}')
     zipfile.add("Game.rb", "Game.rb")
 end
