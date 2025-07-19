@@ -5,13 +5,13 @@
 // 3: multiply
 // 4: overlay
 // 5: screen
-uniform int blend_mode = 0;
+uniform int blend_mode;
 
 // Compatibility with other SpritesetMap shaders
 const vec3 lumaF = vec3(.299, .587, .114);
 
-uniform vec4 color = vec4(0.0,0.0,0.0,0.0);
-uniform vec4 tone = vec4(0.0,0.0,0.0,0.0);
+uniform vec4 color;
+uniform vec4 tone;
 
 // Uniform keeping track of base texture
 uniform sampler2D texture;
@@ -20,14 +20,22 @@ uniform sampler2D texture;
 uniform sampler2D extra_texture;
 
 // Uniform keeping track of a first scroll
-uniform vec2 direction1 = vec2(0.1, 0.1);
+uniform vec2 direction1;
 
 // Uniform keeping track of the time variable
 uniform float time;
 // Uniform keeping track of the opacity variable
-uniform float opacity = 1.0;
+uniform float opacity;
 // Uniform keeping track of the factor by which the distance should be multiplied
-uniform float dist_factor = 1.5;
+uniform float dist_factor;
+
+#ifdef GL_ES
+uniform vec2 extra_texture_factor_npot;
+#else
+const vec2 extra_texture_factor_npot = vec2(1.0, 1.0):
+#endif
+
+varying vec2 v_factor_npot;
 
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
@@ -54,7 +62,7 @@ float compute_distance(vec2 pixPos, vec2 to){
 // Scroll preset
 vec4 scroll(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
-  float dist = min(max(compute_distance(pixPos,CENTER) * dist_factor,0.0),1.0);
+  float dist = min(max(compute_distance(pixPos / v_factor_npot, CENTER) * dist_factor, 0.0), 1.0);
   return vec4(texture2D(extra_texture, mod(pixPos + direction1 * time,vec2(1.0))).rgb,dist);
 }
 

@@ -5,28 +5,30 @@
 // 3: multiply
 // 4: overlay
 // 5: screen
-uniform int blend_mode = 0;
+uniform int blend_mode;
 
 // Compatibility with other SpritesetMap shaders
 
 const vec3 lumaF = vec3(.299, .587, .114);
 
-uniform vec4 color = vec4(0.0, 0.0, 0.0, 0.0);
-uniform vec4 tone = vec4(0.0, 0.0, 0.0, 0.0);
+uniform vec4 color;
+uniform vec4 tone;
 
 // Uniform keeping track of a sample color
-uniform vec4 sample_color = vec4(0.9, 0.9, 1.0, 1.0);
+uniform vec4 sample_color;
 
 // Uniform keeping track of base texture
 uniform sampler2D texture;
 
 // Uniform keeping track of a position
-uniform vec2 position = vec2(0.5, 0.5);
+uniform vec2 position;
 
 // Uniform keeping track of the time variable
 uniform float time;
 // Uniform keeping track of the opacity variable
-uniform float opacity = 1.0;
+uniform float opacity;
+
+varying vec2 v_factor_npot;
 
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
@@ -58,8 +60,9 @@ vec4 ripple(vec2 pixPos)
   float amount = 0.008;
 
   // Map out the ripple, this makes a donut shape
-  float outer_map = 1.0 - smoothstep(spread - width, spread, compute_distance(pixPos, position));
-  float inner_map = smoothstep(spread - width * 2.0, spread - width, compute_distance(pixPos, position) );
+  float distance = compute_distance(pixPos / v_factor_npot, position);
+  float outer_map = 1.0 - smoothstep(spread - width, spread, distance);
+  float inner_map = smoothstep(spread - width * 2.0, spread - width, distance);
   float map = outer_map * inner_map;
 
   // Fading factor with distance
