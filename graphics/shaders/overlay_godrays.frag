@@ -5,17 +5,17 @@
 // 3: multiply
 // 4: overlay
 // 5: screen
-uniform int blend_mode = 0;
+uniform int blend_mode;
 
 // Compatibility with other SpritesetMap shaders
 
 const vec3 lumaF = vec3(.299, .587, .114);
 
-uniform vec4 color = vec4(0.0,0.0,0.0,0.0);
-uniform vec4 tone = vec4(0.0,0.0,0.0,0.0);
+uniform vec4 color;
+uniform vec4 tone;
 
 // Uniform keeping track of a sample color
-uniform vec4 sample_color = vec4(0.9,0.9,1.0,1.0);
+uniform vec4 sample_color;
 
 // Uniform keeping track of base texture
 uniform sampler2D texture;
@@ -24,7 +24,7 @@ uniform sampler2D texture;
 uniform float time;
 
 // Uniform keeping track of the opacity variable
-uniform float opacity = 1.0;
+uniform float opacity;
 
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
