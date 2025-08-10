@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 1032,
-        "description": 0
-      },
       "height": 0.1,
       "weight": 999.9,
       "type1": "psychic",
@@ -100,20 +96,24 @@
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "teleport",
-          "level": 1
-        },
-        {
           "klass": "LevelLearnableMove",
-          "move": "cosmic_power",
           "level": 1
         },
         {
-          "klass": "EvolutionLearnableMove",
-          "move": "cosmic_power"
+          "move": "cosmic_power",
+          "klass": "LevelLearnableMove",
+          "level": 1
+        },
+        {
+          "move": "cosmic_power",
+          "klass": "EvolutionLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 1032,
+        "description": 0
+      }
     }
   ]
 }

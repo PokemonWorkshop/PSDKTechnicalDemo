@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 747,
-        "description": 0
-      },
       "height": 0.2,
       "weight": 0.3,
       "type1": "electric",
@@ -82,38 +78,42 @@
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "tackle",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "thunder_wave",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "spark",
-          "level": 1
-        },
-        {
           "klass": "LevelLearnableMove",
-          "move": "charge_beam",
           "level": 1
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "thunder_wave"
+          "move": "charge_beam",
+          "klass": "LevelLearnableMove",
+          "level": 1
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "magnet_rise"
+          "move": "thunder_wave",
+          "klass": "TechLearnableMove"
         },
         {
-          "klass": "TechLearnableMove",
-          "move": "charge_beam"
+          "move": "magnet_rise",
+          "klass": "TutorLearnableMove"
+        },
+        {
+          "move": "charge_beam",
+          "klass": "TechLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 747,
+        "description": 0
+      }
     }
   ]
 }
