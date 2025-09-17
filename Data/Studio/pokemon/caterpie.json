@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 128,
-        "description": 0
-      },
       "height": 0.3,
       "weight": 2.9,
       "type1": "bug",
@@ -66,49 +62,53 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "010",
-        "iconShiny": "",
-        "front": "010",
-        "frontShiny": "010",
-        "back": "010",
-        "backShiny": "010",
-        "footprint": "010",
-        "character": "010_0",
-        "characterShiny": "010s_0",
-        "cry": "010cry.ogg",
+        "icon": "0010",
+        "iconShiny": "0010s",
+        "front": "0010",
+        "frontShiny": "0010s",
+        "back": "0010",
+        "backShiny": "0010s",
+        "footprint": "0010",
+        "character": "0010",
+        "characterShiny": "0010s",
+        "cry": "0010.ogg",
         "hasFemale": false,
         "egg": "egg",
         "iconEgg": "egg"
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "tackle",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "string_shot",
+          "klass": "LevelLearnableMove",
           "level": 1
         },
         {
-          "klass": "LevelLearnableMove",
           "move": "bug_bite",
+          "klass": "LevelLearnableMove",
           "level": 9
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "bug_bite"
+          "move": "snore",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "snore"
+          "move": "bug_bite",
+          "klass": "TutorLearnableMove"
         },
         {
-          "klass": "TutorLearnableMove",
-          "move": "electroweb"
+          "move": "electroweb",
+          "klass": "TutorLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 13,
+        "description": 0
+      }
     }
   ]
 }

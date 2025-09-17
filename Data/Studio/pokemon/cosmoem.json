@@ -5,10 +5,6 @@
   "forms": [
     {
       "form": 0,
-      "formTextId": {
-        "name": 167,
-        "description": 0
-      },
       "height": 0.1,
       "weight": 999.9,
       "type1": "psychic",
@@ -65,7 +61,7 @@
         15
       ],
       "hatchSteps": 30720,
-      "babyDbSymbol": "__undef__",
+      "babyDbSymbol": "cosmoem",
       "babyForm": 0,
       "itemHeld": [
         {
@@ -84,36 +80,40 @@
       ],
       "frontOffsetY": 0,
       "resources": {
-        "icon": "790",
-        "iconShiny": "",
-        "front": "790",
-        "frontShiny": "790",
-        "back": "790",
-        "backShiny": "790",
-        "footprint": "",
-        "character": "790_0",
-        "characterShiny": "790s_0",
-        "cry": "790cry.ogg",
+        "icon": "0790",
+        "iconShiny": "0790s",
+        "front": "0790",
+        "frontShiny": "0790s",
+        "back": "0790",
+        "backShiny": "0790s",
+        "footprint": "0790",
+        "character": "0790",
+        "characterShiny": "0790s",
+        "cry": "0790.ogg",
         "hasFemale": false,
         "egg": "egg",
         "iconEgg": "egg"
       },
       "moveSet": [
         {
-          "klass": "LevelLearnableMove",
           "move": "teleport",
-          "level": 1
-        },
-        {
           "klass": "LevelLearnableMove",
-          "move": "cosmic_power",
           "level": 1
         },
         {
-          "klass": "EvolutionLearnableMove",
-          "move": "cosmic_power"
+          "move": "cosmic_power",
+          "klass": "LevelLearnableMove",
+          "level": 1
+        },
+        {
+          "move": "cosmic_power",
+          "klass": "EvolutionLearnableMove"
         }
-      ]
+      ],
+      "formTextId": {
+        "name": 1032,
+        "description": 0
+      }
     }
   ]
 }
