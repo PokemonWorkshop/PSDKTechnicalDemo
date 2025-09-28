@@ -5,6 +5,10 @@
   "forms": [
     {
       "form": 0,
+      "formTextId": {
+        "name": 1001,
+        "description": 0
+      },
       "height": 2,
       "weight": 100,
       "type1": "grass",
@@ -77,7 +81,9 @@
         "characterShiny": "003s_0",
         "characterShinyF": "003fs_0",
         "cry": "003cry.ogg",
-        "hasFemale": true
+        "hasFemale": true,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
@@ -372,14 +378,14 @@
           "klass": "TechLearnableMove",
           "move": "rock_climb"
         }
-      ],
-      "formTextId": {
-        "name": 1001,
-        "description": 0
-      }
+      ]
     },
     {
       "form": 30,
+      "formTextId": {
+        "name": 1002,
+        "description": 251
+      },
       "height": 2.4,
       "weight": 155.5,
       "type1": "grass",
@@ -440,7 +446,9 @@
         "character": "003_30",
         "characterShiny": "003s_30",
         "cry": "003_30cry.ogg",
-        "hasFemale": false
+        "hasFemale": false,
+        "egg": "egg",
+        "iconEgg": "egg"
       },
       "moveSet": [
         {
@@ -682,11 +690,7 @@
           "klass": "TechLearnableMove",
           "move": "bulldoze"
         }
-      ],
-      "formTextId": {
-        "name": 1002,
-        "description": 251
-      }
+      ]
     }
   ]
 }

@@ -4,7 +4,7 @@ width: 35
 height: 32
 autoplay_bgm: true
 bgm: !ruby/object:RPG::AudioFile
-  name: Poke Center
+  name: Poke Center.ogg
   volume: 100
   pitch: 100
 autoplay_bgs: false
@@ -458,10 +458,19 @@ events:
         indent: 0
         code: 509
       - !ruby/object:RPG::EventCommand
-        parameters:
-        - ge(2).animate_from_charset([0,1],40,reverse:true)
+        parameters: []
         indent: 0
-        code: 355
+        code: 210
+      - !ruby/object:RPG::EventCommand
+        parameters:
+        - !ruby/object:Tone
+          red: 0
+          green: 0
+          blue: 0
+          gray: 0
+        - 15
+        indent: 0
+        code: 223
       - !ruby/object:RPG::EventCommand
         parameters:
         - -1
@@ -526,19 +535,14 @@ events:
         code: 509
       - !ruby/object:RPG::EventCommand
         parameters:
+        - ge(2).animate_from_charset([0,1,0,1],80,reverse:true)
+        indent: 0
+        code: 355
+      - !ruby/object:RPG::EventCommand
+        parameters:
         - 6
         indent: 0
         code: 106
-      - !ruby/object:RPG::EventCommand
-        parameters:
-        - !ruby/object:Tone
-          red: 0
-          green: 0
-          blue: 0
-          gray: 0
-        - 15
-        indent: 0
-        code: 223
       - !ruby/object:RPG::EventCommand
         parameters: []
         indent: 0
