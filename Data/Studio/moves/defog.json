@@ -11,14 +11,13 @@
   "category": "status",
   "movecriticalRate": 1,
   "priority": 0,
-  "isAuthentic": true,
+  "isAuthentic": false,
   "isBallistics": false,
   "isBite": false,
   "isBlocable": true,
   "isCharge": false,
   "isDance": false,
   "isDirect": false,
-  "isDistance": false,
   "isEffectChance": false,
   "isGravity": false,
   "isHeal": false,
@@ -33,7 +32,9 @@
   "isRecharge": false,
   "isSnatchable": false,
   "isSoundAttack": false,
+  "isSlicingAttack": false,
   "isUnfreeze": false,
+  "isWind": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
   "battleStageMod": [
     {
@@ -43,6 +44,11 @@
   ],
   "moveStatus": [],
   "effectChance": 100,
-  "isSlicingAttack": false,
-  "isWind": false
+  "condition": "cool",
+  "appeal": 2,
+  "jam": 0,
+  "comboMoves": [],
+  "effectTags": [
+    "bonus_first"
+  ]
 }

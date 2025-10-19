@@ -3,7 +3,7 @@
   "id": 218,
   "dbSymbol": "frustration",
   "mapUse": 0,
-  "battleEngineMethod": "s_return",
+  "battleEngineMethod": "s_frustration",
   "type": "normal",
   "power": 0,
   "accuracy": 100,
@@ -18,7 +18,6 @@
   "isCharge": false,
   "isDance": false,
   "isDirect": true,
-  "isDistance": false,
   "isEffectChance": false,
   "isGravity": false,
   "isHeal": false,
@@ -33,11 +32,18 @@
   "isRecharge": false,
   "isSnatchable": false,
   "isSoundAttack": false,
+  "isSlicingAttack": false,
   "isUnfreeze": false,
+  "isWind": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
   "battleStageMod": [],
   "moveStatus": [],
   "effectChance": 0,
-  "isSlicingAttack": false,
-  "isWind": false
+  "condition": "cute",
+  "appeal": 2,
+  "jam": 3,
+  "comboMoves": [],
+  "effectTags": [
+    "jam_previous"
+  ]
 }

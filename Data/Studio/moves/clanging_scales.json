@@ -3,7 +3,7 @@
   "id": 691,
   "dbSymbol": "clanging_scales",
   "mapUse": 0,
-  "battleEngineMethod": "s_basic",
+  "battleEngineMethod": "s_self_stat",
   "type": "dragon",
   "power": 110,
   "accuracy": 100,
@@ -18,11 +18,10 @@
   "isCharge": false,
   "isDance": false,
   "isDirect": false,
-  "isDistance": false,
   "isEffectChance": false,
   "isGravity": false,
   "isHeal": false,
-  "isKingRockUtility": false,
+  "isKingRockUtility": true,
   "isMagicCoatAffected": false,
   "isMental": false,
   "isMirrorMove": true,
@@ -33,11 +32,21 @@
   "isRecharge": false,
   "isSnatchable": false,
   "isSoundAttack": true,
-  "isUnfreeze": false,
-  "battleEngineAimedTarget": "adjacent_pokemon",
-  "battleStageMod": [],
-  "moveStatus": [],
-  "effectChance": 0,
   "isSlicingAttack": false,
-  "isWind": false
+  "isUnfreeze": false,
+  "isWind": false,
+  "battleEngineAimedTarget": "adjacent_all_foe",
+  "battleStageMod": [
+    {
+      "battleStage": "DFE_STAGE",
+      "modificator": -1
+    }
+  ],
+  "moveStatus": [],
+  "effectChance": 100,
+  "condition": "cool",
+  "appeal": 4,
+  "jam": 0,
+  "comboMoves": [],
+  "effectTags": []
 }

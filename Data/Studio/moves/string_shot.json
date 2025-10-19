@@ -18,7 +18,6 @@
   "isCharge": false,
   "isDance": false,
   "isDirect": false,
-  "isDistance": false,
   "isEffectChance": false,
   "isGravity": false,
   "isHeal": false,
@@ -33,16 +32,27 @@
   "isRecharge": false,
   "isSnatchable": false,
   "isSoundAttack": false,
+  "isSlicingAttack": false,
   "isUnfreeze": false,
+  "isWind": false,
   "battleEngineAimedTarget": "adjacent_all_foe",
   "battleStageMod": [
     {
       "battleStage": "SPD_STAGE",
-      "modificator": -1
+      "modificator": -2
     }
   ],
   "moveStatus": [],
   "effectChance": 100,
-  "isSlicingAttack": false,
-  "isWind": false
+  "condition": "clever",
+  "appeal": 2,
+  "jam": 3,
+  "comboMoves": [
+    "electroweb",
+    "spider_web",
+    "sticky_web"
+  ],
+  "effectTags": [
+    "jam_previous"
+  ]
 }

@@ -18,11 +18,10 @@
   "isCharge": false,
   "isDance": false,
   "isDirect": true,
-  "isDistance": false,
   "isEffectChance": false,
   "isGravity": false,
   "isHeal": false,
-  "isKingRockUtility": false,
+  "isKingRockUtility": true,
   "isMagicCoatAffected": false,
   "isMental": false,
   "isMirrorMove": true,
@@ -33,16 +32,23 @@
   "isRecharge": false,
   "isSnatchable": false,
   "isSoundAttack": false,
+  "isSlicingAttack": false,
   "isUnfreeze": false,
+  "isWind": false,
   "battleEngineAimedTarget": "adjacent_pokemon",
   "battleStageMod": [],
   "moveStatus": [
     {
       "status": "CONFUSED",
-      "luckRate": 20
+      "luckRate": 100
     }
   ],
   "effectChance": 20,
-  "isSlicingAttack": false,
-  "isWind": false
+  "condition": "cute",
+  "appeal": 3,
+  "jam": 0,
+  "comboMoves": [],
+  "effectTags": [
+    "cancel_others_combo"
+  ]
 }
