@@ -54,7 +54,7 @@ float compute_distance(vec2 pixPos, vec2 to){
 // Scroll preset
 vec4 scroll(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
-  float dist = clamp(compute_distance(pixPos,CENTER) * dist_factor,0.0,1.0);
+  float dist = min(max(compute_distance(pixPos,CENTER) * dist_factor,0.0),1.0);
   return vec4(texture2D(extra_texture, mod(pixPos + direction1 * time,vec2(1.0))).rgb,dist);
 }
 
