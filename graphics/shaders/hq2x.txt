@@ -58,10 +58,10 @@ void main() {
   float lc1 = k / (0.12 * dot(c10 + c12 + c11, dt) + lum_add);
   float lc2 = k / (0.12 * dot(c01 + c21 + c11, dt) + lum_add);
 
-  w1 = clamp(lc1 * dot(abs(c11 - c10), dt) + mx, min_w, max_w);
-  w2 = clamp(lc2 * dot(abs(c11 - c21), dt) + mx, min_w, max_w);
-  w3 = clamp(lc1 * dot(abs(c11 - c12), dt) + mx, min_w, max_w);
-  w4 = clamp(lc2 * dot(abs(c11 - c01), dt) + mx, min_w, max_w);
+  w1 = min(max(lc1 * dot(abs(c11 - c10), dt) + mx, min_w), max_w);
+  w2 = min(max(lc2 * dot(abs(c11 - c21), dt) + mx, min_w), max_w);
+  w3 = min(max(lc1 * dot(abs(c11 - c12), dt) + mx, min_w), max_w);
+  w4 = min(max(lc2 * dot(abs(c11 - c01), dt) + mx, min_w), max_w);
 
   vec4 frag;
   frag.xyz = w1 * c10 + w2 * c21 + w3 * c12 + w4 * c01 + (1.0 - w1 - w2 - w3 - w4) * c11;

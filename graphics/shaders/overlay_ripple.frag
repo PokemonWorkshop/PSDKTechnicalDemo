@@ -63,12 +63,12 @@ vec4 ripple(vec2 pixPos)
   float map = outer_map * inner_map;
 
   // Fading factor with distance
-  float fade = clamp(1.2 - spread,0.0,1.0);
+  float fade = min(max(1.2 - spread,0.0),1.0);
 
   // Normalize the result
   vec2 displacement = normalize(gl_TexCoord[0].xy - position) * amount * map * fade;
 
-  return texture2D(texture, clamp(gl_TexCoord[0].xy - displacement, vec2(0.0), vec2(1.0))) + map * sample_color * fade;
+  return texture2D(texture, min(max(gl_TexCoord[0].xy - displacement, vec2(0.0)), vec2(1.0))) + map * sample_color * fade;
 }
 
 // Account for opacity in blend modes

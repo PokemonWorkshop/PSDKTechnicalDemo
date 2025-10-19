@@ -71,7 +71,7 @@ vec4 fog(vec2 pixPos){
   float energy = noise1.r * noise2.r;
   vec4 color_intensity = sample_color;
 
-  return vec4(color_intensity.rgb,clamp(0.0,1.0,energy+dist));
+  return vec4(color_intensity.rgb,min(max(dist+energy,0.0),1.0));
 }
 
 // Account for opacity in blend modes

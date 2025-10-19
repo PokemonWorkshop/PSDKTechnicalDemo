@@ -52,7 +52,7 @@ float compute_distance(vec2 pixPos, vec2 to){
 // static_image preset
 vec4 static_image(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
-  float dist = clamp(compute_distance(pixPos,CENTER) * dist_factor,0.0,1.0);
+  float dist = min(max(compute_distance(pixPos,CENTER) * dist_factor,0.0),1.0);
 
   return vec4(texture2D(extra_texture, pixPos).rgb,dist);
 }
