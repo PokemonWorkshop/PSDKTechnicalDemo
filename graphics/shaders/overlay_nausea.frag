@@ -1,5 +1,5 @@
 // Uniform keeping track of whether the current frame is a snapshot (inverted)
-uniform bool in_snapshot = false;
+uniform bool in_snapshot;
 
 // Uniform keeping track of the blend mode
 // 0: normal (mix)
@@ -8,14 +8,14 @@ uniform bool in_snapshot = false;
 // 3: multiply
 // 4: overlay
 // 5: screen
-uniform int blend_mode = 0;
+uniform int blend_mode;
 
 // Compatibility with other SpritesetMap shaders
 
 const vec3 lumaF = vec3(.299, .587, .114);
 
-uniform vec4 color = vec4(0.0,0.0,0.0,0.0);
-uniform vec4 tone = vec4(0.0,0.0,0.0,0.0);
+uniform vec4 color;
+uniform vec4 tone;
 
 // Uniform keeping track of base texture
 uniform sampler2D texture;
@@ -23,7 +23,7 @@ uniform sampler2D texture;
 // Uniform keeping track of the time variable
 uniform float time;
 // Uniform keeping track of the opacity variable
-uniform float opacity = 1.0;
+uniform float opacity;
 
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
@@ -56,7 +56,7 @@ vec4 nausea(vec2 pixPos)
   } else {
     fixedTime = time;
   }
-  vec2 normalizedPosition = vec2(0.5) - (vec2(0.5) - pixPos) * offset * rotate(sin(fixedTime * PI * 2) / 40.0);
+  vec2 normalizedPosition = vec2(0.5) - (vec2(0.5) - pixPos) * offset * rotate(sin(fixedTime * PI * 2.0) / 40.0);
 
   return texture2D(texture, normalizedPosition);
 }

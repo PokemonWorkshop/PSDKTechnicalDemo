@@ -5,17 +5,17 @@
 // 3: multiply
 // 4: overlay
 // 5: screen
-uniform int blend_mode = 0;
+uniform int blend_mode;
 
 // Compatibility with other SpritesetMap shaders
 
 const vec3 lumaF = vec3(.299, .587, .114);
 
-uniform vec4 color = vec4(0.0, 0.0, 0.0, 0.0);
-uniform vec4 tone = vec4(0.0, 0.0, 0.0, 0.0);
+uniform vec4 color;
+uniform vec4 tone;
 
 // Uniform keeping track of a sample color
-uniform vec4 sample_color = vec4(0.9, 0.9, 1.0, 1.0);
+uniform vec4 sample_color;
 
 // Uniform keeping track of base texture
 uniform sampler2D texture;
@@ -24,16 +24,24 @@ uniform sampler2D texture;
 uniform sampler2D noise;
 
 // Uniform keeping track of a first scroll
-uniform vec2 direction1 = vec2(0.1, 0.1);
+uniform vec2 direction1;
 // Uniform keeping track of a second scroll
-uniform vec2 direction2 = vec2(-0.1, -0.1);
+const vec2 direction2 = vec2(-0.1, -0.1);
 
 // Uniform keeping track of the time variable
 uniform float time;
 // Uniform keeping track of the opacity variable
-uniform float opacity = 1.0;
+uniform float opacity;
 // Uniform keeping track of the factor by which the distance should be multiplied
-uniform float dist_factor = 1.5;
+uniform float dist_factor;
+
+#ifdef GL_ES
+uniform vec2 noise_factor_npot;
+#else
+const vec2 noise_factor_npot = vec2(1.0, 1.0);
+#endif
+
+varying vec2 v_factor_npot;
 
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
@@ -60,13 +68,13 @@ float compute_distance(vec2 pixPos, vec2 to){
 // Fog overlay preset
 vec4 fog(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
- float dist = compute_distance(pixPos,CENTER) * dist_factor;
+  float dist = compute_distance(pixPos / v_factor_npot, CENTER) * dist_factor;
   // Wobble disruption according to time
   vec2 wobble = vec2(cos(time)*0.03,sin(time)*0.05);
 
   // Load the noise texture's pixels with a wobble
-  vec4 noise1 = texture2D(noise, mod(pixPos + direction1 * time + wobble,vec2(1.0)));
-  vec4 noise2 = texture2D(noise, mod(pixPos + direction2 * time,vec2(1.0)));
+  vec4 noise1 = texture2D(noise, mod(pixPos + direction1 * time + wobble, noise_factor_npot));
+  vec4 noise2 = texture2D(noise, mod(pixPos + direction2 * time, noise_factor_npot));
 
   float energy = noise1.r * noise2.r;
   vec4 color_intensity = sample_color;
