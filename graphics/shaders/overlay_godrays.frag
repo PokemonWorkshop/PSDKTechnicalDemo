@@ -105,7 +105,7 @@ vec4 godrays(vec2 pixPos)
   ray2 *= cut;
 
   // Apply the noise pattern (i.e. create the rays)
-  float rays = clamp(noise_gen(ray1) + (noise_gen(ray2) * ray2_intensity), 0., 1.);
+  float rays = min(max(noise_gen(ray1) + (noise_gen(ray2) * ray2_intensity), 0.), 1.);
 
   // Fade out edges
   rays *= smoothstep(0.0, falloff, (pixPos.y)); // Bottom
