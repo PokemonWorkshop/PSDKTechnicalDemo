@@ -1,19 +1,14 @@
 --- !ruby/object:RPG::Map
-tileset_id: 4
-width: 20
-height: 15
 autoplay_bgm: false
+autoplay_bgs: false
 bgm: !ruby/object:RPG::AudioFile
   name: ''
-  volume: 100
   pitch: 100
-autoplay_bgs: false
+  volume: 100
 bgs: !ruby/object:RPG::AudioFile
   name: ''
-  volume: 80
   pitch: 100
-encounter_list: []
-encounter_step: 30
+  volume: 80
 data: !ruby/object:Table
   data: |
     init 20 15 3
@@ -65,4 +60,9 @@ data: !ruby/object:Table
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+encounter_list: []
+encounter_step: 30
 events: {}
+height: 15
+tileset_id: 4
+width: 20
