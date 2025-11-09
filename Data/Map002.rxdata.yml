@@ -1,19 +1,14 @@
 --- !ruby/object:RPG::Map
-tileset_id: 2
-width: 32
-height: 32
 autoplay_bgm: false
+autoplay_bgs: false
 bgm: !ruby/object:RPG::AudioFile
   name: ''
-  volume: 100
   pitch: 100
-autoplay_bgs: false
+  volume: 100
 bgs: !ruby/object:RPG::AudioFile
   name: ''
-  volume: 100
   pitch: 100
-encounter_list: []
-encounter_step: 30
+  volume: 100
 data: !ruby/object:Table
   data: |
     init 32 32 3
@@ -116,80 +111,107 @@ data: !ruby/object:Table
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
     0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+encounter_list: []
+encounter_step: 30
 events:
   1: !ruby/object:RPG::Event
+    id: 1
+    name: !binary |-
+      wqdTdGFydA==
     pages:
     - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
       list:
       - !ruby/object:RPG::EventCommand
+        code: 122
+        indent: 0
         parameters:
         - 47
         - 47
         - 0
         - 0
         - 3
-        indent: 0
-        code: 122
       - !ruby/object:RPG::EventCommand
+        code: 122
+        indent: 0
         parameters:
         - 48
         - 48
         - 0
         - 0
         - 18
-        indent: 0
-        code: 122
       - !ruby/object:RPG::EventCommand
+        code: 122
+        indent: 0
         parameters:
         - 49
         - 49
         - 0
         - 0
         - 42
-        indent: 0
-        code: 122
       - !ruby/object:RPG::EventCommand
+        code: 121
+        indent: 0
         parameters:
         - 2
         - 2
         - 0
-        indent: 0
-        code: 121
       - !ruby/object:RPG::EventCommand
+        code: 121
+        indent: 0
         parameters:
         - 10
         - 10
         - 0
-        indent: 0
-        code: 121
       - !ruby/object:RPG::EventCommand
+        code: 121
+        indent: 0
         parameters:
         - 7
         - 7
         - 0
-        indent: 0
-        code: 121
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
         parameters:
         - "$pokemon_party.tint_time_set = :platinum_daynight"
-        indent: 0
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 125
+        indent: 0
         parameters:
         - 0
         - 0
         - 3000
-        indent: 0
-        code: 125
       - !ruby/object:RPG::EventCommand
+        code: 241
+        indent: 0
         parameters:
         - !ruby/object:RPG::AudioFile
           name: Professor Rowan
-          volume: 100
           pitch: 100
-        indent: 0
-        code: 241
+          volume: 100
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 1
         - Intro
@@ -201,9 +223,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 8
         - SirMalo
@@ -215,9 +237,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 7
         - Aerun
@@ -229,9 +251,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 6
         - NuriYuri
@@ -243,9 +265,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 5
         - Palbolsky
@@ -257,9 +279,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 4
         - Rey
@@ -271,9 +293,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 3
         - Walven
@@ -285,9 +307,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 1
         - 30
@@ -299,14 +321,14 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 30
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 8
         - 40
@@ -318,134 +340,134 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 45
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 0 :[name=???]:Hello Maker, and welcome to the PokémonSDK Technical Demo!
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
         parameters:
         - set_self_switch(true, "A", 2)
-        indent: 0
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 1 :[name=SirMalo]:I am SirMalo,[WAIT 40] and here are my workmates Aerun,[WAIT
           100] Nuri Yuri,[WAIT 100] Palbolsky,[WAIT 100] Rey,[WAIT 100] and Walven![WAIT
           100]
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 2 :[name=SirMalo]:This technical demo is the result of our continued
           collaboration and shows how far we've come since the first release of PokémonSDK.
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 3 :[name=SirMalo]:Of course, PokémonSDK would never have reached this
           level without all the contributors who played their part!
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 4 :[name=SirMalo]:As far as this demo is concerned, it will let you test
           the different systems we offer with PokémonSDK ingame.
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 5 :[name=SirMalo]:But it is also connected with Pokémon Studio, and it
           will let you see how these features are implemented.
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 6 :[name=SirMalo]:You will soon arrive on the Island, a collection of
           maps on which you will be able to explore and experiment on.
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 7 :[name=SirMalo]:You'll want to start by going to the Tower, as it will
           be the beginning of your journey. Someone will wait for you there.
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 401
+        indent: 0
         parameters:
         - Quelqu'un t'y attend.
-        indent: 0
-        code: 401
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 8 :[name=SirMalo]:But before you leave, I have to ask you for some information.
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 9 :[name=SirMalo]:Do you know how to change your controls?
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 102
+        indent: 0
         parameters:
         - - "\\t[11,27]"
           - "\\t[11,28]"
         - 2
-        indent: 0
-        code: 102
       - !ruby/object:RPG::EventCommand
+        code: 402
+        indent: 0
         parameters:
         - 0
         - "\\t[11,27]"
-        indent: 0
-        code: 402
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 1
         parameters:
         - 2, 10 :[name=SirMalo]:Great! Then let's continue with the next question.
-        indent: 1
-        code: 101
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
         code: 0
+        indent: 1
+        parameters: []
       - !ruby/object:RPG::EventCommand
+        code: 402
+        indent: 0
         parameters:
         - 1
         - "\\t[11,28]"
-        indent: 0
-        code: 402
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 1
         parameters:
         - 2, 11 :[name=SirMalo]:To change your controls, press the F1 button at any
           point after this introduction!
-        indent: 1
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 1
         parameters:
         - 2, 12 :[name=SirMalo]:You can then modify your controls as you see fit.
-        indent: 1
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 1
         parameters:
         - 2, 13 :[name=SirMalo]:Let's move on to the next question.
-        indent: 1
-        code: 101
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 1
         code: 0
-      - !ruby/object:RPG::EventCommand
+        indent: 1
         parameters: []
-        indent: 0
-        code: 404
       - !ruby/object:RPG::EventCommand
+        code: 404
+        indent: 0
+        parameters: []
+      - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 7
         - 20
@@ -457,9 +479,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 6
         - 20
@@ -471,9 +493,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 5
         - 20
@@ -485,9 +507,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 4
         - 20
@@ -499,9 +521,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 3
         - 20
@@ -513,14 +535,14 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 30
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 3
         - Ethan-intro
@@ -532,9 +554,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 4
         - Lyra-intro
@@ -546,9 +568,9 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 3
         - 20
@@ -560,9 +582,9 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 4
         - 20
@@ -574,50 +596,50 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
         code: 112
+        indent: 0
+        parameters: []
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 1
         parameters:
         - 2, 14 :[name=SirMalo]:Which appearence defines you the best?
-        indent: 1
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 102
+        indent: 1
         parameters:
         - - 2, 15 Left
           - 2, 16 Right
         - 2
-        indent: 1
-        code: 102
       - !ruby/object:RPG::EventCommand
+        code: 402
+        indent: 1
         parameters:
         - 0
         - 2, 15 Left
-        indent: 1
-        code: 402
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 2
         parameters:
         - "$trainer.define_gender(false)"
-        indent: 2
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 2
         parameters:
         - "$trainer.name = 'Ethan'"
-        indent: 2
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 322
+        indent: 2
         parameters:
         - 1
         - ''
         - 0
         - hero_01_ethan
         - 0
-        indent: 2
-        code: 322
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 2
         parameters:
         - 4
         - 20
@@ -629,38 +651,38 @@ events:
         - 100
         - 0
         - 0
-        indent: 2
-        code: 232
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
         code: 0
+        indent: 2
+        parameters: []
       - !ruby/object:RPG::EventCommand
+        code: 402
+        indent: 1
         parameters:
         - 1
         - 2, 16 Right
-        indent: 1
-        code: 402
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 2
         parameters:
         - "$trainer.define_gender(true)"
-        indent: 2
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 2
         parameters:
         - "$trainer.name = 'Lyra'"
-        indent: 2
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 322
+        indent: 2
         parameters:
         - 1
         - ''
         - 0
         - hero_01_lyra
         - 0
-        indent: 2
-        code: 322
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 2
         parameters:
         - 3
         - 20
@@ -672,105 +694,105 @@ events:
         - 100
         - 0
         - 0
-        indent: 2
-        code: 232
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
         code: 0
-      - !ruby/object:RPG::EventCommand
+        indent: 2
         parameters: []
-        indent: 1
-        code: 404
       - !ruby/object:RPG::EventCommand
+        code: 404
+        indent: 1
+        parameters: []
+      - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 1
         parameters:
         - Here, we're setting the base appearance of the player.
-        indent: 1
-        code: 108
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 1
         parameters:
         - ''
-        indent: 1
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 1
         parameters:
         - 'The system will then seek the player_m files for the male '
-        indent: 1
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 1
         parameters:
         - character and the player_f for the female character.
-        indent: 1
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 1
         parameters:
         - ''
-        indent: 1
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 1
         parameters:
         - 'You can check how the files names are formated in the '
-        indent: 1
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 1
         parameters:
         - folder:graphics/characters
-        indent: 1
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 1
         parameters:
         - "$game_player.set_appearance_set('player')"
-        indent: 1
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 1
         parameters:
         - 2, 17 :[name=SirMalo]:Finally, what is your name?
-        indent: 1
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 303
+        indent: 1
         parameters:
         - 1
         - 12
-        indent: 1
-        code: 303
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 1
         parameters:
         - 2, 18 :[name=SirMalo]:\n[1]? It's a great name!
-        indent: 1
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 401
+        indent: 1
         parameters:
         - Did I write it properly?
-        indent: 1
-        code: 401
       - !ruby/object:RPG::EventCommand
+        code: 102
+        indent: 1
         parameters:
         - - "\\t[11,27]"
           - "\\t[11,28]"
         - 2
-        indent: 1
-        code: 102
       - !ruby/object:RPG::EventCommand
+        code: 402
+        indent: 1
         parameters:
         - 0
         - "\\t[11,27]"
-        indent: 1
-        code: 402
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
         code: 113
-      - !ruby/object:RPG::EventCommand
-        parameters: []
         indent: 2
-        code: 0
+        parameters: []
       - !ruby/object:RPG::EventCommand
+        code: 0
+        indent: 2
+        parameters: []
+      - !ruby/object:RPG::EventCommand
+        code: 402
+        indent: 1
         parameters:
         - 1
         - "\\t[11,28]"
-        indent: 1
-        code: 402
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 2
         parameters:
         - 3
         - 20
@@ -782,9 +804,9 @@ events:
         - 100
         - 255
         - 0
-        indent: 2
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 2
         parameters:
         - 4
         - 20
@@ -796,120 +818,118 @@ events:
         - 100
         - 255
         - 0
-        indent: 2
-        code: 232
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 2
         code: 0
-      - !ruby/object:RPG::EventCommand
+        indent: 2
         parameters: []
-        indent: 1
+      - !ruby/object:RPG::EventCommand
         code: 404
-      - !ruby/object:RPG::EventCommand
-        parameters: []
         indent: 1
-        code: 0
-      - !ruby/object:RPG::EventCommand
         parameters: []
-        indent: 0
-        code: 413
       - !ruby/object:RPG::EventCommand
+        code: 0
+        indent: 1
+        parameters: []
+      - !ruby/object:RPG::EventCommand
+        code: 413
+        indent: 0
+        parameters: []
+      - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 19 :[name=SirMalo]:We're done, young Maker!
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 20 :[name=SirMalo]:You can now experiment with this demo and discover
           the features of PokémonSDK!
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
         parameters:
         - 2, 21 :[name=SirMalo]:Have fun!
-        indent: 0
-        code: 101
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
         code: 221
+        indent: 0
+        parameters: []
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 1
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 2
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 3
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 4
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 5
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 6
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 7
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 235
+        indent: 0
         parameters:
         - 8
-        indent: 0
-        code: 235
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
         parameters:
         - set_self_switch(true, "A", 4, 19)
-        indent: 0
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 242
+        indent: 0
         parameters:
         - 1
-        indent: 0
-        code: 242
       - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
         parameters:
         - "!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - Delete the 4 next commands to have a teleportation
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - without issues!
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - "!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 209
+        indent: 0
         parameters:
         - -1
         - !ruby/object:RPG::MoveRoute
-          repeat: false
-          skippable: false
           list:
           - &1 !ruby/object:RPG::MoveCommand
             code: 42
@@ -918,14 +938,16 @@ events:
           - !ruby/object:RPG::MoveCommand
             code: 0
             parameters: []
-        indent: 0
-        code: 209
+          repeat: false
+          skippable: false
       - !ruby/object:RPG::EventCommand
+        code: 509
+        indent: 0
         parameters:
         - *1
-        indent: 0
-        code: 509
       - !ruby/object:RPG::EventCommand
+        code: 231
+        indent: 0
         parameters:
         - 50
         - white
@@ -937,14 +959,14 @@ events:
         - 100
         - 0
         - 0
-        indent: 0
-        code: 231
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 1
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 50
         - 19
@@ -956,166 +978,166 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
         parameters:
         - Here, we're defining the items and the TM shops on the3
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - Exterior map
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
         parameters:
         - 'add_limited_shop(:shop_items, [:choice_scarf, :rocky_helmet, :king_s_rock,
           :life_orb, :focus_sash, :intriguing_stone], [1, 1, 1, 1, 1], shop_rewrite:
           false)'
-        indent: 0
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
         parameters:
         - 'add_limited_shop(:shop_tms, [:tm06, :tm26, :tm55, :tm83], [1, 1, 1, 1],
           shop_rewrite: false)'
-        indent: 0
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
         parameters:
         - Here we're defining the limited shop of the Farmer NPC on
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - the Exterior map. The shop will have one unit of each
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - !binary |-
           UG9rw6ltb24gKGxldmVsIDI1KSBsaXN0ZWQgaGVyZTog
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - Miltank, Mareep, Tauros, Purrloin, Farfetch'd
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
         parameters:
         - PFM.game_state.shop.create_new_pokemon_shop(:farmer_shop, [:miltank], [3500],
           [25])
-        indent: 0
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
         parameters:
         - PFM.game_state.shop.refill_pokemon_shop(:farmer_shop, [:mareep], list_price
           = [2500], list_param = [25])
-        indent: 0
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
         parameters:
         - PFM.game_state.shop.refill_pokemon_shop(:farmer_shop, [:tauros], list_price
           = [4000], list_param = [25])
-        indent: 0
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
         parameters:
         - PFM.game_state.shop.refill_pokemon_shop(:farmer_shop, [:purrloin], list_price
           = [1500], list_param = [25])
-        indent: 0
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
         parameters:
         - PFM.game_state.shop.refill_pokemon_shop(:farmer_shop, [:farfetch_d], list_price
           = [3000], list_param = [25])
-        indent: 0
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
         parameters:
         - 'We initialize, on the map 19 (Exterior),  the Berry plants for '
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - 'the events with ID 12 and 13 and giving those an '
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - Oran Berry and a Sitrus Berry respectively.
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - The "3" on the second command means the berry begins
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - at the stage 3 out of 4, so only the Oran berry will be ready
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - at the beginning of the game.
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
         parameters:
         - Yuki::Berries.init_berry(19, 12, :oran_berry)
-        indent: 0
-        code: 355
       - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
         parameters:
         - Yuki::Berries.init_berry(19, 13, :sitrus_berry, 3)
-        indent: 0
-        code: 655
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 30
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
         parameters:
         - "!!!IMPORTANT, PLEASE READ!!!"
-        indent: 0
-        code: 108
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - This event lowers the opacity of the player and display
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - a white image to give the illusion of a flash happening
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - and to let the player "exit" the ship. You might want to
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - delete these commands to ensure you'll have a proper
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
         parameters:
         - teleportation! (search a comment beginning with !!!!!!!!)
-        indent: 0
-        code: 408
       - !ruby/object:RPG::EventCommand
+        code: 132
+        indent: 0
         parameters:
         - !ruby/object:RPG::AudioFile
           name: Wild Battle (Kanto)
-          volume: 100
           pitch: 100
-        indent: 0
-        code: 132
+          volume: 100
       - !ruby/object:RPG::EventCommand
+        code: 201
+        indent: 0
         parameters:
         - 0
         - 19
@@ -1123,69 +1145,68 @@ events:
         - 60
         - 2
         - 1
-        indent: 0
-        code: 201
       - !ruby/object:RPG::EventCommand
+        code: 241
+        indent: 0
         parameters:
         - !ruby/object:RPG::AudioFile
           name: ''
-          volume: 100
           pitch: 100
-        indent: 0
-        code: 241
+          volume: 100
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
         code: 0
-      move_type: 0
-      direction_fix: false
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch2_valid: false
-        self_switch_ch: A
-        switch1_id: 1
-        switch1_valid: false
-        variable_value: 0
-        self_switch_valid: false
-        variable_id: 1
-        variable_valid: false
-        switch2_id: 1
+        indent: 0
+        parameters: []
+      move_frequency: 6
       move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
         list:
         - !ruby/object:RPG::MoveCommand
           code: 0
           parameters: []
-      trigger: 4
-      step_anime: false
-      move_frequency: 6
-      always_on_top: false
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        opacity: 255
-        character_name: ''
-        pattern: 0
-        tile_id: 0
-        direction: 2
-        blend_type: 0
-        character_hue: 0
-      walk_anime: true
+        repeat: true
+        skippable: false
       move_speed: 6
+      move_type: 0
+      step_anime: false
       through: false
-    name: !binary |-
-      wqdTdGFydA==
-    y: 16
+      trigger: 4
+      walk_anime: true
     x: 16
-    id: 1
+    y: 16
   2: !ruby/object:RPG::Event
+    id: 2
+    name: EV002
     pages:
     - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: true
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
       list:
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 30
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 7
         - 20
@@ -1197,14 +1218,14 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 50
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 6
         - 20
@@ -1216,14 +1237,14 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 50
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 5
         - 20
@@ -1235,14 +1256,14 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 50
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 4
         - 20
@@ -1254,14 +1275,14 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 50
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
+        code: 232
+        indent: 0
         parameters:
         - 3
         - 20
@@ -1273,56 +1294,35 @@ events:
         - 100
         - 255
         - 0
-        indent: 0
-        code: 232
       - !ruby/object:RPG::EventCommand
+        code: 106
+        indent: 0
         parameters:
         - 50
-        indent: 0
-        code: 106
       - !ruby/object:RPG::EventCommand
-        parameters: []
-        indent: 0
         code: 116
-      - !ruby/object:RPG::EventCommand
-        parameters: []
         indent: 0
+        parameters: []
+      - !ruby/object:RPG::EventCommand
         code: 0
-      move_type: 0
-      direction_fix: false
-      condition: !ruby/object:RPG::Event::Page::Condition
-        switch2_valid: false
-        self_switch_ch: A
-        switch1_id: 1
-        switch1_valid: false
-        variable_value: 0
-        self_switch_valid: true
-        variable_id: 1
-        variable_valid: false
-        switch2_id: 1
+        indent: 0
+        parameters: []
+      move_frequency: 3
       move_route: !ruby/object:RPG::MoveRoute
-        repeat: true
-        skippable: false
         list:
         - !ruby/object:RPG::MoveCommand
           code: 0
           parameters: []
-      trigger: 4
-      step_anime: false
-      move_frequency: 3
-      always_on_top: false
-      graphic: !ruby/object:RPG::Event::Page::Graphic
-        opacity: 255
-        character_name: ''
-        pattern: 0
-        tile_id: 0
-        direction: 2
-        blend_type: 0
-        character_hue: 0
-      walk_anime: true
+        repeat: true
+        skippable: false
       move_speed: 3
+      move_type: 0
+      step_anime: false
       through: false
-    name: EV002
-    y: 16
+      trigger: 4
+      walk_anime: true
     x: 17
-    id: 2
+    y: 16
+height: 32
+tileset_id: 2
+width: 32
