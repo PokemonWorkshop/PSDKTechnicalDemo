@@ -1,0 +1,81 @@
+--- !ruby/object:Configs::Console
+tab_width: 2
+max_depth: 2
+variable_limit: 10
+true_color: true
+colors:
+  !ruby/class 'String': !ruby/object:Configs::Console::Color
+    ansi_fallback: 2
+    red: 100
+    green: 195
+    blue: 60
+  !ruby/class 'Integer': !ruby/object:Configs::Console::Color
+    ansi_fallback: 4
+    red: 0
+    green: 158
+    blue: 255
+  !ruby/class 'Float': !ruby/object:Configs::Console::Color
+    ansi_fallback: 4
+    red: 0
+    green: 158
+    blue: 255
+  !ruby/class 'Symbol': !ruby/object:Configs::Console::Color
+    ansi_fallback: 8
+    red: 150
+    green: 150
+    blue: 170
+  !ruby/class 'TrueClass': !ruby/object:Configs::Console::Color
+    ansi_fallback: 10
+    red: 0
+    green: 255
+    blue: 150
+  !ruby/class 'FalseClass': !ruby/object:Configs::Console::Color
+    ansi_fallback: 9
+    red: 255
+    green: 102
+    blue: 102
+  !ruby/class 'Hash': !ruby/object:Configs::Console::Color
+    ansi_fallback: 3
+    red: 255
+    green: 204
+    blue: 102
+  !ruby/class 'Array': !ruby/object:Configs::Console::Color
+    ansi_fallback: 15
+    red:
+    green:
+    blue:
+  !ruby/class 'Object': !ruby/object:Configs::Console::Color
+    ansi_fallback: 15
+    red: 255
+    green: 255
+    blue: 255
+  :error: !ruby/object:Configs::Console::Color
+    ansi_fallback: 1
+    red: 255
+    green: 51
+    blue: 51
+  :info: !ruby/object:Configs::Console::Color
+    ansi_fallback: 2
+    red: 102
+    green: 255
+    blue: 102
+  :debug: !ruby/object:Configs::Console::Color
+    ansi_fallback: 6
+    red: 102
+    green: 255
+    blue: 255
+  :data: !ruby/object:Configs::Console::Color
+    ansi_fallback: 3
+    red: 255
+    green: 220
+    blue: 102
+  :ivar: !ruby/object:Configs::Console::Color
+    ansi_fallback: 12
+    red: 190
+    green: 115
+    blue: 255
+  :const: !ruby/object:Configs::Console::Color
+    ansi_fallback: 3
+    red: 255
+    green: 170
+    blue: 102
