@@ -32,7 +32,7 @@ uniform float dist_factor;
 #ifdef GL_ES
 uniform vec2 extra_texture_factor_npot;
 #else
-const vec2 extra_texture_factor_npot = vec2(1.0, 1.0):
+const vec2 extra_texture_factor_npot = vec2(1.0, 1.0);
 #endif
 
 varying vec2 v_factor_npot;

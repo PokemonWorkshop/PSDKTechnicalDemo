@@ -1,5 +1,3 @@
-#version 120
-
 uniform vec2 displayCoordinates;
 uniform vec2 screenFactor;
 uniform vec2 waterOffset;

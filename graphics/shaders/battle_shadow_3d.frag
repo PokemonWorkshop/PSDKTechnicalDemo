@@ -1,5 +1,3 @@
-#version 120
-
 uniform sampler2D texture;
 const vec4 gray = vec4(0.4, 0.4, 0.4, 0.3);
 const vec4 blank = vec4(0, 0, 0, 0);
