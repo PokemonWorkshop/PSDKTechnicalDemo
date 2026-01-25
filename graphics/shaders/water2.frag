@@ -1,5 +1,3 @@
-#version 120
-
 uniform sampler2D texture;
 uniform sampler2D waterTexture;
 uniform sampler2D stillWaterTexture;

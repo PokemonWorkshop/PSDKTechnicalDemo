@@ -1,15 +1,17 @@
+varying vec2 v_factor_npot;
 uniform float yval[10];
 uniform sampler2D texture;
 const vec4 dark = vec4(.0, .0, .0, 1.);
 void main()
 {
-  vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
-  float y = gl_TexCoord[0].y;
+  vec2 tc = gl_TexCoord[0].xy;
+  vec4 frag = texture2D(texture, tc);
+  float y = tc.y * factor_npot.y;
   for(int i = 0; i < 10; i++)
   {
     if(yval[i] >= y)
     {
-      frag = mix(frag, dark, float(10 - i) / 10);
+      frag = mix(frag, dark, float(10 - i) / 10.f);
       break;
     }
   }

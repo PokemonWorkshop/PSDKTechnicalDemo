@@ -5,14 +5,14 @@
 // 3: multiply
 // 4: overlay
 // 5: screen
-uniform int blend_mode = 0;
+uniform int blend_mode;
 
 // Compatibility with other SpritesetMap shaders
 
 const vec3 lumaF = vec3(.299, .587, .114);
 
-uniform vec4 color = vec4(0.0,0.0,0.0,0.0);
-uniform vec4 tone = vec4(0.0,0.0,0.0,0.0);
+uniform vec4 color;
+uniform vec4 tone;
 
 // Uniform keeping track of base texture
 uniform sampler2D texture;
@@ -23,14 +23,23 @@ uniform sampler2D extra_texture;
 // Uniform keeping track of the time variable
 uniform float time;
 // Uniform keeping track of the opacity variable
-uniform float opacity = 1.0;
+uniform float opacity;
 // Uniform keeping track of the factor by which the distance should be multiplied
-uniform float dist_factor = 1.5;
+uniform float dist_factor;
+
 
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
 // Constant keeping track of the UV coordinates of the center of the screen
 const vec2 CENTER = vec2(0.5, 0.5);
+
+varying vec2 v_factor_npot;
+
+#ifdef GL_ES
+uniform vec2 extra_texture_factor_npot;
+#else
+const vec2 extra_texture_factor_npot = vec2(1.0, 1.0);
+#endif
 
 // Function to compute the overlay blend mode effect
 vec4 overlay_blend_mode(vec4 base, vec4 blend1){
@@ -52,9 +61,8 @@ float compute_distance(vec2 pixPos, vec2 to){
 // static_image preset
 vec4 static_image(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
-  float dist = min(max(compute_distance(pixPos,CENTER) * dist_factor,0.0),1.0);
-
-  return vec4(texture2D(extra_texture, pixPos).rgb,dist);
+  float dist = min(max(compute_distance(pixPos / v_factor_npot, CENTER) * dist_factor, 0.0), 1.0);
+  return vec4(texture2D(extra_texture, pixPos * extra_texture_factor_npot / v_factor_npot).rgb,dist);
 }
 
 

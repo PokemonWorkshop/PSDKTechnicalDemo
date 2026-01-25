@@ -1,5 +1,3 @@
-#version 120
-
 uniform mat4 camera;
 uniform float z;
 
