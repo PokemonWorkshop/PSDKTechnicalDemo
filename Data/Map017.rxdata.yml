@@ -1943,7 +1943,7 @@ events:
         code: 655
         indent: 0
         parameters:
-        - bi.battle_bgm = 'audio/bgm/xy_trainer_battle'
+        - bi.battle_bgm = 'xy_trainer_battle'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
@@ -5166,7 +5166,7 @@ events:
         code: 655
         indent: 0
         parameters:
-        - bi.battle_bgm = 'audio/bgm/xy_trainer_battle'
+        - bi.battle_bgm = 'xy_trainer_battle'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
@@ -5177,13 +5177,23 @@ events:
         indent: 0
         parameters:
         - 'party << PFM::Pokemon.generate_from_hash(id: :porygon_z, level: 32, shiny:
-          true, given_name: ''Crash'', trainer_name: ''Marie'')'
+          true, given_name: ''Crash'', '
+      - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
+        parameters:
+        - 'trainer_name: ''Marie'')'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
         parameters:
         - 'party << PFM::Pokemon.generate_from_hash(id: :scizor, level: 33, given_name:
-          ''Razor'', item: :scizorite, trainer_name: ''Marie'')'
+          ''Razor'', item: :scizorite, '
+      - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
+        parameters:
+        - 'trainer_name: ''Marie'')'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
@@ -5198,9 +5208,19 @@ events:
         code: 655
         indent: 0
         parameters:
-        - bi.add_party(1, party, 'Marie', 'Scientifique', 'dp_scientist_F', bag, 255,
-          4, "17, 225 I predicted you as easily as I can predict the prime numbers.",
-          "17, 226 Your patterns follows the chaos theory, I couldn't do anything...")
+        - 'bi.add_party(1, party, ''Marie'', ''Scientifique'', ''dp_scientist_F'',
+          bag, 255, 4, "17, 225 I predicted you as easily '
+      - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
+        parameters:
+        - 'as I can predict the prime numbers.", "17, 226 Your patterns follows the
+          chaos theory, I couldn''t do '
+      - !ruby/object:RPG::EventCommand
+        code: 655
+        indent: 0
+        parameters:
+        - anything...")
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
@@ -6184,7 +6204,7 @@ events:
         code: 655
         indent: 0
         parameters:
-        - bi.battle_bgm = 'audio/bgm/teruterusky_zinnia_hgss'
+        - bi.battle_bgm = 'teruterusky_zinnia_hgss'
       - !ruby/object:RPG::EventCommand
         code: 655
         indent: 0
