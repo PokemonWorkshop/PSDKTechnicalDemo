@@ -1299,36 +1299,29 @@ events:
         - !ruby/object:RPG::MoveRoute
           list:
           - &23 !ruby/object:RPG::MoveCommand
-            code: 44
-            parameters:
-            - !ruby/object:RPG::AudioFile
-              name: computer_on
-              pitch: 100
-              volume: 80
-          - &24 !ruby/object:RPG::MoveCommand
             code: 41
             parameters:
             - fx_Computer-screen
             - 0
             - 2
             - 3
-          - &25 !ruby/object:RPG::MoveCommand
+          - &24 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 8
-          - &26 !ruby/object:RPG::MoveCommand
+          - &25 !ruby/object:RPG::MoveCommand
             code: 45
             parameters:
             - animate_from_charset([0],12,reverse:true)
-          - &27 !ruby/object:RPG::MoveCommand
+          - &26 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 12
-          - &28 !ruby/object:RPG::MoveCommand
+          - &27 !ruby/object:RPG::MoveCommand
             code: 45
             parameters:
             - animate_from_charset([0],12)
-          - &29 !ruby/object:RPG::MoveCommand
+          - &28 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 12
@@ -1368,11 +1361,6 @@ events:
         parameters:
         - *28
       - !ruby/object:RPG::EventCommand
-        code: 509
-        indent: 0
-        parameters:
-        - *29
-      - !ruby/object:RPG::EventCommand
         code: 210
         indent: 0
         parameters: []
@@ -1388,37 +1376,30 @@ events:
         - 0
         - !ruby/object:RPG::MoveRoute
           list:
-          - &30 !ruby/object:RPG::MoveCommand
-            code: 44
-            parameters:
-            - !ruby/object:RPG::AudioFile
-              name: computer_off
-              pitch: 100
-              volume: 80
-          - &31 !ruby/object:RPG::MoveCommand
+          - &29 !ruby/object:RPG::MoveCommand
             code: 45
             parameters:
             - animate_from_charset([0],12,reverse:true)
+          - &30 !ruby/object:RPG::MoveCommand
+            code: 15
+            parameters:
+            - 12
+          - &31 !ruby/object:RPG::MoveCommand
+            code: 45
+            parameters:
+            - animate_from_charset([0],12)
           - &32 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 12
           - &33 !ruby/object:RPG::MoveCommand
-            code: 45
-            parameters:
-            - animate_from_charset([0],12)
-          - &34 !ruby/object:RPG::MoveCommand
-            code: 15
-            parameters:
-            - 12
-          - &35 !ruby/object:RPG::MoveCommand
             code: 41
             parameters:
             - fx_Computer-screen
             - 0
             - 2
             - 0
-          - &36 !ruby/object:RPG::MoveCommand
+          - &34 !ruby/object:RPG::MoveCommand
             code: 15
             parameters:
             - 4
@@ -1427,6 +1408,11 @@ events:
             parameters: []
           repeat: false
           skippable: false
+      - !ruby/object:RPG::EventCommand
+        code: 509
+        indent: 0
+        parameters:
+        - *29
       - !ruby/object:RPG::EventCommand
         code: 509
         indent: 0
@@ -1452,16 +1438,6 @@ events:
         indent: 0
         parameters:
         - *34
-      - !ruby/object:RPG::EventCommand
-        code: 509
-        indent: 0
-        parameters:
-        - *35
-      - !ruby/object:RPG::EventCommand
-        code: 509
-        indent: 0
-        parameters:
-        - *36
       - !ruby/object:RPG::EventCommand
         code: 210
         indent: 0
