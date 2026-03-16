@@ -4496,6 +4496,117 @@ events:
       walk_anime: true
     x: 20
     y: 25
+  41: !ruby/object:RPG::Event
+    id: 41
+    name: Books
+    pages:
+    - !ruby/object:RPG::Event::Page
+      always_on_top: false
+      condition: !ruby/object:RPG::Event::Page::Condition
+        self_switch_ch: A
+        self_switch_valid: false
+        switch1_id: 1
+        switch1_valid: false
+        switch2_id: 1
+        switch2_valid: false
+        variable_id: 1
+        variable_valid: false
+        variable_value: 0
+      direction_fix: false
+      graphic: !ruby/object:RPG::Event::Page::Graphic
+        blend_type: 0
+        character_hue: 0
+        character_name: ''
+        direction: 2
+        opacity: 255
+        pattern: 0
+        tile_id: 0
+      list:
+      - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
+        parameters:
+        - 14, 133 A pile of books with strange writing.
+      - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
+        parameters:
+        - 14, 134 The title is in a language you don't seem to know.
+      - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
+        parameters:
+        - This script command allows you to change the font
+      - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
+        parameters:
+        - of future messages.
+      - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
+        parameters:
+        - For future messages, we'll change the font ID to 5,
+      - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
+        parameters:
+        - which corresponds to the Unown font, configured in Studio.
+      - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
+        parameters:
+        - The text will be automatically converted to Unown font.
+      - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
+        parameters:
+        - apply_message_font(5)
+      - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
+        parameters:
+        - 14, 135 Learn unown.
+      - !ruby/object:RPG::EventCommand
+        code: 108
+        indent: 0
+        parameters:
+        - The following script command allows you to recover
+      - !ruby/object:RPG::EventCommand
+        code: 408
+        indent: 0
+        parameters:
+        - the original font.
+      - !ruby/object:RPG::EventCommand
+        code: 355
+        indent: 0
+        parameters:
+        - reset_message_font
+      - !ruby/object:RPG::EventCommand
+        code: 101
+        indent: 0
+        parameters:
+        - 14, 136 Despite all your efforts, you are unable to decipher it.
+      - !ruby/object:RPG::EventCommand
+        code: 0
+        indent: 0
+        parameters: []
+      move_frequency: 3
+      move_route: !ruby/object:RPG::MoveRoute
+        list:
+        - !ruby/object:RPG::MoveCommand
+          code: 0
+          parameters: []
+        repeat: true
+        skippable: false
+      move_speed: 3
+      move_type: 0
+      step_anime: false
+      through: false
+      trigger: 0
+      walk_anime: true
+    x: 30
+    y: 22
   5: !ruby/object:RPG::Event
     id: 5
     name: Message speed
