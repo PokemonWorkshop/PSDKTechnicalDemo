@@ -7,7 +7,7 @@ require 'tempfile'
 
 ENCRYPTION_KEY = ['1f24dd020fb077983c537dd29af01b9188406ce835bca75567b54db9be9f83f9'].pack('H*')
 EPSA_MAGIC = 'PSAE'
-EPSA_VERSION = 1
+EPSA_VERSION = 2
 
 unless ENCRYPTION_KEY.bytesize == 32
   STDERR.puts "ENCRYPTION_KEY must be exactly 32 bytes (got #{ENCRYPTION_KEY.bytesize})"
@@ -29,10 +29,10 @@ begin
     Dir.glob(glob_pattern).each do |file_or_dir|
       next if File.directory?(file_or_dir)
       puts "Adding #{file_or_dir}"
-      zip.get_output_stream(file_or_dir) { |out| out.write(File.binread(file_or_dir)) }
+      zip.add(file_or_dir, file_or_dir)
     end
     puts "Adding Game.rb"
-    zip.get_output_stream("Game.rb") { |out| out.write(File.binread("Game.rb")) }
+    zip.add("Game.rb", "Game.rb")
   end
   zip_data = File.binread(tmp_zip.path)
 
@@ -45,11 +45,13 @@ begin
   unless no_encrypt
     # Encrypt the ZIP data with AES-256-CBC
     begin
+      hash = OpenSSL::Digest::SHA256.digest(zip_data)
+      payload = hash + zip_data  # 32-byte SHA-256 hash prepended to ZIP data
       cipher = OpenSSL::Cipher::AES256.new(:CBC)
       cipher.encrypt
       cipher.key = ENCRYPTION_KEY
       iv = cipher.random_iv
-      encrypted_data = cipher.update(zip_data) + cipher.final
+      encrypted_data = cipher.update(payload) + cipher.final
     rescue OpenSSL::Cipher::CipherError => e
       STDERR.puts "Encryption failed: #{e.message}"
       exit 1
