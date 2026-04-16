@@ -165,6 +165,14 @@ unless system("apktool d #{base_apk_path.shellescape} -o #{decompiled_dir.shelle
   abort "apktool decompile failed"
 end
 
+# Update versionCode so Android allows installing over a previous build
+apktool_yml = File.join(decompiled_dir, "apktool.yml")
+version_code = Time.now.to_i / 60
+apktool_content = File.read(apktool_yml)
+apktool_content.sub!(/versionCode:\s*'?\d+'?/, "versionCode: #{version_code}")
+File.write(apktool_yml, apktool_content)
+puts "  versionCode: #{version_code}"
+
 # ---------------------------------------------------------------------------
 # Step 3: Modify app identity (manifest, resources, icon)
 # ---------------------------------------------------------------------------
@@ -245,18 +253,24 @@ end
 
 puts "[6/6] Signing APK..."
 
-# Generate a debug keystore if none provided
+# Use or generate a persistent debug keystore when none provided
 unless keystore_path
-  keystore_path = File.join(tmp_dir, "debug.keystore")
-  unless system(
-    "keytool -genkey -v -keystore #{keystore_path.shellescape} " \
-    "-alias psdk -keyalg RSA -keysize 2048 -validity 10000 " \
-    "-storepass #{keystore_pass.shellescape} " \
-    "-dname 'CN=PSDK, O=PSDK' 2>&1"
-  )
-    abort "keytool keystore generation failed"
+  default_keystore_dir = File.join(Dir.home, ".android")
+  keystore_path = File.join(default_keystore_dir, "debug.keystore")
+  unless File.exist?(keystore_path)
+    FileUtils.mkdir_p(default_keystore_dir)
+    unless system(
+      "keytool -genkey -v -keystore #{keystore_path.shellescape} " \
+      "-alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 " \
+      "-storepass #{keystore_pass.shellescape} " \
+      "-dname 'CN=PSDK, O=PSDK' 2>&1"
+    )
+      abort "keytool keystore generation failed"
+    end
+    puts "  Generated debug keystore: #{keystore_path}"
+  else
+    puts "  Using existing debug keystore: #{keystore_path}"
   end
-  puts "  Generated debug keystore"
 end
 
 unless system(
