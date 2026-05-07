@@ -1,10 +1,11 @@
 # Host-side counterpart to PSDK-android's libepsakdf.so.
 #
 # Produces byte-identical output to the native C implementation in
-# PSDK-android/app/src/main/cpp/epsa_kdf.cpp. The parity test in
-# plugins/test_epsa_kdf.rb is the gate that catches drift.
+# PSDK-android/app/src/main/cpp/epsa_kdf.cpp.
 
 require 'openssl'
+
+require_relative 'epsa_format'
 
 module EpsaKdf
   module_function
@@ -22,7 +23,7 @@ module EpsaKdf
   # "psdk-epsa-bundle" (16 bytes) XOR'd against OBF_KEY. Mirrors INFO_XOR in epsa_kdf.cpp.
   INFO_XOR = ['0b081f10561e0b081a56190e151f171e'].pack('H*').freeze
 
-  BUILD_ID_SIZE = 8
+  BUILD_ID_SIZE = EpsaFormat::BUILD_ID_SIZE
   KEY_SIZE      = 32
 
   def deobfuscate(blob)
@@ -51,19 +52,24 @@ module EpsaKdf
     hkdf_expand(hkdf_extract(salt, ikm), info, length)
   end
 
-  # Derive the 32-byte K_master.
+  # Derive the 32-byte v4 K_enc and K_mac. Returns { enc_key:, mac_key: }.
   #
-  # @param cert_der   [String] APK signing cert DER bytes (ASCII-8BIT)
-  # @param build_id   [String] 8 bytes (ASCII-8BIT)
-  # @param kdf_version [Integer] 0..255
-  def derive(cert_der, build_id, kdf_version = CURRENT_KDF_VERSION)
+  # Two separate HKDF derivations off the same (cert_der, build_id, kdf_version),
+  # distinguished by an `info`-suffix tag — see EpsaFormat for the layout.
+  def derive_v4(cert_der, build_id, kdf_version = CURRENT_KDF_VERSION)
     raise ArgumentError, 'build_id must be 8 bytes' unless build_id.bytesize == BUILD_ID_SIZE
     raise ArgumentError, 'kdf_version out of byte range' unless (0..255).cover?(kdf_version)
 
     salt        = deobfuscate(SALT_XOR)
-    info_prefix = deobfuscate(INFO_XOR)
-    info        = info_prefix + kdf_version.chr + build_id
+    info_prefix = deobfuscate(INFO_XOR) + kdf_version.chr + build_id
 
-    hkdf_sha256(ikm: cert_der, salt: salt, info: info, length: KEY_SIZE)
+    enc_key = hkdf_sha256(ikm: cert_der, salt: salt,
+                          info: info_prefix + EpsaFormat::KDF_INFO_TAG_ENC,
+                          length: KEY_SIZE)
+    mac_key = hkdf_sha256(ikm: cert_der, salt: salt,
+                          info: info_prefix + EpsaFormat::KDF_INFO_TAG_MAC,
+                          length: KEY_SIZE)
+
+    { enc_key: enc_key, mac_key: mac_key }
   end
 end
