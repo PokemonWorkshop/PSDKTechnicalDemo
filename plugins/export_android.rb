@@ -66,11 +66,10 @@ require 'tempfile'
 require 'fileutils'
 require 'shellwords'
 
+require_relative 'epsa_format'
 require_relative 'epsa_kdf'
+require_relative 'epsa_writer'
 require_relative 'pkcs12_cert'
-
-EPSA_MAGIC = 'PSAE'
-EPSA_VERSION = 3
 
 # ---------------------------------------------------------------------------
 # Argument parsing
@@ -244,30 +243,15 @@ begin
   zip_data = File.binread(tmp_zip.path)
   puts "  Archive contents: #{zip_data.bytesize} bytes"
 
-  hash = OpenSSL::Digest::SHA256.digest(zip_data)
-  payload = hash + zip_data
-
-  build_id = OpenSSL::Random.random_bytes(8)
   kdf_version = EpsaKdf::CURRENT_KDF_VERSION
-  key = EpsaKdf.derive(signing_cert_der, build_id, kdf_version)
-
-  cipher = OpenSSL::Cipher.new('aes-256-cbc')
-  cipher.encrypt
-  cipher.key = key
-  iv = cipher.random_iv
-  encrypted_data = cipher.update(payload) + cipher.final
-
-  # v3 header: magic (4) | version (4) | kdf_version (1) | reserved (3) | build_id (8) | IV (16)
-  File.open(epsa_path, 'wb') do |f|
-    f.write(EPSA_MAGIC)
-    f.write([EPSA_VERSION].pack('V'))
-    f.write([kdf_version].pack('C'))
-    f.write("\x00\x00\x00".b)
-    f.write(build_id)
-    f.write(iv)
-    f.write(encrypted_data)
-  end
-  puts "  Encrypted archive: #{File.size(epsa_path)} bytes (v#{EPSA_VERSION}, kdf=#{kdf_version})"
+  n_chunks = EpsaWriter.write(
+    epsa_path: epsa_path,
+    plaintext: zip_data,
+    signing_cert_der: signing_cert_der,
+    kdf_version: kdf_version
+  )
+  puts "  Encrypted archive: #{File.size(epsa_path)} bytes " \
+       "(v#{EpsaFormat::VERSION}, kdf=#{kdf_version}, chunks=#{n_chunks})"
 ensure
   tmp_zip.unlink
 end
