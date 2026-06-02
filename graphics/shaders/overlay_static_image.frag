@@ -27,6 +27,16 @@ uniform float opacity;
 // Uniform keeping track of the factor by which the distance should be multiplied
 uniform float dist_factor;
 
+// The position offset of the overlay on the map, in normalized coordinates
+uniform vec2 position;
+// The resolution of the viewport or screen, in pixels
+uniform vec2 resolution;
+// The resolution of the overlay image/texture, in pixels
+uniform vec2 image_resolution;
+// Uniform keeping track of whether the overlay is affixed to the map
+uniform bool map_affix;
+// Factor by which the image resolution should be multiplied, to make sure the image is affixed to map
+uniform float zoom;
 
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
@@ -58,13 +68,25 @@ float compute_distance(vec2 pixPos, vec2 to){
  return length(result);
 }
 
+// Function to compute the correct UV coordinates for the overlay to remain affixed to the map
+vec2 resolve_overlay_uv(vec2 pixPos){
+  vec2 adjust = resolution / image_resolution / zoom;
+  vec2 displacement = (pixPos - vec2(position.x, -position.y));
+  return displacement * adjust;
+}
+
 // static_image preset
 vec4 static_image(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
   float dist = min(max(compute_distance(pixPos / v_factor_npot, CENTER) * dist_factor, 0.0), 1.0);
-  return vec4(texture2D(extra_texture, pixPos * extra_texture_factor_npot / v_factor_npot).rgb,dist);
-}
+  vec2 static_image_uv = pixPos * extra_texture_factor_npot / v_factor_npot;
+  vec4 texture;
 
+  if(!map_affix) texture = vec4(texture2D(extra_texture, static_image_uv));
+  else texture = texture2D(extra_texture, resolve_overlay_uv(static_image_uv));
+
+  return vec4(texture.rgb, min(dist, texture.a));
+}
 
 // Account for opacity in blend modes
 vec3 blend(vec3 frag, vec3 overlay, float overlay_opacity)
@@ -97,7 +119,7 @@ void main() {
   vec4 frag = texture2D(texture, gl_TexCoord[0].xy);
 
   // Process overlay preset function + blend mode
-  vec4 overlay = static_image(gl_TexCoord[1].xy);
+  vec4 overlay = static_image(vec2(gl_TexCoord[0].x,1.0 - gl_TexCoord[0].y));
   frag = account_for_blend_mode(frag, overlay);
 
   // Compatibility with color_process
