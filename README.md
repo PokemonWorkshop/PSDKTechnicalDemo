@@ -85,4 +85,6 @@ Let us know what you thought of it in either the [#💬🌎・psdk-talk](https:/
 Please read the [Tiled README](Data/Tiled/README_TILED.md)
 
 ### Information about creating custom scripts
-Please read the [How to Create a Custom Script file](scripts/HOW_TO_CREATE_A_CUSTOM_SCRIPT.md)
+Please read the [Customize PSDK](https://docs.pokemonworkshop.com/getting-started/customize-psdk) guides on the documentation website. They cover setting up the development environment, how PSDK loads your scripts, and monkey-patching.
+
+The `scripts/00001 NewDynamicLights.rb` file of this project is a commented example, showing how to add lights to the DynamicLight feature.
