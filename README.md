@@ -82,7 +82,7 @@ Thank you for choosing to use PokémonSDK and Pokémon Studio to make your fanga
 Let us know what you thought of it in either the [#💬🌎・psdk-talk](https://ptb.discord.com/channels/143824995867557888/520273477144412171) (EN channel) or [#💬🥖・psdk-discussions](https://ptb.discord.com/channels/143824995867557888/360856242111119360) (FR channel)!
 
 ### Information about Tiled and its good practices
-Please read the [Tiled README](Data/Tiled/README_TILED.md)
+Please read the [Tiled guide](https://docs.pokemonworkshop.com/tiled) on the documentation website.
 
 ### Information about creating custom scripts
 Please read the [Customize PSDK](https://docs.pokemonworkshop.com/getting-started/customize-psdk) guides on the documentation website. They cover setting up the development environment, how PSDK loads your scripts, and monkey-patching.
