@@ -3031,6 +3031,21 @@
     parameters:
     - Yuki::FollowMe.smart_enable
   - !ruby/object:RPG::EventCommand
+    code: 108
+    indent: 1
+    parameters:
+    - Used to reset the state of the player. Very useful to
+  - !ruby/object:RPG::EventCommand
+    code: 408
+    indent: 1
+    parameters:
+    - disable the bridge state notably.
+  - !ruby/object:RPG::EventCommand
+    code: 355
+    indent: 1
+    parameters:
+    - "$game_player.fly_reset_attributes"
+  - !ruby/object:RPG::EventCommand
     code: 201
     indent: 1
     parameters:
@@ -7671,6 +7686,21 @@
     - 19
     - 19
     - 0
+  - !ruby/object:RPG::EventCommand
+    code: 108
+    indent: 2
+    parameters:
+    - Used to reset the state of the player. Very useful to
+  - !ruby/object:RPG::EventCommand
+    code: 408
+    indent: 2
+    parameters:
+    - disable the bridge state notably.
+  - !ruby/object:RPG::EventCommand
+    code: 355
+    indent: 2
+    parameters:
+    - "$game_player.fly_reset_attributes"
   - !ruby/object:RPG::EventCommand
     code: 201
     indent: 2
