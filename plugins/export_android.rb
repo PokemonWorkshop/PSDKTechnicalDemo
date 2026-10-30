@@ -83,7 +83,6 @@ require 'openssl'
 require 'optparse'
 require 'tmpdir'
 require 'fileutils'
-require 'shellwords'
 
 require_relative 'epsa_format'
 require_relative 'epsa_kdf'
@@ -587,7 +586,10 @@ end
 puts '[2/6] Decompiling base APK...'
 
 decompiled_dir = File.join(work_dir, 'decompiled')
-abort 'apktool decompile failed' unless system("apktool d #{base_apk_path.shellescape} -o #{decompiled_dir.shellescape} -f -s 2>&1")
+# The tools take their arguments as a list, without a shell: a path escaped for a POSIX shell
+# (Shellwords) broke on Windows' cmd.exe as soon as it had a space or an accent, and Ruby finds
+# and quotes Windows' .bat tools (apktool, apksigner) itself.
+abort 'apktool decompile failed' unless system('apktool', 'd', base_apk_path, '-o', decompiled_dir, '-f', '-s', err: :out)
 
 # Update versionCode so Android allows installing over a previous build
 apktool_yml = File.join(decompiled_dir, 'apktool.yml')
@@ -672,11 +674,11 @@ puts "  Injected #{archive_name} into assets/"
 puts '[5/6] Rebuilding APK...'
 
 unsigned_apk = File.join(work_dir, 'unsigned.apk')
-abort 'apktool rebuild failed' unless system("apktool b #{decompiled_dir.shellescape} -o #{unsigned_apk.shellescape} 2>&1")
+abort 'apktool rebuild failed' unless system('apktool', 'b', decompiled_dir, '-o', unsigned_apk, err: :out)
 
 # Zipalign
 aligned_apk = File.join(work_dir, 'aligned.apk')
-abort 'zipalign failed' unless system("zipalign -f 4 #{unsigned_apk.shellescape} #{aligned_apk.shellescape}")
+abort 'zipalign failed' unless system('zipalign', '-f', '4', unsigned_apk, aligned_apk)
 
 # ---------------------------------------------------------------------------
 # Step 6: Sign the APK
@@ -688,14 +690,8 @@ puts '[6/6] Signing APK...'
 # The password goes through the environment, not the command line, so it
 # doesn't show up in the process list.
 FileUtils.mkdir_p(File.dirname(output_path))
-unless system(
-  { 'PSDK_KS_PASS' => keystore_pass },
-  'apksigner sign ' \
-  "--ks #{keystore_path.shellescape} " \
-  '--ks-pass env:PSDK_KS_PASS ' \
-  "--out #{output_path.shellescape} " \
-  "#{aligned_apk.shellescape}"
-)
+unless system({ 'PSDK_KS_PASS' => keystore_pass },
+              'apksigner', 'sign', '--ks', keystore_path, '--ks-pass', 'env:PSDK_KS_PASS', '--out', output_path, aligned_apk)
   abort 'apksigner signing failed'
 end
 
