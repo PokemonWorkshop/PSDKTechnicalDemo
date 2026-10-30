@@ -28,8 +28,6 @@ uniform float time;
 // Uniform keeping track of the opacity variable
 uniform float opacity;
 
-varying vec2 v_factor_npot;
-
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
 
@@ -60,7 +58,7 @@ vec4 ripple(vec2 pixPos)
   float amount = 0.008;
 
   // Map out the ripple, this makes a donut shape
-  float distance = compute_distance(pixPos / v_factor_npot, position);
+  float distance = compute_distance(pixPos, position);
   float outer_map = 1.0 - smoothstep(spread - width, spread, distance);
   float inner_map = smoothstep(spread - width * 2.0, spread - width, distance);
   float map = outer_map * inner_map;

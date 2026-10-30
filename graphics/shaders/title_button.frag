@@ -1,8 +1,3 @@
-#ifdef GL_ES
-varying vec2 v_factor_npot;
-#else
-const vec2 v_factor_npot = vec2(1.0, 1.0);
-#endif
 uniform float t;
 
 const float PI = 3.14159265359;
@@ -17,7 +12,7 @@ void main() {
   COLORS[5] = vec4(0.4824, 0.2118, 0.8549, 1.0);
   COLORS[6] = vec4(1.0000, 0.1490, 0.2196, 1.0);
 
-  vec2 adjusted_coordinates = gl_TexCoord[0].xy / v_factor_npot;
+  vec2 adjusted_coordinates = gl_TexCoord[0].xy;
 
   float circleX = mod((adjusted_coordinates.x - t) * 6.0, 1.0);
   float colorIndex = mod((adjusted_coordinates.x - t) * 6.0, 6.0);
