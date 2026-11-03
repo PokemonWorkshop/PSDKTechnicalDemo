@@ -40,14 +40,6 @@ uniform bool map_affix;
 // Factor by which the image resolution should be multiplied, to make sure the image is affixed to map
 uniform float zoom;
 
-#ifdef GL_ES
-uniform vec2 extra_texture_factor_npot;
-#else
-const vec2 extra_texture_factor_npot = vec2(1.0, 1.0);
-#endif
-
-varying vec2 v_factor_npot;
-
 // Constant keeping track of a small number for comparison purposes
 const float SMALL_NUMBER = 0.0001;
 // Constant keeping track of the UV coordinates of the center of the screen
@@ -80,8 +72,8 @@ vec2 resolve_overlay_uv(vec2 pixPos){
 // Scroll preset
 vec4 scroll(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
-  float dist = min(max(compute_distance(pixPos / v_factor_npot, CENTER) * dist_factor, 0.0), 1.0);
-  vec2 scroll_uv = pixPos * extra_texture_factor_npot / v_factor_npot + direction1 * time;
+  float dist = min(max(compute_distance(pixPos, CENTER) * dist_factor, 0.0), 1.0);
+  vec2 scroll_uv = pixPos + direction1 * time;
   vec4 texture;
 
   if(!map_affix) texture = vec4(texture2D(extra_texture, mod(scroll_uv, vec2(1.0))));

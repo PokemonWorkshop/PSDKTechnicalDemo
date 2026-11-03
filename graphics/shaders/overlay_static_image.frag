@@ -43,14 +43,6 @@ const float SMALL_NUMBER = 0.0001;
 // Constant keeping track of the UV coordinates of the center of the screen
 const vec2 CENTER = vec2(0.5, 0.5);
 
-varying vec2 v_factor_npot;
-
-#ifdef GL_ES
-uniform vec2 extra_texture_factor_npot;
-#else
-const vec2 extra_texture_factor_npot = vec2(1.0, 1.0);
-#endif
-
 // Function to compute the overlay blend mode effect
 vec4 overlay_blend_mode(vec4 base, vec4 blend1){
   vec4 limit = step(0.5, base);
@@ -78,8 +70,8 @@ vec2 resolve_overlay_uv(vec2 pixPos){
 // static_image preset
 vec4 static_image(vec2 pixPos){
   // Modulate alpha channel according to distance to center and a factor so we can see the player
-  float dist = min(max(compute_distance(pixPos / v_factor_npot, CENTER) * dist_factor, 0.0), 1.0);
-  vec2 static_image_uv = pixPos * extra_texture_factor_npot / v_factor_npot;
+  float dist = min(max(compute_distance(pixPos, CENTER) * dist_factor, 0.0), 1.0);
+  vec2 static_image_uv = pixPos;
   vec4 texture;
 
   if(!map_affix) texture = vec4(texture2D(extra_texture, static_image_uv));
